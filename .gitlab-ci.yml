@@ -3,7 +3,7 @@ include:
     ref: '8605615b6ce98e97ad0ab83c6e6ee55ffbbe5865'
     file: '/ci/phosh-common-jobs.yml'
   - project: 'gnome/citemplates'
-    file: 'flatpak/flatpak-ci-initiative-sdk-extensions.yml'
+    file: 'flatpak/flatpak_ci_initiative.yml'
 
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
@@ -191,17 +191,25 @@ package-deb-debian-forky:
     PHOSH_DOCKER_IMAGE: "${DEBIAN_IMAGE}"
   extends: .phosh-build-debian-package
 
-flatpak-gnome-46:
-  image: 'quay.io/gnome_infrastructure/gnome-runtime-images:gnome-46'
-  before_script: []
-  extends: ".flatpak"
+.flatpak-local:
   allow_failure: true
+  before_script: []
   variables:
     APP_ID: "sm.puri.Chatty.Devel"
     BUNDLE: "sm.puri.Chatty.Devel.flatpak"
     FLATPAK_MODULE: "chatty"
     MANIFEST_PATH: "sm.puri.Chatty.json"
     RUNTIME_REPO: "https://dl.flathub.org/repo/flathub.flatpakrepo"
+
+flatpak@x86_64:
+  extends:
+    - .flatpak@x86_64
+    - .flatpak-local
+
+flatpak@aarch64:
+  extends:
+    - .flatpak@aarch64
+    - .flatpak-local
 
 check-consistency:
   image: ${IMAGE}
