@@ -1,5 +1,5 @@
 {
-    "app-id": "sm.puri.Chatty.Devel",
+    "id": "sm.puri.Chatty.Devel",
     "runtime": "org.gnome.Platform",
     "runtime-version": "46",
     "sdk": "org.gnome.Sdk",
