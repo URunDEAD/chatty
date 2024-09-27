@@ -14,7 +14,6 @@
         "--system-talk-name=org.freedesktop.ModemManager1",
         "--talk-name=org.gnome.evolution.dataserver.AddressBook10",
         "--talk-name=org.gnome.evolution.dataserver.Sources5",
-        "--talk-name=im.pidgin.purple.PurpleService",
         "--talk-name=org.gnome.evolution.dataserver.Subprocess.Backend.*",
         "--env=SSL_CERT_DIR=/etc/ssl/certs",
         "--filesystem=~/.purple"
@@ -40,28 +39,6 @@
                     "type": "archive",
                     "url": "https://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz",
                     "sha256": "67c74d94196b153b774ab9f89b2fa6c6ba79352407037c8c14d5aeb334e959cd"
-                }
-            ]
-        },
-        {
-            "name": "libpurple",
-            "config-opts": [
-                "--disable-dbus",
-                "--disable-gtkui",
-                "--disable-consoleui",
-                "--disable-vv",
-                "--disable-idn",
-                "--disable-avahi",
-                "--disable-meanwhile",
-                "--disable-tcl",
-                "--disable-nm",
-                "--disable-perl"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "http://downloads.sourceforge.net/pidgin/pidgin-2.14.7.tar.bz2",
-                    "sha256": "fea6ab4f0572fe24646049c2b3fecbdca27abca6d06e95bd655e44db99bd69fe"
                 }
             ]
         },
