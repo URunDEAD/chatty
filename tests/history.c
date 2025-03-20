@@ -461,8 +461,19 @@ compare_message (Message       *message,
 }
 
 static void
+on_done_quit_loop (GObject      *source_object,
+                   GAsyncResult *res,
+                   gpointer      user_data)
+{
+  GMainLoop *loop = user_data;
+
+  g_main_loop_quit (loop);
+}
+
+static void
 test_history_new (void)
 {
+  g_autoptr (GMainLoop) loop = NULL;
   ChattyHistory *history;
   GTask *task;
   g_autofree char *dir = NULL;
@@ -473,15 +484,16 @@ test_history_new (void)
   g_assert (CHATTY_IS_HISTORY (history));
   g_assert_true (chatty_history_is_closed (history));
 
-  task = g_task_new (NULL, NULL, NULL, NULL);
+  loop = g_main_loop_new (NULL, FALSE);
+
+  task = g_task_new (NULL, NULL, on_done_quit_loop, loop);
   dir = g_strdup (g_test_get_dir (G_TEST_BUILT));
   file_name = g_test_get_filename (G_TEST_BUILT, "test-history.db", NULL);
   g_remove (file_name);
   g_assert_false (g_file_test (file_name, G_FILE_TEST_EXISTS));
   chatty_history_open_async (history, dir, "test-history.db", finish_bool_cb, task);
 
-  while (!g_task_get_completed (task))
-    g_main_context_iteration (NULL, TRUE);
+  g_main_loop_run (loop);
 
   status = g_task_propagate_boolean (task, NULL);
   g_assert_true (g_file_test (file_name, G_FILE_TEST_IS_REGULAR));
@@ -489,11 +501,10 @@ test_history_new (void)
   g_assert_true (status);
   g_assert_finalize_object (task);
 
-  task = g_task_new (NULL, NULL, NULL, NULL);
+  task = g_task_new (NULL, NULL, on_done_quit_loop, loop);
   chatty_history_close_async (history, finish_bool_cb, task);
 
-  while (!g_task_get_completed (task))
-    g_main_context_iteration (NULL, TRUE);
+  g_main_loop_run (loop);
 
   status = g_task_propagate_boolean (task, NULL);
   g_assert_true (chatty_history_is_closed (history));
@@ -526,6 +537,7 @@ add_message (ChattyHistory      *history,
              ChattyMsgType       type,
              ChattyMsgDirection  direction)
 {
+  g_autoptr (GMainLoop) loop = NULL;
   g_autofree char *uid = NULL;
   GPtrArray *msg_array;
   Message *msg;
@@ -547,12 +559,12 @@ add_message (ChattyHistory      *history,
   g_assert_nonnull (uid);
   g_ptr_array_add (test_msg_array, msg);
 
-  task = g_task_new (NULL, NULL, NULL, NULL);
+  loop = g_main_loop_new (NULL, FALSE);
+
+  task = g_task_new (NULL, NULL, on_done_quit_loop, loop);
   chatty_history_get_messages_async (history, msg->chat, NULL, -1, finish_pointer_cb, task);
 
-  /* Wait until the task is completed */
-  while (!g_task_get_completed (task))
-    g_main_context_iteration (NULL, TRUE);
+  g_main_loop_run (loop);
 
   msg_array = g_task_propagate_pointer (task, NULL);
   g_assert_finalize_object (task);
@@ -630,6 +642,7 @@ add_chatty_message (ChattyHistory      *history,
                     ChattyMsgDirection  direction,
                     ChattyMsgStatus     status)
 {
+  g_autoptr (GMainLoop) loop = NULL;
   g_autoptr(ChattyContact) contact = NULL;
   GPtrArray *old_msg_array;
   ChattyMessage *message;
@@ -645,15 +658,16 @@ add_chatty_message (ChattyHistory      *history,
   g_clear_pointer (&uuid, g_free);
   g_assert (CHATTY_IS_MESSAGE (message));
 
-  task = g_task_new (NULL, NULL, NULL, NULL);
+  loop = g_main_loop_new (NULL, FALSE);
+
+  task = g_task_new (NULL, NULL, on_done_quit_loop, loop);
   chatty_history_add_message_async (history, chat, message, finish_bool_cb, task);
 
-  while (!g_task_get_completed (task))
-    g_main_context_iteration (NULL, TRUE);
+  g_main_loop_run (loop);
 
   success = g_task_propagate_boolean (task, NULL);
   g_assert_true (success);
-  g_clear_object (&task);
+  g_assert_finalize_object (task);
 
   if (status != CHATTY_STATUS_DRAFT)
     g_ptr_array_add (msg_array, message);
@@ -661,25 +675,23 @@ add_chatty_message (ChattyHistory      *history,
     g_clear_object (&message);
 
   message = msg_array->pdata[0];
-  task = g_task_new (NULL, NULL, NULL, NULL);
+  task = g_task_new (NULL, NULL, on_done_quit_loop, loop);
   chatty_history_get_messages_async (history, chat, message, -1, finish_pointer_cb, task);
 
-  while (!g_task_get_completed (task))
-    g_main_context_iteration (NULL, TRUE);
+  g_main_loop_run (loop);
 
   old_msg_array = g_task_propagate_pointer (task, NULL);
   g_assert_null (old_msg_array);
-  g_clear_object (&task);
+  g_assert_finalize_object (task);
 
   if (msg_array->len > 2) {
     message = msg_array->pdata[msg_array->len - 2];
     g_assert (CHATTY_IS_MESSAGE (message));
 
-    task = g_task_new (NULL, NULL, NULL, NULL);
+    task = g_task_new (NULL, NULL, on_done_quit_loop, loop);
     chatty_history_get_messages_async (history, chat, message, -1, finish_pointer_cb, task);
 
-    while (!g_task_get_completed (task))
-      g_main_context_iteration (NULL, TRUE);
+    g_main_loop_run (loop);
 
     old_msg_array = g_task_propagate_pointer (task, NULL);
     g_assert_nonnull (old_msg_array);
@@ -695,15 +707,14 @@ add_chatty_message (ChattyHistory      *history,
   if (status == CHATTY_STATUS_DRAFT) {
     g_autofree char *draft = NULL;
 
-    task = g_task_new (NULL, NULL, NULL, NULL);
+    task = g_task_new (NULL, NULL, on_done_quit_loop, loop);
     chatty_history_get_draft_async (history, chat, finish_pointer_cb, task);
 
-    while (!g_task_get_completed (task))
-      g_main_context_iteration (NULL, TRUE);
+    g_main_loop_run (loop);
 
     draft = g_task_propagate_pointer (task, NULL);
     g_assert_cmpstr (draft, ==, what);
-    g_clear_object (&task);
+    g_assert_finalize_object (task);
   }
 }
 
