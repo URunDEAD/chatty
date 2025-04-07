@@ -3240,7 +3240,7 @@ chatty_history_new (void)
 /**
  * chatty_history_open_async:
  * @self: a #ChattyHistory
- * @dir: (transfer full): The database directory
+ * @dir: The database directory
  * @file_name: The file name of database
  * @callback: a #GAsyncReadyCallback, or %NULL
  * @user_data: closure data for @callback
@@ -3251,7 +3251,7 @@ chatty_history_new (void)
  */
 void
 chatty_history_open_async (ChattyHistory       *self,
-                           char                *dir,
+                           const char          *dir,
                            const char          *file_name,
                            GAsyncReadyCallback  callback,
                            gpointer             user_data)
@@ -3279,7 +3279,7 @@ chatty_history_open_async (ChattyHistory       *self,
                                         self);
 
   country = chatty_settings_get_country_iso_code (chatty_settings_get_default ());
-  g_object_set_data_full (G_OBJECT (task), "dir", dir, g_free);
+  g_object_set_data_full (G_OBJECT (task), "dir", g_strdup (dir), g_free);
   g_object_set_data_full (G_OBJECT (task), "file-name", g_strdup (file_name), g_free);
   g_object_set_data_full (G_OBJECT (task), "country-code", g_strdup (country), g_free);
 
@@ -3779,7 +3779,7 @@ chatty_history_open (ChattyHistory *self,
   g_autoptr(GTask) task = NULL;
 
   task = g_task_new (NULL, NULL, NULL, NULL);
-  chatty_history_open_async (self, g_strdup (dir), file_name, finish_cb, task);
+  chatty_history_open_async (self, dir, file_name, finish_cb, task);
 
   history_db_wait_for_completion (task);
 }

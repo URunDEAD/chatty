@@ -465,7 +465,7 @@ test_history_new (void)
 {
   ChattyHistory *history;
   GTask *task;
-  char *dir;
+  g_autofree char *dir = NULL;
   const char *file_name;
   gboolean status;
 

@@ -23,7 +23,7 @@ G_DECLARE_FINAL_TYPE (ChattyHistory, chatty_history, CHATTY, HISTORY, GObject)
 
 ChattyHistory *chatty_history_new                 (void);
 void           chatty_history_open_async          (ChattyHistory        *self,
-                                                   char                 *dir,
+                                                   const char           *dir,
                                                    const char           *file_name,
                                                    GAsyncReadyCallback   callback,
                                                    gpointer              user_data);
