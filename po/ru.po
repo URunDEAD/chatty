@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: purism-chatty\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/Chatty/issues\n"
-"POT-Creation-Date: 2025-03-10 11:23+0000\n"
-"PO-Revision-Date: 2025-03-10 22:23+0300\n"
+"POT-Creation-Date: 2025-04-04 17:54+0000\n"
+"PO-Revision-Date: 2025-04-06 14:35+0300\n"
 "Last-Translator: Artur So <arturios2005@mail.ru>\n"
 "Language-Team: Russian\n"
 "Language: ru\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Poedit 3.6\n"
 
 #: data/sm.puri.Chatty.desktop.in.in:3 data/sm.puri.Chatty.metainfo.xml.in.in:6
 #: src/chatty-application.c:157 src/chatty-application.c:389
@@ -30,8 +30,7 @@ msgstr "Приложение для общения через SMS/MMS, Matrix и
 
 #: data/sm.puri.Chatty.desktop.in.in:7
 msgid "XMPP;SMS;chat;jabber;messaging;modem;matrix;"
-msgstr ""
-"XMPP;SMS;chat;jabber;messaging;modem;matrix;смс;чат;общение;модем;сообщение;"
+msgstr "XMPP;SMS;chat;jabber;messaging;modem;matrix;смс;чат;общение;модем;сообщение;"
 
 #: data/sm.puri.Chatty.gschema.xml:7 data/sm.puri.Chatty.gschema.xml:8
 msgid "Whether the application is launching the first time"
@@ -91,7 +90,8 @@ msgstr "Снимать идентификаторы отслеживания"
 
 #: data/sm.puri.Chatty.gschema.xml:50
 msgid "Whether to Remove Tracking IDs from URLs Automatically"
-msgstr "Нужно ли автоматически удалять идентификаторы отслеживания из URL"
+msgstr ""
+"Нужно ли автоматически удалять идентификаторы отслеживания из URL-адресов"
 
 #: data/sm.puri.Chatty.gschema.xml:55
 msgid "Whether Strip Tracking IDs was shown"
@@ -288,7 +288,7 @@ msgstr ""
 "%s"
 
 #: src/chatty-application.c:195 src/chatty-manager.c:681
-#: src/chatty-message-bar.c:467 src/purple/chatty-purple-notify.c:35
+#: src/chatty-message-bar.c:468 src/purple/chatty-purple-notify.c:35
 #: src/purple/chatty-purple.c:199 src/purple/chatty-purple.c:619
 #: src/dialogs/chatty-new-chat-dialog.c:226
 #: src/dialogs/chatty-settings-dialog.c:219
@@ -307,57 +307,57 @@ msgstr "Закрыть"
 msgid "Send To"
 msgstr "Отправить в"
 
-#: src/chatty-chat-list.c:174
+#: src/chatty-chat-list.c:194
 msgid "Select a contact with the <b>“+”</b> button in the titlebar."
 msgstr "Выберете контакт с помощью кнопки <b>“+”</b> в панели заголовка."
 
-#: src/chatty-chat-list.c:178
+#: src/chatty-chat-list.c:198
 msgid "Add instant messaging accounts in Preferences."
 msgstr "Добавьте уч. записи для обмена мгновенными сообщениями в Настройках."
 
-#: src/chatty-chat-list.c:214 src/chatty-contact-list.c:282
+#: src/chatty-chat-list.c:234 src/chatty-contact-list.c:282
 msgid "No Search Results"
 msgstr "Нет результатов поиска"
 
-#: src/chatty-chat-list.c:215
+#: src/chatty-chat-list.c:235
 msgid "Try different search"
 msgstr "Попробуйте другой поисковый запрос"
 
-#: src/chatty-chat-list.c:220
+#: src/chatty-chat-list.c:240
 msgid "No archived chats"
 msgstr "Нет архивных чатов"
 
-#: src/chatty-chat-list.c:222
+#: src/chatty-chat-list.c:242
 msgid "Start Chatting"
 msgstr "Начать общение"
 
-#: src/chatty-chat-page.c:196 src/chatty-chat-page.c:205
+#: src/chatty-chat-page.c:195 src/chatty-chat-page.c:204
 msgid "This is an MMS conversation"
 msgstr "Это беседа по MMS"
 
-#: src/chatty-chat-page.c:198 src/chatty-chat-page.c:213
-#: src/chatty-chat-page.c:219
+#: src/chatty-chat-page.c:197 src/chatty-chat-page.c:212
+#: src/chatty-chat-page.c:218
 msgid "Your messages are not encrypted, and carrier rates may apply"
 msgstr ""
 "Ваши сообщения не зашифрованы, и могут применяться тарифы оператора связи"
 
-#: src/chatty-chat-page.c:208
+#: src/chatty-chat-page.c:207
 msgid "This is an SMS/MMS conversation"
 msgstr "Это беседа по SMS/MMS"
 
-#: src/chatty-chat-page.c:211
+#: src/chatty-chat-page.c:210
 msgid "This is an SMS conversation"
 msgstr "Это беседа по SMS"
 
-#: src/chatty-chat-page.c:217
+#: src/chatty-chat-page.c:216
 msgid "This is an IM conversation"
 msgstr "Это беседа мгновенными сообщениями"
 
-#: src/chatty-chat-page.c:223
+#: src/chatty-chat-page.c:222
 msgid "Your messages are encrypted"
 msgstr "Ваши сообщения зашифрованы"
 
-#: src/chatty-chat-page.c:226
+#: src/chatty-chat-page.c:225
 msgid "Your messages are not encrypted"
 msgstr "Ваши сообщения не зашифрованы"
 
@@ -550,18 +550,18 @@ msgstr "Подключение уч. записи…"
 msgid "“%s” is not a valid URI"
 msgstr "“%s” неправильный URI"
 
-#: src/chatty-message-bar.c:465 src/purple/chatty-purple.c:195
+#: src/chatty-message-bar.c:466 src/purple/chatty-purple.c:195
 #: src/chatty-window.c:378
 msgid "Alert"
 msgstr "Предупреждение"
 
-#: src/chatty-message-bar.c:466
+#: src/chatty-message-bar.c:467
 msgid "Found and automatically deleted tracking IDs from the pasted link."
 msgstr ""
 "Обнаружены и автоматически удалены идентификаторы отслеживания из "
 "вставленной ссылки."
 
-#: src/chatty-message-bar.c:468
+#: src/chatty-message-bar.c:469
 msgid "Don't Show Again"
 msgstr "Не показывать снова"
 
@@ -642,7 +642,7 @@ msgid "User %s has added %s to the contacts"
 msgstr "Пользователь %s добавил %s в контакты"
 
 #: src/purple/chatty-purple.c:283 src/dialogs/chatty-settings-dialog.c:477
-#: src/ui/chatty-ma-account-details.ui:141
+#: src/ui/chatty-ma-account-details.ui:144
 #: src/ui/chatty-pp-account-details.ui:80
 msgid "Delete Account"
 msgstr "Удаление уч. записи"
@@ -1049,6 +1049,15 @@ msgstr "Убирает чат из списка чатов"
 msgid "Delete"
 msgstr "Удалить"
 
+#. TRANSLATORS: %u is the number of members in a room
+#: src/dialogs/chatty-ma-chat-info.c:123
+#, c-format
+msgid "%u member"
+msgid_plural "%u members"
+msgstr[0] "%u участник"
+msgstr[1] "%u участника"
+msgstr[2] "%u участников"
+
 #: src/dialogs/chatty-mm-chat-info.c:146
 msgctxt "Refer to self in contact list"
 msgid "You"
@@ -1099,7 +1108,7 @@ msgid "XMPP ID"
 msgstr "XMPP ID"
 
 #: src/dialogs/chatty-pp-chat-info.c:301 src/ui/chatty-ma-chat-info.ui:28
-#: src/ui/chatty-ma-account-details.ui:90
+#: src/ui/chatty-ma-account-details.ui:91
 msgid "Matrix ID"
 msgstr "Matrix ID"
 
@@ -1310,7 +1319,7 @@ msgstr ""
 "Эта настройка является экспериментальной и может привести к потере SMS. "
 "Используйте на свой страх и риск!"
 
-#: src/matrix/chatty-ma-account.c:78
+#: src/matrix/chatty-ma-account.c:77
 #, c-format
 msgid "Please enter password for “%s”, homeserver: %s"
 msgstr "Пожалуйста, введите пароль для “%s”, домашний сервер: %s"
@@ -1356,16 +1365,21 @@ msgstr[2] "Вложения слишком большие"
 msgid "%Y-%m-%d %H∶%M"
 msgstr "%H∶%M %Y-%m-%d"
 
-#: src/mm/chatty-mmsd.c:1298
+#: src/mm/chatty-mmsd.c:1308
 #, c-format
 msgid "You received an MMS, but it expired on: %s"
 msgstr "Вы получили MMS, но срок его действия истек: %s"
 
-#: src/mm/chatty-mmsd.c:1301
+#: src/mm/chatty-mmsd.c:1311
+#, c-format
+msgid "You received an MMS, but it cannot be retrieved"
+msgstr "Вы получили MMS, но его невозможно открыть"
+
+#: src/mm/chatty-mmsd.c:1313
 msgid "You received an empty MMS."
 msgstr "Вы получили пустое MMS."
 
-#: src/mm/chatty-mmsd.c:1782 src/mm/chatty-mmsd.c:1830
+#: src/mm/chatty-mmsd.c:1794 src/mm/chatty-mmsd.c:1842
 #, c-format
 msgid "Automatically Retrying for  %i MMS"
 msgid_plural "Automatically Retrying for  %i MMSes..."
@@ -1373,35 +1387,35 @@ msgstr[0] "Автоматическая повторная попытка для
 msgstr[1] "Автоматическая повторная попытка для %i MMSes..."
 msgstr[2] "Автоматическая повторная попытка для %i MMSes..."
 
-#: src/mm/chatty-mmsd.c:1787
+#: src/mm/chatty-mmsd.c:1799
 msgid "Temporary Error Sending MMS"
 msgstr "Временная ошибка при отправке MMS"
 
-#: src/mm/chatty-mmsd.c:1835
+#: src/mm/chatty-mmsd.c:1847
 msgid "Temporary Error Receiving MMS"
 msgstr "Временная ошибка при получении MMS"
 
-#: src/mm/chatty-mmsd.c:2053
+#: src/mm/chatty-mmsd.c:2065
 msgid "MMSC is not configured"
 msgstr "MMSC не настроен"
 
-#: src/mm/chatty-mmsd.c:2056
+#: src/mm/chatty-mmsd.c:2068
 msgid "APN is not configured correctly"
 msgstr "APN настроен неправильно"
 
-#: src/mm/chatty-mmsd.c:2059
+#: src/mm/chatty-mmsd.c:2071
 msgid "Mobile Data is not configured"
 msgstr "Мобильные данные не настроены"
 
-#: src/mm/chatty-mmsd.c:2062
+#: src/mm/chatty-mmsd.c:2074
 msgid "Mobile Data is off"
 msgstr "Мобильные данные отключены"
 
-#: src/mm/chatty-mmsd.c:2065
+#: src/mm/chatty-mmsd.c:2077
 msgid "Unknown Error"
 msgstr "Неизвестная ошибка"
 
-#: src/mm/chatty-mmsd.c:2070
+#: src/mm/chatty-mmsd.c:2082
 #, c-format
 msgid "Chatty cannot process %i MMS"
 msgid_plural "Chatty cannot process %i MMSes..."
@@ -1542,6 +1556,10 @@ msgstr "Шифрование"
 msgid "Encrypt Messages"
 msgstr "Зашифровать сообщения"
 
+#: src/ui/chatty-ma-chat-info.ui:62
+msgid "Chat Members"
+msgstr "Участники чата"
+
 #: src/ui/chatty-main-view.ui:12 src/ui/chatty-settings-dialog.ui:14
 #: src/ui/chatty-side-bar.ui:19
 msgid "Back"
@@ -1656,15 +1674,27 @@ msgstr "Расширенная информация"
 msgid "Homeserver"
 msgstr "Домашний сервер"
 
-#: src/ui/chatty-ma-account-details.ui:103
-msgid "Device ID"
-msgstr "Идентификатор устройства"
+#: src/ui/chatty-ma-account-details.ui:83
+msgid "Copy homeserver URL"
+msgstr "Копировать URL-адрес домашнего сервера"
 
-#: src/ui/chatty-ma-account-details.ui:118
+#: src/ui/chatty-ma-account-details.ui:97 src/ui/chatty-ma-user-row.ui:68
+msgid "Copy user ID"
+msgstr "Копировать ID пользователя"
+
+#: src/ui/chatty-ma-account-details.ui:105
+msgid "Device ID"
+msgstr "ID устройства"
+
+#: src/ui/chatty-ma-account-details.ui:111
+msgid "Copy device ID"
+msgstr "Копировать ID устройства"
+
+#: src/ui/chatty-ma-account-details.ui:121
 msgid "Sensitive information"
 msgstr "Конфиденциальная информация"
 
-#: src/ui/chatty-ma-account-details.ui:121
+#: src/ui/chatty-ma-account-details.ui:124
 msgid "Access token"
 msgstr "Токен доступа"
 
@@ -1707,7 +1737,7 @@ msgstr "Индикаторы набора текста"
 
 #: src/ui/chatty-settings-dialog.ui:184
 msgid "Remove Tracking IDs From URLs"
-msgstr "Удалять идентификаторы отслеживания из URL"
+msgstr "Удалять идентификаторы отслеживания из URL-адресов"
 
 #: src/ui/chatty-settings-dialog.ui:197
 msgid "Show Attachment Previews"
