@@ -57,6 +57,13 @@
         <content_attribute id="social-chat">intense</content_attribute>
     </content_rating>
     <releases>
+      <release version="0.8.8" date="2025-05-01">
+        <description>
+          <ul>
+            <li>Bugfix release for broken xdg-activation</li>
+          </ul>
+        </description>
+      </release>
       <release version="0.8.7" date="2025-04-10">
         <description>
           <ul>

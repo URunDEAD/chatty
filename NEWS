@@ -1,3 +1,16 @@
+chatty 0.8.8
+------------
+Released Mai 2025
+* Bugfix release
+* Fixed chatty not properly starting up
+  when launched from the graphical shell:
+  xdg-activation broke in 0.8.7 due to appid mismatches
+* Contributors:
+    * fossdd
+    * Hank Greenburg
+* UI translations:
+    * Artur S0 (ru)
+
 chatty 0.8.7
 ------------
 Released April 2025

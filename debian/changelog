@@ -1,3 +1,35 @@
+chatty (0.8.8) unstable; urgency=medium
+
+  [ Artur S0 ]
+  * Update Russian translation
+
+  [ fossdd ]
+  * data: Use APP_ID for metainfo ID.
+    Fixes the mismatch of app id, desktop/dbus service file.
+    Rather than having multiple app ids (lowercase and not) replace the
+    metainfo ID with the APP_ID to fix the appstreamcli validate-tree
+    warning and keep the application ID everywhere consistent.
+    This reverts commit 70d1ba4ebaa43937dd304b733ceed9c8c0296900.
+
+  [ Hank Greenburg ]
+  * Update file README.md
+
+  [ twlvnn kraftwerk ]
+  * Update Bulgarian translation
+
+  [ Yaron Shahrabani ]
+  * Update Hebrew translation
+
+  [ Bruce Cowan ]
+  * Update British English translation
+
+  [ Benedikt Wildenhain ]
+  * fix failing gpg test.
+    Set the GPG test key's expire date 10 years into the future.
+    Closes: https://gitlab.gnome.org/World/Chatty/-/issues/981
+
+ -- Evangelos Ribeiro Tzaras <devrtz-debian@fortysixandtwo.eu>  Sat, 24 May 2025 20:58:54 +0200
+
 chatty (0.8.7) unstable; urgency=medium
 
   [ Evangelos Ribeiro Tzaras ]
