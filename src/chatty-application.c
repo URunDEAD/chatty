@@ -376,7 +376,6 @@ chatty_application_startup (GApplication *application)
   ChattyApplication *self = (ChattyApplication *)application;
   g_autofree char *db_path = NULL;
   g_autofree char *purple_dir = NULL;
-  const char *help_accels[] = { "F1", NULL };
 
   self->manager = chatty_manager_get_default ();
 
@@ -407,7 +406,12 @@ chatty_application_startup (GApplication *application)
 
   g_action_map_add_action_entries (G_ACTION_MAP (self), app_entries,
                                    G_N_ELEMENTS (app_entries), self);
-  gtk_application_set_accels_for_action (GTK_APPLICATION (self), "app.help", help_accels);
+
+  gtk_application_set_accels_for_action (GTK_APPLICATION (self), "app.help", (const char * const []){  "F1", NULL });
+  gtk_application_set_accels_for_action (GTK_APPLICATION (self), "win.go-back", (const char * const []){ "<Ctrl>w", NULL });
+  gtk_application_set_accels_for_action (GTK_APPLICATION (self), "win.new-chat", (const char * const []){ "<Ctrl>n", NULL });
+  gtk_application_set_accels_for_action (GTK_APPLICATION (self), "win.new-group-chat", (const char * const []){ "<Ctrl>g", NULL });
+  gtk_application_set_accels_for_action (GTK_APPLICATION (self), "win.show-settings", (const char * const []){ "<Ctrl>comma", NULL });
 
   if (g_application_get_flags (application) & G_APPLICATION_IS_SERVICE) {
     g_application_hold (application);

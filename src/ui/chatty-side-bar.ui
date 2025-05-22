@@ -35,7 +35,7 @@
                 <property name="visible" bind-source="add_chat_button" bind-property="visible" bind-flags="sync-create"/>
                 <property name="tooltip-text" translatable="yes">Menu</property>
                 <property name="icon-name">open-menu-symbolic</property>
-                <property name="popover">main_menu_popover</property>
+                <property name="menu-model">main_menu</property>
                 <property name="primary">True</property>
               </object>
             </child>
@@ -85,59 +85,6 @@
     </property>
   </template>
 
-  <object class="GtkPopover" id="main_menu_popover">
-    <style>
-      <class name="menu" />
-    </style>
-    <property name="child">
-      <object class="GtkBox">
-        <property name="margin-start">6</property>
-        <property name="margin-end">6</property>
-        <property name="margin-top">6</property>
-        <property name="margin-bottom">6</property>
-        <property name="orientation">vertical</property>
-        <child>
-          <object class="GtkModelButton">
-            <property name="visible">1</property>
-            <property name="receives-default">0</property>
-            <property name="text" translatable="yes" context="show archived chat list when clicked">Archived</property>
-            <property name="action-name">win.show-archived</property>
-          </object>
-        </child>
-        <child>
-          <object class="GtkModelButton">
-            <property name="visible">1</property>
-            <property name="receives-default">0</property>
-            <property name="text" translatable="yes">Preferences</property>
-            <property name="action-name">win.show-settings</property>
-          </object>
-        </child>
-        <child>
-          <object class="GtkModelButton">
-            <property name="visible">1</property>
-            <property name="text" translatable="yes">Keyboard _Shortcuts</property>
-            <property name="action-name">win.show-help-overlay</property>
-          </object>
-        </child>
-        <child>
-          <object class="GtkModelButton">
-            <property name="visible">1</property>
-            <property name="text" translatable="yes">Help</property>
-            <property name="action-name">app.help</property>
-          </object>
-        </child>
-        <child>
-          <object class="GtkModelButton">
-            <property name="visible">1</property>
-            <property name="receives-default">0</property>
-            <property name="text" translatable="yes">About Chats</property>
-            <property name="action-name">app.about</property>
-          </object>
-        </child>
-      </object>
-    </property>
-  </object>
-
   <object class="GtkPopover" id="new_message_popover">
     <style>
       <class name="menu" />
@@ -151,19 +98,19 @@
         <property name="orientation">vertical</property>
         <child>
           <object class="GtkModelButton" id="new_chat_button">
-            <property name="text" translatable="yes">New Message…</property>
+            <property name="text" translatable="yes">_New Message…</property>
             <property name="action-name">win.new-chat</property>
           </object>
         </child>
         <child>
           <object class="GtkModelButton" id="new_sms_mms_button">
-            <property name="text" translatable="yes">New SMS/MMS Message…</property>
+            <property name="text" translatable="yes">New SMS/MMS _Message…</property>
             <property name="action-name">win.new-sms-mms</property>
           </object>
         </child>
         <child>
           <object class="GtkModelButton" id="new_group_chat_button">
-            <property name="text" translatable="yes">New Group Message…</property>
+            <property name="text" translatable="yes">New _Group Message…</property>
             <property name="action-name">win.new-group-chat</property>
           </object>
         </child>
@@ -182,5 +129,31 @@
       </object>
     </property>
   </object>
+
+  <menu id="main_menu">
+    <section>
+      <item>
+        <attribute name="label" translatable="yes" context="show archived chat list when clicked">_Archived</attribute>
+        <attribute name="action">win.show-archived</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">_Preferences</attribute>
+        <attribute name="action">win.show-settings</attribute>
+      </item>
+      <item>
+          <attribute name="label" translatable="yes">Keyboard _Shortcuts</attribute>
+          <attribute name="action">win.show-help-overlay</attribute>
+          </item>
+      <item>
+          <attribute name="label" translatable="yes">_Help</attribute>
+          <attribute name="action">app.help</attribute>
+          </item>
+      <item>
+        <attribute name="label" translatable="yes">About _Chats</attribute>
+        <attribute name="action">app.about</attribute>
+      </item>
+    </section>
+  </menu>
+
 
 </interface>

@@ -134,7 +134,7 @@
           <object class="GtkModelButton" id="leave_button">
             <property name="can-focus">0</property>
             <property name="receives-default">0</property>
-            <property name="text" translatable="yes">Leave Chat</property>
+            <property name="text" translatable="yes">_Leave Chat</property>
             <property name="action-name">win.leave-chat</property>
           </object>
         </child>
@@ -142,7 +142,7 @@
           <object class="GtkModelButton" id="block_button">
             <property name="can-focus">0</property>
             <property name="receives-default">0</property>
-            <property name="text" translatable="yes">Block Contact</property>
+            <property name="text" translatable="yes">_Block Contact</property>
             <property name="action-name">win.block-chat</property>
           </object>
         </child>
@@ -150,7 +150,7 @@
           <object class="GtkModelButton" id="unblock_button">
             <property name="can-focus">0</property>
             <property name="receives-default">0</property>
-            <property name="text" translatable="yes">Unblock Contact</property>
+            <property name="text" translatable="yes">_Unblock Contact</property>
             <property name="action-name">win.unblock-chat</property>
           </object>
         </child>
@@ -158,7 +158,7 @@
           <object class="GtkModelButton" id="archive_button">
             <property name="can-focus">0</property>
             <property name="receives-default">0</property>
-            <property name="text" translatable="yes">Archive chat</property>
+            <property name="text" translatable="yes">_Archive chat</property>
             <property name="action-name">win.archive-chat</property>
           </object>
         </child>
@@ -174,7 +174,7 @@
           <object class="GtkModelButton" id="delete_button">
             <property name="can-focus">0</property>
             <property name="receives-default">0</property>
-            <property name="text" translatable="yes">Delete Chat</property>
+            <property name="text" translatable="yes">_Delete Chat</property>
             <property name="action-name">win.delete-chat</property>
           </object>
         </child>

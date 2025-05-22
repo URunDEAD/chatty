@@ -27,6 +27,22 @@
                 <property name="title" translatable="yes" context="shortcut window">Open Search</property>
                 <property name="action-name">win.search-chat</property>
               </object>
+	    </child>
+
+            <child>
+              <object class="GtkShortcutsShortcut">
+                <property name="visible">1</property>
+                <property name="title" translatable="yes" context="shortcut window">New Chat</property>
+                <property name="action-name">win.new-chat</property>
+              </object>
+	    </child>
+
+            <child>
+              <object class="GtkShortcutsShortcut">
+                <property name="visible">1</property>
+                <property name="title" translatable="yes" context="shortcut window">New Group Chat</property>
+                <property name="action-name">win.new-group-chat</property>
+              </object>
             </child>
 
             <child>
@@ -50,6 +66,14 @@
                 <property name="visible">1</property>
                 <property name="title" translatable="yes" context="shortcut window">Show Details</property>
                 <property name="action-name">win.show-chat-details</property>
+              </object>
+            </child>
+
+            <child>
+              <object class="GtkShortcutsShortcut">
+                <property name="visible">1</property>
+                <property name="title" translatable="yes" context="shortcut window">Close Chat</property>
+		<property name="action-name">win.go-back</property>
               </object>
             </child>
 

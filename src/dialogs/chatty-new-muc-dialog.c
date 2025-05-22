@@ -215,6 +215,8 @@ chatty_new_muc_dialog_class_init (ChattyNewMucDialogClass *klass)
   gtk_widget_class_bind_template_callback (widget_class, muc_dialog_cancel_clicked_cb);
   gtk_widget_class_bind_template_callback (widget_class, button_join_chat_clicked_cb);
   gtk_widget_class_bind_template_callback (widget_class, account_list_row_activated_cb);
+
+  gtk_widget_class_add_binding_action (widget_class, GDK_KEY_Escape, 0, "window.close", NULL);
 }
 
 

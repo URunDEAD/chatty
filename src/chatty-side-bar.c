@@ -35,7 +35,7 @@ struct _ChattySideBar
 
   GtkWidget         *chat_list;
 
-  GtkWidget         *main_menu_popover;
+  GtkWidget         *main_menu;
 
   GtkWidget         *new_message_popover;
   GtkWidget         *new_chat_button;
@@ -259,7 +259,7 @@ chatty_side_bar_class_init (ChattySideBarClass *klass)
 
   gtk_widget_class_bind_template_child (widget_class, ChattySideBar, chat_list);
 
-  gtk_widget_class_bind_template_child (widget_class, ChattySideBar, main_menu_popover);
+  gtk_widget_class_bind_template_child (widget_class, ChattySideBar, main_menu);
 
   gtk_widget_class_bind_template_child (widget_class, ChattySideBar, new_message_popover);
   gtk_widget_class_bind_template_child (widget_class, ChattySideBar, new_chat_button);

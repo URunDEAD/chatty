@@ -622,6 +622,8 @@ chatty_new_chat_dialog_class_init (ChattyNewChatDialogClass *klass)
   gtk_widget_class_bind_template_callback (widget_class, add_in_contacts_button_clicked_cb);
   gtk_widget_class_bind_template_callback (widget_class, contact_name_text_changed_cb);
   gtk_widget_class_bind_template_callback (widget_class, account_list_row_activated_cb);
+
+  gtk_widget_class_add_binding_action (widget_class, GDK_KEY_Escape, 0, "window.close", NULL);
 }
 
 
