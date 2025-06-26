@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: purism-chatty\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/Chatty/issues\n"
-"POT-Creation-Date: 2025-04-04 17:54+0000\n"
-"PO-Revision-Date: 2025-04-08 22:34+0200\n"
+"POT-Creation-Date: 2025-04-10 11:22+0000\n"
+"PO-Revision-Date: 2025-06-26 14:36+0200\n"
 "Last-Translator: Daniel Rusek <mail@asciiwolf.com>\n"
 "Language-Team: Czech\n"
 "Language: cs\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Poedit 3.6\n"
 
 #: data/sm.puri.Chatty.desktop.in.in:3 data/sm.puri.Chatty.metainfo.xml.in.in:6
 #: src/chatty-application.c:157 src/chatty-application.c:389
@@ -35,7 +35,7 @@ msgstr "XMPP;SMS;chat;jabber;zprávy;modem;matrix;"
 
 #: data/sm.puri.Chatty.gschema.xml:7 data/sm.puri.Chatty.gschema.xml:8
 msgid "Whether the application is launching the first time"
-msgstr "Zdali je aplikace spouštěna poprvé"
+msgstr "Zda je aplikace spouštěna poprvé"
 
 #: data/sm.puri.Chatty.gschema.xml:13
 msgid "Country code in ISO 3166-1 alpha-2 format"
@@ -51,7 +51,7 @@ msgstr "Odesílat potvrzení o přečtení zprávy"
 
 #: data/sm.puri.Chatty.gschema.xml:20
 msgid "Whether to send the status of the message if read"
-msgstr "Zdali odesílat stav zprávy po přečtení"
+msgstr "Zda odesílat stav zprávy po přečtení"
 
 #: data/sm.puri.Chatty.gschema.xml:25
 msgid "Message carbon copies"
@@ -83,7 +83,7 @@ msgstr "Odesílat upozornění o psaní"
 
 #: data/sm.puri.Chatty.gschema.xml:44
 msgid "Whether to Send typing notifications"
-msgstr "Zdali odesílat upozornění o psaní"
+msgstr "Zda odesílat upozornění o psaní"
 
 #: data/sm.puri.Chatty.gschema.xml:49
 msgid "Strip Tracking IDs"
@@ -131,7 +131,7 @@ msgstr "Klávesa Enter odešle zprávu"
 
 #: data/sm.puri.Chatty.gschema.xml:86
 msgid "Whether pressing Enter key sends the message"
-msgstr "Zdali zmáčknutí klávesy Enter odešle zprávu"
+msgstr "Zda zmáčknutí klávesy Enter odešle zprávu"
 
 #: data/sm.puri.Chatty.gschema.xml:91
 msgid "Request SMS delivery reports"
@@ -139,7 +139,7 @@ msgstr "Vyžádat zprávy o doručení SMS"
 
 #: data/sm.puri.Chatty.gschema.xml:92
 msgid "Whether to request delivery reports for outgoing SMS"
-msgstr "Zdali vyžádat zprávy o doručení pro odchozí SMS"
+msgstr "Zda vyžádat zprávy o doručení pro odchozí SMS"
 
 #: data/sm.puri.Chatty.gschema.xml:97
 msgid "Clear out stuck SMS"
@@ -206,39 +206,48 @@ msgstr ""
 
 #: data/sm.puri.Chatty.metainfo.xml.in.in:23
 msgid "Folded view of a chat using the light theme."
-msgstr ""
+msgstr "Složený pohled na konverzaci se světlým motivem."
 
 #: data/sm.puri.Chatty.metainfo.xml.in.in:27
 msgid "Folded view of a chat using the dark theme."
-msgstr ""
+msgstr "Složený pohled na konverzaci s tmavým motivem."
 
 #: data/sm.puri.Chatty.metainfo.xml.in.in:31
 msgid "Unfolded view of a chat and the chat list in the sidebar."
 msgstr ""
+"Rozložený pohled na konverzaci a seznam konverzací na postranním panelu."
 
 #: data/sm.puri.Chatty.metainfo.xml.in.in:35
 msgid ""
 "The chat view using the dark theme as seen on a mobile phone running Phosh "
 "with unfolded keyboard."
 msgstr ""
+"Pohled na konverzaci s tmavým motivem, jak je vidět na mobilním telefonu s "
+"prostředím Phosh a rozloženou klávesnicí."
 
 #: data/sm.puri.Chatty.metainfo.xml.in.in:39
 msgid ""
 "The chat list view using the light theme as seen on a mobile phone running "
 "Phosh."
 msgstr ""
+"Pohled na seznam konverzací se světlým motivem, jak je vidět na mobilním "
+"telefonu s prostředím Phosh."
 
 #: data/sm.puri.Chatty.metainfo.xml.in.in:43
 msgid ""
 "The SMS/MMS preferences using the light theme as seen on a mobile phone "
 "running Phosh."
 msgstr ""
+"Předvolby SMS/MMS se světlým motivem, jak je vidět na mobilním telefonu s "
+"prostředím Phosh."
 
 #: data/sm.puri.Chatty.metainfo.xml.in.in:48
 msgid ""
 "The chat details view using the dark theme as seen on a mobile phone running "
 "Phosh."
 msgstr ""
+"Zobrazení podrobností konverzace s tmavým motivem, jak je vidět na mobilním "
+"telefonu s prostředím Phosh."
 
 #: src/chatty-application.c:73
 msgid "Show release version"
