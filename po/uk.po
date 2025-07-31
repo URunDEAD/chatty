@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: purism-chatty\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/Chatty/issues\n"
-"POT-Creation-Date: 2025-04-04 17:54+0000\n"
-"PO-Revision-Date: 2025-04-05 17:38+0300\n"
+"POT-Creation-Date: 2025-07-31 17:50+0000\n"
+"PO-Revision-Date: 2025-07-31 21:22+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -19,23 +19,23 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
 
-#: data/sm.puri.Chatty.desktop.in.in:3 data/sm.puri.Chatty.metainfo.xml.in.in:6
-#: src/chatty-application.c:157 src/chatty-application.c:389
+#: data/sm.puri.Chatty.desktop.in.in:2 data/sm.puri.Chatty.metainfo.xml.in.in:6
+#: src/chatty-application.c:157 src/chatty-application.c:388
 #: src/chatty-side-bar.c:385 src/ui/chatty-main-view.ui:4
 #: src/ui/chatty-side-bar.ui:4 src/ui/chatty-side-bar.ui:12
 #: src/ui/chatty-window.ui:4
 msgid "Chats"
 msgstr "Спілкування"
 
-#: data/sm.puri.Chatty.desktop.in.in:6
+#: data/sm.puri.Chatty.desktop.in.in:5
 msgid "SMS/MMS, Matrix and XMPP chat application"
 msgstr "Програма для спілкування за допомогою SMS/MMS, Matrix і XMPP"
 
-#: data/sm.puri.Chatty.desktop.in.in:7
+#: data/sm.puri.Chatty.desktop.in.in:6
 msgid "XMPP;SMS;chat;jabber;messaging;modem;matrix;"
 msgstr ""
-"XMPP;SMS;chat;jabber;messaging;modem;есемес;чат;балачка;спілкування;джабер;"
-"повідомлення;модем;матрикс;метрікс;"
+"XMPP;SMS;chat;jabber;messaging;modem;есемес;чат;балачка;спілкування;джабер;по"
+"відомлення;модем;матрикс;метрікс;"
 
 #: data/sm.puri.Chatty.gschema.xml:7 data/sm.puri.Chatty.gschema.xml:8
 msgid "Whether the application is launching the first time"
@@ -615,7 +615,7 @@ msgstr "Будь-який протокол"
 msgid "Matrix"
 msgstr "Matrix"
 
-#: src/chatty-side-bar.c:357 src/dialogs/chatty-new-chat-dialog.c:634
+#: src/chatty-side-bar.c:357 src/dialogs/chatty-new-chat-dialog.c:636
 #: src/dialogs/chatty-settings-dialog.c:1121
 #: src/ui/chatty-settings-dialog.ui:255
 msgid "SMS/MMS"
@@ -1062,8 +1062,6 @@ msgstr "Вилучити"
 #. TRANSLATORS: %u is the number of members in a room
 #: src/dialogs/chatty-ma-chat-info.c:123
 #, c-format
-#| msgid "%u Member"
-#| msgid_plural "%u Members"
 msgid "%u member"
 msgid_plural "%u members"
 msgstr[0] "%u учасник"
@@ -1149,7 +1147,7 @@ msgstr "Помилка під час спроби відкрити «Конта�
 msgid "SMS"
 msgstr "SMS"
 
-#: src/dialogs/chatty-new-chat-dialog.c:634
+#: src/dialogs/chatty-new-chat-dialog.c:636
 msgid "You"
 msgstr "Ви"
 
@@ -1309,7 +1307,7 @@ msgstr "Параметри PGP"
 msgid "New PGP Key"
 msgstr "Новий ключ PGP"
 
-#: src/dialogs/chatty-settings-dialog.c:1133 src/ui/chatty-side-bar.ui:111
+#: src/dialogs/chatty-settings-dialog.c:1133
 msgid "Preferences"
 msgstr "Параметри"
 
@@ -1571,8 +1569,6 @@ msgid "Encrypt Messages"
 msgstr "Шифрувати повідомлення"
 
 #: src/ui/chatty-ma-chat-info.ui:62
-#| msgid "%u Member"
-#| msgid_plural "%u Members"
 msgid "Chat Members"
 msgstr "Учасники спілкування"
 
@@ -1586,28 +1582,33 @@ msgid "Call"
 msgstr "Виклик"
 
 #: src/ui/chatty-main-view.ui:137
-msgid "Leave Chat"
-msgstr "Полишити спілкування"
+#| msgid "Leave Chat"
+msgid "_Leave Chat"
+msgstr "Поли_шити спілкування"
 
 #: src/ui/chatty-main-view.ui:145
-msgid "Block Contact"
-msgstr "Заблокувати контакт"
+#| msgid "Block Contact"
+msgid "_Block Contact"
+msgstr "За_блокувати контакт"
 
 #: src/ui/chatty-main-view.ui:153
-msgid "Unblock Contact"
-msgstr "Розблокувати контакт"
+#| msgid "Unblock Contact"
+msgid "_Unblock Contact"
+msgstr "_Розблокувати контакт"
 
 #: src/ui/chatty-main-view.ui:161
-msgid "Archive chat"
-msgstr "Архівувати спілкування"
+#| msgid "Archive chat"
+msgid "_Archive chat"
+msgstr "_Архівувати спілкування"
 
 #: src/ui/chatty-main-view.ui:169
 msgid "Unarchive chat"
 msgstr "Скасувати архівування"
 
 #: src/ui/chatty-main-view.ui:177
-msgid "Delete Chat"
-msgstr "Вилучити спілкування"
+#| msgid "Delete Chat"
+msgid "_Delete Chat"
+msgstr "Ви_лучити спілкування"
 
 #: src/ui/chatty-message-row.ui:161
 msgid "Copy Text"
@@ -1691,12 +1692,10 @@ msgid "Homeserver"
 msgstr "Домашній сервер"
 
 #: src/ui/chatty-ma-account-details.ui:83
-#| msgid "Homeserver"
 msgid "Copy homeserver URL"
 msgstr "Копіювати адресу домашнього сервера"
 
 #: src/ui/chatty-ma-account-details.ui:97 src/ui/chatty-ma-user-row.ui:68
-#| msgid "PGP user ID"
 msgid "Copy user ID"
 msgstr "Копіювати ідентифікатор користувача"
 
@@ -1705,7 +1704,6 @@ msgid "Device ID"
 msgstr "Ід. пристрою"
 
 #: src/ui/chatty-ma-account-details.ui:111
-#| msgid "Device ID"
 msgid "Copy device ID"
 msgstr "Копіювати ідентифікатор пристрою"
 
@@ -1913,34 +1911,45 @@ msgstr "Меню"
 msgid "Search"
 msgstr "Пошук"
 
-#: src/ui/chatty-side-bar.ui:103
-msgctxt "show archived chat list when clicked"
-msgid "Archived"
-msgstr "Архівовано"
+#: src/ui/chatty-side-bar.ui:101
+#| msgid "New Message…"
+msgid "_New Message…"
+msgstr "_Нове повідомлення…"
 
-#: src/ui/chatty-side-bar.ui:118
+#: src/ui/chatty-side-bar.ui:107
+#| msgid "New SMS/MMS Message…"
+msgid "New SMS/MMS _Message…"
+msgstr "Нове повідо_млення SMS/MMS…"
+
+#: src/ui/chatty-side-bar.ui:113
+#| msgid "New Group Message…"
+msgid "New _Group Message…"
+msgstr "Нове _групове повідомлення…"
+
+#: src/ui/chatty-side-bar.ui:136
+#| msgid "Archived"
+msgctxt "show archived chat list when clicked"
+msgid "_Archived"
+msgstr "_Архівовано"
+
+#: src/ui/chatty-side-bar.ui:140
+#| msgid "Preferences"
+msgid "_Preferences"
+msgstr "П_араметри"
+
+#: src/ui/chatty-side-bar.ui:144
 msgid "Keyboard _Shortcuts"
 msgstr "_Клавіатурні скорочення"
 
-#: src/ui/chatty-side-bar.ui:125
-msgid "Help"
-msgstr "Довідка"
+#: src/ui/chatty-side-bar.ui:148
+#| msgid "Help"
+msgid "_Help"
+msgstr "_Довідка"
 
-#: src/ui/chatty-side-bar.ui:133
-msgid "About Chats"
-msgstr "Про «Спілкування»"
-
-#: src/ui/chatty-side-bar.ui:154
-msgid "New Message…"
-msgstr "Нове повідомлення…"
-
-#: src/ui/chatty-side-bar.ui:160
-msgid "New SMS/MMS Message…"
-msgstr "Нове повідомлення SMS/MMS…"
-
-#: src/ui/chatty-side-bar.ui:166
-msgid "New Group Message…"
-msgstr "Нове групове повідомлення…"
+#: src/ui/chatty-side-bar.ui:152
+#| msgid "About Chats"
+msgid "About _Chats"
+msgstr "_Про «Спілкування»"
 
 #: src/ui/chatty-verification-page.ui:24
 msgid "Incoming Verification Request"
@@ -2009,19 +2018,37 @@ msgid "Open Search"
 msgstr "Відкрити пошук"
 
 #: src/ui/help-overlay.ui:35
+#| msgid "New Group Chat"
+msgctxt "shortcut window"
+msgid "New Chat"
+msgstr "Нове спілкування"
+
+#: src/ui/help-overlay.ui:43
+#| msgid "New Group Chat"
+msgctxt "shortcut window"
+msgid "New Group Chat"
+msgstr "Нове групове спілкування"
+
+#: src/ui/help-overlay.ui:51
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
 msgstr "Показати скорочення"
 
-#: src/ui/help-overlay.ui:46
+#: src/ui/help-overlay.ui:62
 msgctxt "shortcut window"
 msgid "Chat"
 msgstr "Спілкування"
 
-#: src/ui/help-overlay.ui:51
+#: src/ui/help-overlay.ui:67
 msgctxt "shortcut window"
 msgid "Show Details"
 msgstr "Показати подробиці"
+
+#: src/ui/help-overlay.ui:75
+#| msgid "Delete Chat"
+msgctxt "shortcut window"
+msgid "Close Chat"
+msgstr "Закрити спілкування"
 
 #: src/users/chatty-contact.c:324
 msgid "Mobile:"
@@ -2034,6 +2061,10 @@ msgstr "Робочий:"
 #: src/users/chatty-contact.c:328
 msgid "Other:"
 msgstr "Інший:"
+
+#~ msgctxt "show archived chat list when clicked"
+#~ msgid "Archived"
+#~ msgstr "Архівовано"
 
 #~ msgid "Start in daemon mode"
 #~ msgstr "Запускати у режимі служби"
