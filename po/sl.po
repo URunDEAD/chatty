@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: chatty master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/Chatty/issues\n"
-"POT-Creation-Date: 2025-04-04 17:54+0000\n"
-"PO-Revision-Date: 2025-04-05 09:10+0200\n"
+"POT-Creation-Date: 2025-07-31 17:50+0000\n"
+"PO-Revision-Date: 2025-08-01 12:31+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: Slovenian <gnome-si@googlegroups.com>\n"
 "Language: sl\n"
@@ -22,19 +22,19 @@ msgstr ""
 "X-Generator: Poedit 2.2.1\n"
 "X-Poedit-SourceCharset: ISO-8859-1\n"
 
-#: data/sm.puri.Chatty.desktop.in.in:3 data/sm.puri.Chatty.metainfo.xml.in.in:6
-#: src/chatty-application.c:157 src/chatty-application.c:389
+#: data/sm.puri.Chatty.desktop.in.in:2 data/sm.puri.Chatty.metainfo.xml.in.in:6
+#: src/chatty-application.c:157 src/chatty-application.c:388
 #: src/chatty-side-bar.c:385 src/ui/chatty-main-view.ui:4
 #: src/ui/chatty-side-bar.ui:4 src/ui/chatty-side-bar.ui:12
 #: src/ui/chatty-window.ui:4
 msgid "Chats"
 msgstr "Klepeti"
 
-#: data/sm.puri.Chatty.desktop.in.in:6
+#: data/sm.puri.Chatty.desktop.in.in:5
 msgid "SMS/MMS, Matrix and XMPP chat application"
 msgstr "Programček za klepet SMS, Matrix in XMPP"
 
-#: data/sm.puri.Chatty.desktop.in.in:7
+#: data/sm.puri.Chatty.desktop.in.in:6
 msgid "XMPP;SMS;chat;jabber;messaging;modem;matrix;"
 msgstr "XMPP;SMS;klepet;jabber;chat;sporočanje;sporočila;modem;matrix;"
 
@@ -609,7 +609,7 @@ msgstr "Poljuben protokol"
 msgid "Matrix"
 msgstr "Matrix"
 
-#: src/chatty-side-bar.c:357 src/dialogs/chatty-new-chat-dialog.c:634
+#: src/chatty-side-bar.c:357 src/dialogs/chatty-new-chat-dialog.c:636
 #: src/dialogs/chatty-settings-dialog.c:1121
 #: src/ui/chatty-settings-dialog.ui:255
 msgid "SMS/MMS"
@@ -1143,7 +1143,7 @@ msgstr "Napaka pri odpiranju Stikov GNOME: %s"
 msgid "SMS"
 msgstr "SMS"
 
-#: src/dialogs/chatty-new-chat-dialog.c:634
+#: src/dialogs/chatty-new-chat-dialog.c:636
 msgid "You"
 msgstr "Vi"
 
@@ -1299,7 +1299,7 @@ msgstr "Nastavitve PGP"
 msgid "New PGP Key"
 msgstr "Nov ključ PGP"
 
-#: src/dialogs/chatty-settings-dialog.c:1133 src/ui/chatty-side-bar.ui:111
+#: src/dialogs/chatty-settings-dialog.c:1133
 msgid "Preferences"
 msgstr "Nastavitve"
 
@@ -1577,28 +1577,28 @@ msgid "Call"
 msgstr "Kliči"
 
 #: src/ui/chatty-main-view.ui:137
-msgid "Leave Chat"
-msgstr "Zapusti klepet"
+msgid "_Leave Chat"
+msgstr "_Zapusti klepet"
 
 #: src/ui/chatty-main-view.ui:145
-msgid "Block Contact"
-msgstr "Kontaktni blok"
+msgid "_Block Contact"
+msgstr "_Blokiraj stik"
 
 #: src/ui/chatty-main-view.ui:153
-msgid "Unblock Contact"
-msgstr "Odblokiranje stika"
+msgid "_Unblock Contact"
+msgstr "_Odblokiraj stik"
 
 #: src/ui/chatty-main-view.ui:161
-msgid "Archive chat"
-msgstr "Arhiviraj klepet"
+msgid "_Archive chat"
+msgstr "_Arhiviraj klepet"
 
 #: src/ui/chatty-main-view.ui:169
 msgid "Unarchive chat"
 msgstr "Odarhiviraj klepet"
 
 #: src/ui/chatty-main-view.ui:177
-msgid "Delete Chat"
-msgstr "Izbriši klepet"
+msgid "_Delete Chat"
+msgstr "_Izbriši klepet"
 
 #: src/ui/chatty-message-row.ui:161
 msgid "Copy Text"
@@ -1899,34 +1899,38 @@ msgstr "Meni"
 msgid "Search"
 msgstr "Išči"
 
-#: src/ui/chatty-side-bar.ui:103
-msgctxt "show archived chat list when clicked"
-msgid "Archived"
-msgstr "Arhivirano"
+#: src/ui/chatty-side-bar.ui:101
+msgid "_New Message…"
+msgstr "_Novo sporočilo …"
 
-#: src/ui/chatty-side-bar.ui:118
+#: src/ui/chatty-side-bar.ui:107
+msgid "New SMS/MMS _Message…"
+msgstr "Novo _sporočilo SMS/MMS ..."
+
+#: src/ui/chatty-side-bar.ui:113
+msgid "New _Group Message…"
+msgstr "Novo s_kupinsko sporočilo …"
+
+#: src/ui/chatty-side-bar.ui:136
+msgctxt "show archived chat list when clicked"
+msgid "_Archived"
+msgstr "_Arhivirano"
+
+#: src/ui/chatty-side-bar.ui:140
+msgid "_Preferences"
+msgstr "_Nastavitve"
+
+#: src/ui/chatty-side-bar.ui:144
 msgid "Keyboard _Shortcuts"
 msgstr "_Tipke za bližnjico"
 
-#: src/ui/chatty-side-bar.ui:125
-msgid "Help"
-msgstr "Pomoč"
+#: src/ui/chatty-side-bar.ui:148
+msgid "_Help"
+msgstr "Po_moč"
 
-#: src/ui/chatty-side-bar.ui:133
-msgid "About Chats"
-msgstr "O Klepetih"
-
-#: src/ui/chatty-side-bar.ui:154
-msgid "New Message…"
-msgstr "Novo sporočilo …"
-
-#: src/ui/chatty-side-bar.ui:160
-msgid "New SMS/MMS Message…"
-msgstr "Novo sporočilo SMS/MMS ..."
-
-#: src/ui/chatty-side-bar.ui:166
-msgid "New Group Message…"
-msgstr "Novo skupinsko sporočilo …"
+#: src/ui/chatty-side-bar.ui:152
+msgid "About _Chats"
+msgstr "O _Klepetih"
 
 #: src/ui/chatty-verification-page.ui:24
 msgid "Incoming Verification Request"
@@ -1995,18 +1999,33 @@ msgstr "Odpri iskanje"
 
 #: src/ui/help-overlay.ui:35
 msgctxt "shortcut window"
+msgid "New Chat"
+msgstr "Nov klepet"
+
+#: src/ui/help-overlay.ui:43
+msgctxt "shortcut window"
+msgid "New Group Chat"
+msgstr "Nov skupinski klepet"
+
+#: src/ui/help-overlay.ui:51
+msgctxt "shortcut window"
 msgid "Show Shortcuts"
 msgstr "Pokaži bližnjice"
 
-#: src/ui/help-overlay.ui:46
+#: src/ui/help-overlay.ui:62
 msgctxt "shortcut window"
 msgid "Chat"
 msgstr "Klepet"
 
-#: src/ui/help-overlay.ui:51
+#: src/ui/help-overlay.ui:67
 msgctxt "shortcut window"
 msgid "Show Details"
 msgstr "Pokaži podrobnosti"
+
+#: src/ui/help-overlay.ui:75
+msgctxt "shortcut window"
+msgid "Close Chat"
+msgstr "Zapri klepet"
 
 #: src/users/chatty-contact.c:324
 msgid "Mobile:"
