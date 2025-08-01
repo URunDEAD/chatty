@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: chatty main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/Chatty/issues\n"
-"POT-Creation-Date: 2025-04-04 17:54+0000\n"
-"PO-Revision-Date: 2025-04-05 07:19+0330\n"
+"POT-Creation-Date: 2025-07-31 17:50+0000\n"
+"PO-Revision-Date: 2025-08-01 14:23+0330\n"
 "Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
 "Language-Team: Persian <fa@li.org>\n"
 "Language: fa\n"
@@ -16,21 +16,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Poedit 3.6\n"
 
-#: data/sm.puri.Chatty.desktop.in.in:3 data/sm.puri.Chatty.metainfo.xml.in.in:6
-#: src/chatty-application.c:157 src/chatty-application.c:389
+#: data/sm.puri.Chatty.desktop.in.in:2 data/sm.puri.Chatty.metainfo.xml.in.in:6
+#: src/chatty-application.c:157 src/chatty-application.c:388
 #: src/chatty-side-bar.c:385 src/ui/chatty-main-view.ui:4
 #: src/ui/chatty-side-bar.ui:4 src/ui/chatty-side-bar.ui:12
 #: src/ui/chatty-window.ui:4
 msgid "Chats"
 msgstr "گپ‌ها"
 
-#: data/sm.puri.Chatty.desktop.in.in:6
+#: data/sm.puri.Chatty.desktop.in.in:5
 msgid "SMS/MMS, Matrix and XMPP chat application"
 msgstr "برنامهٔ گپ XMPP، ماتریکس و پیامک"
 
-#: data/sm.puri.Chatty.desktop.in.in:7
+#: data/sm.puri.Chatty.desktop.in.in:6
 msgid "XMPP;SMS;chat;jabber;messaging;modem;matrix;"
 msgstr "XMPP;SMS;chat;jabber;messaging;modem;matrix;پیامک;گپ;جبر;پیام;مودم;ماتریکس;"
 
@@ -238,8 +238,8 @@ msgid ""
 "The SMS/MMS preferences using the light theme as seen on a mobile phone running "
 "Phosh."
 msgstr ""
-"ترجیحات پیامک/پیام چندرسانه‌ای با زمینهٔ روشن به صورتی که روی تلفن همراهی که فوش "
-"را اجرا می‌کند دیده می‌شود."
+"ترجیحات پیامک/پیام چندرسانه‌ای با زمینهٔ روشن به صورتی که روی تلفن همراهی که فوش را "
+"اجرا می‌کند دیده می‌شود."
 
 #: data/sm.puri.Chatty.metainfo.xml.in.in:48
 msgid ""
@@ -285,14 +285,10 @@ msgstr ""
 #: src/chatty-application.c:195 src/chatty-manager.c:681
 #: src/chatty-message-bar.c:468 src/purple/chatty-purple-notify.c:35
 #: src/purple/chatty-purple.c:199 src/purple/chatty-purple.c:619
-#: src/dialogs/chatty-new-chat-dialog.c:226
-#: src/dialogs/chatty-settings-dialog.c:219
-#: src/dialogs/chatty-settings-dialog.c:668
-#: src/dialogs/chatty-settings-dialog.c:705
-#: src/dialogs/chatty-settings-dialog.c:821
-#: src/dialogs/chatty-settings-dialog.c:857
-#: src/dialogs/chatty-settings-dialog.c:872
-#: src/dialogs/chatty-settings-dialog.c:889
+#: src/dialogs/chatty-new-chat-dialog.c:226 src/dialogs/chatty-settings-dialog.c:219
+#: src/dialogs/chatty-settings-dialog.c:668 src/dialogs/chatty-settings-dialog.c:705
+#: src/dialogs/chatty-settings-dialog.c:821 src/dialogs/chatty-settings-dialog.c:857
+#: src/dialogs/chatty-settings-dialog.c:872 src/dialogs/chatty-settings-dialog.c:889
 #: src/dialogs/chatty-settings-dialog.c:901
 #: src/dialogs/chatty-settings-dialog.c:1535 src/ui/chatty-main-view.ui:73
 msgid "Close"
@@ -513,8 +509,7 @@ msgstr "صدا"
 msgid "Location"
 msgstr "مکان"
 
-#: src/chatty-list-row.c:276 src/chatty-list-row.c:293
-#: src/chatty-notification.c:176
+#: src/chatty-list-row.c:276 src/chatty-list-row.c:293 src/chatty-notification.c:176
 msgid "File"
 msgstr "پرونده"
 
@@ -588,7 +583,7 @@ msgstr "هر شیوه‌نامه‌ای"
 msgid "Matrix"
 msgstr "ماتریکس"
 
-#: src/chatty-side-bar.c:357 src/dialogs/chatty-new-chat-dialog.c:634
+#: src/chatty-side-bar.c:357 src/dialogs/chatty-new-chat-dialog.c:636
 #: src/dialogs/chatty-settings-dialog.c:1121 src/ui/chatty-settings-dialog.ui:255
 msgid "SMS/MMS"
 msgstr "پیام کوتاه یا چندرسانه‌ای"
@@ -606,8 +601,7 @@ msgid "Archived"
 msgstr "بایگانی شده"
 
 #: src/purple/chatty-purple-notify.c:26 src/purple/chatty-purple.c:613
-#: src/dialogs/chatty-new-chat-dialog.c:222
-#: src/dialogs/chatty-settings-dialog.c:215
+#: src/dialogs/chatty-new-chat-dialog.c:222 src/dialogs/chatty-settings-dialog.c:215
 msgid "Error"
 msgstr "خطا"
 
@@ -1042,14 +1036,12 @@ msgctxt "Refer to self in contact list"
 msgid "You"
 msgstr "شما"
 
-#: src/dialogs/chatty-pp-chat-info.c:108
-#: src/dialogs/chatty-ma-account-details.c:168
+#: src/dialogs/chatty-pp-chat-info.c:108 src/dialogs/chatty-ma-account-details.c:168
 #: src/dialogs/chatty-pp-account-details.c:115
 msgid "Set Avatar"
 msgstr "تنظیم چهرک"
 
-#: src/dialogs/chatty-pp-chat-info.c:115
-#: src/dialogs/chatty-ma-account-details.c:175
+#: src/dialogs/chatty-pp-chat-info.c:115 src/dialogs/chatty-ma-account-details.c:175
 #: src/dialogs/chatty-pp-account-details.c:122
 msgid "Images"
 msgstr "تصویرها"
@@ -1115,7 +1107,7 @@ msgstr "خطا در گشودن آشنای گنوم: %s"
 msgid "SMS"
 msgstr "پیامک"
 
-#: src/dialogs/chatty-new-chat-dialog.c:634
+#: src/dialogs/chatty-new-chat-dialog.c:636
 msgid "You"
 msgstr "شما"
 
@@ -1175,19 +1167,16 @@ msgstr "شناسهٔ کلید %s وارد شده با کلید PGP یافته �
 msgid "Cannot Find Signing Key"
 msgstr "نمی‌توان کلید امضا را یافت"
 
-#: src/dialogs/chatty-settings-dialog.c:706
-#: src/dialogs/chatty-settings-dialog.c:952
+#: src/dialogs/chatty-settings-dialog.c:706 src/dialogs/chatty-settings-dialog.c:952
 msgid "I Know What I am Doing"
 msgstr "می‌دانم چه می‌کنم"
 
-#: src/dialogs/chatty-settings-dialog.c:788
-#: src/dialogs/chatty-settings-dialog.c:870
+#: src/dialogs/chatty-settings-dialog.c:788 src/dialogs/chatty-settings-dialog.c:870
 #: src/dialogs/chatty-settings-dialog.c:887
 msgid "Cannot Create Signing Key"
 msgstr "نمی‌توان کلید امضا را ساخت"
 
-#: src/dialogs/chatty-settings-dialog.c:789
-#: src/dialogs/chatty-settings-dialog.c:886
+#: src/dialogs/chatty-settings-dialog.c:789 src/dialogs/chatty-settings-dialog.c:886
 #, c-format
 msgid "Error creating the PGP ID. Please check the logs for more details."
 msgstr "خطای در ایجاد شناسهٔ PGP. برای جزییات بیش‌تر لطفاً گزارش‌ها را بررسی کنید."
@@ -1267,7 +1256,7 @@ msgstr "تنظیمات PGP"
 msgid "New PGP Key"
 msgstr "کلید PGP جدید"
 
-#: src/dialogs/chatty-settings-dialog.c:1133 src/ui/chatty-side-bar.ui:111
+#: src/dialogs/chatty-settings-dialog.c:1133
 msgid "Preferences"
 msgstr "ترجیحات"
 
@@ -1539,28 +1528,28 @@ msgid "Call"
 msgstr "تماس"
 
 #: src/ui/chatty-main-view.ui:137
-msgid "Leave Chat"
-msgstr "ترک گپ"
+msgid "_Leave Chat"
+msgstr "_ترک گپ"
 
 #: src/ui/chatty-main-view.ui:145
-msgid "Block Contact"
-msgstr "انسداد آشنا"
+msgid "_Block Contact"
+msgstr "_انسداد آشنا"
 
 #: src/ui/chatty-main-view.ui:153
-msgid "Unblock Contact"
-msgstr "رفع انسداد آشنا"
+msgid "_Unblock Contact"
+msgstr "_رفع انسداد آشنا"
 
 #: src/ui/chatty-main-view.ui:161
-msgid "Archive chat"
-msgstr "بایگانی گپ"
+msgid "_Archive chat"
+msgstr "_بایگانی گپ"
 
 #: src/ui/chatty-main-view.ui:169
 msgid "Unarchive chat"
 msgstr "در آوردن گپ از بایگانی"
 
 #: src/ui/chatty-main-view.ui:177
-msgid "Delete Chat"
-msgstr "حذف گپ"
+msgid "_Delete Chat"
+msgstr "_حذف گپ"
 
 #: src/ui/chatty-message-row.ui:161
 msgid "Copy Text"
@@ -1861,34 +1850,38 @@ msgstr "فهرست"
 msgid "Search"
 msgstr "جست‌وجو"
 
-#: src/ui/chatty-side-bar.ui:103
-msgctxt "show archived chat list when clicked"
-msgid "Archived"
-msgstr "بایگانی شده"
+#: src/ui/chatty-side-bar.ui:101
+msgid "_New Message…"
+msgstr "پیام _جدید…"
 
-#: src/ui/chatty-side-bar.ui:118
+#: src/ui/chatty-side-bar.ui:107
+msgid "New SMS/MMS _Message…"
+msgstr "_پیام کوتاه یا چندرسانه‌ای جدید…"
+
+#: src/ui/chatty-side-bar.ui:113
+msgid "New _Group Message…"
+msgstr "پیام _گروهی جدید…"
+
+#: src/ui/chatty-side-bar.ui:136
+msgctxt "show archived chat list when clicked"
+msgid "_Archived"
+msgstr "_بایگانی شده"
+
+#: src/ui/chatty-side-bar.ui:140
+msgid "_Preferences"
+msgstr "_ترجیحات"
+
+#: src/ui/chatty-side-bar.ui:144
 msgid "Keyboard _Shortcuts"
 msgstr "_میان‌برهای صفحه‌کلید"
 
-#: src/ui/chatty-side-bar.ui:125
-msgid "Help"
-msgstr "راهنما"
+#: src/ui/chatty-side-bar.ui:148
+msgid "_Help"
+msgstr "_راهنما"
 
-#: src/ui/chatty-side-bar.ui:133
-msgid "About Chats"
-msgstr "دربارهٔ گپ‌ها"
-
-#: src/ui/chatty-side-bar.ui:154
-msgid "New Message…"
-msgstr "پیام جدید…"
-
-#: src/ui/chatty-side-bar.ui:160
-msgid "New SMS/MMS Message…"
-msgstr "پیام کوتاه یا چندرسانه‌ای جدید…"
-
-#: src/ui/chatty-side-bar.ui:166
-msgid "New Group Message…"
-msgstr "پیام گروهی جدید…"
+#: src/ui/chatty-side-bar.ui:152
+msgid "About _Chats"
+msgstr "دربارهٔ _گپ‌ها"
 
 #: src/ui/chatty-verification-page.ui:24
 msgid "Incoming Verification Request"
@@ -1903,8 +1896,8 @@ msgid ""
 "Verifying this user will mark their session as trusted, and also mark your "
 "session as trusted to them."
 msgstr ""
-"تأیید این کاربر نشستش را به عنوان مطمئن علامت زده و نشستتان را نیز برایش به "
-"عنوان مطمئن علامت می‌زند."
+"تأیید این کاربر نشستش را به عنوان مطمئن علامت زده و نشستتان را نیز برایش به عنوان "
+"مطمئن علامت می‌زند."
 
 #: src/ui/chatty-verification-page.ui:98
 msgid "C_ontinue"
@@ -1915,8 +1908,7 @@ msgid "Verify this user by confirming the following emoji appears on their scree
 msgstr "تأیید این کاربر با تأیید ظاهر شدن شکلک‌های زیر روی صفحه‌اش"
 
 #: src/ui/chatty-verification-page.ui:378
-msgid ""
-"Verify this user by confirming the following number appears on their screen."
+msgid "Verify this user by confirming the following number appears on their screen."
 msgstr "تأیید این کاربر با تأیید ظاهر شدن عدد زیر روی صفحه‌اش."
 
 #: src/ui/chatty-verification-page.ui:413
@@ -1950,18 +1942,33 @@ msgstr "گشودن جست‌وجو"
 
 #: src/ui/help-overlay.ui:35
 msgctxt "shortcut window"
+msgid "New Chat"
+msgstr "گپ جدید"
+
+#: src/ui/help-overlay.ui:43
+msgctxt "shortcut window"
+msgid "New Group Chat"
+msgstr "گپ گروهی جدید"
+
+#: src/ui/help-overlay.ui:51
+msgctxt "shortcut window"
 msgid "Show Shortcuts"
 msgstr "نمایش میان‌برها"
 
-#: src/ui/help-overlay.ui:46
+#: src/ui/help-overlay.ui:62
 msgctxt "shortcut window"
 msgid "Chat"
 msgstr "گپ"
 
-#: src/ui/help-overlay.ui:51
+#: src/ui/help-overlay.ui:67
 msgctxt "shortcut window"
 msgid "Show Details"
 msgstr "نمایش جزییات"
+
+#: src/ui/help-overlay.ui:75
+msgctxt "shortcut window"
+msgid "Close Chat"
+msgstr "بستن گپ"
 
 #: src/users/chatty-contact.c:324
 msgid "Mobile:"
@@ -1974,6 +1981,10 @@ msgstr "کاری:"
 #: src/users/chatty-contact.c:328
 msgid "Other:"
 msgstr "دیگر:"
+
+#~ msgctxt "show archived chat list when clicked"
+#~ msgid "Archived"
+#~ msgstr "بایگانی شده"
 
 #~ msgid "Start in daemon mode"
 #~ msgstr "آغاز در حالت خدمت"
