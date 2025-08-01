@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: purism-chatty\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/Chatty/issues\n"
-"POT-Creation-Date: 2025-04-10 11:22+0000\n"
-"PO-Revision-Date: 2025-06-26 14:36+0200\n"
+"POT-Creation-Date: 2025-07-31 17:50+0000\n"
+"PO-Revision-Date: 2025-08-01 13:02+0200\n"
 "Last-Translator: Daniel Rusek <mail@asciiwolf.com>\n"
 "Language-Team: Czech\n"
 "Language: cs\n"
@@ -17,19 +17,19 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Poedit 3.6\n"
 
-#: data/sm.puri.Chatty.desktop.in.in:3 data/sm.puri.Chatty.metainfo.xml.in.in:6
-#: src/chatty-application.c:157 src/chatty-application.c:389
+#: data/sm.puri.Chatty.desktop.in.in:2 data/sm.puri.Chatty.metainfo.xml.in.in:6
+#: src/chatty-application.c:157 src/chatty-application.c:388
 #: src/chatty-side-bar.c:385 src/ui/chatty-main-view.ui:4
 #: src/ui/chatty-side-bar.ui:4 src/ui/chatty-side-bar.ui:12
 #: src/ui/chatty-window.ui:4
 msgid "Chats"
 msgstr "Konverzace"
 
-#: data/sm.puri.Chatty.desktop.in.in:6
+#: data/sm.puri.Chatty.desktop.in.in:5
 msgid "SMS/MMS, Matrix and XMPP chat application"
 msgstr "SMS/MMS, Matrix a XMPP konverzační aplikace"
 
-#: data/sm.puri.Chatty.desktop.in.in:7
+#: data/sm.puri.Chatty.desktop.in.in:6
 msgid "XMPP;SMS;chat;jabber;messaging;modem;matrix;"
 msgstr "XMPP;SMS;chat;jabber;zprávy;modem;matrix;"
 
@@ -599,7 +599,7 @@ msgstr "Libovolný protokol"
 msgid "Matrix"
 msgstr "Matrix"
 
-#: src/chatty-side-bar.c:357 src/dialogs/chatty-new-chat-dialog.c:634
+#: src/chatty-side-bar.c:357 src/dialogs/chatty-new-chat-dialog.c:636
 #: src/dialogs/chatty-settings-dialog.c:1121
 #: src/ui/chatty-settings-dialog.ui:255
 msgid "SMS/MMS"
@@ -1131,7 +1131,7 @@ msgstr "Chyba při otevírání Kontaktů GNOME: %s"
 msgid "SMS"
 msgstr "SMS"
 
-#: src/dialogs/chatty-new-chat-dialog.c:634
+#: src/dialogs/chatty-new-chat-dialog.c:636
 msgid "You"
 msgstr "Vy"
 
@@ -1287,7 +1287,7 @@ msgstr "Nastavení PGP"
 msgid "New PGP Key"
 msgstr "Nový klíč PGP"
 
-#: src/dialogs/chatty-settings-dialog.c:1133 src/ui/chatty-side-bar.ui:111
+#: src/dialogs/chatty-settings-dialog.c:1133
 msgid "Preferences"
 msgstr "Předvolby"
 
@@ -1562,28 +1562,28 @@ msgid "Call"
 msgstr "Volat"
 
 #: src/ui/chatty-main-view.ui:137
-msgid "Leave Chat"
-msgstr "Odejít z konverzace"
+msgid "_Leave Chat"
+msgstr "_Odejít z konverzace"
 
 #: src/ui/chatty-main-view.ui:145
-msgid "Block Contact"
-msgstr "Blokovat kontakt"
+msgid "_Block Contact"
+msgstr "_Blokovat kontakt"
 
 #: src/ui/chatty-main-view.ui:153
-msgid "Unblock Contact"
-msgstr "Zrušit blokaci kontaktu"
+msgid "_Unblock Contact"
+msgstr "Zr_ušit blokaci kontaktu"
 
 #: src/ui/chatty-main-view.ui:161
-msgid "Archive chat"
-msgstr "Archivovat konverzaci"
+msgid "_Archive chat"
+msgstr "_Archivovat konverzaci"
 
 #: src/ui/chatty-main-view.ui:169
 msgid "Unarchive chat"
 msgstr "Zrušit archivaci konverzace"
 
 #: src/ui/chatty-main-view.ui:177
-msgid "Delete Chat"
-msgstr "Smazat konverzaci"
+msgid "_Delete Chat"
+msgstr "_Smazat konverzaci"
 
 #: src/ui/chatty-message-row.ui:161
 msgid "Copy Text"
@@ -1884,34 +1884,38 @@ msgstr "Nabídka"
 msgid "Search"
 msgstr "Hledat"
 
-#: src/ui/chatty-side-bar.ui:103
-msgctxt "show archived chat list when clicked"
-msgid "Archived"
-msgstr "Archivováno"
+#: src/ui/chatty-side-bar.ui:101
+msgid "_New Message…"
+msgstr "_Nová zpráva…"
 
-#: src/ui/chatty-side-bar.ui:118
+#: src/ui/chatty-side-bar.ui:107
+msgid "New SMS/MMS _Message…"
+msgstr "Nová _zpráva SMS/MMS…"
+
+#: src/ui/chatty-side-bar.ui:113
+msgid "New _Group Message…"
+msgstr "Nová _hromadná zpráva…"
+
+#: src/ui/chatty-side-bar.ui:136
+msgctxt "show archived chat list when clicked"
+msgid "_Archived"
+msgstr "_Archivováno"
+
+#: src/ui/chatty-side-bar.ui:140
+msgid "_Preferences"
+msgstr "_Předvolby"
+
+#: src/ui/chatty-side-bar.ui:144
 msgid "Keyboard _Shortcuts"
 msgstr "Kláve_sové zkratky"
 
-#: src/ui/chatty-side-bar.ui:125
-msgid "Help"
-msgstr "Nápověda"
+#: src/ui/chatty-side-bar.ui:148
+msgid "_Help"
+msgstr "_Nápověda"
 
-#: src/ui/chatty-side-bar.ui:133
-msgid "About Chats"
-msgstr "O aplikaci Konverzace"
-
-#: src/ui/chatty-side-bar.ui:154
-msgid "New Message…"
-msgstr "Nová zpráva…"
-
-#: src/ui/chatty-side-bar.ui:160
-msgid "New SMS/MMS Message…"
-msgstr "Nová zpráva SMS/MMS…"
-
-#: src/ui/chatty-side-bar.ui:166
-msgid "New Group Message…"
-msgstr "Nová hromadná zpráva…"
+#: src/ui/chatty-side-bar.ui:152
+msgid "About _Chats"
+msgstr "O aplikaci _Konverzace"
 
 #: src/ui/chatty-verification-page.ui:24
 msgid "Incoming Verification Request"
@@ -1980,18 +1984,33 @@ msgstr "Otevřít vyhledávání"
 
 #: src/ui/help-overlay.ui:35
 msgctxt "shortcut window"
+msgid "New Chat"
+msgstr "Nová konverzace"
+
+#: src/ui/help-overlay.ui:43
+msgctxt "shortcut window"
+msgid "New Group Chat"
+msgstr "Nová hromadná konverzace"
+
+#: src/ui/help-overlay.ui:51
+msgctxt "shortcut window"
 msgid "Show Shortcuts"
 msgstr "Zobrazit zkratky"
 
-#: src/ui/help-overlay.ui:46
+#: src/ui/help-overlay.ui:62
 msgctxt "shortcut window"
 msgid "Chat"
 msgstr "Konverzace"
 
-#: src/ui/help-overlay.ui:51
+#: src/ui/help-overlay.ui:67
 msgctxt "shortcut window"
 msgid "Show Details"
 msgstr "Zobrazit podrobnosti"
+
+#: src/ui/help-overlay.ui:75
+msgctxt "shortcut window"
+msgid "Close Chat"
+msgstr "Zavřít konverzaci"
 
 #: src/users/chatty-contact.c:324
 msgid "Mobile:"
@@ -2004,6 +2023,10 @@ msgstr "Zaměstnání:"
 #: src/users/chatty-contact.c:328
 msgid "Other:"
 msgstr "Ostatní:"
+
+#~ msgctxt "show archived chat list when clicked"
+#~ msgid "Archived"
+#~ msgstr "Archivováno"
 
 #~ msgid "Start in daemon mode"
 #~ msgstr "Spustit v módu démona"
