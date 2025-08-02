@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: chatty master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/Chatty/issues\n"
-"POT-Creation-Date: 2025-07-31 17:50+0000\n"
-"PO-Revision-Date: 2025-08-01 10:35+0200\n"
+"POT-Creation-Date: 2025-08-01 12:47+0000\n"
+"PO-Revision-Date: 2025-08-02 12:13+0200\n"
 "Last-Translator: Antonio Marin <gnmer.6qxyg@slmail.me>\n"
 "Language-Team: Romanian <gnomero-list@lists.sourceforge.net>\n"
 "Language: ro\n"
@@ -1912,7 +1912,7 @@ msgstr "_Preferințe"
 
 #: src/ui/chatty-side-bar.ui:144
 msgid "Keyboard _Shortcuts"
-msgstr "_Scurtături"
+msgstr "Scur_tături"
 
 #: src/ui/chatty-side-bar.ui:148
 msgid "_Help"
