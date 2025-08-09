@@ -1,14 +1,14 @@
 # Azerbaijani translation for chatty.
 # Copyright (C) 2025 chatty's COPYRIGHT HOLDER
 # This file is distributed under the same license as the chatty package.
-# Ramal Rəhimov <jhonaluman@gmail.com>,  2025.
+# Ramal Rəhimov <jhonaluman@gmail.com>, 2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: chatty main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/Chatty/issues\n"
-"POT-Creation-Date: 2025-05-10 11:21+0000\n"
-"PO-Revision-Date: 2025-05-10 11:21+0000\n"
+"POT-Creation-Date: 2025-08-01 12:47+0000\n"
+"PO-Revision-Date: 2025-08-09 15:22+0300\n"
 "Last-Translator: Ramal Rəhimov <jhonaluman@gmail.com>\n"
 "Language-Team: Azerbaijani <contact@azlinux.org>\n"
 "Language: az\n"
@@ -16,20 +16,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Gtranslator 48.0\n"
 
-#: data/sm.puri.Chatty.desktop.in.in:3 data/sm.puri.Chatty.metainfo.xml.in.in:6
-#: src/chatty-application.c:157 src/chatty-application.c:389
+#: data/sm.puri.Chatty.desktop.in.in:2 data/sm.puri.Chatty.metainfo.xml.in.in:6
+#: src/chatty-application.c:157 src/chatty-application.c:388
 #: src/chatty-side-bar.c:385 src/ui/chatty-main-view.ui:4
 #: src/ui/chatty-side-bar.ui:4 src/ui/chatty-side-bar.ui:12
 #: src/ui/chatty-window.ui:4
 msgid "Chats"
 msgstr "Söhbətlər"
 
-#: data/sm.puri.Chatty.desktop.in.in:6
+#: data/sm.puri.Chatty.desktop.in.in:5
 msgid "SMS/MMS, Matrix and XMPP chat application"
 msgstr "SMS/MMS, Matrix və XMPP söhbət tətbiqi"
 
-#: data/sm.puri.Chatty.desktop.in.in:7
+#: data/sm.puri.Chatty.desktop.in.in:6
 msgid "XMPP;SMS;chat;jabber;messaging;modem;matrix;"
 msgstr "XMPP;SMS;söhbət;jabber;mesajlaşma;modem;matrix;"
 
@@ -139,7 +140,8 @@ msgstr "SMS çatdırılma hesabatlarını tələb et"
 
 #: data/sm.puri.Chatty.gschema.xml:92
 msgid "Whether to request delivery reports for outgoing SMS"
-msgstr "Göndərilən SMS-lər üçün çatdırılma hesabatlarının tələb edilib-edilməməsi"
+msgstr ""
+"Göndərilən SMS-lər üçün çatdırılma hesabatlarının tələb edilib-edilməməsi"
 
 #: data/sm.puri.Chatty.gschema.xml:97
 msgid "Clear out stuck SMS"
@@ -148,7 +150,9 @@ msgstr "Tıxanmış SMS-ləri təmizlə"
 #: data/sm.puri.Chatty.gschema.xml:98
 msgid ""
 "Whether Chatty should clear out SMS that are stuck in receiving/unknown state"
-msgstr "Chatty-nin qəbul edilməmiş/naməlum vəziyyətdə olan SMS-ləri təmizləyib-təmizləməməsi"
+msgstr ""
+"Chatty-nin qəbul edilməmiş/naməlum vəziyyətdə olan SMS-ləri təmizləyib-"
+"təmizləməməsi"
 
 #: data/sm.puri.Chatty.gschema.xml:103
 msgid "Enable experimental features"
@@ -180,7 +184,8 @@ msgstr "PGP istifadəçi ID-si"
 
 #: data/sm.puri.Chatty.gschema.xml:125
 msgid "The user ID for PGP that Chatty will use for outgoing messages"
-msgstr "Chatty-nin göndərilən mesajlar üçün istifadə edəcəyi PGP istifadəçi ID-si"
+msgstr ""
+"Chatty-nin göndərilən mesajlar üçün istifadə edəcəyi PGP istifadəçi ID-si"
 
 #: data/sm.puri.Chatty.gschema.xml:130 src/ui/chatty-settings-dialog.ui:480
 msgid "Public Key Fingerprint"
@@ -188,7 +193,9 @@ msgstr "Açıq Açar Barmaq İzi"
 
 #: data/sm.puri.Chatty.gschema.xml:131
 msgid "The default keyid the remote side should use to encrypt messages to us"
-msgstr "Uzaq tərəfin bizə mesajları şifrələmək üçün istifadə etməli olduğu standart açar ID-si"
+msgstr ""
+"Uzaq tərəfin bizə mesajları şifrələmək üçün istifadə etməli olduğu standart "
+"açar ID-si"
 
 #: data/sm.puri.Chatty.metainfo.xml.in.in:7
 msgid "Messaging application for mobile and desktop"
@@ -226,22 +233,21 @@ msgstr ""
 msgid ""
 "The chat list view using the light theme as seen on a mobile phone running "
 "Phosh."
-msgstr ""
-"Phosh işləyən mobil telefonda açıq mövzu ilə söhbət siyahısı görünüşü."
+msgstr "Phosh işləyən mobil telefonda açıq mövzu ilə söhbət siyahısı görünüşü."
 
 #: data/sm.puri.Chatty.metainfo.xml.in.in:43
 msgid ""
 "The SMS/MMS preferences using the light theme as seen on a mobile phone "
 "running Phosh."
-msgstr ""
-"Phosh işləyən mobil telefonda açıq mövzu ilə SMS/MMS parametrləri."
+msgstr "Phosh işləyən mobil telefonda açıq mövzu ilə SMS/MMS parametrləri."
 
 #: data/sm.puri.Chatty.metainfo.xml.in.in:48
 msgid ""
 "The chat details view using the dark theme as seen on a mobile phone running "
 "Phosh."
 msgstr ""
-"Phosh işləyən mobil telefonda qaranlıq mövzu ilə söhbət təfərrüatları görünüşü."
+"Phosh işləyən mobil telefonda qaranlıq mövzu ilə söhbət təfərrüatları "
+"görünüşü."
 
 #: src/chatty-application.c:73
 msgid "Show release version"
@@ -257,7 +263,9 @@ msgstr "libpurple sazlama mesajlarını aktivləşdir"
 
 #: src/chatty-application.c:79
 msgid "Enable verbose debug messages (repeat option for more verbosity)"
-msgstr "Ətraflı sazlama mesajlarını aktivləşdir (daha çox ətraflıq üçün seçimi təkrarlayın)"
+msgstr ""
+"Ətraflı sazlama mesajlarını aktivləşdir (daha çox ətraflıq üçün seçimi "
+"təkrarlayın)"
 
 #: src/chatty-application.c:160
 msgid "An SMS and XMPP messaging client"
@@ -372,7 +380,9 @@ msgstr "Naməlum Əlaqə"
 
 #: src/chatty-contact-list.c:283
 msgid "Try different search, or type a valid number to create new chat"
-msgstr "Fərqli axtarış cəhd edin və ya yeni söhbət yaratmaq üçün etibarlı nömrə daxil edin"
+msgstr ""
+"Fərqli axtarış cəhd edin və ya yeni söhbət yaratmaq üçün etibarlı nömrə "
+"daxil edin"
 
 #: src/chatty-contact-list.c:289
 msgid "No Contacts"
@@ -549,7 +559,9 @@ msgstr "Yenidən Göstərmə"
 
 #: src/chatty-message.c:230
 msgid "Got an encrypted message, but couldn't decrypt due to missing keys"
-msgstr "Şifrələnmiş mesaj alındı, lakin açarların olmaması səbəbindən deşifrə oluna bilmədi"
+msgstr ""
+"Şifrələnmiş mesaj alındı, lakin açarların olmaması səbəbindən deşifrə oluna "
+"bilmədi"
 
 #: src/chatty-notification.c:150
 #, c-format
@@ -583,7 +595,7 @@ msgstr "İstənilən Protokol"
 msgid "Matrix"
 msgstr "Matrix"
 
-#: src/chatty-side-bar.c:357 src/dialogs/chatty-new-chat-dialog.c:634
+#: src/chatty-side-bar.c:357 src/dialogs/chatty-new-chat-dialog.c:636
 #: src/dialogs/chatty-settings-dialog.c:1121
 #: src/ui/chatty-settings-dialog.ui:255
 msgid "SMS/MMS"
@@ -999,7 +1011,8 @@ msgstr "%s %s"
 
 #: src/chatty-window.c:379
 msgid "You shall no longer be notified for new messages, continue?"
-msgstr "Yeni mesajlar üçün artıq bildiriş almayacaqsınız, davam etmək istəyirsiniz?"
+msgstr ""
+"Yeni mesajlar üçün artıq bildiriş almayacaqsınız, davam etmək istəyirsiniz?"
 
 #: src/chatty-window.c:383
 msgid "Block"
@@ -1113,7 +1126,7 @@ msgstr "GNOME Əlaqələri açarkən xəta: %s"
 msgid "SMS"
 msgstr "SMS"
 
-#: src/dialogs/chatty-new-chat-dialog.c:634
+#: src/dialogs/chatty-new-chat-dialog.c:636
 msgid "You"
 msgstr "Sən"
 
@@ -1167,7 +1180,8 @@ msgstr "Etibarsız İmza ID-si"
 #: src/dialogs/chatty-settings-dialog.c:701
 #, c-format
 msgid "The entered Key ID %s does not match the found PGP Key for %s:%s."
-msgstr "Daxil edilən Açar ID-si %s, %s:%s üçün tapılan PGP açarı ilə uyğun gəlmir."
+msgstr ""
+"Daxil edilən Açar ID-si %s, %s:%s üçün tapılan PGP açarı ilə uyğun gəlmir."
 
 #: src/dialogs/chatty-settings-dialog.c:703
 msgid "Cannot Find Signing Key"
@@ -1188,7 +1202,8 @@ msgstr "İmza Açarı Yaradıla Bilmir"
 #: src/dialogs/chatty-settings-dialog.c:886
 #, c-format
 msgid "Error creating the PGP ID. Please check the logs for more details."
-msgstr "PGP ID-si yaradılarkən xəta baş verdi. Ətraflı məlumat üçün logları yoxlayın."
+msgstr ""
+"PGP ID-si yaradılarkən xəta baş verdi. Ətraflı məlumat üçün logları yoxlayın."
 
 #: src/dialogs/chatty-settings-dialog.c:802
 #, c-format
@@ -1211,7 +1226,9 @@ msgstr "PGP açarı yaratmaq üçün bütün sahələr doldurulmalıdır"
 #, c-format
 msgid ""
 "%s already has key with fingerprint %s. Please choose a different PGP ID"
-msgstr "%s artıq %s barmaq izi ilə açara malikdir. Zəhmət olmasa fərqli bir PGP ID-si seçin"
+msgstr ""
+"%s artıq %s barmaq izi ilə açara malikdir. Zəhmət olmasa fərqli bir PGP ID-"
+"si seçin"
 
 #: src/dialogs/chatty-settings-dialog.c:898
 #, c-format
@@ -1229,8 +1246,8 @@ msgid ""
 "Chatty is currently set to use PGP key: %s. The new key will be used instead "
 "of the existing one!"
 msgstr ""
-"Chatty hal-hazırda %s PGP açarını istifadə etmək üçün təyin edilib. Yeni açar "
-"mövcud olanın əvəzinə istifadə ediləcək!"
+"Chatty hal-hazırda %s PGP açarını istifadə etmək üçün təyin edilib. Yeni "
+"açar mövcud olanın əvəzinə istifadə ediləcək!"
 
 #: src/dialogs/chatty-settings-dialog.c:949
 msgid "Signing ID Present"
@@ -1268,7 +1285,7 @@ msgstr "PGP Parametrləri"
 msgid "New PGP Key"
 msgstr "Yeni PGP Açarı"
 
-#: src/dialogs/chatty-settings-dialog.c:1133 src/ui/chatty-side-bar.ui:111
+#: src/dialogs/chatty-settings-dialog.c:1133
 msgid "Preferences"
 msgstr "Tərcihlər"
 
@@ -1290,7 +1307,8 @@ msgstr "Eksperimental Parametr!"
 msgid ""
 "This setting is experimental and may cause loss of SMS. Use at your own risk!"
 msgstr ""
-"Bu parametr eksperimentaldır və SMS itkilərinə səbəb ola bilər. Öz riskinizlə istifadə edin!"
+"Bu parametr eksperimentaldır və SMS itkilərinə səbəb ola bilər. Öz "
+"riskinizlə istifadə edin!"
 
 #: src/matrix/chatty-ma-account.c:77
 #, c-format
@@ -1539,28 +1557,28 @@ msgid "Call"
 msgstr "Zəng"
 
 #: src/ui/chatty-main-view.ui:137
-msgid "Leave Chat"
-msgstr "Söhbəti Tərk Et"
+msgid "_Leave Chat"
+msgstr "Söhbəti _Tərk et"
 
 #: src/ui/chatty-main-view.ui:145
-msgid "Block Contact"
-msgstr "Əlaqəni Blokla"
+msgid "_Block Contact"
+msgstr "Əlaqəni _Blokla"
 
 #: src/ui/chatty-main-view.ui:153
-msgid "Unblock Contact"
-msgstr "Əlaqənin Blokunu Aç"
+msgid "_Unblock Contact"
+msgstr "Əlaqənin _Blokunu Aç"
 
 #: src/ui/chatty-main-view.ui:161
-msgid "Archive chat"
-msgstr "Söhbəti arxivləşdir"
+msgid "_Archive chat"
+msgstr "Söhbəti _arxivləşdir"
 
 #: src/ui/chatty-main-view.ui:169
 msgid "Unarchive chat"
 msgstr "Söhbəti arxivdən çıxar"
 
 #: src/ui/chatty-main-view.ui:177
-msgid "Delete Chat"
-msgstr "Söhbəti Sil"
+msgid "_Delete Chat"
+msgstr "Söhbəti _Sil"
 
 #: src/ui/chatty-message-row.ui:161
 msgid "Copy Text"
@@ -1770,8 +1788,8 @@ msgid ""
 "Chatty can use any existing key embedded with gpg. However, you are given "
 "the option to generate a key specifically for Chatty below."
 msgstr ""
-"Chatty gpg ilə inteqrasiya olunmuş hər hansı mövcud açardan istifadə edə bilər. "
-"Lakin aşağıda Chatty üçün xüsusi bir açar yaratmaq imkanı verilir."
+"Chatty gpg ilə inteqrasiya olunmuş hər hansı mövcud açardan istifadə edə "
+"bilər. Lakin aşağıda Chatty üçün xüsusi bir açar yaratmaq imkanı verilir."
 
 #: src/ui/chatty-settings-dialog.ui:453
 msgid "Generate Chatty PGP Key"
@@ -1794,8 +1812,8 @@ msgid ""
 "This will generate a key for use with Chatty. Please note that this will not "
 "install the key on a smart card."
 msgstr ""
-"Bu, Chatty ilə istifadə üçün açar yaradacaq. Nəzərə alın ki, bu açar smart karta "
-"quraşdırılmayacaq."
+"Bu, Chatty ilə istifadə üçün açar yaradacaq. Nəzərə alın ki, bu açar smart "
+"karta quraşdırılmayacaq."
 
 #: src/ui/chatty-settings-dialog.ui:508
 msgid "Full Name"
@@ -1861,34 +1879,38 @@ msgstr "Menyu"
 msgid "Search"
 msgstr "Axtar"
 
-#: src/ui/chatty-side-bar.ui:103
-msgctxt "show archived chat list when clicked"
-msgid "Archived"
-msgstr "Arxivləşdirilib"
+#: src/ui/chatty-side-bar.ui:101
+msgid "_New Message…"
+msgstr "_Yeni Mesaj…"
 
-#: src/ui/chatty-side-bar.ui:118
+#: src/ui/chatty-side-bar.ui:107
+msgid "New SMS/MMS _Message…"
+msgstr "Yeni SMS/MMS_Mesajı…"
+
+#: src/ui/chatty-side-bar.ui:113
+msgid "New _Group Message…"
+msgstr "Yeni_Qrup Mesajı…"
+
+#: src/ui/chatty-side-bar.ui:136
+msgctxt "show archived chat list when clicked"
+msgid "_Archived"
+msgstr "_Arxivləşdirilib"
+
+#: src/ui/chatty-side-bar.ui:140
+msgid "_Preferences"
+msgstr "_Parametrlər"
+
+#: src/ui/chatty-side-bar.ui:144
 msgid "Keyboard _Shortcuts"
 msgstr "Klaviatura _Qısayolları"
 
-#: src/ui/chatty-side-bar.ui:125
-msgid "Help"
-msgstr "Kömək"
+#: src/ui/chatty-side-bar.ui:148
+msgid "_Help"
+msgstr "_Kömək"
 
-#: src/ui/chatty-side-bar.ui:133
-msgid "About Chats"
-msgstr "Söhbətlər Haqqında"
-
-#: src/ui/chatty-side-bar.ui:154
-msgid "New Message…"
-msgstr "Yeni Mesaj…"
-
-#: src/ui/chatty-side-bar.ui:160
-msgid "New SMS/MMS Message…"
-msgstr "Yeni SMS/MMS Mesajı…"
-
-#: src/ui/chatty-side-bar.ui:166
-msgid "New Group Message…"
-msgstr "Yeni Qrup Mesajı…"
+#: src/ui/chatty-side-bar.ui:152
+msgid "About _Chats"
+msgstr "_Söhbətlər Haqqında"
 
 #: src/ui/chatty-verification-page.ui:24
 msgid "Incoming Verification Request"
@@ -1903,8 +1925,8 @@ msgid ""
 "Verifying this user will mark their session as trusted, and also mark your "
 "session as trusted to them."
 msgstr ""
-"Bu istifadəçini yoxlamaq onların sessiyasını etibarlı kimi işarələyəcək və sizin "
-"sessiyanızı da onlara etibarlı kimi göstərəcək."
+"Bu istifadəçini yoxlamaq onların sessiyasını etibarlı kimi işarələyəcək və "
+"sizin sessiyanızı da onlara etibarlı kimi göstərəcək."
 
 #: src/ui/chatty-verification-page.ui:98
 msgid "C_ontinue"
@@ -1914,18 +1936,21 @@ msgstr "D_avam Et"
 msgid ""
 "Verify this user by confirming the following emoji appears on their screen"
 msgstr ""
-"Bu istifadəçini yoxlamaq üçün onların ekranında görünən aşağıdakı emojini təsdiqləyin"
+"Bu istifadəçini yoxlamaq üçün onların ekranında görünən aşağıdakı emojini "
+"təsdiqləyin"
 
 #: src/ui/chatty-verification-page.ui:378
 msgid ""
 "Verify this user by confirming the following number appears on their screen."
 msgstr ""
-"Bu istifadəçini yoxlamaq üçün onların ekranında görünən aşağıdakı rəqəmi təsdiqləyin."
+"Bu istifadəçini yoxlamaq üçün onların ekranında görünən aşağıdakı rəqəmi "
+"təsdiqləyin."
 
 #: src/ui/chatty-verification-page.ui:413
 msgid "To be secure, do this in person or use a trusted way to communicate."
 msgstr ""
-"Təhlükəsizlik üçün bunu şəxsən edin və ya etibarlı ünsiyyət vasitəsindən istifadə edin."
+"Təhlükəsizlik üçün bunu şəxsən edin və ya etibarlı ünsiyyət vasitəsindən "
+"istifadə edin."
 
 #: src/ui/chatty-verification-page.ui:424
 msgctxt "verb, which means 'both items are not the same'"
@@ -1954,18 +1979,33 @@ msgstr "Axtarışı Aç"
 
 #: src/ui/help-overlay.ui:35
 msgctxt "shortcut window"
+msgid "New Chat"
+msgstr "Yeni Söhbət"
+
+#: src/ui/help-overlay.ui:43
+msgctxt "shortcut window"
+msgid "New Group Chat"
+msgstr "Yeni Qrup Söhbəti"
+
+#: src/ui/help-overlay.ui:51
+msgctxt "shortcut window"
 msgid "Show Shortcuts"
 msgstr "Qısayolları Göstər"
 
-#: src/ui/help-overlay.ui:46
+#: src/ui/help-overlay.ui:62
 msgctxt "shortcut window"
 msgid "Chat"
 msgstr "Söhbət"
 
-#: src/ui/help-overlay.ui:51
+#: src/ui/help-overlay.ui:67
 msgctxt "shortcut window"
 msgid "Show Details"
 msgstr "Təfərrüatları Göstər"
+
+#: src/ui/help-overlay.ui:75
+msgctxt "shortcut window"
+msgid "Close Chat"
+msgstr "Söhbəti Bağla"
 
 #: src/users/chatty-contact.c:324
 msgid "Mobile:"
@@ -1978,3 +2018,7 @@ msgstr "İş:"
 #: src/users/chatty-contact.c:328
 msgid "Other:"
 msgstr "Digər:"
+
+#~ msgctxt "show archived chat list when clicked"
+#~ msgid "Archived"
+#~ msgstr "Arxivləşdirilib"
