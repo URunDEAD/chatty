@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: chatty master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/Chatty/issues\n"
-"POT-Creation-Date: 2025-04-04 17:54+0000\n"
-"PO-Revision-Date: 2025-05-04 15:06+0300\n"
-"Last-Translator: Yosef Or Boczko <yoseforb@gmail.com>\n"
+"POT-Creation-Date: 2025-08-10 11:27+0000\n"
+"PO-Revision-Date: 2025-08-15 14:18+0300\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <yoseforb@gmail.com>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
@@ -25,19 +25,19 @@ msgstr ""
 "X-DL-Domain: po\n"
 "X-DL-State: None\n"
 
-#: data/sm.puri.Chatty.desktop.in.in:3 data/sm.puri.Chatty.metainfo.xml.in.in:6
-#: src/chatty-application.c:157 src/chatty-application.c:389
+#: data/sm.puri.Chatty.desktop.in.in:2 data/sm.puri.Chatty.metainfo.xml.in.in:6
+#: src/chatty-application.c:157 src/chatty-application.c:388
 #: src/chatty-side-bar.c:385 src/ui/chatty-main-view.ui:4
 #: src/ui/chatty-side-bar.ui:4 src/ui/chatty-side-bar.ui:12
 #: src/ui/chatty-window.ui:4
 msgid "Chats"
 msgstr "התכתבויות"
 
-#: data/sm.puri.Chatty.desktop.in.in:6
+#: data/sm.puri.Chatty.desktop.in.in:5
 msgid "SMS/MMS, Matrix and XMPP chat application"
 msgstr "יישום התכתבות במסרונים, Matrix וב־XMPP"
 
-#: data/sm.puri.Chatty.desktop.in.in:7
+#: data/sm.puri.Chatty.desktop.in.in:6
 msgid "XMPP;SMS;chat;jabber;messaging;modem;matrix;"
 msgstr ""
 "XMPP;מסרון;מסרונים;אס אם "
@@ -603,7 +603,7 @@ msgstr "כל פרוטוקול"
 msgid "Matrix"
 msgstr "‫Matrix"
 
-#: src/chatty-side-bar.c:357 src/dialogs/chatty-new-chat-dialog.c:634
+#: src/chatty-side-bar.c:357 src/dialogs/chatty-new-chat-dialog.c:636
 #: src/dialogs/chatty-settings-dialog.c:1121
 #: src/ui/chatty-settings-dialog.ui:255
 msgid "SMS/MMS"
@@ -1137,7 +1137,7 @@ msgstr "שגיאה בפתיחת אנשי הקשר של GNOME:‏ %s"
 msgid "SMS"
 msgstr "SMS"
 
-#: src/dialogs/chatty-new-chat-dialog.c:634
+#: src/dialogs/chatty-new-chat-dialog.c:636
 msgid "You"
 msgstr "אני"
 
@@ -1291,7 +1291,7 @@ msgstr "הגדרות PGP"
 msgid "New PGP Key"
 msgstr "מפתח PGP חדש"
 
-#: src/dialogs/chatty-settings-dialog.c:1133 src/ui/chatty-side-bar.ui:111
+#: src/dialogs/chatty-settings-dialog.c:1133
 msgid "Preferences"
 msgstr "העדפות"
 
@@ -1568,28 +1568,28 @@ msgid "Call"
 msgstr "שיחה"
 
 #: src/ui/chatty-main-view.ui:137
-msgid "Leave Chat"
-msgstr "לצאת מההתכתבות"
+msgid "_Leave Chat"
+msgstr "_לצאת מההתכתבות"
 
 #: src/ui/chatty-main-view.ui:145
-msgid "Block Contact"
-msgstr "חסימת איש קשר"
+msgid "_Block Contact"
+msgstr "_חסימת איש קשר"
 
 #: src/ui/chatty-main-view.ui:153
-msgid "Unblock Contact"
-msgstr "שחרור איש קשר"
+msgid "_Unblock Contact"
+msgstr "_שחרור איש קשר"
 
 #: src/ui/chatty-main-view.ui:161
-msgid "Archive chat"
-msgstr "ארכוב שיחה"
+msgid "_Archive chat"
+msgstr "העברת שיחה ל_ארכיון"
 
 #: src/ui/chatty-main-view.ui:169
 msgid "Unarchive chat"
 msgstr "הוצאת שיחה מארכיון"
 
 #: src/ui/chatty-main-view.ui:177
-msgid "Delete Chat"
-msgstr "למחוק התכתבות"
+msgid "_Delete Chat"
+msgstr "למ_חוק התכתבות"
 
 #: src/ui/chatty-message-row.ui:161
 msgid "Copy Text"
@@ -1892,34 +1892,38 @@ msgstr "תפריט"
 msgid "Search"
 msgstr "חיפוש"
 
-#: src/ui/chatty-side-bar.ui:103
-msgctxt "show archived chat list when clicked"
-msgid "Archived"
-msgstr "ארכיון"
+#: src/ui/chatty-side-bar.ui:101
+msgid "_New Message…"
+msgstr "הוד_עה חדשה…"
 
-#: src/ui/chatty-side-bar.ui:118
+#: src/ui/chatty-side-bar.ui:107
+msgid "New SMS/MMS _Message…"
+msgstr "הודעת SMS/MMS חד_שה…"
+
+#: src/ui/chatty-side-bar.ui:113
+msgid "New _Group Message…"
+msgstr "הודעה _קבוצתית חדשה…"
+
+#: src/ui/chatty-side-bar.ui:136
+msgctxt "show archived chat list when clicked"
+msgid "_Archived"
+msgstr "_בארכיון"
+
+#: src/ui/chatty-side-bar.ui:140
+msgid "_Preferences"
+msgstr "העד_פות"
+
+#: src/ui/chatty-side-bar.ui:144
 msgid "Keyboard _Shortcuts"
 msgstr "_צירופי מקשים"
 
-#: src/ui/chatty-side-bar.ui:125
-msgid "Help"
-msgstr "עזרה"
+#: src/ui/chatty-side-bar.ui:148
+msgid "_Help"
+msgstr "ע_זרה"
 
-#: src/ui/chatty-side-bar.ui:133
-msgid "About Chats"
-msgstr "על התכתבויות"
-
-#: src/ui/chatty-side-bar.ui:154
-msgid "New Message…"
-msgstr "הודעה חדשה…"
-
-#: src/ui/chatty-side-bar.ui:160
-msgid "New SMS/MMS Message…"
-msgstr "הודעת SMS/MMS חדשה…"
-
-#: src/ui/chatty-side-bar.ui:166
-msgid "New Group Message…"
-msgstr "הודעה קבוצתית חדשה…"
+#: src/ui/chatty-side-bar.ui:152
+msgid "About _Chats"
+msgstr "על ה_תכתבויות"
 
 #: src/ui/chatty-verification-page.ui:24
 msgid "Incoming Verification Request"
@@ -1984,18 +1988,33 @@ msgstr "פתיחת חיפוש"
 
 #: src/ui/help-overlay.ui:35
 msgctxt "shortcut window"
+msgid "New Chat"
+msgstr "התכתבות חדשה"
+
+#: src/ui/help-overlay.ui:43
+msgctxt "shortcut window"
+msgid "New Group Chat"
+msgstr "התכתבות קבוצתית חדשה"
+
+#: src/ui/help-overlay.ui:51
+msgctxt "shortcut window"
 msgid "Show Shortcuts"
 msgstr "הצגת צירופי מקשים"
 
-#: src/ui/help-overlay.ui:46
+#: src/ui/help-overlay.ui:62
 msgctxt "shortcut window"
 msgid "Chat"
 msgstr "התכתבות"
 
-#: src/ui/help-overlay.ui:51
+#: src/ui/help-overlay.ui:67
 msgctxt "shortcut window"
 msgid "Show Details"
 msgstr "הצגת פרטים"
+
+#: src/ui/help-overlay.ui:75
+msgctxt "shortcut window"
+msgid "Close Chat"
+msgstr "סגירת התכתבות"
 
 #: src/users/chatty-contact.c:324
 msgid "Mobile:"
@@ -2008,6 +2027,10 @@ msgstr "עבודה:"
 #: src/users/chatty-contact.c:328
 msgid "Other:"
 msgstr "אחר:"
+
+#~ msgctxt "show archived chat list when clicked"
+#~ msgid "Archived"
+#~ msgstr "ארכיון"
 
 #~ msgid "Start in daemon mode"
 #~ msgstr "לעלות במצב רקע"
