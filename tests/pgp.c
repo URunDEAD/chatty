@@ -428,7 +428,7 @@ create_key_cb (GObject      *object,
   g_assert_nonnull (fingerprint);
 
   /* We can check the newly created key */
-  system ("gpg --list-keys");
+  g_assert (system ("gpg --list-keys") == 0);
 
   /* Delete the key in case we run tests multiple times */
   system_args = g_strdup_printf ("gpg --batch --yes --delete-secret-key %s < /dev/null > /dev/null 2>&1", fingerprint);
