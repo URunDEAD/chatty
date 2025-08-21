@@ -156,7 +156,7 @@ chatty_application_show_about (GSimpleAction *action,
   adw_show_about_dialog (GTK_WIDGET (gtk_application_get_active_window (user_data)),
                          "application-name", _("Chats"),
                          "application-icon", CHATTY_APP_ID,
-                         "version", GIT_VERSION,
+                         "version", CHATTY_GIT_VERSION,
                          "comments", _("An SMS and XMPP messaging client"),
                          "website", "https://gitlab.gnome.org/World/Chatty",
                          "copyright", "© 2018–2023 Purism SPC",
@@ -323,7 +323,7 @@ chatty_application_handle_local_options (GApplication *application,
                                          GVariantDict *options)
 {
   if (g_variant_dict_contains (options, "version")) {
-    g_print ("%s %s\n", PACKAGE_NAME, GIT_VERSION);
+    g_print ("%s %s\n", PACKAGE_NAME, CHATTY_GIT_VERSION);
     return 0;
   }
 
@@ -381,7 +381,7 @@ chatty_application_startup (GApplication *application)
 
   G_APPLICATION_CLASS (chatty_application_parent_class)->startup (application);
 
-  g_info ("%s %s, git version: %s", PACKAGE_NAME, PACKAGE_VERSION, GIT_VERSION);
+  g_info ("%s %s, git version: %s", PACKAGE_NAME, PACKAGE_VERSION, CHATTY_GIT_VERSION);
 
   cm_init (TRUE);
 
