@@ -48,6 +48,7 @@ struct _ChattyMaChatInfo
   GtkWidget     *name_row;
   GtkWidget     *matrix_id_row;
   GtkWidget     *topic_row;
+  GtkWidget     *room_version_row;
   GtkWidget     *encryption_spinner;
   GtkWidget     *encryption_row;
 
@@ -138,7 +139,7 @@ chatty_ma_chat_info_set_item (ChattyChatInfo *info,
                               ChattyChat     *chat)
 {
   ChattyMaChatInfo *self = (ChattyMaChatInfo *)info;
-  const char *topic;
+  const char *topic, *room_version;
 
   g_assert (CHATTY_IS_MA_CHAT_INFO (self));
   g_assert (!chat || CHATTY_IS_MA_CHAT (chat));
@@ -161,9 +162,13 @@ chatty_ma_chat_info_set_item (ChattyChatInfo *info,
 
   topic = chatty_ma_chat_get_topic (CHATTY_MA_CHAT (self->chat));
   gtk_widget_set_visible (self->topic_row, !!topic);
-
   if (topic)
     adw_action_row_set_subtitle (ADW_ACTION_ROW (self->topic_row), topic);
+
+  room_version = chatty_ma_chat_get_room_version (CHATTY_MA_CHAT (self->chat));
+  gtk_widget_set_visible (self->room_version_row, !!room_version);
+  if (room_version)
+    adw_action_row_set_subtitle (ADW_ACTION_ROW (self->room_version_row), room_version);
 
   g_signal_connect_swapped (self->chat, "notify::encrypt",
                             G_CALLBACK (ma_chat_encrypt_changed_cb),
@@ -214,6 +219,7 @@ chatty_ma_chat_info_class_init (ChattyMaChatInfoClass *klass)
   gtk_widget_class_bind_template_child (widget_class, ChattyMaChatInfo, name_row);
   gtk_widget_class_bind_template_child (widget_class, ChattyMaChatInfo, matrix_id_row);
   gtk_widget_class_bind_template_child (widget_class, ChattyMaChatInfo, topic_row);
+  gtk_widget_class_bind_template_child (widget_class, ChattyMaChatInfo, room_version_row);
   gtk_widget_class_bind_template_child (widget_class, ChattyMaChatInfo, encryption_spinner);
   gtk_widget_class_bind_template_child (widget_class, ChattyMaChatInfo, encryption_row);
   gtk_widget_class_bind_template_child (widget_class, ChattyMaChatInfo, members_group);

@@ -1051,3 +1051,11 @@ chatty_ma_chat_get_topic (ChattyMaChat  *self)
 
   return cm_room_get_topic (self->cm_room);
 }
+
+const char *
+chatty_ma_chat_get_room_version (ChattyMaChat *self)
+{
+  g_return_val_if_fail (CHATTY_IS_MA_CHAT (self), NULL);
+
+  return cm_room_get_room_version (self->cm_room);
+}

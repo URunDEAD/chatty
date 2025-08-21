@@ -30,9 +30,15 @@
         </child>
 
         <!-- Topic -->
-         <child>
+        <child>
           <object class="AdwActionRow" id="topic_row">
             <property name="title" translatable="yes">Topic</property>
+          </object>
+        </child>
+
+        <child>
+          <object class="AdwActionRow" id="room_version_row">
+            <property name="title" translatable="yes">Room version</property>
           </object>
         </child>
       </object>
