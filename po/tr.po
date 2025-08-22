@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: purism-chatty\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/Chatty/issues\n"
-"POT-Creation-Date: 2025-04-04 17:54+0000\n"
-"PO-Revision-Date: 2025-04-06 08:00+0300\n"
+"POT-Creation-Date: 2025-08-10 11:27+0000\n"
+"PO-Revision-Date: 2025-08-22 08:00+0300\n"
 "Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
 "Language-Team: Turkish <takim@gnome.org.tr>\n"
 "Language: tr\n"
@@ -20,24 +20,21 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 3.5\n"
 
-#: data/sm.puri.Chatty.desktop.in.in:3 data/sm.puri.Chatty.metainfo.xml.in.in:6
-#: src/chatty-application.c:157 src/chatty-application.c:389
+#: data/sm.puri.Chatty.desktop.in.in:2 data/sm.puri.Chatty.metainfo.xml.in.in:6
+#: src/chatty-application.c:157 src/chatty-application.c:388
 #: src/chatty-side-bar.c:385 src/ui/chatty-main-view.ui:4
 #: src/ui/chatty-side-bar.ui:4 src/ui/chatty-side-bar.ui:12
 #: src/ui/chatty-window.ui:4
 msgid "Chats"
 msgstr "Konuşmalar"
 
-#: data/sm.puri.Chatty.desktop.in.in:6
+#: data/sm.puri.Chatty.desktop.in.in:5
 msgid "SMS/MMS, Matrix and XMPP chat application"
 msgstr "SMS/MMS, Matrix ve XMPP konuşma uygulaması"
 
-#: data/sm.puri.Chatty.desktop.in.in:7
+#: data/sm.puri.Chatty.desktop.in.in:6
 msgid "XMPP;SMS;chat;jabber;messaging;modem;matrix;"
-msgstr ""
-"XMPP;SMS;chat;chats;jabber;messaging;modem;mesajlaşma;iletişim;ileti;"
-"kısamesaj;kısaileti;MMS;multimedyamesajı;multimedyailetisi;çokluortammesajı;"
-"çokluortamiletisi;matrix;matriks;"
+msgstr "XMPP;SMS;chat;chats;jabber;messaging;modem;mesajlaşma;iletişim;ileti;kısamesaj;kısaileti;MMS;multimedyamesajı;multimedyailetisi;çokluortammesajı;çokluortamiletisi;matrix;matriks;"
 
 #: data/sm.puri.Chatty.gschema.xml:7 data/sm.puri.Chatty.gschema.xml:8
 msgid "Whether the application is launching the first time"
@@ -595,7 +592,7 @@ msgstr "Herhangi Bir İletişim Kuralı"
 msgid "Matrix"
 msgstr "Matrix"
 
-#: src/chatty-side-bar.c:357 src/dialogs/chatty-new-chat-dialog.c:634
+#: src/chatty-side-bar.c:357 src/dialogs/chatty-new-chat-dialog.c:636
 #: src/dialogs/chatty-settings-dialog.c:1121
 #: src/ui/chatty-settings-dialog.ui:255
 msgid "SMS/MMS"
@@ -1124,7 +1121,7 @@ msgstr "GNOME Kişiler açılırken hata: %s"
 msgid "SMS"
 msgstr "SMS"
 
-#: src/dialogs/chatty-new-chat-dialog.c:634
+#: src/dialogs/chatty-new-chat-dialog.c:636
 msgid "You"
 msgstr "Siz"
 
@@ -1284,7 +1281,7 @@ msgstr "PGP Ayarları"
 msgid "New PGP Key"
 msgstr "Yeni PGP Anahtarı"
 
-#: src/dialogs/chatty-settings-dialog.c:1133 src/ui/chatty-side-bar.ui:111
+#: src/dialogs/chatty-settings-dialog.c:1133
 msgid "Preferences"
 msgstr "Tercihler"
 
@@ -1553,28 +1550,28 @@ msgid "Call"
 msgstr "Ara"
 
 #: src/ui/chatty-main-view.ui:137
-msgid "Leave Chat"
-msgstr "Konuşmadan Ayrıl"
+msgid "_Leave Chat"
+msgstr "Konuşmadan _Ayrıl"
 
 #: src/ui/chatty-main-view.ui:145
-msgid "Block Contact"
-msgstr "Kişiyi Engelle"
+msgid "_Block Contact"
+msgstr "Kişiyi _Engelle"
 
 #: src/ui/chatty-main-view.ui:153
-msgid "Unblock Contact"
-msgstr "Engeli Kaldır"
+msgid "_Unblock Contact"
+msgstr "Engeli _Kaldır"
 
 #: src/ui/chatty-main-view.ui:161
-msgid "Archive chat"
-msgstr "Konuşmayı Arşivle"
+msgid "_Archive chat"
+msgstr "Konuşmayı _Arşivle"
 
 #: src/ui/chatty-main-view.ui:169
 msgid "Unarchive chat"
 msgstr "Arşivden Çıkar"
 
 #: src/ui/chatty-main-view.ui:177
-msgid "Delete Chat"
-msgstr "Konuşmayı Sil"
+msgid "_Delete Chat"
+msgstr "Konuşmayı _Sil"
 
 #: src/ui/chatty-message-row.ui:161
 msgid "Copy Text"
@@ -1875,34 +1872,38 @@ msgstr "Menü"
 msgid "Search"
 msgstr "Ara"
 
-#: src/ui/chatty-side-bar.ui:103
-msgctxt "show archived chat list when clicked"
-msgid "Archived"
-msgstr "Arşivli"
+#: src/ui/chatty-side-bar.ui:101
+msgid "_New Message…"
+msgstr "_Yeni İleti…"
 
-#: src/ui/chatty-side-bar.ui:118
+#: src/ui/chatty-side-bar.ui:107
+msgid "New SMS/MMS _Message…"
+msgstr "Yeni SMS/MMS İlet_isi…"
+
+#: src/ui/chatty-side-bar.ui:113
+msgid "New _Group Message…"
+msgstr "Yeni _Küme İletisi…"
+
+#: src/ui/chatty-side-bar.ui:136
+msgctxt "show archived chat list when clicked"
+msgid "_Archived"
+msgstr "_Arşivli"
+
+#: src/ui/chatty-side-bar.ui:140
+msgid "_Preferences"
+msgstr "_Tercihler"
+
+#: src/ui/chatty-side-bar.ui:144
 msgid "Keyboard _Shortcuts"
 msgstr "Klavye _Kısayolları"
 
-#: src/ui/chatty-side-bar.ui:125
-msgid "Help"
-msgstr "Yardım"
+#: src/ui/chatty-side-bar.ui:148
+msgid "_Help"
+msgstr "_Yardım"
 
-#: src/ui/chatty-side-bar.ui:133
-msgid "About Chats"
-msgstr "Konuşmalar Hakkında"
-
-#: src/ui/chatty-side-bar.ui:154
-msgid "New Message…"
-msgstr "İletiyi Aç…"
-
-#: src/ui/chatty-side-bar.ui:160
-msgid "New SMS/MMS Message…"
-msgstr "Yeni SMS/MMS İletisi…"
-
-#: src/ui/chatty-side-bar.ui:166
-msgid "New Group Message…"
-msgstr "Yeni Küme Konuşması…"
+#: src/ui/chatty-side-bar.ui:152
+msgid "About _Chats"
+msgstr "_Konuşmalar Hakkında"
 
 #: src/ui/chatty-verification-page.ui:24
 msgid "Incoming Verification Request"
@@ -1970,18 +1971,33 @@ msgstr "Aramayı Aç"
 
 #: src/ui/help-overlay.ui:35
 msgctxt "shortcut window"
+msgid "New Chat"
+msgstr "Yeni Konuşma"
+
+#: src/ui/help-overlay.ui:43
+msgctxt "shortcut window"
+msgid "New Group Chat"
+msgstr "Yeni Küme Konuşması"
+
+#: src/ui/help-overlay.ui:51
+msgctxt "shortcut window"
 msgid "Show Shortcuts"
 msgstr "Kısayolları Göster"
 
-#: src/ui/help-overlay.ui:46
+#: src/ui/help-overlay.ui:62
 msgctxt "shortcut window"
 msgid "Chat"
 msgstr "Konuşma"
 
-#: src/ui/help-overlay.ui:51
+#: src/ui/help-overlay.ui:67
 msgctxt "shortcut window"
 msgid "Show Details"
 msgstr "Ayrıntıları Göster"
+
+#: src/ui/help-overlay.ui:75
+msgctxt "shortcut window"
+msgid "Close Chat"
+msgstr "Konuşmayı Kapat"
 
 #: src/users/chatty-contact.c:324
 msgid "Mobile:"
