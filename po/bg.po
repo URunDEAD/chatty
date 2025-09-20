@@ -7,30 +7,28 @@ msgid ""
 msgstr ""
 "Project-Id-Version: chatty main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/Chatty/issues\n"
-"POT-Creation-Date: 2025-04-10 11:22+0000\n"
-"PO-Revision-Date: 2025-04-13 21:35+0200\n"
+"POT-Creation-Date: 2025-09-10 11:29+0000\n"
+"PO-Revision-Date: 2025-09-20 10:55+0200\n"
 "Last-Translator: twlvnn kraftwerk <kraft_werk@tutanota.com>\n"
 "Language-Team: Bulgarian <dict-notifications@fsa-bg.org>\n"
 "Language: bg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"X-Generator: Gtranslator 47.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.7\n"
 
-#: data/sm.puri.Chatty.desktop.in.in:3 data/sm.puri.Chatty.metainfo.xml.in.in:6
-#: src/chatty-application.c:157 src/chatty-application.c:389
-#: src/chatty-side-bar.c:385 src/ui/chatty-main-view.ui:4
-#: src/ui/chatty-side-bar.ui:4 src/ui/chatty-side-bar.ui:12
-#: src/ui/chatty-window.ui:4
+#: data/sm.puri.Chatty.desktop.in.in:2 data/sm.puri.Chatty.metainfo.xml.in.in:6 src/chatty-application.c:157
+#: src/chatty-application.c:388 src/chatty-side-bar.c:385 src/ui/chatty-main-view.ui:4 src/ui/chatty-side-bar.ui:4
+#: src/ui/chatty-side-bar.ui:12 src/ui/chatty-window.ui:4
 msgid "Chats"
 msgstr "Чатове"
 
-#: data/sm.puri.Chatty.desktop.in.in:6
+#: data/sm.puri.Chatty.desktop.in.in:5
 msgid "SMS/MMS, Matrix and XMPP chat application"
 msgstr "Програма за разговаряне чрез SMS/MMS, Matrix и XMPP"
 
-#: data/sm.puri.Chatty.desktop.in.in:7
+#: data/sm.puri.Chatty.desktop.in.in:6
 msgid "XMPP;SMS;chat;jabber;messaging;modem;matrix;"
 msgstr "чат;разговаряне;модем;смс;есемес;джабър;матрица;матрикс;съобщение;XMPP;SMS;chat;jabber;messaging;modem;matrix;"
 
@@ -52,8 +50,7 @@ msgstr "Изпращане на известия за прочитане"
 
 #: data/sm.puri.Chatty.gschema.xml:20
 msgid "Whether to send the status of the message if read"
-msgstr ""
-"Дали да се изпращат известия за състоянието на съобщенията, ако са прочетени"
+msgstr "Дали да се изпращат известия за състоянието на съобщенията, ако са прочетени"
 
 #: data/sm.puri.Chatty.gschema.xml:25
 msgid "Message carbon copies"
@@ -93,8 +90,7 @@ msgstr "Премахване на идентификаторите за прос
 
 #: data/sm.puri.Chatty.gschema.xml:50
 msgid "Whether to Remove Tracking IDs from URLs Automatically"
-msgstr ""
-"Дали автоматично да се премахват идентификаторите за проследяване от адресите"
+msgstr "Дали автоматично да се премахват идентификаторите за проследяване от адресите"
 
 #: data/sm.puri.Chatty.gschema.xml:55
 msgid "Whether Strip Tracking IDs was shown"
@@ -102,8 +98,7 @@ msgstr "Дали „Премахване на идентификаторите �
 
 #: data/sm.puri.Chatty.gschema.xml:56
 msgid "Whether the Tracking IDs dialog has been shown"
-msgstr ""
-"Дали прозорецът „Премахване на идентификаторите за проследяване“ бе показан"
+msgstr "Дали прозорецът „Премахване на идентификаторите за проследяване“ бе показан"
 
 #: data/sm.puri.Chatty.gschema.xml:61
 msgid "Render Attachments"
@@ -150,11 +145,8 @@ msgid "Clear out stuck SMS"
 msgstr "Изчистване на заседнали SMS-и"
 
 #: data/sm.puri.Chatty.gschema.xml:98
-msgid ""
-"Whether Chatty should clear out SMS that are stuck in receiving/unknown state"
-msgstr ""
-"Дали „Чатове“ да изчисти SMS-ите, които са заседнали в състояние на "
-"получаване/неизвестно"
+msgid "Whether Chatty should clear out SMS that are stuck in receiving/unknown state"
+msgstr "Дали „Чатове“ да изчисти SMS-ите, които са заседнали в състояние на получаване/неизвестно"
 
 #: data/sm.puri.Chatty.gschema.xml:103
 msgid "Enable experimental features"
@@ -186,9 +178,7 @@ msgstr "Идентификатор на потребителя в PGP"
 
 #: data/sm.puri.Chatty.gschema.xml:125
 msgid "The user ID for PGP that Chatty will use for outgoing messages"
-msgstr ""
-"Потребителският идентификатор за PGP, който „Чатове“ ще използва за "
-"изходящите съобщения"
+msgstr "Потребителският идентификатор за PGP, който „Чатове“ ще използва за изходящите съобщения"
 
 #: data/sm.puri.Chatty.gschema.xml:130 src/ui/chatty-settings-dialog.ui:480
 msgid "Public Key Fingerprint"
@@ -196,9 +186,7 @@ msgstr "Отпечатък на публичния ключ"
 
 #: data/sm.puri.Chatty.gschema.xml:131
 msgid "The default keyid the remote side should use to encrypt messages to us"
-msgstr ""
-"Стандартният ключ, който отдалечената страна трябва да използва, за да "
-"шифрира съобщенията към нас"
+msgstr "Стандартният ключ, който отдалечената страна трябва да използва, за да шифрира съобщенията към нас"
 
 #: data/sm.puri.Chatty.metainfo.xml.in.in:7
 msgid "Messaging application for mobile and desktop"
@@ -206,11 +194,10 @@ msgstr "Програма за разговори за мобилни устро�
 
 #: data/sm.puri.Chatty.metainfo.xml.in.in:9
 msgid ""
-"Chats is a simple to use to messaging app for 1:1 communication and small "
-"groups supporting SMS, MMS, XMPP and Matrix."
+"Chats is a simple to use to messaging app for 1:1 communication and small groups supporting SMS, MMS, XMPP and "
+"Matrix."
 msgstr ""
-"„Чатове“ е лесна за използване програма за 1:1 разговори и малки групи, "
-"която поддържа SMS, MMS, XMPP и Matrix."
+"„Чатове“ е лесна за използване програма за 1:1 разговори и малки групи, която поддържа SMS, MMS, XMPP и Matrix."
 
 #: data/sm.puri.Chatty.metainfo.xml.in.in:23
 msgid "Folded view of a chat using the light theme."
@@ -225,34 +212,20 @@ msgid "Unfolded view of a chat and the chat list in the sidebar."
 msgstr "Разгънат изглед на чат и списък с чатове в страничната лента."
 
 #: data/sm.puri.Chatty.metainfo.xml.in.in:35
-msgid ""
-"The chat view using the dark theme as seen on a mobile phone running Phosh "
-"with unfolded keyboard."
-msgstr ""
-"Изглед на чат с тъмната тема, както се вижда на мобилен телефон с Phosh с "
-"разгъната клавиатура."
+msgid "The chat view using the dark theme as seen on a mobile phone running Phosh with unfolded keyboard."
+msgstr "Изглед на чат с тъмната тема, както се вижда на мобилен телефон с Phosh с разгъната клавиатура."
 
 #: data/sm.puri.Chatty.metainfo.xml.in.in:39
-msgid ""
-"The chat list view using the light theme as seen on a mobile phone running "
-"Phosh."
-msgstr ""
-"Изглед на чат със светлата тема, както се вижда на мобилен телефон с Phosh."
+msgid "The chat list view using the light theme as seen on a mobile phone running Phosh."
+msgstr "Изглед на чат със светлата тема, както се вижда на мобилен телефон с Phosh."
 
 #: data/sm.puri.Chatty.metainfo.xml.in.in:43
-msgid ""
-"The SMS/MMS preferences using the light theme as seen on a mobile phone "
-"running Phosh."
-msgstr ""
-"Настройките за SMS/MMS със светлата тема, както се вижда на мобилен телефон "
-"с Phosh."
+msgid "The SMS/MMS preferences using the light theme as seen on a mobile phone running Phosh."
+msgstr "Настройките за SMS/MMS със светлата тема, както се вижда на мобилен телефон с Phosh."
 
 #: data/sm.puri.Chatty.metainfo.xml.in.in:48
-msgid ""
-"The chat details view using the dark theme as seen on a mobile phone running "
-"Phosh."
-msgstr ""
-"Изглед на подробностите на чата с тъмната тема на мобилен телефон с Phosh."
+msgid "The chat details view using the dark theme as seen on a mobile phone running Phosh."
+msgstr "Изглед на подробностите на чата с тъмната тема на мобилен телефон с Phosh."
 
 #: src/chatty-application.c:73
 msgid "Show release version"
@@ -268,9 +241,7 @@ msgstr "Включване на съобщения за отстраняване
 
 #: src/chatty-application.c:79
 msgid "Enable verbose debug messages (repeat option for more verbosity)"
-msgstr ""
-"Включване на допълнителни съобщения за отстраняване на грешки (повторете "
-"опцията за повече подробности)"
+msgstr "Включване на допълнителни съобщения за отстраняване на грешки (повторете опцията за повече подробности)"
 
 #: src/chatty-application.c:160
 msgid "An SMS and XMPP messaging client"
@@ -279,15 +250,12 @@ msgstr "Клиент за изпращане на съобщения по SMS и
 #: src/chatty-application.c:168
 msgid "translator-credits"
 msgstr ""
-"Twlvnn Kraftwerk &lt;<a "
-"href='mailto:kraft_werk@tutanota.com'>kraft_werk@tutanota.com</a>&gt;\n"
+"Twlvnn Kraftwerk &lt;<a href='mailto:kraft_werk@tutanota.com'>kraft_werk@tutanota.com</a>&gt;\n"
 "\n"
 "\n"
 "Проектът за превод на GNOME има нужда от подкрепа.\n"
-"Научете повече за нас на <a href='https://fsa-bg.org/project/gtp'>уеб сайта</"
-"a> ни.\n"
-"Докладвайте за грешки в превода в <a href='https://fsa-bg.org/project/gtp/"
-"newticket'>съответния раздел</a>."
+"Научете повече за нас на <a href='https://fsa-bg.org/project/gtp'>уеб сайта</a> ни.\n"
+"Докладвайте за грешки в превода в <a href='https://fsa-bg.org/project/gtp/newticket'>съответния раздел</a>."
 
 #: src/chatty-application.c:193
 #, c-format
@@ -298,19 +266,13 @@ msgstr ""
 "Неуспешно извеждане на помощта:\n"
 "%s"
 
-#: src/chatty-application.c:195 src/chatty-manager.c:681
-#: src/chatty-message-bar.c:468 src/purple/chatty-purple-notify.c:35
-#: src/purple/chatty-purple.c:199 src/purple/chatty-purple.c:619
-#: src/dialogs/chatty-new-chat-dialog.c:226
-#: src/dialogs/chatty-settings-dialog.c:219
-#: src/dialogs/chatty-settings-dialog.c:668
-#: src/dialogs/chatty-settings-dialog.c:705
-#: src/dialogs/chatty-settings-dialog.c:821
-#: src/dialogs/chatty-settings-dialog.c:857
-#: src/dialogs/chatty-settings-dialog.c:872
-#: src/dialogs/chatty-settings-dialog.c:889
-#: src/dialogs/chatty-settings-dialog.c:901
-#: src/dialogs/chatty-settings-dialog.c:1535 src/ui/chatty-main-view.ui:73
+#: src/chatty-application.c:195 src/chatty-manager.c:681 src/chatty-message-bar.c:468
+#: src/purple/chatty-purple-notify.c:35 src/purple/chatty-purple.c:199 src/purple/chatty-purple.c:619
+#: src/dialogs/chatty-new-chat-dialog.c:226 src/dialogs/chatty-settings-dialog.c:219
+#: src/dialogs/chatty-settings-dialog.c:668 src/dialogs/chatty-settings-dialog.c:705
+#: src/dialogs/chatty-settings-dialog.c:821 src/dialogs/chatty-settings-dialog.c:857
+#: src/dialogs/chatty-settings-dialog.c:872 src/dialogs/chatty-settings-dialog.c:889
+#: src/dialogs/chatty-settings-dialog.c:901 src/dialogs/chatty-settings-dialog.c:1535 src/ui/chatty-main-view.ui:73
 msgid "Close"
 msgstr "Затваряне"
 
@@ -346,11 +308,9 @@ msgstr "Започнете да чатите"
 msgid "This is an MMS conversation"
 msgstr "Това е разговор по MMS"
 
-#: src/chatty-chat-page.c:197 src/chatty-chat-page.c:212
-#: src/chatty-chat-page.c:218
+#: src/chatty-chat-page.c:197 src/chatty-chat-page.c:212 src/chatty-chat-page.c:218
 msgid "Your messages are not encrypted, and carrier rates may apply"
-msgstr ""
-"Съобщенията ви не са шифрирани и може да се прилагат тарифи на оператора."
+msgstr "Съобщенията ви не са шифрирани и може да се прилагат тарифи на оператора."
 
 #: src/chatty-chat-page.c:207
 msgid "This is an SMS/MMS conversation"
@@ -395,8 +355,7 @@ msgstr "Неизвестен контакт"
 
 #: src/chatty-contact-list.c:283
 msgid "Try different search, or type a valid number to create new chat"
-msgstr ""
-"Опитайте друго търсене или въведете правилен номер, за да създадете нов чат"
+msgstr "Опитайте друго търсене или въведете правилен номер, за да създадете нов чат"
 
 #: src/chatty-contact-list.c:289
 msgid "No Contacts"
@@ -532,8 +491,7 @@ msgstr "Аудио"
 msgid "Location"
 msgstr "Местоположение"
 
-#: src/chatty-list-row.c:276 src/chatty-list-row.c:293
-#: src/chatty-notification.c:176
+#: src/chatty-list-row.c:276 src/chatty-list-row.c:293 src/chatty-notification.c:176
 msgid "File"
 msgstr "Файл"
 
@@ -558,16 +516,13 @@ msgstr "Свързване с регистрацията…"
 msgid "“%s” is not a valid URI"
 msgstr "„%s“ не е правилен адрес"
 
-#: src/chatty-message-bar.c:466 src/purple/chatty-purple.c:195
-#: src/chatty-window.c:378
+#: src/chatty-message-bar.c:466 src/purple/chatty-purple.c:195 src/chatty-window.c:378
 msgid "Alert"
 msgstr "Известие"
 
 #: src/chatty-message-bar.c:467
 msgid "Found and automatically deleted tracking IDs from the pasted link."
-msgstr ""
-"Автоматично са намерени и изтрити идентификаторите за проследяване от "
-"поставената връзката."
+msgstr "Автоматично са намерени и изтрити идентификаторите за проследяване от поставената връзката."
 
 #: src/chatty-message-bar.c:469
 msgid "Don't Show Again"
@@ -575,9 +530,7 @@ msgstr "Да не се показва повече"
 
 #: src/chatty-message.c:230
 msgid "Got an encrypted message, but couldn't decrypt due to missing keys"
-msgstr ""
-"Получено е шифрирано съобщение, но дешифрирането е неуспешно поради липса на "
-"ключове"
+msgstr "Получено е шифрирано съобщение, но дешифрирането е неуспешно поради липса на ключове"
 
 #: src/chatty-notification.c:150
 #, c-format
@@ -611,8 +564,7 @@ msgstr "Всякакъв протокол"
 msgid "Matrix"
 msgstr "Matrix"
 
-#: src/chatty-side-bar.c:357 src/dialogs/chatty-new-chat-dialog.c:634
-#: src/dialogs/chatty-settings-dialog.c:1121
+#: src/chatty-side-bar.c:357 src/dialogs/chatty-new-chat-dialog.c:636 src/dialogs/chatty-settings-dialog.c:1121
 #: src/ui/chatty-settings-dialog.ui:255
 msgid "SMS/MMS"
 msgstr "SMS/MMS"
@@ -629,8 +581,7 @@ msgstr "Telegram"
 msgid "Archived"
 msgstr "Архивирани"
 
-#: src/purple/chatty-purple-notify.c:26 src/purple/chatty-purple.c:613
-#: src/dialogs/chatty-new-chat-dialog.c:222
+#: src/purple/chatty-purple-notify.c:26 src/purple/chatty-purple.c:613 src/dialogs/chatty-new-chat-dialog.c:222
 #: src/dialogs/chatty-settings-dialog.c:215
 msgid "Error"
 msgstr "Грешка"
@@ -648,8 +599,7 @@ msgstr "Отваряне на файл…"
 msgid "User %s has added %s to the contacts"
 msgstr "Потребителят %s е добавил %s към контактите"
 
-#: src/purple/chatty-purple.c:283 src/dialogs/chatty-settings-dialog.c:477
-#: src/ui/chatty-ma-account-details.ui:144
+#: src/purple/chatty-purple.c:283 src/dialogs/chatty-settings-dialog.c:477 src/ui/chatty-ma-account-details.ui:144
 #: src/ui/chatty-pp-account-details.ui:80
 msgid "Delete Account"
 msgstr "Изтриване на регистрацията"
@@ -664,12 +614,10 @@ msgstr "Позволяване на %s?"
 msgid "Add %s to contact list"
 msgstr "Добавяне на %s в списъка с контакти"
 
-#: src/purple/chatty-purple.c:293 src/chatty-window.c:382
-#: src/chatty-window.c:478 src/dialogs/chatty-settings-dialog.c:483
-#: src/ui/chatty-dialog-wrong-pw.ui:23 src/ui/chatty-dialog-new-chat.ui:36
-#: src/ui/chatty-settings-dialog.ui:25 src/ui/chatty-settings-dialog.ui:55
-#: src/ui/chatty-settings-dialog.ui:75 src/ui/chatty-verification-page.ui:129
-#: src/ui/chatty-verification-page.ui:158
+#: src/purple/chatty-purple.c:293 src/chatty-window.c:382 src/chatty-window.c:478
+#: src/dialogs/chatty-settings-dialog.c:483 src/ui/chatty-dialog-wrong-pw.ui:23 src/ui/chatty-dialog-new-chat.ui:36
+#: src/ui/chatty-settings-dialog.ui:25 src/ui/chatty-settings-dialog.ui:55 src/ui/chatty-settings-dialog.ui:75
+#: src/ui/chatty-verification-page.ui:129 src/ui/chatty-verification-page.ui:158
 msgid "_Cancel"
 msgstr "_Отказване"
 
@@ -1027,8 +975,7 @@ msgstr "%s %s"
 
 #: src/chatty-window.c:379
 msgid "You shall no longer be notified for new messages, continue?"
-msgstr ""
-"Вече няма да получавате известия за нови съобщения, искате ли да продължите?"
+msgstr "Вече няма да получавате известия за нови съобщения, искате ли да продължите?"
 
 #: src/chatty-window.c:383
 msgid "Block"
@@ -1069,14 +1016,12 @@ msgctxt "Refer to self in contact list"
 msgid "You"
 msgstr "Вие"
 
-#: src/dialogs/chatty-pp-chat-info.c:108
-#: src/dialogs/chatty-ma-account-details.c:168
+#: src/dialogs/chatty-pp-chat-info.c:108 src/dialogs/chatty-ma-account-details.c:168
 #: src/dialogs/chatty-pp-account-details.c:115
 msgid "Set Avatar"
 msgstr "Задаване на аватар"
 
-#: src/dialogs/chatty-pp-chat-info.c:115
-#: src/dialogs/chatty-ma-account-details.c:175
+#: src/dialogs/chatty-pp-chat-info.c:115 src/dialogs/chatty-ma-account-details.c:175
 #: src/dialogs/chatty-pp-account-details.c:122
 msgid "Images"
 msgstr "Изображения"
@@ -1112,8 +1057,7 @@ msgstr "Телефонен номер"
 msgid "XMPP ID"
 msgstr "Идентификатор за XMPP"
 
-#: src/dialogs/chatty-pp-chat-info.c:301 src/ui/chatty-ma-chat-info.ui:28
-#: src/ui/chatty-ma-account-details.ui:91
+#: src/dialogs/chatty-pp-chat-info.c:301 src/ui/chatty-ma-chat-info.ui:28 src/ui/chatty-ma-account-details.ui:91
 msgid "Matrix ID"
 msgstr "Идентификатор за Matrix"
 
@@ -1142,22 +1086,19 @@ msgstr "Грешка при отваряне на „Контакти“: %s"
 msgid "SMS"
 msgstr "SMS"
 
-#: src/dialogs/chatty-new-chat-dialog.c:634
+#: src/dialogs/chatty-new-chat-dialog.c:636
 msgid "You"
 msgstr "Вие"
 
-#: src/dialogs/chatty-ma-account-details.c:418
-#: src/dialogs/chatty-pp-account-details.c:171
+#: src/dialogs/chatty-ma-account-details.c:418 src/dialogs/chatty-pp-account-details.c:171
 msgid "connected"
 msgstr "свързан"
 
-#: src/dialogs/chatty-ma-account-details.c:420
-#: src/dialogs/chatty-pp-account-details.c:173
+#: src/dialogs/chatty-ma-account-details.c:420 src/dialogs/chatty-pp-account-details.c:173
 msgid "connecting…"
 msgstr "свързване…"
 
-#: src/dialogs/chatty-ma-account-details.c:422
-#: src/dialogs/chatty-pp-account-details.c:175
+#: src/dialogs/chatty-ma-account-details.c:422 src/dialogs/chatty-pp-account-details.c:175
 msgid "disconnected"
 msgstr "връзката е прекъсната"
 
@@ -1196,32 +1137,25 @@ msgstr "Неправилен идентификатор за подписван�
 #: src/dialogs/chatty-settings-dialog.c:701
 #, c-format
 msgid "The entered Key ID %s does not match the found PGP Key for %s:%s."
-msgstr ""
-"Въведеният идентификатор %s на ключа не съвпада с намерения PGP ключ за %s:"
-"%s."
+msgstr "Въведеният идентификатор %s на ключа не съвпада с намерения PGP ключ за %s:%s."
 
 #: src/dialogs/chatty-settings-dialog.c:703
 msgid "Cannot Find Signing Key"
 msgstr "Ключът за подписване не може да бъде намерен"
 
-#: src/dialogs/chatty-settings-dialog.c:706
-#: src/dialogs/chatty-settings-dialog.c:952
+#: src/dialogs/chatty-settings-dialog.c:706 src/dialogs/chatty-settings-dialog.c:952
 msgid "I Know What I am Doing"
 msgstr "Знам какво правя"
 
-#: src/dialogs/chatty-settings-dialog.c:788
-#: src/dialogs/chatty-settings-dialog.c:870
+#: src/dialogs/chatty-settings-dialog.c:788 src/dialogs/chatty-settings-dialog.c:870
 #: src/dialogs/chatty-settings-dialog.c:887
 msgid "Cannot Create Signing Key"
 msgstr "Ключът за подписване не може да бъде създаден"
 
-#: src/dialogs/chatty-settings-dialog.c:789
-#: src/dialogs/chatty-settings-dialog.c:886
+#: src/dialogs/chatty-settings-dialog.c:789 src/dialogs/chatty-settings-dialog.c:886
 #, c-format
 msgid "Error creating the PGP ID. Please check the logs for more details."
-msgstr ""
-"Грешка при създаването на идентификатор за PGP. Проверете журналите за "
-"повече подробности."
+msgstr "Грешка при създаването на идентификатор за PGP. Проверете журналите за повече подробности."
 
 #: src/dialogs/chatty-settings-dialog.c:802
 #, c-format
@@ -1242,8 +1176,7 @@ msgstr "Всички записи трябва да бъдат попълнен�
 
 #: src/dialogs/chatty-settings-dialog.c:869
 #, c-format
-msgid ""
-"%s already has key with fingerprint %s. Please choose a different PGP ID"
+msgid "%s already has key with fingerprint %s. Please choose a different PGP ID"
 msgstr "%s вече има ключ с отпечатък %s. Изберете друг идентификатор за PGP"
 
 #: src/dialogs/chatty-settings-dialog.c:898
@@ -1258,19 +1191,15 @@ msgstr "Създаване на ключ"
 #. Translators: This means that the existing key will be there, but there will be a new key that Chatty will use by default instead of the existing one.
 #: src/dialogs/chatty-settings-dialog.c:947
 #, c-format
-msgid ""
-"Chatty is currently set to use PGP key: %s. The new key will be used instead "
-"of the existing one!"
-msgstr ""
-"„Чатове“ е настроен да използва PGP ключ: %s. Новият ключ ще бъде използван "
-"вместо съществуващия!"
+msgid "Chatty is currently set to use PGP key: %s. The new key will be used instead of the existing one!"
+msgstr "„Чатове“ е настроен да използва PGP ключ: %s. Новият ключ ще бъде използван вместо съществуващия!"
 
 #: src/dialogs/chatty-settings-dialog.c:949
 msgid "Signing ID Present"
 msgstr "Наличен е идентификатор за подписване"
 
-#: src/dialogs/chatty-settings-dialog.c:951 src/ui/chatty-dialog-join-muc.ui:16
-#: src/ui/chatty-info-dialog.ui:23 src/ui/chatty-info-dialog.ui:32
+#: src/dialogs/chatty-settings-dialog.c:951 src/ui/chatty-dialog-join-muc.ui:16 src/ui/chatty-info-dialog.ui:23
+#: src/ui/chatty-info-dialog.ui:32
 msgid "Cancel"
 msgstr "Отказване"
 
@@ -1278,8 +1207,7 @@ msgstr "Отказване"
 msgid "Restart Chatty to disable Purple"
 msgstr "Рестартирайте „Чатове“, за да се изключи Purple"
 
-#: src/dialogs/chatty-settings-dialog.c:1123
-#: src/ui/chatty-settings-dialog.ui:290
+#: src/dialogs/chatty-settings-dialog.c:1123 src/ui/chatty-settings-dialog.ui:290
 msgid "Purple"
 msgstr "Purple"
 
@@ -1287,13 +1215,11 @@ msgstr "Purple"
 msgid "New Account"
 msgstr "Нова регистрация"
 
-#: src/dialogs/chatty-settings-dialog.c:1127
-#: src/ui/chatty-settings-dialog.ui:363
+#: src/dialogs/chatty-settings-dialog.c:1127 src/ui/chatty-settings-dialog.ui:363
 msgid "Blocked Contacts"
 msgstr "Блокирани контакти"
 
-#: src/dialogs/chatty-settings-dialog.c:1129
-#: src/ui/chatty-settings-dialog.ui:272
+#: src/dialogs/chatty-settings-dialog.c:1129 src/ui/chatty-settings-dialog.ui:272
 msgid "PGP Settings"
 msgstr "Настройки за PGP"
 
@@ -1301,12 +1227,12 @@ msgstr "Настройки за PGP"
 msgid "New PGP Key"
 msgstr "Нов ключ за PGP"
 
-#: src/dialogs/chatty-settings-dialog.c:1133 src/ui/chatty-side-bar.ui:111
+#: src/dialogs/chatty-settings-dialog.c:1133
 msgid "Preferences"
 msgstr "Настройки"
 
-#: src/dialogs/chatty-settings-dialog.c:1161
-#: src/ui/chatty-pp-account-details.ui:60 src/ui/chatty-settings-dialog.ui:245
+#: src/dialogs/chatty-settings-dialog.c:1161 src/ui/chatty-pp-account-details.ui:60
+#: src/ui/chatty-settings-dialog.ui:245
 msgid "Protocol"
 msgstr "Протокол"
 
@@ -1320,11 +1246,8 @@ msgid "Experimental Setting!"
 msgstr "Експериментална настройка!"
 
 #: src/dialogs/chatty-settings-dialog.c:1534
-msgid ""
-"This setting is experimental and may cause loss of SMS. Use at your own risk!"
-msgstr ""
-"Тази настройка е експериментална и може да доведе до загуба на SMS. "
-"Използвайте я на свой риск!"
+msgid "This setting is experimental and may cause loss of SMS. Use at your own risk!"
+msgstr "Тази настройка е експериментална и може да доведе до загуба на SMS. Използвайте я на свой риск!"
 
 #: src/matrix/chatty-ma-account.c:77
 #, c-format
@@ -1452,8 +1375,7 @@ msgstr "_Добре"
 msgid "Please re-enter the Password."
 msgstr "Въведете паролата отново."
 
-#: src/ui/chatty-dialog-wrong-pw.ui:53 src/ui/chatty-pp-account-details.ui:70
-#: src/ui/chatty-settings-dialog.ui:794
+#: src/ui/chatty-dialog-wrong-pw.ui:53 src/ui/chatty-pp-account-details.ui:70 src/ui/chatty-settings-dialog.ui:794
 msgid "Password"
 msgstr "Парола"
 
@@ -1550,8 +1472,7 @@ msgstr "Тема"
 msgid "Chat settings"
 msgstr "Настройки на чата"
 
-#: src/ui/chatty-ma-chat-info.ui:46 src/ui/chatty-pp-chat-info.ui:95
-#: src/ui/chatty-pp-chat-info.ui:132
+#: src/ui/chatty-ma-chat-info.ui:46 src/ui/chatty-pp-chat-info.ui:95 src/ui/chatty-pp-chat-info.ui:132
 msgid "Encryption"
 msgstr "Шифър"
 
@@ -1563,8 +1484,7 @@ msgstr "Шифриране на съобщенията"
 msgid "Chat Members"
 msgstr "Членове на чата"
 
-#: src/ui/chatty-main-view.ui:12 src/ui/chatty-settings-dialog.ui:14
-#: src/ui/chatty-side-bar.ui:19
+#: src/ui/chatty-main-view.ui:12 src/ui/chatty-settings-dialog.ui:14 src/ui/chatty-side-bar.ui:19
 msgid "Back"
 msgstr "Назад"
 
@@ -1573,28 +1493,28 @@ msgid "Call"
 msgstr "Обаждане"
 
 #: src/ui/chatty-main-view.ui:137
-msgid "Leave Chat"
-msgstr "Напускане на чата"
+msgid "_Leave Chat"
+msgstr "_Напускане на чата"
 
 #: src/ui/chatty-main-view.ui:145
-msgid "Block Contact"
-msgstr "Блокиране на контакта"
+msgid "_Block Contact"
+msgstr "_Блокиране на контакта"
 
 #: src/ui/chatty-main-view.ui:153
-msgid "Unblock Contact"
-msgstr "Отблокиране на контакта"
+msgid "_Unblock Contact"
+msgstr "_Отблокиране на контакта"
 
 #: src/ui/chatty-main-view.ui:161
-msgid "Archive chat"
-msgstr "Архивиране на чата"
+msgid "_Archive chat"
+msgstr "_Архивиране на чата"
 
 #: src/ui/chatty-main-view.ui:169
 msgid "Unarchive chat"
 msgstr "Деархивиране на чата"
 
 #: src/ui/chatty-main-view.ui:177
-msgid "Delete Chat"
-msgstr "Изтриване на чата"
+msgid "_Delete Chat"
+msgstr "_Изтриване на чата"
 
 #: src/ui/chatty-message-row.ui:161
 msgid "Copy Text"
@@ -1616,8 +1536,7 @@ msgstr "Тема на стаята"
 msgid "User"
 msgstr "Потребител"
 
-#: src/ui/chatty-pp-chat-info.ui:102 src/ui/chatty-ma-account-details.ui:53
-#: src/ui/chatty-pp-account-details.ui:65
+#: src/ui/chatty-pp-chat-info.ui:102 src/ui/chatty-ma-account-details.ui:53 src/ui/chatty-pp-account-details.ui:65
 msgid "Status"
 msgstr "Състояние"
 
@@ -1717,8 +1636,7 @@ msgstr "Изтеглане на файл от сървър"
 msgid "_Save"
 msgstr "_Запазване"
 
-#: src/ui/chatty-settings-dialog.ui:45 src/ui/chatty-settings-dialog.ui:65
-#: src/ui/chatty-settings-dialog.ui:85
+#: src/ui/chatty-settings-dialog.ui:45 src/ui/chatty-settings-dialog.ui:65 src/ui/chatty-settings-dialog.ui:85
 msgid "_Apply"
 msgstr "_Прилагане"
 
@@ -1801,11 +1719,11 @@ msgstr "Текущ ключ за PGP"
 
 #: src/ui/chatty-settings-dialog.ui:448
 msgid ""
-"Chatty can use any existing key embedded with gpg. However, you are given "
-"the option to generate a key specifically for Chatty below."
+"Chatty can use any existing key embedded with gpg. However, you are given the option to generate a key specifically "
+"for Chatty below."
 msgstr ""
-"„Чатове“ може да използва всеки съществуващ ключ, вграден с gpg. По-долу "
-"обаче ви е предоставена опция да генерирате ключ специално за „Чатове“."
+"„Чатове“ може да използва всеки съществуващ ключ, вграден с gpg. По-долу обаче ви е предоставена опция да генерирате "
+"ключ специално за „Чатове“."
 
 #: src/ui/chatty-settings-dialog.ui:453
 msgid "Generate Chatty PGP Key"
@@ -1824,12 +1742,9 @@ msgid "Optional"
 msgstr "По избор"
 
 #: src/ui/chatty-settings-dialog.ui:505
-msgid ""
-"This will generate a key for use with Chatty. Please note that this will not "
-"install the key on a smart card."
+msgid "This will generate a key for use with Chatty. Please note that this will not install the key on a smart card."
 msgstr ""
-"Това ще генерира ключ за ползване с „Чатове“. обърнете внимание, че това "
-"няма да инсталира ключа на чип картата."
+"Това ще генерира ключ за ползване с „Чатове“. обърнете внимание, че това няма да инсталира ключа на чип картата."
 
 #: src/ui/chatty-settings-dialog.ui:508
 msgid "Full Name"
@@ -1895,34 +1810,38 @@ msgstr "Меню"
 msgid "Search"
 msgstr "Търсене"
 
-#: src/ui/chatty-side-bar.ui:103
-msgctxt "show archived chat list when clicked"
-msgid "Archived"
-msgstr "Архивирани"
+#: src/ui/chatty-side-bar.ui:101
+msgid "_New Message…"
+msgstr "_Ново съобщение…"
 
-#: src/ui/chatty-side-bar.ui:118
+#: src/ui/chatty-side-bar.ui:107
+msgid "New SMS/MMS _Message…"
+msgstr "Ново _съобщение по SMS/MMS…"
+
+#: src/ui/chatty-side-bar.ui:113
+msgid "New _Group Message…"
+msgstr "Ново _групово съобщение…"
+
+#: src/ui/chatty-side-bar.ui:136
+msgctxt "show archived chat list when clicked"
+msgid "_Archived"
+msgstr "_Архивирани"
+
+#: src/ui/chatty-side-bar.ui:140
+msgid "_Preferences"
+msgstr "_Настройки"
+
+#: src/ui/chatty-side-bar.ui:144
 msgid "Keyboard _Shortcuts"
 msgstr "_Клавишни комбинации"
 
-#: src/ui/chatty-side-bar.ui:125
-msgid "Help"
-msgstr "Помощ"
+#: src/ui/chatty-side-bar.ui:148
+msgid "_Help"
+msgstr "_Помощ"
 
-#: src/ui/chatty-side-bar.ui:133
-msgid "About Chats"
-msgstr "Относно „Чатове“"
-
-#: src/ui/chatty-side-bar.ui:154
-msgid "New Message…"
-msgstr "Ново съобщение…"
-
-#: src/ui/chatty-side-bar.ui:160
-msgid "New SMS/MMS Message…"
-msgstr "Ново съобщение по SMS/MMS…"
-
-#: src/ui/chatty-side-bar.ui:166
-msgid "New Group Message…"
-msgstr "Ново групово съобщение…"
+#: src/ui/chatty-side-bar.ui:152
+msgid "About _Chats"
+msgstr "Относно „_Чатове“"
 
 #: src/ui/chatty-verification-page.ui:24
 msgid "Incoming Verification Request"
@@ -1933,36 +1852,26 @@ msgid "Verify this user to mark them as trusted."
 msgstr "Потвърдете този потребител, за да го отбележите като доверен."
 
 #: src/ui/chatty-verification-page.ui:78
-msgid ""
-"Verifying this user will mark their session as trusted, and also mark your "
-"session as trusted to them."
+msgid "Verifying this user will mark their session as trusted, and also mark your session as trusted to them."
 msgstr ""
-"Потвърждаването на този потребител ще маркира сесията му като надеждна и ще "
-"маркира и вашата сесия като надеждна за него."
+"Потвърждаването на този потребител ще маркира сесията му като надеждна и ще маркира и вашата сесия като надеждна за "
+"него."
 
 #: src/ui/chatty-verification-page.ui:98
 msgid "C_ontinue"
 msgstr "_Продължаване"
 
 #: src/ui/chatty-verification-page.ui:201
-msgid ""
-"Verify this user by confirming the following emoji appears on their screen"
-msgstr ""
-"Потвърдете този потребител, като проверите, че на екрана му се появява "
-"следния емотикон."
+msgid "Verify this user by confirming the following emoji appears on their screen"
+msgstr "Потвърдете този потребител, като проверите, че на екрана му се появява следния емотикон."
 
 #: src/ui/chatty-verification-page.ui:378
-msgid ""
-"Verify this user by confirming the following number appears on their screen."
-msgstr ""
-"Потвърдете този потребител, като проверите, че на екрана му се появява "
-"следният номер."
+msgid "Verify this user by confirming the following number appears on their screen."
+msgstr "Потвърдете този потребител, като проверите, че на екрана му се появява следният номер."
 
 #: src/ui/chatty-verification-page.ui:413
 msgid "To be secure, do this in person or use a trusted way to communicate."
-msgstr ""
-"За да сте сигурни, направете това на място или използвайте надежден начин за "
-"комуникация."
+msgstr "За да сте сигурни, направете това на място или използвайте надежден начин за комуникация."
 
 #: src/ui/chatty-verification-page.ui:424
 msgctxt "verb, which means 'both items are not the same'"
@@ -1991,18 +1900,33 @@ msgstr "Отваряне на търсачката"
 
 #: src/ui/help-overlay.ui:35
 msgctxt "shortcut window"
+msgid "New Chat"
+msgstr "_Нов чат"
+
+#: src/ui/help-overlay.ui:43
+msgctxt "shortcut window"
+msgid "New Group Chat"
+msgstr "Нов групов чат"
+
+#: src/ui/help-overlay.ui:51
+msgctxt "shortcut window"
 msgid "Show Shortcuts"
 msgstr "Показване на клавишните комбинации"
 
-#: src/ui/help-overlay.ui:46
+#: src/ui/help-overlay.ui:62
 msgctxt "shortcut window"
 msgid "Chat"
 msgstr "Чат"
 
-#: src/ui/help-overlay.ui:51
+#: src/ui/help-overlay.ui:67
 msgctxt "shortcut window"
 msgid "Show Details"
 msgstr "Показване на подробностите"
+
+#: src/ui/help-overlay.ui:75
+msgctxt "shortcut window"
+msgid "Close Chat"
+msgstr "Затваряне на чата"
 
 #: src/users/chatty-contact.c:324
 msgid "Mobile:"
@@ -2015,3 +1939,7 @@ msgstr "Работа:"
 #: src/users/chatty-contact.c:328
 msgid "Other:"
 msgstr "Друго:"
+
+#~ msgctxt "show archived chat list when clicked"
+#~ msgid "Archived"
+#~ msgstr "Архивирани"
