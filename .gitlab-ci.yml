@@ -17,6 +17,7 @@ stages:
   - package
   - test-package
   - release
+  - deploy
 
 workflow:
   rules:
