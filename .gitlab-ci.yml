@@ -116,7 +116,7 @@ test:debian-gcc:
     - eatmydata apt-get -y install libgtk-4-bin xvfb gcovr
     - export G_DEBUG=fatal-warnings
     - export LC_ALL=C.UTF-8
-    - xvfb-run -a -s "-screen 0 1024x768x24" meson test -C _build
+    - xvfb-run -a -s "-screen 0 1024x768x24" meson test -C _build --print-errorlogs
     - ninja -C _build coverage
   coverage: '/^\s+lines\.+:\s+([\d.]+\%)\s+/'
   except:
