@@ -108,6 +108,8 @@ image_item_update_animation_cb (gpointer user_data)
   ChattyFileItem *self = user_data;
   int timeout = 0;
 
+/* gdk-pixbuf animations are deprecated */
+G_GNUC_BEGIN_IGNORE_DEPRECATIONS
   if (gdk_pixbuf_animation_iter_advance (self->animation_iter, NULL)) {
     GdkPixbuf *pixbuf;
 
@@ -121,6 +123,7 @@ image_item_update_animation_cb (gpointer user_data)
                                            image_item_update_animation_cb,
                                            self);
   }
+G_GNUC_END_IGNORE_DEPRECATIONS
 
   if (timeout <= 0) {
     g_clear_object (&self->animation_iter);
@@ -314,6 +317,8 @@ item_set_file (gpointer user_data)
     else
       path = g_build_path (G_DIR_SEPARATOR_S, g_get_user_data_dir (), "chatty", chatty_file_get_path (self->file), NULL);
 
+/* gdk-pixbuf animations are deprecated */
+G_GNUC_BEGIN_IGNORE_DEPRECATIONS
     self->pixbuf_animation = gdk_pixbuf_animation_new_from_file (path, &error);
     if (!error && !gdk_pixbuf_animation_is_static_image (self->pixbuf_animation)) {
       GdkPixbuf *pixbuf;
@@ -347,6 +352,7 @@ item_set_file (gpointer user_data)
       return G_SOURCE_REMOVE;
     } else if (error)
       g_warning ("Error getting animation from file: '%s'", error->message);
+G_GNUC_END_IGNORE_DEPRECATIONS
   /*
    * For some reason, with gstreamer 1.22.10, some webm videos don't work with GtkVideo
    * on the Librem5 nor Pinephone Pro (arm64), but work fine on my laptop (amd64). Per:
