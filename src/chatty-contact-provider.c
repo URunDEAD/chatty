@@ -199,18 +199,26 @@ chatty_eds_load_contact (ChattyEds     *self,
   }
 
   /* Only container should be freed, attribute is freed in ChattyContact */
+  #if EDS_CHECK_VERSION(3, 59, 1)
+  attributes = e_vcard_get_attributes_by_name (E_VCARD (contact), e_contact_field_name (field_id));
+  #else
   attributes = e_contact_get_attributes (contact, field_id);
+  #endif
 
   for (GSList *l = (GSList *)attributes; l != NULL; l = l->next) {
+    EVCardAttribute *attr = l->data;
     g_autofree char *value = NULL;
 
-    value = e_vcard_attribute_get_value (l->data);
+    value = e_vcard_attribute_get_value (attr);
 
-    if (value && *value)
+    if (value && *value) {
+      #if EDS_CHECK_VERSION(3, 59, 1)
+      attr = e_vcard_attribute_copy (attr);
+      #endif
       g_ptr_array_add (self->contacts_array,
-                       chatty_contact_new (contact, l->data, protocol));
-
+                       chatty_contact_new (contact, attr, protocol));
     }
+  }
 }
 
 static void
