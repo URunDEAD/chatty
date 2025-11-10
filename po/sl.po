@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: chatty master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/Chatty/issues\n"
-"POT-Creation-Date: 2025-07-31 17:50+0000\n"
-"PO-Revision-Date: 2025-08-01 12:31+0200\n"
+"POT-Creation-Date: 2025-11-10 11:24+0000\n"
+"PO-Revision-Date: 2025-11-10 13:49+0100\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: Slovenian <gnome-si@googlegroups.com>\n"
 "Language: sl\n"
@@ -470,21 +470,21 @@ msgstr "%Y-%m-%d %I:%M %p"
 msgid "%Y-%m-%d"
 msgstr "%Y-%m-%d"
 
-#: src/chatty-file-item.c:139 src/chatty-file-item.c:154
+#: src/chatty-file-item.c:142 src/chatty-file-item.c:157
 msgid "Contact"
 msgstr "Stik"
 
-#: src/chatty-file-item.c:151
+#: src/chatty-file-item.c:154
 #, c-format
 msgid "Contact: %s"
 msgstr "Stik: %s"
 
-#: src/chatty-file-item.c:172
+#: src/chatty-file-item.c:175
 #, c-format
 msgid "Invite: %s"
 msgstr "Povabilo: %s"
 
-#: src/chatty-file-item.c:175
+#: src/chatty-file-item.c:178
 msgctxt "Invitation to event"
 msgid "Invitation"
 msgstr "Vabilo"
@@ -1054,7 +1054,7 @@ msgid "Delete"
 msgstr "Izbriši"
 
 #. TRANSLATORS: %u is the number of members in a room
-#: src/dialogs/chatty-ma-chat-info.c:123
+#: src/dialogs/chatty-ma-chat-info.c:124
 #, c-format
 msgid "%u member"
 msgid_plural "%u members"
@@ -1550,20 +1550,24 @@ msgstr "Klepet"
 msgid "Topic"
 msgstr "Tema"
 
-#: src/ui/chatty-ma-chat-info.ui:43 src/ui/chatty-pp-chat-info.ui:110
+#: src/ui/chatty-ma-chat-info.ui:41
+msgid "Room version"
+msgstr "Različica klepetalnice"
+
+#: src/ui/chatty-ma-chat-info.ui:49 src/ui/chatty-pp-chat-info.ui:110
 msgid "Chat settings"
 msgstr "Nastavitve klepeta"
 
-#: src/ui/chatty-ma-chat-info.ui:46 src/ui/chatty-pp-chat-info.ui:95
+#: src/ui/chatty-ma-chat-info.ui:52 src/ui/chatty-pp-chat-info.ui:95
 #: src/ui/chatty-pp-chat-info.ui:132
 msgid "Encryption"
 msgstr "Šifriranje"
 
-#: src/ui/chatty-ma-chat-info.ui:47 src/ui/chatty-pp-chat-info.ui:133
+#: src/ui/chatty-ma-chat-info.ui:53 src/ui/chatty-pp-chat-info.ui:133
 msgid "Encrypt Messages"
 msgstr "Šifriraj sporočila"
 
-#: src/ui/chatty-ma-chat-info.ui:62
+#: src/ui/chatty-ma-chat-info.ui:68
 msgid "Chat Members"
 msgstr "Člani klepeta"
 
