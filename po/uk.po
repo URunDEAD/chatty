@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: purism-chatty\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/Chatty/issues\n"
-"POT-Creation-Date: 2025-07-31 17:50+0000\n"
-"PO-Revision-Date: 2025-07-31 21:22+0300\n"
+"POT-Creation-Date: 2025-11-10 11:24+0000\n"
+"PO-Revision-Date: 2025-11-13 15:31+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -476,21 +476,21 @@ msgstr "%Y.%m.%d %I:%M %p"
 msgid "%Y-%m-%d"
 msgstr "%d-%m-%Y"
 
-#: src/chatty-file-item.c:139 src/chatty-file-item.c:154
+#: src/chatty-file-item.c:142 src/chatty-file-item.c:157
 msgid "Contact"
 msgstr "Контакт"
 
-#: src/chatty-file-item.c:151
+#: src/chatty-file-item.c:154
 #, c-format
 msgid "Contact: %s"
 msgstr "Контакт: %s"
 
-#: src/chatty-file-item.c:172
+#: src/chatty-file-item.c:175
 #, c-format
 msgid "Invite: %s"
 msgstr "Запросити: %s"
 
-#: src/chatty-file-item.c:175
+#: src/chatty-file-item.c:178
 msgctxt "Invitation to event"
 msgid "Invitation"
 msgstr "Запрошення"
@@ -1060,7 +1060,7 @@ msgid "Delete"
 msgstr "Вилучити"
 
 #. TRANSLATORS: %u is the number of members in a room
-#: src/dialogs/chatty-ma-chat-info.c:123
+#: src/dialogs/chatty-ma-chat-info.c:124
 #, c-format
 msgid "%u member"
 msgid_plural "%u members"
@@ -1555,20 +1555,24 @@ msgstr "Спілкування"
 msgid "Topic"
 msgstr "Тема"
 
-#: src/ui/chatty-ma-chat-info.ui:43 src/ui/chatty-pp-chat-info.ui:110
+#: src/ui/chatty-ma-chat-info.ui:41
+msgid "Room version"
+msgstr "Версія кімнати"
+
+#: src/ui/chatty-ma-chat-info.ui:49 src/ui/chatty-pp-chat-info.ui:110
 msgid "Chat settings"
 msgstr "Параметри спілкування"
 
-#: src/ui/chatty-ma-chat-info.ui:46 src/ui/chatty-pp-chat-info.ui:95
+#: src/ui/chatty-ma-chat-info.ui:52 src/ui/chatty-pp-chat-info.ui:95
 #: src/ui/chatty-pp-chat-info.ui:132
 msgid "Encryption"
 msgstr "Шифрування"
 
-#: src/ui/chatty-ma-chat-info.ui:47 src/ui/chatty-pp-chat-info.ui:133
+#: src/ui/chatty-ma-chat-info.ui:53 src/ui/chatty-pp-chat-info.ui:133
 msgid "Encrypt Messages"
 msgstr "Шифрувати повідомлення"
 
-#: src/ui/chatty-ma-chat-info.ui:62
+#: src/ui/chatty-ma-chat-info.ui:68
 msgid "Chat Members"
 msgstr "Учасники спілкування"
 
@@ -1582,22 +1586,18 @@ msgid "Call"
 msgstr "Виклик"
 
 #: src/ui/chatty-main-view.ui:137
-#| msgid "Leave Chat"
 msgid "_Leave Chat"
 msgstr "Поли_шити спілкування"
 
 #: src/ui/chatty-main-view.ui:145
-#| msgid "Block Contact"
 msgid "_Block Contact"
 msgstr "За_блокувати контакт"
 
 #: src/ui/chatty-main-view.ui:153
-#| msgid "Unblock Contact"
 msgid "_Unblock Contact"
 msgstr "_Розблокувати контакт"
 
 #: src/ui/chatty-main-view.ui:161
-#| msgid "Archive chat"
 msgid "_Archive chat"
 msgstr "_Архівувати спілкування"
 
@@ -1606,7 +1606,6 @@ msgid "Unarchive chat"
 msgstr "Скасувати архівування"
 
 #: src/ui/chatty-main-view.ui:177
-#| msgid "Delete Chat"
 msgid "_Delete Chat"
 msgstr "Ви_лучити спілкування"
 
@@ -1912,28 +1911,23 @@ msgid "Search"
 msgstr "Пошук"
 
 #: src/ui/chatty-side-bar.ui:101
-#| msgid "New Message…"
 msgid "_New Message…"
 msgstr "_Нове повідомлення…"
 
 #: src/ui/chatty-side-bar.ui:107
-#| msgid "New SMS/MMS Message…"
 msgid "New SMS/MMS _Message…"
 msgstr "Нове повідо_млення SMS/MMS…"
 
 #: src/ui/chatty-side-bar.ui:113
-#| msgid "New Group Message…"
 msgid "New _Group Message…"
 msgstr "Нове _групове повідомлення…"
 
 #: src/ui/chatty-side-bar.ui:136
-#| msgid "Archived"
 msgctxt "show archived chat list when clicked"
 msgid "_Archived"
 msgstr "_Архівовано"
 
 #: src/ui/chatty-side-bar.ui:140
-#| msgid "Preferences"
 msgid "_Preferences"
 msgstr "П_араметри"
 
@@ -1942,12 +1936,10 @@ msgid "Keyboard _Shortcuts"
 msgstr "_Клавіатурні скорочення"
 
 #: src/ui/chatty-side-bar.ui:148
-#| msgid "Help"
 msgid "_Help"
 msgstr "_Довідка"
 
 #: src/ui/chatty-side-bar.ui:152
-#| msgid "About Chats"
 msgid "About _Chats"
 msgstr "_Про «Спілкування»"
 
@@ -2018,13 +2010,11 @@ msgid "Open Search"
 msgstr "Відкрити пошук"
 
 #: src/ui/help-overlay.ui:35
-#| msgid "New Group Chat"
 msgctxt "shortcut window"
 msgid "New Chat"
 msgstr "Нове спілкування"
 
 #: src/ui/help-overlay.ui:43
-#| msgid "New Group Chat"
 msgctxt "shortcut window"
 msgid "New Group Chat"
 msgstr "Нове групове спілкування"
@@ -2045,7 +2035,6 @@ msgid "Show Details"
 msgstr "Показати подробиці"
 
 #: src/ui/help-overlay.ui:75
-#| msgid "Delete Chat"
 msgctxt "shortcut window"
 msgid "Close Chat"
 msgstr "Закрити спілкування"
