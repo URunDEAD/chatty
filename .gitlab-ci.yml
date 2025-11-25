@@ -75,14 +75,12 @@ build-alpine-edge:
         evolution-data-server-dev
         evolution-dev
         feedbackd-dev
-        folks-dev
         gspell-dev
         gnupg
         gst-plugins-base-dev
-        gtk+3.0-dev
+        gtk4.0-dev
         gtksourceview5-dev
         libadwaita-dev
-        libgee-dev
         libphonenumber-dev
         libsoup3-dev
         meson
