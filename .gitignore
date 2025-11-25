@@ -16,4 +16,5 @@ debian/tmp
 .flatpak-builder/
 .#*
 po/purims-chatty.pot
-subprojects/libcmatrix/
+subprojects/.wraplock
+subprojects/libcmatrix
