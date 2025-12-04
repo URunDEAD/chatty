@@ -1,14 +1,14 @@
 # Basque translation for chatty.
 # Copyright (C) 2023 chatty's COPYRIGHT HOLDER
 # This file is distributed under the same license as the chatty package.
-# Asier Sarasua Garmendia <asiersarasua@ni.eus>, 2023, 2024.
+# Asier Saratsua Garmendia <asiersarasua@ni.eus>, 2023, 2024, 2025.
 #
 msgid ""
 msgstr "Project-Id-Version: chatty main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/Chatty/issues\n"
-"POT-Creation-Date: 2024-01-01 04:19+0000\n"
-"PO-Revision-Date: 2010:00+0100\n"
-"Last-Translator: Asier Sarasua Garmendia <asiersarasua@ni.eus>\n"
+"POT-Creation-Date: 2025-11-10 11:24+0000\n"
+"PO-Revision-Date: 2025-12-04 11:24+0000\n"
+"Last-Translator: Asier Saratsua Garmendia <asiersarasua@ni.eus>\n"
 "Language-Team: Basque <eu@li.org>\n"
 "Language: eu\n"
 "MIME-Version: 1.0\n"
@@ -16,19 +16,23 @@ msgstr "Project-Id-Version: chatty main\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: data/sm.puri.Chatty.desktop.in.in:3 data/sm.puri.Chatty.metainfo.xml.in.in:6
-#: src/chatty-application.c:164 src/chatty-application.c:403
-#: src/chatty-side-bar.c:347 src/ui/chatty-side-bar.ui:16
+#: data/sm.puri.Chatty.desktop.in.in:2 data/sm.puri.Chatty.metainfo.xml.in.in:6
+#: src/chatty-application.c:157 src/chatty-application.c:388
+#: src/chatty-side-bar.c:385 src/ui/chatty-main-view.ui:4
+#: src/ui/chatty-side-bar.ui:4 src/ui/chatty-side-bar.ui:12
+#: src/ui/chatty-window.ui:4
 msgid "Chats"
 msgstr "Berriketak"
 
-#: data/sm.puri.Chatty.desktop.in.in:6
-msgid "SMS and XMPP chat application"
-msgstr "SMS eta XMPP berriketarako aplikazioa"
+#: data/sm.puri.Chatty.desktop.in.in:5
+#| msgid "SMS and XMPP chat application"
+msgid "SMS/MMS, Matrix and XMPP chat application"
+msgstr "SMS/MMS, Matrix eta XMPP berriketa-aplikazioa"
 
-#: data/sm.puri.Chatty.desktop.in.in:7
-msgid "XMPP;SMS;chat;jabber;messaging;modem"
-msgstr "XMPP;SMS;berriketa;jabber;mezuak;modema"
+#: data/sm.puri.Chatty.desktop.in.in:6
+#| msgid "XMPP;SMS;chat;jabber;messaging;modem"
+msgid "XMPP;SMS;chat;jabber;messaging;modem;matrix;"
+msgstr "XMPP;SMS;berriketa;jabber;mezularitza;modem;matrix;"
 
 #: data/sm.puri.Chatty.gschema.xml:7 data/sm.puri.Chatty.gschema.xml:8
 msgid "Whether the application is launching the first time"
@@ -54,23 +58,23 @@ msgstr "Mezua irakurrri bada, horren egoera bidaliko den ala ez"
 msgid "Message carbon copies"
 msgstr ""
 
-#: data/sm.puri.Chatty.gschema.xml:26 src/ui/chatty-settings-dialog.ui:511
+#: data/sm.puri.Chatty.gschema.xml:26 src/ui/chatty-settings-dialog.ui:661
 msgid "Share chat history among devices"
-msgstr ""
+msgstr "Partekatu berriketa-historia gailuen artean"
 
 #: data/sm.puri.Chatty.gschema.xml:31
 msgid "Enable Message Archive Management"
-msgstr ""
+msgstr "Gaitu mezuen artxibatze-kudeaketa (MAM)"
 
 #: data/sm.puri.Chatty.gschema.xml:32
 msgid "Enable MAM archive synchronization from the server"
-msgstr ""
+msgstr "Gaitu MAM artxibatze-sinkronizazioa zerbitzaritik"
 
 #: data/sm.puri.Chatty.gschema.xml:37
 msgid "Enable purple"
 msgstr "Gaitu purple"
 
-#: data/sm.puri.Chatty.gschema.xml:38 src/ui/chatty-settings-dialog.ui:471
+#: data/sm.puri.Chatty.gschema.xml:38
 msgid "Enable purple accounts"
 msgstr "Gaitu purple kontuak"
 
@@ -82,7 +86,7 @@ msgstr ""
 msgid "Whether to Send typing notifications"
 msgstr ""
 
-#: data/sm.puri.Chatty.gschema.xml:49 src/ui/chatty-settings-dialog.ui:173
+#: data/sm.puri.Chatty.gschema.xml:49
 msgid "Strip Tracking IDs"
 msgstr ""
 
@@ -90,69 +94,103 @@ msgstr ""
 msgid "Whether to Remove Tracking IDs from URLs Automatically"
 msgstr ""
 
-#: data/sm.puri.Chatty.gschema.xml:55 src/ui/chatty-settings-dialog.ui:187
+#: data/sm.puri.Chatty.gschema.xml:55
+msgid "Whether Strip Tracking IDs was shown"
+msgstr ""
+
+#: data/sm.puri.Chatty.gschema.xml:56
+msgid "Whether the Tracking IDs dialog has been shown"
+msgstr ""
+
+#: data/sm.puri.Chatty.gschema.xml:61
 msgid "Render Attachments"
 msgstr "Errendatu eranskinak"
 
-#: data/sm.puri.Chatty.gschema.xml:56
+#: data/sm.puri.Chatty.gschema.xml:62
 msgid "Whether to Render Attachments or not"
 msgstr ""
 
-#: data/sm.puri.Chatty.gschema.xml:61 data/sm.puri.Chatty.gschema.xml:62
-msgid "Mark Idle users differently"
-msgstr ""
-
 #: data/sm.puri.Chatty.gschema.xml:67 data/sm.puri.Chatty.gschema.xml:68
-msgid "Indicate unknown contacts"
-msgstr ""
+msgid "Mark Idle users differently"
+msgstr "Markatu erabiltzaile inaktiboak beste modu batean"
 
-#: data/sm.puri.Chatty.gschema.xml:73
+#: data/sm.puri.Chatty.gschema.xml:73 data/sm.puri.Chatty.gschema.xml:74
+msgid "Indicate unknown contacts"
+msgstr "Adierazi kontaktu ezezagunak"
+
+#: data/sm.puri.Chatty.gschema.xml:79
 msgid "Convert text to emoticons"
 msgstr "Bihurtu testuak emotikono"
 
-#: data/sm.puri.Chatty.gschema.xml:74
+#: data/sm.puri.Chatty.gschema.xml:80
 msgid "Convert text matching emoticons as real emoticons"
 msgstr ""
 
-#: data/sm.puri.Chatty.gschema.xml:79
+#: data/sm.puri.Chatty.gschema.xml:85
 msgid "Enter key sends the message"
 msgstr "Enter teklak mezua bidaltzen du"
 
-#: data/sm.puri.Chatty.gschema.xml:80
+#: data/sm.puri.Chatty.gschema.xml:86
 msgid "Whether pressing Enter key sends the message"
 msgstr "Enter tekla sakatzen bada, mezua bidaliko da"
 
-#: data/sm.puri.Chatty.gschema.xml:85
+#: data/sm.puri.Chatty.gschema.xml:91
 msgid "Request SMS delivery reports"
 msgstr ""
 
-#: data/sm.puri.Chatty.gschema.xml:86
+#: data/sm.puri.Chatty.gschema.xml:92
 msgid "Whether to request delivery reports for outgoing SMS"
 msgstr ""
 
-#: data/sm.puri.Chatty.gschema.xml:91
+#: data/sm.puri.Chatty.gschema.xml:97
+msgid "Clear out stuck SMS"
+msgstr ""
+
+#: data/sm.puri.Chatty.gschema.xml:98
+msgid ""
+"Whether Chatty should clear out SMS that are stuck in receiving/unknown state"
+msgstr ""
+
+#: data/sm.puri.Chatty.gschema.xml:103
 msgid "Enable experimental features"
 msgstr "Gaitu eginbide esperimentalak"
 
-#: data/sm.puri.Chatty.gschema.xml:92
+#: data/sm.puri.Chatty.gschema.xml:104
 msgid "Whether to enable experimental features"
 msgstr "Eginbide esperimentalak gaituko diren ala ez"
 
-#: data/sm.puri.Chatty.gschema.xml:97
+#: data/sm.puri.Chatty.gschema.xml:109
 msgid "Window maximized"
 msgstr "Leihoa maximizatuta"
 
-#: data/sm.puri.Chatty.gschema.xml:98
+#: data/sm.puri.Chatty.gschema.xml:110
 msgid "Window maximized state"
 msgstr "Leihoaren maximizazioaren egoera"
 
-#: data/sm.puri.Chatty.gschema.xml:103
+#: data/sm.puri.Chatty.gschema.xml:115
 msgid "Window size"
 msgstr "Leiho-tamaina"
 
-#: data/sm.puri.Chatty.gschema.xml:104
+#: data/sm.puri.Chatty.gschema.xml:116
 msgid "Window size (width, height)."
 msgstr "Leiho-tamaina (zabalera, altuera)"
+
+#: data/sm.puri.Chatty.gschema.xml:124
+msgid "PGP user ID"
+msgstr ""
+
+#: data/sm.puri.Chatty.gschema.xml:125
+msgid "The user ID for PGP that Chatty will use for outgoing messages"
+msgstr ""
+
+#: data/sm.puri.Chatty.gschema.xml:130 src/ui/chatty-settings-dialog.ui:480
+#| msgid "Own Fingerprint"
+msgid "Public Key Fingerprint"
+msgstr ""
+
+#: data/sm.puri.Chatty.gschema.xml:131
+msgid "The default keyid the remote side should use to encrypt messages to us"
+msgstr ""
 
 #: data/sm.puri.Chatty.metainfo.xml.in.in:7
 msgid "Messaging application for mobile and desktop"
@@ -164,39 +202,67 @@ msgid ""
 "groups supporting SMS, MMS, XMPP and Matrix."
 msgstr ""
 
-#: data/sm.puri.Chatty.metainfo.xml.in.in:16
-msgid "Chats message window"
+#: data/sm.puri.Chatty.metainfo.xml.in.in:23
+msgid "Folded view of a chat using the light theme."
 msgstr ""
 
-#: src/chatty-application.c:79
+#: data/sm.puri.Chatty.metainfo.xml.in.in:27
+msgid "Folded view of a chat using the dark theme."
+msgstr ""
+
+#: data/sm.puri.Chatty.metainfo.xml.in.in:31
+msgid "Unfolded view of a chat and the chat list in the sidebar."
+msgstr ""
+
+#: data/sm.puri.Chatty.metainfo.xml.in.in:35
+msgid ""
+"The chat view using the dark theme as seen on a mobile phone running Phosh "
+"with unfolded keyboard."
+msgstr ""
+
+#: data/sm.puri.Chatty.metainfo.xml.in.in:39
+msgid ""
+"The chat list view using the light theme as seen on a mobile phone running "
+"Phosh."
+msgstr ""
+
+#: data/sm.puri.Chatty.metainfo.xml.in.in:43
+msgid ""
+"The SMS/MMS preferences using the light theme as seen on a mobile phone "
+"running Phosh."
+msgstr ""
+
+#: data/sm.puri.Chatty.metainfo.xml.in.in:48
+msgid ""
+"The chat details view using the dark theme as seen on a mobile phone running "
+"Phosh."
+msgstr ""
+
+#: src/chatty-application.c:73
 msgid "Show release version"
 msgstr "Erakutsi bertsioa"
 
-#: src/chatty-application.c:80
-msgid "Start in daemon mode"
-msgstr ""
-
-#: src/chatty-application.c:81
+#: src/chatty-application.c:74
 msgid "Disable all accounts"
 msgstr "Desgaitu kontu guztiak"
 
-#: src/chatty-application.c:83
+#: src/chatty-application.c:76
 msgid "Enable libpurple debug messages"
 msgstr "Gaitu libpurple arazketa-mezuak"
 
-#: src/chatty-application.c:86
+#: src/chatty-application.c:79
 msgid "Enable verbose debug messages (repeat option for more verbosity)"
 msgstr ""
 
-#: src/chatty-application.c:167
+#: src/chatty-application.c:160
 msgid "An SMS and XMPP messaging client"
 msgstr ""
 
-#: src/chatty-application.c:175
+#: src/chatty-application.c:168
 msgid "translator-credits"
 msgstr "translator-credits"
 
-#: src/chatty-application.c:198
+#: src/chatty-application.c:193
 #, c-format
 msgid ""
 "There was an error displaying help:\n"
@@ -204,74 +270,90 @@ msgid ""
 msgstr "Errorea gertatu da laguntza bistaratzean:\n"
 "%s"
 
+#: src/chatty-application.c:195 src/chatty-manager.c:681
+#: src/chatty-message-bar.c:468 src/purple/chatty-purple-notify.c:35
+#: src/purple/chatty-purple.c:199 src/purple/chatty-purple.c:619
+#: src/dialogs/chatty-new-chat-dialog.c:226
+#: src/dialogs/chatty-settings-dialog.c:219
+#: src/dialogs/chatty-settings-dialog.c:668
+#: src/dialogs/chatty-settings-dialog.c:705
+#: src/dialogs/chatty-settings-dialog.c:821
+#: src/dialogs/chatty-settings-dialog.c:857
+#: src/dialogs/chatty-settings-dialog.c:872
+#: src/dialogs/chatty-settings-dialog.c:889
+#: src/dialogs/chatty-settings-dialog.c:901
+#: src/dialogs/chatty-settings-dialog.c:1535 src/ui/chatty-main-view.ui:73
+msgid "Close"
+msgstr "Itxi"
+
 #: src/chatty-avatar.c:182 src/chatty-contact-list.c:393
 msgid "Send To"
 msgstr "Bidali honi:"
 
-#: src/chatty-chat-list.c:174
+#: src/chatty-chat-list.c:194
 msgid "Select a contact with the <b>“+”</b> button in the titlebar."
 msgstr ""
 
-#: src/chatty-chat-list.c:178
+#: src/chatty-chat-list.c:198
 msgid "Add instant messaging accounts in Preferences."
 msgstr ""
 
-#: src/chatty-chat-list.c:214 src/chatty-contact-list.c:282
+#: src/chatty-chat-list.c:234 src/chatty-contact-list.c:282
 msgid "No Search Results"
 msgstr "Bilaketak ez du emaitzarik"
 
-#: src/chatty-chat-list.c:215
+#: src/chatty-chat-list.c:235
 msgid "Try different search"
 msgstr "Saiatu bestelako bilaketa bat"
 
-#: src/chatty-chat-list.c:220
+#: src/chatty-chat-list.c:240
 msgid "No archived chats"
 msgstr "Ez dago artxibatutako berriketarik"
 
-#: src/chatty-chat-list.c:222
+#: src/chatty-chat-list.c:242
 msgid "Start Chatting"
 msgstr "Hasi berriketan"
 
-#: src/chatty-chat-page.c:201 src/chatty-chat-page.c:210
+#: src/chatty-chat-page.c:195 src/chatty-chat-page.c:204
 msgid "This is an MMS conversation"
 msgstr "Hau MMS berriketa bat da"
 
-#: src/chatty-chat-page.c:203 src/chatty-chat-page.c:218
-#: src/chatty-chat-page.c:224
+#: src/chatty-chat-page.c:197 src/chatty-chat-page.c:212
+#: src/chatty-chat-page.c:218
 msgid "Your messages are not encrypted, and carrier rates may apply"
 msgstr ""
 
-#: src/chatty-chat-page.c:213
+#: src/chatty-chat-page.c:207
 msgid "This is an SMS/MMS conversation"
 msgstr "Hau SMS/MMS berriketa bat da"
 
-#: src/chatty-chat-page.c:216
+#: src/chatty-chat-page.c:210
 msgid "This is an SMS conversation"
 msgstr "Hau SMS berriketa bat da"
 
-#: src/chatty-chat-page.c:222
+#: src/chatty-chat-page.c:216
 msgid "This is an IM conversation"
 msgstr "Hau IM berriketa bat da"
 
-#: src/chatty-chat-page.c:228
+#: src/chatty-chat-page.c:222
 msgid "Your messages are encrypted"
 msgstr "Zure mezua zifratuta daude"
 
-#: src/chatty-chat-page.c:231
+#: src/chatty-chat-page.c:225
 msgid "Your messages are not encrypted"
 msgstr "Zure mezuak ez daude zifratuta"
 
-#: src/chatty-chat.c:708
+#: src/chatty-chat.c:726
 msgid "Empty room"
 msgstr "Gela hutsa"
 
 #. TRANSLATORS: %s are name/user-id/phone numbers of two users
-#: src/chatty-chat.c:715
+#: src/chatty-chat.c:733
 #, c-format
 msgid "%s and %s"
 msgstr "%s eta %s"
 
-#: src/chatty-chat.c:717
+#: src/chatty-chat.c:735
 #, c-format
 msgid "%s and %u other"
 msgid_plural "%s and %u others"
@@ -290,53 +372,108 @@ msgstr "Saiatu beste bilaketa batekin edo idatzi baliozko zenbaki bat berriketa 
 msgid "No Contacts"
 msgstr "Kontakturik ez"
 
-#: src/chatty-clock.c:85
+#: src/chatty-clock.c:87
 msgid "Just Now"
 msgstr "Orain"
 
 #. TRANSLATORS: Timestamp with 12 hour time, e.g. “06∶42 PM”.
 #. * See https://docs.gtk.org/glib/method.DateTime.format.html
+#. * Note, that this is a regular colon to ensure times are not
+#. * reversed in RTL locales, see https://gitlab.gnome.org/Teams/Websites/developer.gnome.org-hig/-/issues/127
 #.
-#: src/chatty-clock.c:94 src/chatty-clock.c:124
-msgid "%I∶%M %p"
-msgstr "%I∶%M %p"
+#: src/chatty-clock.c:98 src/chatty-clock.c:137
+#| msgid "%I∶%M %p"
+msgid "%I:%M %p"
+msgstr "%I:%M %p"
 
-#: src/chatty-clock.c:103
+#: src/chatty-clock.c:107
 #, c-format
-msgid "%lu minute ago"
-msgid_plural "%lu minutes ago"
-msgstr[0] "Duela minutu %lu"
-msgstr[1] "Duela %lu minutu"
+#| msgid "%lu minute ago"
+#| msgid_plural "%lu minutes ago"
+msgid "%<PRIi64> minute ago"
+msgid_plural "%<PRIi64> minutes ago"
+msgstr[0] "Duela minutu %<PRIi64>"
+msgstr[1] "Duela %<PRIi64> minutu"
 
-#: src/chatty-clock.c:111
-msgid "Today %H∶%M"
-msgstr "Gaur %H∶%M"
+#. TRANSLATORS:
+#. * Note, that this is a regular colon to ensure times are not
+#. * reversed in RTL locales, see https://gitlab.gnome.org/Teams/Websites/developer.gnome.org-hig/-/issues/127
+#.
+#: src/chatty-clock.c:120
+#| msgid "Today %H∶%M"
+msgid "Today %H:%M"
+msgstr "Gaur, %H:%M"
 
 #. TRANSLATORS: Timestamp with 12 hour time, e.g. “Today 06∶42 PM”.
 #. * See https://docs.gtk.org/glib/method.DateTime.format.html
+#. * Note, that this is a regular colon to ensure times are not
+#. * reversed in RTL locales, see https://gitlab.gnome.org/Teams/Websites/developer.gnome.org-hig/-/issues/127
 #.
-#: src/chatty-clock.c:119
-msgid "Today %I∶%M %p"
-msgstr "Gaur %I∶%M %p"
+#: src/chatty-clock.c:130
+#| msgid "Today %I∶%M %p"
+msgid "Today %I:%M %p"
+msgstr "Gaur, %I:%M %p"
 
-#: src/chatty-clock.c:131
-msgid "Yesterday %H∶%M"
-msgstr "Atzo %H∶%M"
+#: src/chatty-clock.c:144
+#| msgid "Yesterday %H∶%M"
+msgid "Yesterday %H:%M"
+msgstr "Atzo, %H:%M"
 
 #. TRANSLATORS: Timestamp with 12 hour time, e.g. “Yesterday 06∶42 PM”.
 #. * See https://docs.gtk.org/glib/method.DateTime.format.html
+#. * Note, that this is a regular colon to ensure times are not
+#. * reversed in RTL locales, see https://gitlab.gnome.org/Teams/Websites/developer.gnome.org-hig/-/issues/127
 #.
-#: src/chatty-clock.c:136
-msgid "Yesterday %I∶%M %p"
-msgstr "Atzo %I∶%M %p"
+#: src/chatty-clock.c:151
+#| msgid "Yesterday %I∶%M %p"
+msgid "Yesterday %I:%M %p"
+msgstr "Atzo, %I:%M %p"
 
-#. TRANSLATORS: Timestamp from more than 7 days ago or future date
-#. * (eg: when the system time is wrong), e.g. “2022-01-01”.
-#. * See https://docs.gtk.org/glib/method.DateTime.format.html
+#. TRANSLATORS:
+#. * Note, that this is a regular colon to ensure times are not
+#. * reversed in RTL locales, see https://gitlab.gnome.org/Teams/Websites/developer.gnome.org-hig/-/issues/127
 #.
-#: src/chatty-clock.c:152
+#: src/chatty-clock.c:176
+#| msgid "%Y-%m-%d %H∶%M"
+msgid "%Y-%m-%d %H:%M"
+msgstr "%Y-%m-%d %H:%M"
+
+#. TRANSLATORS: Timestamp with 12 hour time, e.g. “Today 06∶42 PM”.
+#. * See https://docs.gtk.org/glib/method.DateTime.format.html
+#. * Note, that this is a regular colon to ensure times are not
+#. * reversed in RTL locales, see https://gitlab.gnome.org/Teams/Websites/developer.gnome.org-hig/-/issues/127
+#.
+#: src/chatty-clock.c:183
+#| msgid "%Y-%m-%d %H∶%M"
+msgid "%Y-%m-%d %I:%M %p"
+msgstr "%Y-%m-%d %I:%M %p"
+
+#: src/chatty-clock.c:185
 msgid "%Y-%m-%d"
 msgstr "%Y-%m-%d"
+
+#: src/chatty-file-item.c:142 src/chatty-file-item.c:157
+#| msgid "Contact ID"
+msgid "Contact"
+msgstr "Kontaktua"
+
+#: src/chatty-file-item.c:154
+#, c-format
+#| msgid "Contact ID"
+msgid "Contact: %s"
+msgstr "Kontaktua: %s"
+
+#: src/chatty-file-item.c:175
+#, c-format
+#| msgid "Invite"
+msgid "Invite: %s"
+msgstr "Gonbidatu: %s"
+
+#: src/chatty-file-item.c:178
+#| msgid "Invite"
+msgctxt "Invitation to event"
+msgid "Invitation"
+msgstr "Gonbidapena"
 
 #. TRANSLATORS: %s is the Device ID
 #: src/chatty-fp-row.c:130
@@ -347,135 +484,185 @@ msgstr ""
 #. TRANSLATORS: %s is the chat room name
 #: src/chatty-invite-page.c:72
 #, c-format
-msgid "Do you want to join “%s”"
+msgid "Do you want to join “%s”?"
 msgstr ""
 
-#: src/chatty-list-row.c:122
+#: src/chatty-list-row.c:123
 msgid "Owner"
 msgstr "Jabea"
 
-#: src/chatty-list-row.c:125
+#: src/chatty-list-row.c:126
 msgid "Moderator"
 msgstr "Moderatzailea"
 
-#: src/chatty-list-row.c:128
+#: src/chatty-list-row.c:129
 msgid "Member"
 msgstr "Kidea"
 
-#: src/chatty-list-row.c:250
+#: src/chatty-list-row.c:264 src/chatty-notification.c:180
 msgid "Picture"
 msgstr "Irudia"
 
-#: src/chatty-list-row.c:253
+#: src/chatty-list-row.c:267 src/chatty-notification.c:184
 msgid "Video"
 msgstr "Bideoa"
 
-#: src/chatty-list-row.c:256
+#: src/chatty-list-row.c:270
 msgid "Audio"
 msgstr "Audioa"
 
-#: src/chatty-list-row.c:259
+#: src/chatty-list-row.c:273
 msgid "Location"
 msgstr "Kokalekua"
 
-#: src/chatty-list-row.c:262 src/chatty-list-row.c:279
+#: src/chatty-list-row.c:276 src/chatty-list-row.c:293
+#: src/chatty-notification.c:176
 msgid "File"
 msgstr "Fitxategia"
 
-#: src/chatty-list-row.c:265
+#: src/chatty-list-row.c:279
 msgid "MMS Message"
 msgstr "MMS mezua"
 
-#: src/chatty-list-row.c:281
+#: src/chatty-list-row.c:295
 msgid "Multiple Files"
 msgstr "Fitxategi anitz"
 
-#: src/chatty-main-view.c:124
+#: src/chatty-main-view.c:125
 msgid "Account disconnected"
 msgstr "Kontua deskonektatuta"
 
-#: src/chatty-main-view.c:126
+#: src/chatty-main-view.c:127
 msgid "Account connecting…"
 msgstr "Kontua konektatzen…"
 
-#: src/chatty-manager.c:736
+#: src/chatty-manager.c:679
 #, c-format
 msgid "“%s” is not a valid URI"
 msgstr "“%s” ez da baliozko URIa"
+
+#: src/chatty-message-bar.c:466 src/purple/chatty-purple.c:195
+#: src/chatty-window.c:378
+msgid "Alert"
+msgstr "Abisua"
+
+#: src/chatty-message-bar.c:467
+msgid "Found and automatically deleted tracking IDs from the pasted link."
+msgstr ""
+
+#: src/chatty-message-bar.c:469
+msgid "Don't Show Again"
+msgstr "Ez erakutsi berriro"
 
 #: src/chatty-message.c:230
 msgid "Got an encrypted message, but couldn't decrypt due to missing keys"
 msgstr "Mezu zifratu bat jaso da baina ezin da deszifratu gakoak falta direlako"
 
-#: src/chatty-notification.c:180
-msgid "Open Message"
-msgstr "Ireki mezua"
-
-#: src/chatty-notification.c:213
+#: src/chatty-notification.c:150
 #, c-format
 msgid "New message from %s"
 msgstr "%s-(r)en mezu berria"
 
-#: src/chatty-notification.c:215
+#: src/chatty-notification.c:152
 msgid "Message Received"
 msgstr "Mezua jaso da"
 
-#: src/chatty-side-bar.c:317
+#: src/chatty-notification.c:188
+#| msgid "Audio"
+msgid "Audio File"
+msgstr "Audio-fitxategia"
+
+#: src/chatty-notification.c:195
+#| msgid "MMSC"
+msgid "MMS"
+msgstr "MMS"
+
+#: src/chatty-notification.c:207
+#, c-format
+#| msgid "MMS Message"
+msgid "%i Message"
+msgid_plural "%i Messages"
+msgstr[0] "Mezu %i"
+msgstr[1] "%i mezu"
+
+#: src/chatty-side-bar.c:355
 msgid "Any Protocol"
 msgstr "Edozein protokolo"
 
-#: src/chatty-side-bar.c:318 src/ui/chatty-settings-dialog.ui:581
+#: src/chatty-side-bar.c:356 src/ui/chatty-settings-dialog.ui:731
 msgid "Matrix"
 msgstr "Matrix"
 
-#: src/chatty-side-bar.c:319
+#: src/chatty-side-bar.c:357 src/dialogs/chatty-new-chat-dialog.c:636
+#: src/dialogs/chatty-settings-dialog.c:1121
+#: src/ui/chatty-settings-dialog.ui:255
 msgid "SMS/MMS"
 msgstr "SMS/MMS"
 
-#: src/chatty-side-bar.c:322 src/ui/chatty-settings-dialog.ui:570
+#: src/chatty-side-bar.c:360 src/ui/chatty-settings-dialog.ui:720
 msgid "XMPP"
 msgstr "XMPP"
 
-#: src/chatty-side-bar.c:325 src/ui/chatty-settings-dialog.ui:594
+#: src/chatty-side-bar.c:363 src/ui/chatty-settings-dialog.ui:744
 msgid "Telegram"
 msgstr "Telegram"
 
-#: src/chatty-side-bar.c:347
+#: src/chatty-side-bar.c:385
 msgid "Archived"
 msgstr "Artxibatua"
 
+#: src/purple/chatty-purple-notify.c:26 src/purple/chatty-purple.c:613
+#: src/dialogs/chatty-new-chat-dialog.c:222
+#: src/dialogs/chatty-settings-dialog.c:215
+msgid "Error"
+msgstr "Errorea"
+
 #: src/purple/chatty-purple-request.c:218
-msgid "Save File..."
-msgstr "Gorde fitxategia..."
+#| msgid "Save File..."
+msgid "Save File…"
+msgstr "Gorde fitxategia…"
 
 #: src/purple/chatty-purple-request.c:220
-msgid "Open File..."
-msgstr "Ireki fitxategia..."
+#| msgid "Open File..."
+msgid "Open File…"
+msgstr "Ireki fitxategia…"
 
-#: src/purple/chatty-purple.c:194
+#: src/purple/chatty-purple.c:197
 #, c-format
 msgid "User %s has added %s to the contacts"
 msgstr "%s erabiltzaileak %s gehitu du kontaktuetan"
 
-#: src/purple/chatty-purple.c:259
-msgid "Reject"
-msgstr "Baztertu"
+#: src/purple/chatty-purple.c:283 src/dialogs/chatty-settings-dialog.c:477
+#: src/ui/chatty-ma-account-details.ui:144
+#: src/ui/chatty-pp-account-details.ui:80
+msgid "Delete Account"
+msgstr "Ezabatu kontua"
 
-#: src/purple/chatty-purple.c:259
-msgid "Accept"
-msgstr "Onartu"
-
-#: src/purple/chatty-purple.c:278
+#: src/purple/chatty-purple.c:285
 #, c-format
 msgid "Authorize %s?"
 msgstr "Baimendu %s?"
 
-#: src/purple/chatty-purple.c:279
+#: src/purple/chatty-purple.c:289
 #, c-format
 msgid "Add %s to contact list"
 msgstr "Gehitu %s kontaktuen zerrendan"
 
-#: src/purple/chatty-purple.c:595
+#: src/purple/chatty-purple.c:293 src/chatty-window.c:382
+#: src/chatty-window.c:478 src/dialogs/chatty-settings-dialog.c:483
+#: src/ui/chatty-dialog-wrong-pw.ui:23 src/ui/chatty-dialog-new-chat.ui:36
+#: src/ui/chatty-settings-dialog.ui:25 src/ui/chatty-settings-dialog.ui:55
+#: src/ui/chatty-settings-dialog.ui:75 src/ui/chatty-verification-page.ui:129
+#: src/ui/chatty-verification-page.ui:158
+msgid "_Cancel"
+msgstr "_Utzi"
+
+#: src/purple/chatty-purple.c:294
+#| msgid "Authorize %s?"
+msgid "Authorize"
+msgstr "Baimendu"
+
+#: src/purple/chatty-purple.c:618
 msgid "Please check ID and password"
 msgstr "Egiaztatu IDa eta pasahitza"
 
@@ -808,97 +995,119 @@ msgstr "Erakutsi emotikonoak"
 msgid "Show Numbers"
 msgstr "Erakutsi zenbakiak"
 
-#: src/chatty-window.c:348 src/chatty-window.c:435
-#: src/dialogs/chatty-settings-dialog.c:443 src/ui/chatty-dialog-join-muc.ui:18
-#: src/ui/chatty-info-dialog.ui:26 src/ui/chatty-info-dialog.ui:35
-msgid "Cancel"
-msgstr "Utzi"
+#: src/chatty-utils.c:299
+#, c-format
+msgid "%s %s %s %s"
+msgstr "%s %s %s %s"
 
-#: src/chatty-window.c:348
-msgid "Continue"
-msgstr "Jarraitu"
+#: src/chatty-utils.c:301 src/chatty-utils.c:305
+#, c-format
+msgid "%s %s %s"
+msgstr "%s %s %s"
 
-#: src/chatty-window.c:356
+#: src/chatty-utils.c:307 src/chatty-utils.c:310
+#, c-format
+msgid "%s %s"
+msgstr "%s %s"
+
+#: src/chatty-window.c:379
 msgid "You shall no longer be notified for new messages, continue?"
 msgstr "Jadanik ez dituzu mezu berrien jakinarazpenak jasoko, jarraitu?"
 
-#: src/chatty-window.c:435
-msgid "Delete"
-msgstr "Ezabatu"
+#: src/chatty-window.c:383
+#| msgid "Clock"
+msgid "Block"
+msgstr "Blokeatu"
 
-#: src/chatty-window.c:445
+#: src/chatty-window.c:470
 #, c-format
 msgid "Delete chat with “%s”"
-msgstr ""
+msgstr "Ezabatu “%s” erabiltzailearekin izandako berriketa"
 
-#: src/chatty-window.c:446
+#: src/chatty-window.c:471
 msgid "This deletes the conversation history"
 msgstr "Honek berriketaren historia ezabatzen du"
 
-#: src/chatty-window.c:448
+#: src/chatty-window.c:473
 #, c-format
 msgid "Disconnect group chat “%s”"
 msgstr ""
 
-#: src/chatty-window.c:449
+#: src/chatty-window.c:474
 msgid "This removes chat from chats list"
 msgstr "Honek berriketa kentzen du berriketen zerrendatik"
+
+#: src/chatty-window.c:479 src/dialogs/chatty-settings-dialog.c:484
+msgid "Delete"
+msgstr "Ezabatu"
+
+#. TRANSLATORS: %u is the number of members in a room
+#: src/dialogs/chatty-ma-chat-info.c:124
+#, c-format
+#| msgid "%u Member"
+#| msgid_plural "%u Members"
+msgid "%u member"
+msgid_plural "%u members"
+msgstr[0] "Kide %u"
+msgstr[1] "%u kide"
 
 #: src/dialogs/chatty-mm-chat-info.c:146
 msgctxt "Refer to self in contact list"
 msgid "You"
 msgstr "Zu"
 
-#: src/dialogs/chatty-pp-chat-info.c:111
-#: src/dialogs/chatty-ma-account-details.c:139
+#: src/dialogs/chatty-pp-chat-info.c:108
+#: src/dialogs/chatty-ma-account-details.c:168
 #: src/dialogs/chatty-pp-account-details.c:115
 msgid "Set Avatar"
 msgstr "Ezarri avatarra"
 
-#: src/dialogs/chatty-pp-chat-info.c:118
-#: src/dialogs/chatty-ma-account-details.c:146
+#: src/dialogs/chatty-pp-chat-info.c:115
+#: src/dialogs/chatty-ma-account-details.c:175
 #: src/dialogs/chatty-pp-account-details.c:122
 msgid "Images"
 msgstr "Irudiak"
 
-#: src/dialogs/chatty-pp-chat-info.c:221
+#: src/dialogs/chatty-pp-chat-info.c:204
 msgid "Encryption is not available"
 msgstr "Zifratzea ez dago erabilgarri"
 
-#: src/dialogs/chatty-pp-chat-info.c:225
+#: src/dialogs/chatty-pp-chat-info.c:208
 msgid "This chat is encrypted"
 msgstr "Berriketa hau zifratuta dago"
 
-#: src/dialogs/chatty-pp-chat-info.c:229
+#: src/dialogs/chatty-pp-chat-info.c:212
 msgid "This chat is not encrypted"
 msgstr "Berriketa hau ez dago zifratuta"
 
-#: src/dialogs/chatty-pp-chat-info.c:253
+#: src/dialogs/chatty-pp-chat-info.c:236
 msgid "Encryption not available"
 msgstr "Zifratzea ez dago erabilgarri"
 
-#: src/dialogs/chatty-pp-chat-info.c:274
+#: src/dialogs/chatty-pp-chat-info.c:257
 #, c-format
 msgid "%u Member"
 msgid_plural "%u Members"
 msgstr[0] "Kide %u"
 msgstr[1] "%u kide"
 
-#: src/dialogs/chatty-pp-chat-info.c:308
-msgid "Phone Number:"
-msgstr "Telefono-zenbakia:"
+#: src/dialogs/chatty-pp-chat-info.c:292 src/ui/chatty-settings-dialog.ui:385
+msgid "Phone Number"
+msgstr "Telefono-zenbakia"
 
-#: src/dialogs/chatty-pp-chat-info.c:310
-msgid "XMPP ID:"
-msgstr "XMMP IDa:"
+#: src/dialogs/chatty-pp-chat-info.c:295 src/ui/chatty-pp-chat-info.ui:88
+msgid "XMPP ID"
+msgstr "XMMP IDa"
 
-#: src/dialogs/chatty-pp-chat-info.c:315
-msgid "Matrix ID:"
-msgstr "Matrix IDa:"
+#: src/dialogs/chatty-pp-chat-info.c:301 src/ui/chatty-ma-chat-info.ui:28
+#: src/ui/chatty-ma-account-details.ui:91
+msgid "Matrix ID"
+msgstr "Matrix IDa"
 
-#: src/dialogs/chatty-pp-chat-info.c:318
-msgid "Telegram ID:"
-msgstr "Telegram IDa:"
+#: src/dialogs/chatty-pp-chat-info.c:305
+#| msgid "Telegram ID:"
+msgid "Telegram ID"
+msgstr "Telegram IDa"
 
 #: src/dialogs/chatty-new-chat-dialog.c:170
 msgid "Add"
@@ -912,114 +1121,202 @@ msgstr "Sortu"
 msgid "Add Contact"
 msgstr "Gehitu kontaktua"
 
-#: src/dialogs/chatty-new-chat-dialog.c:220
+#: src/dialogs/chatty-new-chat-dialog.c:224
 #, c-format
 msgid "Error opening GNOME Contacts: %s"
 msgstr "Errorea GNOMEren kontaktuak irekitzean: %s"
 
-#: src/dialogs/chatty-new-chat-dialog.c:447
+#: src/dialogs/chatty-new-chat-dialog.c:456
 msgid "SMS"
 msgstr "SMS"
 
-#: src/dialogs/chatty-new-chat-dialog.c:625
+#: src/dialogs/chatty-new-chat-dialog.c:636
 msgid "You"
 msgstr "Zu"
 
-#: src/dialogs/chatty-ma-account-details.c:396
+#: src/dialogs/chatty-ma-account-details.c:418
 #: src/dialogs/chatty-pp-account-details.c:171
 msgid "connected"
 msgstr "konektatuta"
 
-#: src/dialogs/chatty-ma-account-details.c:398
+#: src/dialogs/chatty-ma-account-details.c:420
 #: src/dialogs/chatty-pp-account-details.c:173
 msgid "connecting…"
 msgstr "konektatzen..."
 
-#: src/dialogs/chatty-ma-account-details.c:400
+#: src/dialogs/chatty-ma-account-details.c:422
 #: src/dialogs/chatty-pp-account-details.c:175
 msgid "disconnected"
 msgstr "deskonektatuta"
 
-#: src/dialogs/chatty-settings-dialog.c:194
+#: src/dialogs/chatty-settings-dialog.c:217
 #, c-format
 msgid "Error saving account: %s"
 msgstr "Errorea kontua gordetzean: %s"
 
-#: src/dialogs/chatty-settings-dialog.c:244
+#: src/dialogs/chatty-settings-dialog.c:272
 #, c-format
 msgid "Failed to verify server: %s"
 msgstr "Huts egin du zerbitzaria egiaztatzeak: %s"
 
-#: src/dialogs/chatty-settings-dialog.c:246
+#: src/dialogs/chatty-settings-dialog.c:274
 msgid "Failed to verify server"
 msgstr "Huts egin du zerbitzaria egiaztatzeak"
 
-#: src/dialogs/chatty-settings-dialog.c:252
+#: src/dialogs/chatty-settings-dialog.c:280
 msgid "Couldn't get Home server address"
 msgstr "Ezin da etxeko zerbitzariaren helbidea eskuratu"
 
-#: src/dialogs/chatty-settings-dialog.c:443
-msgid "OK"
-msgstr "Ados"
-
-#: src/dialogs/chatty-settings-dialog.c:453
-#: src/ui/chatty-ma-account-details.ui:162
-#: src/ui/chatty-pp-account-details.ui:154
-msgid "Delete Account"
-msgstr "Ezabatu kontua"
-
-#: src/dialogs/chatty-settings-dialog.c:454
+#: src/dialogs/chatty-settings-dialog.c:479
 #, c-format
 msgid "Delete account %s?"
 msgstr "Ezabatu %s kontua?"
 
-#: src/dialogs/chatty-settings-dialog.c:623
-msgid "Restart chatty to disable purple"
-msgstr "Berrabiarazi chatty purple desgaitzeko"
+#: src/dialogs/chatty-settings-dialog.c:664
+#, c-format
+msgid "Chatty cannot find a valid PGP Key for %s."
+msgstr ""
 
-#: src/dialogs/chatty-settings-dialog.c:625
-#: src/ui/chatty-settings-dialog.ui:472
-msgid "Enable purple plugin"
-msgstr "Gaitu purple plugina"
+#: src/dialogs/chatty-settings-dialog.c:666
+msgid "Invalid Signing ID"
+msgstr ""
 
-#: src/dialogs/chatty-settings-dialog.c:639
-#: src/ui/chatty-settings-dialog.ui:246
-msgid "SMS and MMS Settings"
-msgstr "SMS eta MMS ezarpenak"
+#: src/dialogs/chatty-settings-dialog.c:701
+#, c-format
+msgid "The entered Key ID %s does not match the found PGP Key for %s:%s."
+msgstr ""
 
-#: src/dialogs/chatty-settings-dialog.c:641
-#: src/ui/chatty-settings-dialog.ui:264
-msgid "Purple Settings"
-msgstr "Purple ezarpenak"
+#: src/dialogs/chatty-settings-dialog.c:703
+msgid "Cannot Find Signing Key"
+msgstr ""
 
-#: src/dialogs/chatty-settings-dialog.c:643
+#: src/dialogs/chatty-settings-dialog.c:706
+#: src/dialogs/chatty-settings-dialog.c:952
+msgid "I Know What I am Doing"
+msgstr "Badakit zertan ari naizen"
+
+#: src/dialogs/chatty-settings-dialog.c:788
+#: src/dialogs/chatty-settings-dialog.c:870
+#: src/dialogs/chatty-settings-dialog.c:887
+msgid "Cannot Create Signing Key"
+msgstr "Ezin da sortu sinatze-gakoa"
+
+#: src/dialogs/chatty-settings-dialog.c:789
+#: src/dialogs/chatty-settings-dialog.c:886
+#, c-format
+msgid "Error creating the PGP ID. Please check the logs for more details."
+msgstr ""
+
+#: src/dialogs/chatty-settings-dialog.c:802
+#, c-format
+msgid "Key %s was created for ID %s"
+msgstr ""
+
+#: src/dialogs/chatty-settings-dialog.c:803
+msgid "Successfully Created Key"
+msgstr "Gakoa ongi sortu da"
+
+#: src/dialogs/chatty-settings-dialog.c:855
+#| msgid "Empty room"
+msgid "Empty Entries"
+msgstr "Sarrera hutsak"
+
+#: src/dialogs/chatty-settings-dialog.c:856
+msgid "All entries must be filled to create a PGP Key"
+msgstr "Sarrera guztiak bete behar dira PGP gakoa sortzeko"
+
+#: src/dialogs/chatty-settings-dialog.c:869
+#, c-format
+msgid ""
+"%s already has key with fingerprint %s. Please choose a different PGP ID"
+msgstr ""
+
+#: src/dialogs/chatty-settings-dialog.c:898
+#, c-format
+msgid "Creating key for ID %s."
+msgstr ""
+
+#: src/dialogs/chatty-settings-dialog.c:899
+#| msgid "Create"
+msgid "Creating Key"
+msgstr "Gakoa sortzen"
+
+#. Translators: This means that the existing key will be there, but there will be a new key that Chatty will use by default instead of the existing one.
+#: src/dialogs/chatty-settings-dialog.c:947
+#, c-format
+msgid ""
+"Chatty is currently set to use PGP key: %s. The new key will be used instead "
+"of the existing one!"
+msgstr ""
+
+#: src/dialogs/chatty-settings-dialog.c:949
+msgid "Signing ID Present"
+msgstr ""
+
+#: src/dialogs/chatty-settings-dialog.c:951 src/ui/chatty-dialog-join-muc.ui:16
+#: src/ui/chatty-info-dialog.ui:23 src/ui/chatty-info-dialog.ui:32
+msgid "Cancel"
+msgstr "Utzi"
+
+#: src/dialogs/chatty-settings-dialog.c:1107
+#| msgid "Restart chatty to disable purple"
+msgid "Restart Chatty to disable Purple"
+msgstr "Chatty berrabiarazten Purple desgaitzeko"
+
+#: src/dialogs/chatty-settings-dialog.c:1123
+#: src/ui/chatty-settings-dialog.ui:290
+msgid "Purple"
+msgstr "Purple"
+
+#: src/dialogs/chatty-settings-dialog.c:1125
 msgid "New Account"
 msgstr "Kontu berria"
 
-#: src/dialogs/chatty-settings-dialog.c:645
-#: src/ui/chatty-settings-dialog.ui:324
+#: src/dialogs/chatty-settings-dialog.c:1127
+#: src/ui/chatty-settings-dialog.ui:363
 msgid "Blocked Contacts"
 msgstr "Blokeatutako kontaktuak"
 
-#: src/dialogs/chatty-settings-dialog.c:647 src/ui/chatty-side-bar.ui:115
+#: src/dialogs/chatty-settings-dialog.c:1129
+#: src/ui/chatty-settings-dialog.ui:272
+#| msgid "Purple Settings"
+msgid "PGP Settings"
+msgstr "PGP ezarpenak"
+
+#: src/dialogs/chatty-settings-dialog.c:1131
+msgid "New PGP Key"
+msgstr "PGP gako berria"
+
+#: src/dialogs/chatty-settings-dialog.c:1133
 msgid "Preferences"
 msgstr "Hobespenak"
 
-#: src/dialogs/chatty-settings-dialog.c:675
-msgid "Select Protocol"
-msgstr "Hautatu protokoloa"
+#: src/dialogs/chatty-settings-dialog.c:1161
+#: src/ui/chatty-pp-account-details.ui:60 src/ui/chatty-settings-dialog.ui:245
+msgid "Protocol"
+msgstr "Protokoloa"
 
 #. TRANSLATORS: Only translate 'or'
-#: src/dialogs/chatty-settings-dialog.c:920
+#: src/dialogs/chatty-settings-dialog.c:1422
 msgid "@user:matrix.org or user@example.com"
 msgstr "@erabiltzailea:matrix.org edo erabiltzailea@adibidea.com"
 
-#: src/matrix/chatty-ma-account.c:78
+#: src/dialogs/chatty-settings-dialog.c:1533
+#| msgid "Enable experimental features"
+msgid "Experimental Setting!"
+msgstr "Ezarpen esperimentala!"
+
+#: src/dialogs/chatty-settings-dialog.c:1534
+msgid ""
+"This setting is experimental and may cause loss of SMS. Use at your own risk!"
+msgstr "Ezarpen hau esperimentala da SMSak galtzea eragin dezake. Erabili kontuz!"
+
+#: src/matrix/chatty-ma-account.c:77
 #, c-format
 msgid "Please enter password for “%s”, homeserver: %s"
 msgstr ""
 
-#: src/matrix/chatty-ma-key-chat.c:62
+#: src/matrix/chatty-ma-key-chat.c:73
 msgid "Key Verification"
 msgstr "Gakoaren egiaztatzea"
 
@@ -1032,99 +1329,117 @@ msgstr ""
 msgid "See logs for more details"
 msgstr "Ikusi egunkariak xehetasun gehiagorako"
 
+#: src/mm/chatty-mmsd.c:572 src/mm/chatty-mmsd.c:633 src/mm/chatty-mmsd.c:656
+msgid "MMS cannot be sent"
+msgstr "MMSa ezin izan da bidali"
+
+#: src/mm/chatty-mmsd.c:574
+#| msgid "Render Attachments"
+msgid "Please send less attachments"
+msgstr "Bidali eranskin gutxiago"
+
+#: src/mm/chatty-mmsd.c:635
+msgid "Could not resize image to be small enough"
+msgstr "Ezin da irudiaren tamaina aldatu txikiagoa izan dadin"
+
+#: src/mm/chatty-mmsd.c:653
+#, c-format
+msgid "The attachment is too large"
+msgid_plural "Attachments are too large"
+msgstr[0] "Eranskina handiegia da"
+msgstr[1] "Ernaskinak handiegiak dira"
+
 #. TRANSLATORS: Timestamp for minute accuracy, e.g. “2020-08-11 15:27”.
 #. See https://developer.gnome.org/glib/stable/glib-GDateTime.html#g-date-time-format
 #.
-#: src/mm/chatty-mmsd.c:922
+#: src/mm/chatty-mmsd.c:984
 msgid "%Y-%m-%d %H∶%M"
 msgstr "%Y-%m-%d %H∶%M"
 
-#: src/mm/chatty-mmsd.c:1227
+#: src/mm/chatty-mmsd.c:1308
 #, c-format
 msgid "You received an MMS, but it expired on: %s"
 msgstr ""
 
-#: src/mm/chatty-mmsd.c:1230
+#: src/mm/chatty-mmsd.c:1311
+#, c-format
+msgid "You received an MMS, but it cannot be retrieved"
+msgstr ""
+
+#: src/mm/chatty-mmsd.c:1313
 msgid "You received an empty MMS."
 msgstr "Hutsik dagoen MMS bat jaso duzu."
 
-#: src/mm/chatty-mmsd.c:1706 src/mm/chatty-mmsd.c:1752
+#: src/mm/chatty-mmsd.c:1794 src/mm/chatty-mmsd.c:1842
 #, c-format
 msgid "Automatically Retrying for  %i MMS"
 msgid_plural "Automatically Retrying for  %i MMSes..."
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/mm/chatty-mmsd.c:1711
+#: src/mm/chatty-mmsd.c:1799
 msgid "Temporary Error Sending MMS"
 msgstr ""
 
-#: src/mm/chatty-mmsd.c:1757
+#: src/mm/chatty-mmsd.c:1847
 msgid "Temporary Error Receiving MMS"
 msgstr ""
 
-#: src/mm/chatty-mmsd.c:1973
+#: src/mm/chatty-mmsd.c:2065
 msgid "MMSC is not configured"
 msgstr "MMSC ez dago konfiguratuta"
 
-#: src/mm/chatty-mmsd.c:1976
+#: src/mm/chatty-mmsd.c:2068
 msgid "APN is not configured correctly"
 msgstr "APN ez dago ondo konfiguratuta"
 
-#: src/mm/chatty-mmsd.c:1979
+#: src/mm/chatty-mmsd.c:2071
 msgid "Mobile Data is not configured"
 msgstr "Datu mugikorrak ez daude konfiguratuta"
 
-#: src/mm/chatty-mmsd.c:1982
+#: src/mm/chatty-mmsd.c:2074
 msgid "Mobile Data is off"
 msgstr "Datu mugikorrak desaktibatuta daude"
 
-#: src/mm/chatty-mmsd.c:1985
+#: src/mm/chatty-mmsd.c:2077
 msgid "Unknown Error"
 msgstr "Errore ezezaguna"
 
-#: src/mm/chatty-mmsd.c:1990
+#: src/mm/chatty-mmsd.c:2082
 #, c-format
 msgid "Chatty cannot process %i MMS"
 msgid_plural "Chatty cannot process %i MMSes..."
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/mm/chatty-mm-account.c:319 src/mm/chatty-mm-account.c:370
+#: src/mm/chatty-mm-account.c:345 src/mm/chatty-mm-account.c:396
 #, c-format
 msgid "Error Sending SMS to %s"
 msgstr ""
 
-#: src/mm/chatty-mm-account.c:463
+#: src/mm/chatty-mm-account.c:532
 #, c-format
 msgid "Error Sending MMS to %s"
 msgstr ""
 
-#: src/ui/chatty-attachment.ui:20
+#: src/ui/chatty-attachment.ui:48
 msgid "Remove Attachment"
 msgstr "Kendu eranskina"
 
-#: src/ui/chatty-dialog-wrong-pw.ui:16
+#: src/ui/chatty-dialog-wrong-pw.ui:15
 msgid "Incorrect password"
 msgstr "Pasahitz okerra"
 
-#: src/ui/chatty-dialog-wrong-pw.ui:24 src/ui/chatty-dialog-new-chat.ui:37
-#: src/ui/chatty-settings-dialog.ui:29 src/ui/chatty-settings-dialog.ui:72
-#: src/ui/chatty-verification-page.ui:129
-#: src/ui/chatty-verification-page.ui:157
-msgid "_Cancel"
-msgstr "_Utzi"
-
-#: src/ui/chatty-dialog-wrong-pw.ui:34
+#: src/ui/chatty-dialog-wrong-pw.ui:33
 msgid "_OK"
 msgstr "_Ados"
 
-#: src/ui/chatty-dialog-wrong-pw.ui:48
+#: src/ui/chatty-dialog-wrong-pw.ui:47
 msgid "Please re-enter the Password."
 msgstr "Sartu pasahitza berriro."
 
-#: src/ui/chatty-dialog-wrong-pw.ui:54 src/ui/chatty-pp-account-details.ui:129
-#: src/ui/chatty-settings-dialog.ui:648
+#: src/ui/chatty-dialog-wrong-pw.ui:53 src/ui/chatty-pp-account-details.ui:70
+#: src/ui/chatty-settings-dialog.ui:794
 msgid "Password"
 msgstr "Pasahitza"
 
@@ -1132,53 +1447,78 @@ msgstr "Pasahitza"
 msgid "New Group Chat"
 msgstr "Talde-berriketa berria"
 
-#: src/ui/chatty-dialog-join-muc.ui:24
+#: src/ui/chatty-dialog-join-muc.ui:22
 msgid "Join Chat"
 msgstr "Elkartu berriketarekin"
 
-#: src/ui/chatty-dialog-join-muc.ui:64 src/ui/chatty-dialog-new-chat.ui:193
+#: src/ui/chatty-dialog-join-muc.ui:62 src/ui/chatty-dialog-new-chat.ui:192
 msgid "Select chat account"
 msgstr "Hautatu berriketa-kontua"
 
-#: src/ui/chatty-dialog-join-muc.ui:122
+#: src/ui/chatty-dialog-join-muc.ui:90
+msgid "Room address"
+msgstr "Gelaren helbidea"
+
+#: src/ui/chatty-dialog-join-muc.ui:100
+#| msgid "Name (optional)"
+msgid "Room alias (optional)"
+msgstr "Gelaren aliasa (aukerakoa)"
+
+#: src/ui/chatty-dialog-join-muc.ui:110
+#| msgid "Name (optional)"
+msgid "Nickname (optional)"
+msgstr "Ezizena (aukerakoa)"
+
+#: src/ui/chatty-dialog-join-muc.ui:120
 msgid "Password (optional)"
 msgstr "Pasahitza (aukerakoa)"
 
-#: src/ui/chatty-dialog-new-chat.ui:77
+#: src/ui/chatty-dialog-new-chat.ui:76
 msgid "Group Title"
 msgstr "Taldearen izenburua"
 
-#: src/ui/chatty-dialog-new-chat.ui:119
+#: src/ui/chatty-dialog-new-chat.ui:118
 msgid "Add members from contacts…"
 msgstr "Gehitu kideak kontaktuetatik..."
 
-#: src/ui/chatty-dialog-new-chat.ui:156
+#: src/ui/chatty-dialog-new-chat.ui:155
 msgid "Send To:"
 msgstr "Bidali honi:"
 
-#: src/ui/chatty-dialog-new-chat.ui:216
+#: src/ui/chatty-dialog-new-chat.ui:215 src/ui/chatty-info-dialog.ui:114
 msgid "Contact ID"
 msgstr "Kontaktuaren IDa"
 
-#: src/ui/chatty-dialog-new-chat.ui:226
+#: src/ui/chatty-dialog-new-chat.ui:225
 msgid "Name (optional)"
 msgstr "Izena (aukerakoa)"
 
-#: src/ui/chatty-dialog-new-chat.ui:263
+#: src/ui/chatty-dialog-new-chat.ui:262
 msgid "Add to Contacts"
 msgstr "Gehitu kontaktuei"
 
-#: src/ui/chatty-info-dialog.ui:8 src/ui/chatty-main-view.ui:129
+#: src/ui/chatty-file-item.ui:84
+#| msgid "_Save"
+msgid "Save…"
+msgstr "Gorde…"
+
+#: src/ui/chatty-info-dialog.ui:5 src/ui/chatty-main-view.ui:126
 msgid "Chat Details"
 msgstr "Berriketaren xehetasunak"
 
-#: src/ui/chatty-info-dialog.ui:44
+#: src/ui/chatty-info-dialog.ui:41
 msgid "Apply"
 msgstr "Aplikatu"
 
-#: src/ui/chatty-info-dialog.ui:57
+#. Translators: This is invite to a chat room
+#: src/ui/chatty-info-dialog.ui:55
 msgid "Invite"
 msgstr "Gonbidatu"
+
+#: src/ui/chatty-info-dialog.ui:134
+#| msgid "Open Message"
+msgid "Invite message"
+msgstr "Gonbidapen-mezua"
 
 #: src/ui/chatty-invite-page.ui:62
 msgid "_Accept"
@@ -1188,108 +1528,120 @@ msgstr "_Onartu"
 msgid "_Reject"
 msgstr "_Ezetsi"
 
-#: src/ui/chatty-ma-chat-info.ui:32
+#: src/ui/chatty-ma-chat-info.ui:21 src/ui/chatty-pp-chat-info.ui:59
 msgid "Chat"
 msgstr "Berriketa"
 
-#: src/ui/chatty-ma-chat-info.ui:61 src/ui/chatty-ma-account-details.ui:210
-msgid "Matrix ID"
-msgstr "Matrix IDa"
+#: src/ui/chatty-ma-chat-info.ui:35
+msgid "Topic"
+msgstr "Gaia"
 
-#: src/ui/chatty-ma-chat-info.ui:89 src/ui/chatty-pp-chat-info.ui:242
+#: src/ui/chatty-ma-chat-info.ui:41
+msgid "Room version"
+msgstr "Gelaren bertsioa"
+
+#: src/ui/chatty-ma-chat-info.ui:49 src/ui/chatty-pp-chat-info.ui:110
 msgid "Chat settings"
 msgstr "Berriketaren ezarpenak"
 
-#: src/ui/chatty-ma-chat-info.ui:107 src/ui/chatty-pp-chat-info.ui:193
-#: src/ui/chatty-pp-chat-info.ui:292
+#: src/ui/chatty-ma-chat-info.ui:52 src/ui/chatty-pp-chat-info.ui:95
+#: src/ui/chatty-pp-chat-info.ui:132
 msgid "Encryption"
 msgstr "Zifratzea"
 
-#: src/ui/chatty-ma-chat-info.ui:108 src/ui/chatty-pp-chat-info.ui:293
+#: src/ui/chatty-ma-chat-info.ui:53 src/ui/chatty-pp-chat-info.ui:133
 msgid "Encrypt Messages"
 msgstr "Zifratu mezuak"
 
-#: src/ui/chatty-main-view.ui:17 src/ui/chatty-settings-dialog.ui:18
-#: src/ui/chatty-side-bar.ui:24
+#: src/ui/chatty-ma-chat-info.ui:68
+#| msgid "%u Member"
+#| msgid_plural "%u Members"
+msgid "Chat Members"
+msgstr "Berriketaren kideak"
+
+#: src/ui/chatty-main-view.ui:12 src/ui/chatty-settings-dialog.ui:14
+#: src/ui/chatty-side-bar.ui:19
 msgid "Back"
 msgstr "Atzera"
 
-#: src/ui/chatty-main-view.ui:46 src/ui/chatty-list-row.ui:169
+#: src/ui/chatty-main-view.ui:41 src/ui/chatty-list-row.ui:169
 msgid "Call"
 msgstr "Deitu"
 
-#: src/ui/chatty-main-view.ui:78
-msgid "Close"
-msgstr "Itxi"
+#: src/ui/chatty-main-view.ui:137
+#| msgid "Leave Chat"
+msgid "_Leave Chat"
+msgstr "_Utzi berriketa"
 
-#: src/ui/chatty-main-view.ui:140
-msgid "Leave Chat"
-msgstr "Utzi berriketa"
+#: src/ui/chatty-main-view.ui:145
+#| msgid "Block Contact"
+msgid "_Block Contact"
+msgstr "_Blokeatu kontaktua"
 
-#: src/ui/chatty-main-view.ui:148
-msgid "Block Contact"
-msgstr "Blokeatu kontaktua"
+#: src/ui/chatty-main-view.ui:153
+#| msgid "Unblock Contact"
+msgid "_Unblock Contact"
+msgstr "_Desblokeatu kontaktua"
 
-#: src/ui/chatty-main-view.ui:156
-msgid "Unblock Contact"
-msgstr "Desblokeatu kontaktua"
+#: src/ui/chatty-main-view.ui:161
+#| msgid "Archive chat"
+msgid "_Archive chat"
+msgstr "_Artxibatu berriketa"
 
-#: src/ui/chatty-main-view.ui:164
-msgid "Archive chat"
-msgstr "Artxibatu berriketa"
-
-#: src/ui/chatty-main-view.ui:172
+#: src/ui/chatty-main-view.ui:169
 msgid "Unarchive chat"
 msgstr "Atera berriketa artxibotik"
 
-#: src/ui/chatty-main-view.ui:180
-msgid "Delete Chat"
-msgstr "Ezabatu berriketa"
+#: src/ui/chatty-main-view.ui:177
+#| msgid "Delete Chat"
+msgid "_Delete Chat"
+msgstr "_Ezabatu berriketa"
 
-#: src/ui/chatty-message-row.ui:30
+#: src/ui/chatty-message-row.ui:161
 msgid "Copy Text"
 msgstr "Kopiatu testua"
 
-#: src/ui/chatty-pp-chat-info.ui:34 src/ui/chatty-pp-account-details.ui:38
+#: src/ui/chatty-pp-chat-info.ui:23 src/ui/chatty-pp-account-details.ui:39
 msgid "Change Avatar"
 msgstr "Aldatu avatarra"
 
-#: src/ui/chatty-pp-chat-info.ui:47 src/ui/chatty-pp-account-details.ui:25
+#: src/ui/chatty-pp-chat-info.ui:36 src/ui/chatty-pp-account-details.ui:26
 msgid "Delete Avatar"
 msgstr "Ezabatu avatarra"
 
-#: src/ui/chatty-pp-chat-info.ui:76
+#: src/ui/chatty-pp-chat-info.ui:67
 msgid "Room topic"
 msgstr "Gelaren gaia"
 
-#: src/ui/chatty-pp-chat-info.ui:143
+#: src/ui/chatty-pp-chat-info.ui:81
 msgid "User"
 msgstr "Erabiltzailea"
 
-#: src/ui/chatty-pp-chat-info.ui:168
-msgid "XMPP ID"
-msgstr "XMMP IDa"
-
-#: src/ui/chatty-pp-chat-info.ui:218 src/ui/chatty-ma-account-details.ui:54
-#: src/ui/chatty-pp-account-details.ui:105
+#: src/ui/chatty-pp-chat-info.ui:102 src/ui/chatty-ma-account-details.ui:53
+#: src/ui/chatty-pp-account-details.ui:65
 msgid "Status"
 msgstr "Egoera"
 
-#: src/ui/chatty-pp-chat-info.ui:262
+#: src/ui/chatty-pp-chat-info.ui:115
 msgid "Notifications"
 msgstr "Jakinarazpenak"
 
-#: src/ui/chatty-pp-chat-info.ui:277
+#: src/ui/chatty-pp-chat-info.ui:123
 msgid "Status Messages"
 msgstr "Egoera-mezuak"
 
-#: src/ui/chatty-pp-chat-info.ui:278
+#: src/ui/chatty-pp-chat-info.ui:124
 msgid "Show status messages in chat"
 msgstr "Erakutsi egoera-mezuak berriketan"
 
-#: src/ui/chatty-pp-chat-info.ui:313
+#: src/ui/chatty-pp-chat-info.ui:143
 msgid "Fingerprints"
 msgstr "Hatz-markak"
+
+#: src/ui/chatty-pp-chat-info.ui:162
+#| msgid "User"
+msgid "User List"
+msgstr "Erabiltzaile-zerrenda"
 
 #: src/ui/chatty-mm-chat-info.ui:20
 msgid "Title"
@@ -1307,207 +1659,291 @@ msgstr "Taldeko kideak"
 msgid "Copy Number"
 msgstr "Kopiatu zenbakia"
 
-#: src/ui/chatty-ma-account-details.ui:78
+#: src/ui/chatty-ma-account-details.ui:58
 msgid "Name"
 msgstr "Izena"
 
-#: src/ui/chatty-ma-account-details.ui:106
+#: src/ui/chatty-ma-account-details.ui:64
 msgid "Email"
 msgstr "Posta elektronikoa"
 
-#: src/ui/chatty-ma-account-details.ui:134
+#: src/ui/chatty-ma-account-details.ui:69
 msgid "Phone"
 msgstr "Telefonoa"
 
-#: src/ui/chatty-ma-account-details.ui:174
+#: src/ui/chatty-ma-account-details.ui:74
 msgid "Advanced information"
 msgstr "Informazio aurreratua"
 
-#: src/ui/chatty-ma-account-details.ui:186
+#: src/ui/chatty-ma-account-details.ui:77
 msgid "Homeserver"
 msgstr "Zerbitzaria"
 
-#: src/ui/chatty-ma-account-details.ui:234
+#: src/ui/chatty-ma-account-details.ui:83
+#| msgid "Homeserver"
+msgid "Copy homeserver URL"
+msgstr "Kopiatu zerbitzariaren URLa"
+
+#: src/ui/chatty-ma-account-details.ui:97 src/ui/chatty-ma-user-row.ui:68
+#| msgid "Copy Number"
+msgid "Copy user ID"
+msgstr "Kopiatu erabiltzailearen IDa"
+
+#: src/ui/chatty-ma-account-details.ui:105
 msgid "Device ID"
 msgstr "Gailuaren IDa"
 
-#: src/ui/chatty-pp-account-details.ui:59
+#: src/ui/chatty-ma-account-details.ui:111
+#| msgid "Device ID"
+msgid "Copy device ID"
+msgstr "Kopiatu gailuaren IDa"
+
+#: src/ui/chatty-ma-account-details.ui:121
+#| msgid "Advanced information"
+msgid "Sensitive information"
+msgstr "Informazio sentikorra"
+
+#: src/ui/chatty-ma-account-details.ui:124
+msgid "Access token"
+msgstr "Atzipen-tokena"
+
+#: src/ui/chatty-pp-account-details.ui:55
 msgid "Account ID"
 msgstr "Kontuaren IDa"
 
-#: src/ui/chatty-pp-account-details.ui:81
-msgid "Protocol"
-msgstr "Protokoloa"
-
-#: src/ui/chatty-pp-account-details.ui:168
+#: src/ui/chatty-pp-account-details.ui:88
 msgid "Own Fingerprint"
 msgstr "Norberaren hatz-marka"
 
-#: src/ui/chatty-settings-dialog.ui:39
-msgid "_Add"
-msgstr "_Gehitu"
+#: src/ui/chatty-progress-button.ui:19
+msgid "Download file from server"
+msgstr "Deskargatu fitxategia zerbitzaritik"
 
-#: src/ui/chatty-settings-dialog.ui:52
+#: src/ui/chatty-settings-dialog.ui:35
 msgid "_Save"
 msgstr "G_orde"
 
-#: src/ui/chatty-settings-dialog.ui:62
+#: src/ui/chatty-settings-dialog.ui:45 src/ui/chatty-settings-dialog.ui:65
+#: src/ui/chatty-settings-dialog.ui:85
 msgid "_Apply"
 msgstr "_Aplikatu"
 
-#: src/ui/chatty-settings-dialog.ui:123
+#: src/ui/chatty-settings-dialog.ui:136
 msgid "Accounts"
 msgstr "Kontuak"
 
-#: src/ui/chatty-settings-dialog.ui:140 src/ui/chatty-settings-dialog.ui:489
+#: src/ui/chatty-settings-dialog.ui:153 src/ui/chatty-settings-dialog.ui:639
 msgid "Privacy"
 msgstr "Pribatutasuna"
 
-#: src/ui/chatty-settings-dialog.ui:145
-msgid "Message Receipts"
+#: src/ui/chatty-settings-dialog.ui:158
+msgid "Read Receipts"
+msgstr "Irakurragiriak"
+
+#: src/ui/chatty-settings-dialog.ui:171
+msgid "Typing Indicators"
 msgstr ""
 
-#: src/ui/chatty-settings-dialog.ui:146
-msgid "Confirm received messages"
+#: src/ui/chatty-settings-dialog.ui:184
+msgid "Remove Tracking IDs From URLs"
 msgstr ""
 
-#: src/ui/chatty-settings-dialog.ui:159
-msgid "Typing Notification"
-msgstr ""
+#: src/ui/chatty-settings-dialog.ui:197
+msgid "Show Attachment Previews"
+msgstr "Erakutsi eranskinen aurrebistak"
 
-#: src/ui/chatty-settings-dialog.ui:160
-msgid "Send typing messages"
-msgstr ""
-
-#: src/ui/chatty-settings-dialog.ui:174
-msgid "Strip Tracking IDs from URLs"
-msgstr ""
-
-#: src/ui/chatty-settings-dialog.ui:188
-msgid "Render Attachments from Messages"
-msgstr ""
-
-#: src/ui/chatty-settings-dialog.ui:204
+#: src/ui/chatty-settings-dialog.ui:213
 msgid "Editor"
 msgstr "Editorea"
 
-#: src/ui/chatty-settings-dialog.ui:208
-msgid "Graphical Emoticons"
-msgstr "Emotikono grafikoak"
+#: src/ui/chatty-settings-dialog.ui:217
+#| msgid "Convert text to emoticons"
+msgid "Convert Emoticons"
+msgstr "Bihurtu emotikonoak"
 
-#: src/ui/chatty-settings-dialog.ui:209
-msgid "if you type :) it will be changed to 😃"
-msgstr ""
+#: src/ui/chatty-settings-dialog.ui:218
+msgid "When you type :) it will be changed to 😃"
+msgstr ":) idazten baduzu, honakoa sortuko da: 😃"
 
 #. TRANSLATORS: Return is the Enter key.
-#: src/ui/chatty-settings-dialog.ui:222
-msgid "Send Messages with Return"
-msgstr ""
+#: src/ui/chatty-settings-dialog.ui:231
+msgid "Send Messages With Enter"
+msgstr "Bidali mezuak Enter sakatzean"
 
-#: src/ui/chatty-settings-dialog.ui:236
-msgid "Protocol Settings"
-msgstr "Protokolo-ezarpenak"
-
-#: src/ui/chatty-settings-dialog.ui:297
+#: src/ui/chatty-settings-dialog.ui:323
 msgid "Request Delivery Reports"
 msgstr ""
 
-#: src/ui/chatty-settings-dialog.ui:310
+#: src/ui/chatty-settings-dialog.ui:335
+msgid "Clear Stuck SMS"
+msgstr ""
+
+#: src/ui/chatty-settings-dialog.ui:349
 msgid "SMIL for MMS"
 msgstr ""
 
-#: src/ui/chatty-settings-dialog.ui:342
+#: src/ui/chatty-settings-dialog.ui:381
 msgid "MMS Carrier Settings"
 msgstr ""
 
-#: src/ui/chatty-settings-dialog.ui:346
-msgid "Phone Number"
-msgstr "Telefono-zenbakia"
-
-#: src/ui/chatty-settings-dialog.ui:352
+#: src/ui/chatty-settings-dialog.ui:391
 msgid "Your modem's phone number"
 msgstr "Zure modemaren telefono-zenbakia"
 
-#: src/ui/chatty-settings-dialog.ui:360
+#: src/ui/chatty-settings-dialog.ui:399
 msgid "MMSC"
 msgstr "MMSC"
 
-#: src/ui/chatty-settings-dialog.ui:372
+#: src/ui/chatty-settings-dialog.ui:411
 msgid "APN"
 msgstr "APN"
 
-#: src/ui/chatty-settings-dialog.ui:384
+#: src/ui/chatty-settings-dialog.ui:423
 msgid "Proxy"
 msgstr "Proxya"
 
-#: src/ui/chatty-settings-dialog.ui:411
-msgid "You shall not be notified for the messages from blocked contacts"
+#: src/ui/chatty-settings-dialog.ui:447
+msgid "Current PGP Key"
+msgstr "Uneko PGP gakoa"
+
+#: src/ui/chatty-settings-dialog.ui:448
+msgid ""
+"Chatty can use any existing key embedded with gpg. However, you are given "
+"the option to generate a key specifically for Chatty below."
 msgstr ""
 
-#: src/ui/chatty-settings-dialog.ui:442
-msgid "Blocked chat list empty"
+#: src/ui/chatty-settings-dialog.ui:453
+msgid "Generate Chatty PGP Key"
+msgstr "Sortu Chattyren PGP gakoa"
+
+#: src/ui/chatty-settings-dialog.ui:467
+msgid "Signing ID"
 msgstr ""
 
-#: src/ui/chatty-settings-dialog.ui:495
+#: src/ui/chatty-settings-dialog.ui:472
+msgid "foo@example.com"
+msgstr "foo@adibidea.com"
+
+#: src/ui/chatty-settings-dialog.ui:485
+#| msgid "Name (optional)"
+msgid "Optional"
+msgstr "Aukerakoa"
+
+#: src/ui/chatty-settings-dialog.ui:505
+msgid ""
+"This will generate a key for use with Chatty. Please note that this will not "
+"install the key on a smart card."
+msgstr ""
+
+#: src/ui/chatty-settings-dialog.ui:508
+#| msgid "Name"
+msgid "Full Name"
+msgstr "Izen-abizenak"
+
+#: src/ui/chatty-settings-dialog.ui:520
+#| msgid "XMPP ID"
+msgid "PGP ID"
+msgstr "PGP IDa"
+
+#: src/ui/chatty-settings-dialog.ui:533
+msgid "PGP Passphrase"
+msgstr "PGP pasaesaldia"
+
+#: src/ui/chatty-settings-dialog.ui:562
+msgid "You won't be notified by messages from blocked contacts"
+msgstr ""
+
+#: src/ui/chatty-settings-dialog.ui:593
+#| msgid "Blocked Contacts"
+msgid "No Blocked Chats"
+msgstr "Ez dago blokeatutako berriketarik"
+
+#: src/ui/chatty-settings-dialog.ui:622
+#| msgid "Enable purple accounts"
+msgid "Enable Purple Accounts"
+msgstr "Gaitu purple kontuak"
+
+#: src/ui/chatty-settings-dialog.ui:645
 msgid "Message Archive Management"
 msgstr ""
 
-#: src/ui/chatty-settings-dialog.ui:496
+#: src/ui/chatty-settings-dialog.ui:646
 msgid "Sync conversations with chat server"
 msgstr ""
 
-#: src/ui/chatty-settings-dialog.ui:510
+#: src/ui/chatty-settings-dialog.ui:660
 msgid "Message Carbon Copies"
 msgstr ""
 
-#: src/ui/chatty-settings-dialog.ui:674
+#: src/ui/chatty-settings-dialog.ui:775
+#| msgid "User"
+msgid "User ID"
+msgstr "Erabiltzailearen IDa"
+
+#: src/ui/chatty-settings-dialog.ui:800
 msgid "Home server"
 msgstr "Etxeko zerbitzaria"
 
-#: src/ui/chatty-settings-dialog.ui:706
-msgid "Add _new account…"
-msgstr "Gehitu kontu _berria…"
+#: src/ui/chatty-settings-dialog.ui:810
+msgid "_Add"
+msgstr "_Gehitu"
 
-#: src/ui/chatty-side-bar.ui:32
+#: src/ui/chatty-settings-dialog.ui:838
+#| msgid "New Account"
+msgid "Add _New Account"
+msgstr "Gehitu kontu _berria"
+
+#: src/ui/chatty-side-bar.ui:27
 msgid "Add Chat"
 msgstr "Gehitu berriketa"
 
-#: src/ui/chatty-side-bar.ui:41
+#: src/ui/chatty-side-bar.ui:36
 msgid "Menu"
 msgstr "Menua"
 
-#: src/ui/chatty-side-bar.ui:49
+#: src/ui/chatty-side-bar.ui:45
 msgid "Search"
 msgstr "Bilatu"
 
-#: src/ui/chatty-side-bar.ui:107
-msgctxt "show archived chat list when clicked"
-msgid "Archived"
-msgstr "Artxibatua"
+#: src/ui/chatty-side-bar.ui:101
+#| msgid "New Message…"
+msgid "_New Message…"
+msgstr "_Mezu berria…"
 
-#: src/ui/chatty-side-bar.ui:122
+#: src/ui/chatty-side-bar.ui:107
+#| msgid "New SMS/MMS Message…"
+msgid "New SMS/MMS _Message…"
+msgstr "_SMS/MMS mezu berria…"
+
+#: src/ui/chatty-side-bar.ui:113
+#| msgid "New Group Message…"
+msgid "New _Group Message…"
+msgstr "_Taldeko mezu berria…"
+
+#: src/ui/chatty-side-bar.ui:136
+#| msgid "Archived"
+msgctxt "show archived chat list when clicked"
+msgid "_Archived"
+msgstr "_Artxibatua"
+
+#: src/ui/chatty-side-bar.ui:140
+#| msgid "Preferences"
+msgid "_Preferences"
+msgstr "_Hobespenak"
+
+#: src/ui/chatty-side-bar.ui:144
 msgid "Keyboard _Shortcuts"
 msgstr "Las_ter-teklak"
 
-#: src/ui/chatty-side-bar.ui:129
-msgid "Help"
-msgstr "Laguntza"
+#: src/ui/chatty-side-bar.ui:148
+#| msgid "Help"
+msgid "_Help"
+msgstr "_Laguntza"
 
-#: src/ui/chatty-side-bar.ui:137
-msgid "About Chats"
-msgstr "Berriketak aplikazioari buruz"
-
-#: src/ui/chatty-side-bar.ui:158
-msgid "New Message…"
-msgstr "Mezu berria…"
-
-#: src/ui/chatty-side-bar.ui:164
-msgid "New SMS/MMS Message…"
-msgstr "SMS/MMS mezu berria…"
-
-#: src/ui/chatty-side-bar.ui:170
-msgid "New Group Message…"
-msgstr "Taldeko mezu berria…"
+#: src/ui/chatty-side-bar.ui:152
+#| msgid "About Chats"
+msgid "About _Chats"
+msgstr "__Berriketak aplikazioari buruz"
 
 #: src/ui/chatty-verification-page.ui:24
 msgid "Incoming Verification Request"
@@ -1527,26 +1963,26 @@ msgstr ""
 msgid "C_ontinue"
 msgstr "_Jarraitu"
 
-#: src/ui/chatty-verification-page.ui:200
+#: src/ui/chatty-verification-page.ui:201
 msgid ""
 "Verify this user by confirming the following emoji appears on their screen"
 msgstr ""
 
-#: src/ui/chatty-verification-page.ui:377
+#: src/ui/chatty-verification-page.ui:378
 msgid ""
 "Verify this user by confirming the following number appears on their screen."
 msgstr ""
 
-#: src/ui/chatty-verification-page.ui:412
+#: src/ui/chatty-verification-page.ui:413
 msgid "To be secure, do this in person or use a trusted way to communicate."
 msgstr ""
 
-#: src/ui/chatty-verification-page.ui:423
+#: src/ui/chatty-verification-page.ui:424
 msgctxt "verb, which means 'both items are not the same'"
 msgid "_Don’t Match"
 msgstr ""
 
-#: src/ui/chatty-verification-page.ui:433
+#: src/ui/chatty-verification-page.ui:434
 msgctxt "verb, which means 'both items are the same'"
 msgid "_Match"
 msgstr ""
@@ -1567,18 +2003,94 @@ msgid "Open Search"
 msgstr "Ireki bilaketa"
 
 #: src/ui/help-overlay.ui:35
+#| msgid "New Group Chat"
+msgctxt "shortcut window"
+msgid "New Chat"
+msgstr "Berriketa berria"
+
+#: src/ui/help-overlay.ui:43
+#| msgid "New Group Chat"
+msgctxt "shortcut window"
+msgid "New Group Chat"
+msgstr "Talde-berriketa berria"
+
+#: src/ui/help-overlay.ui:51
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
 msgstr "Erakutsi lasterbideak"
 
+#: src/ui/help-overlay.ui:62
+#| msgid "Chat"
+msgctxt "shortcut window"
+msgid "Chat"
+msgstr "Berriketa"
+
+#: src/ui/help-overlay.ui:67
+#| msgid "Chat Details"
+msgctxt "shortcut window"
+msgid "Show Details"
+msgstr "Erakutsi xehetasunak"
+
+#: src/ui/help-overlay.ui:75
+#| msgid "Delete Chat"
+msgctxt "shortcut window"
+msgid "Close Chat"
+msgstr "Itxi berriketa"
+
 #: src/users/chatty-contact.c:324
-msgid "Mobile: "
-msgstr "Mugikorra: "
+#| msgid "Mobile: "
+msgid "Mobile:"
+msgstr "Mugikorra:"
 
 #: src/users/chatty-contact.c:326
-msgid "Work: "
-msgstr "Lana: "
+#| msgid "Work: "
+msgid "Work:"
+msgstr "Lanekoa:"
 
 #: src/users/chatty-contact.c:328
-msgid "Other: "
-msgstr "Bestelakoa: "
+#| msgid "Other: "
+msgid "Other:"
+msgstr "Beste bat:"
+
+#~ msgid "Reject"
+#~ msgstr "Baztertu"
+
+#~ msgid "Accept"
+#~ msgstr "Onartu"
+
+#~ msgid "Continue"
+#~ msgstr "Jarraitu"
+
+#~ msgid "Phone Number:"
+#~ msgstr "Telefono-zenbakia:"
+
+#~ msgid "XMPP ID:"
+#~ msgstr "XMMP IDa:"
+
+#~ msgid "Matrix ID:"
+#~ msgstr "Matrix IDa:"
+
+#~ msgid "OK"
+#~ msgstr "Ados"
+
+#~ msgid "Enable purple plugin"
+#~ msgstr "Gaitu purple plugina"
+
+#~ msgid "SMS and MMS Settings"
+#~ msgstr "SMS eta MMS ezarpenak"
+
+#~ msgid "Select Protocol"
+#~ msgstr "Hautatu protokoloa"
+
+#~ msgid "Graphical Emoticons"
+#~ msgstr "Emotikono grafikoak"
+
+#~ msgid "Protocol Settings"
+#~ msgstr "Protokolo-ezarpenak"
+
+#~ msgid "Add _new account…"
+#~ msgstr "Gehitu kontu _berria…"
+
+#~ msgctxt "show archived chat list when clicked"
+#~ msgid "Archived"
+#~ msgstr "Artxibatua"
