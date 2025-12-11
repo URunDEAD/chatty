@@ -68,16 +68,32 @@ if compile_schemas.found()
   )
 endif
 
-# DBus service
 service_data = configuration_data()
 service_data.set('appid', app_id)
 service_data.set('bindir', get_option('prefix') / get_option('bindir'))
+
+# DBus service
 configure_file(
   input : 'sm.puri.Chatty.service.in',
   output : '@0@.service'.format(app_id),
   configuration : service_data,
   install : true,
   install_dir : get_option('datadir') / 'dbus-1' / 'services'
+)
+
+# Systemd user service
+systemd_user_unit_dir = join_paths(get_option('prefix'), 'lib/systemd/user/')
+systemd_dep = dependency('systemd', required: false)
+if systemd_dep.found()
+  systemd_user_unit_dir = systemd_dep.get_variable('systemd_user_unit_dir')
+endif
+
+configure_file(
+  input: 'sm.puri.Chatty-daemon.service.in',
+  output : '@0@-daemon.service'.format(app_id),
+  configuration : service_data,
+  install : true,
+  install_dir : systemd_user_unit_dir
 )
 
 subdir('icons')

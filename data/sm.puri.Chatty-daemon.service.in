@@ -1,0 +1,14 @@
+[Unit]
+Description=SMS/MMS, Matrix and XMPP chat application (daemon mode)
+PartOf=gnome-session.target
+Requisite=gnome-session-initialized.target
+After=gnome-session-initialized.target
+
+[Service]
+BusName=@appid@
+ExecStart=@bindir@/chatty --gapplication-service
+Type=dbus
+Restart=on-failure
+
+[Install]
+WantedBy=gnome-session.target

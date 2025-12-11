@@ -9,3 +9,4 @@ Type=Application
 Categories=Network;GNOME;GTK;Chat;InstantMessaging;
 NoDisplay=true
 X-GNOME-AutoRestart=true
+X-GNOME-HiddenUnderSystemd=true
