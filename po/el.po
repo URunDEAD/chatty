@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: purism-chatty\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/Chatty/issues\n"
-"POT-Creation-Date: 2025-10-16 17:07+0000\n"
+"POT-Creation-Date: 2025-12-10 11:26+0000\n"
 "PO-Revision-Date: 2019-01-30 08:52-0500\n"
 "Last-Translator: Pan Talianos <talianos.dev@gmail.com>\n"
 "Language-Team: Greek\n"
@@ -17,8 +17,8 @@ msgstr ""
 #: data/sm.puri.Chatty.desktop.in.in:2 data/sm.puri.Chatty.metainfo.xml.in.in:6
 #: src/chatty-application.c:157 src/chatty-application.c:388
 #: src/chatty-side-bar.c:385 src/ui/chatty-main-view.ui:4
-#: src/chatty-side-bar.ui:4 src/chatty-side-bar.ui:12
-#: src/chatty-window.ui:4
+#: src/ui/chatty-side-bar.ui:4 src/ui/chatty-side-bar.ui:12
+#: src/ui/chatty-window.ui:4
 msgid "Chats"
 msgstr "Συνομιλίες"
 
@@ -179,7 +179,8 @@ msgstr "ID χρήστη PGP"
 
 #: data/sm.puri.Chatty.gschema.xml:125
 msgid "The user ID for PGP that Chatty will use for outgoing messages"
-msgstr "Το ID χρήστη για PGP που θα χρησιμοποιεί το Chatty για εξερχόμενα μηνύματα"
+msgstr ""
+"Το ID χρήστη για PGP που θα χρησιμοποιεί το Chatty για εξερχόμενα μηνύματα"
 
 #: data/sm.puri.Chatty.gschema.xml:130 src/ui/chatty-settings-dialog.ui:480
 msgid "Public Key Fingerprint"
@@ -213,7 +214,8 @@ msgstr "Διπλωμένη προβολή συνομιλίας χρησιμοπ�
 
 #: data/sm.puri.Chatty.metainfo.xml.in.in:31
 msgid "Unfolded view of a chat and the chat list in the sidebar."
-msgstr "Αναδιπλωμένη προβολή συνομιλίας και λίστας συνομιλιών στην πλαϊνή μπάρα."
+msgstr ""
+"Αναδιπλωμένη προβολή συνομιλίας και λίστας συνομιλιών στην πλαϊνή μπάρα."
 
 #: data/sm.puri.Chatty.metainfo.xml.in.in:35
 msgid ""
@@ -303,7 +305,7 @@ msgid "Send To"
 msgstr "Αποστολή προς"
 
 #: src/chatty-chat-list.c:194
-msgid "Select a contact with the <b>”+”</b> button in the titlebar."
+msgid "Select a contact with the <b>“+”</b> button in the titlebar."
 msgstr "Επιλέξτε μια επαφή με το κουμπί <b>«+»</b> στη γραμμή τίτλου."
 
 #: src/chatty-chat-list.c:198
@@ -333,7 +335,9 @@ msgstr "Αυτή είναι μια συνομιλία MMS"
 #: src/chatty-chat-page.c:197 src/chatty-chat-page.c:212
 #: src/chatty-chat-page.c:218
 msgid "Your messages are not encrypted, and carrier rates may apply"
-msgstr "Τα μηνύματά σας δεν είναι κρυπτογραφημένα και μπορεί να ισχύουν χρεώσεις παρόχου"
+msgstr ""
+"Τα μηνύματά σας δεν είναι κρυπτογραφημένα και μπορεί να ισχύουν χρεώσεις "
+"παρόχου"
 
 #: src/chatty-chat-page.c:207
 msgid "This is an SMS/MMS conversation"
@@ -378,7 +382,9 @@ msgstr "Άγνωστη Επαφή"
 
 #: src/chatty-contact-list.c:283
 msgid "Try different search, or type a valid number to create new chat"
-msgstr "Δοκιμάστε διαφορετική αναζήτηση, ή πληκτρολογήστε έναν έγκυρο αριθμό για δημιουργία νέας συνομιλίας"
+msgstr ""
+"Δοκιμάστε διαφορετική αναζήτηση, ή πληκτρολογήστε έναν έγκυρο αριθμό για "
+"δημιουργία νέας συνομιλίας"
 
 #: src/chatty-contact-list.c:289
 msgid "No Contacts"
@@ -388,7 +394,7 @@ msgstr "Δεν υπάρχουν Επαφές"
 msgid "Just Now"
 msgstr "Μόλις Τώρα"
 
-#. TRANSLATORS: Timestamp with 12 hour time, e.g. "06∶42 PM".
+#. TRANSLATORS: Timestamp with 12 hour time, e.g. “06∶42 PM”.
 #. * See https://docs.gtk.org/glib/method.DateTime.format.html
 #. * Note, that this is a regular colon to ensure times are not
 #. * reversed in RTL locales, see https://gitlab.gnome.org/Teams/Websites/developer.gnome.org-hig/-/issues/127
@@ -412,7 +418,7 @@ msgstr[1] "πριν από %<PRIi64> λεπτά"
 msgid "Today %H:%M"
 msgstr "Σήμερα %H:%M"
 
-#. TRANSLATORS: Timestamp with 12 hour time, e.g. "Today 06∶42 PM".
+#. TRANSLATORS: Timestamp with 12 hour time, e.g. “Today 06∶42 PM”.
 #. * See https://docs.gtk.org/glib/method.DateTime.format.html
 #. * Note, that this is a regular colon to ensure times are not
 #. * reversed in RTL locales, see https://gitlab.gnome.org/Teams/Websites/developer.gnome.org-hig/-/issues/127
@@ -425,7 +431,7 @@ msgstr "Σήμερα %I:%M %p"
 msgid "Yesterday %H:%M"
 msgstr "Χθες %H:%M"
 
-#. TRANSLATORS: Timestamp with 12 hour time, e.g. "Yesterday 06∶42 PM".
+#. TRANSLATORS: Timestamp with 12 hour time, e.g. “Yesterday 06∶42 PM”.
 #. * See https://docs.gtk.org/glib/method.DateTime.format.html
 #. * Note, that this is a regular colon to ensure times are not
 #. * reversed in RTL locales, see https://gitlab.gnome.org/Teams/Websites/developer.gnome.org-hig/-/issues/127
@@ -442,7 +448,7 @@ msgstr "Χθες %I:%M %p"
 msgid "%Y-%m-%d %H:%M"
 msgstr "%Y-%m-%d %H:%M"
 
-#. TRANSLATORS: Timestamp with 12 hour time, e.g. "Today 06∶42 PM".
+#. TRANSLATORS: Timestamp with 12 hour time, e.g. “Today 06∶42 PM”.
 #. * See https://docs.gtk.org/glib/method.DateTime.format.html
 #. * Note, that this is a regular colon to ensure times are not
 #. * reversed in RTL locales, see https://gitlab.gnome.org/Teams/Websites/developer.gnome.org-hig/-/issues/127
@@ -455,21 +461,21 @@ msgstr "%Y-%m-%d %I:%M %p"
 msgid "%Y-%m-%d"
 msgstr "%Y-%m-%d"
 
-#: src/chatty-file-item.c:139 src/chatty-file-item.c:154
+#: src/chatty-file-item.c:142 src/chatty-file-item.c:157
 msgid "Contact"
 msgstr "Επαφή"
 
-#: src/chatty-file-item.c:151
+#: src/chatty-file-item.c:154
 #, c-format
 msgid "Contact: %s"
 msgstr "Επαφή: %s"
 
-#: src/chatty-file-item.c:172
+#: src/chatty-file-item.c:175
 #, c-format
 msgid "Invite: %s"
 msgstr "Πρόσκληση: %s"
 
-#: src/chatty-file-item.c:175
+#: src/chatty-file-item.c:178
 msgctxt "Invitation to event"
 msgid "Invitation"
 msgstr "Πρόσκληση"
@@ -482,8 +488,7 @@ msgstr "Δακτυλικό αποτύπωμα ID συσκευής %s:"
 
 #. TRANSLATORS: %s is the chat room name
 #: src/chatty-invite-page.c:72
-#, c-format
-msgid "Do you want to join ”%s”?"
+msgid "Do you want to join “%s”?"
 msgstr "Θέλετε να συμμετάσχετε στο «%s»;"
 
 #: src/chatty-list-row.c:123
@@ -536,8 +541,7 @@ msgid "Account connecting…"
 msgstr "Σύνδεση λογαριασμού…"
 
 #: src/chatty-manager.c:679
-#, c-format
-msgid "”%s” is not a valid URI"
+msgid "“%s” is not a valid URI"
 msgstr "Το «%s» δεν είναι έγκυρο URI"
 
 #: src/chatty-message-bar.c:466 src/purple/chatty-purple.c:195
@@ -547,7 +551,9 @@ msgstr "Ειδοποίηση"
 
 #: src/chatty-message-bar.c:467
 msgid "Found and automatically deleted tracking IDs from the pasted link."
-msgstr "Βρέθηκαν και διαγράφηκαν αυτόματα ID παρακολούθησης από τον επικολλημένο σύνδεσμο."
+msgstr ""
+"Βρέθηκαν και διαγράφηκαν αυτόματα ID παρακολούθησης από τον επικολλημένο "
+"σύνδεσμο."
 
 #: src/chatty-message-bar.c:469
 msgid "Don't Show Again"
@@ -555,7 +561,9 @@ msgstr "Να μην εμφανιστεί ξανά"
 
 #: src/chatty-message.c:230
 msgid "Got an encrypted message, but couldn't decrypt due to missing keys"
-msgstr "Λήφθηκε κρυπτογραφημένο μήνυμα, αλλά δεν ήταν δυνατή η αποκρυπτογράφηση λόγω ελλείψεων κλειδιών"
+msgstr ""
+"Λήφθηκε κρυπτογραφημένο μήνυμα, αλλά δεν ήταν δυνατή η αποκρυπτογράφηση λόγω "
+"ελλείψεων κλειδιών"
 
 #: src/chatty-notification.c:150
 #, c-format
@@ -1012,8 +1020,7 @@ msgid "Block"
 msgstr "Αποκλεισμός"
 
 #: src/chatty-window.c:470
-#, c-format
-msgid "Delete chat with ”%s”"
+msgid "Delete chat with “%s”"
 msgstr "Διαγραφή συνομιλίας με «%s»"
 
 #: src/chatty-window.c:471
@@ -1021,8 +1028,7 @@ msgid "This deletes the conversation history"
 msgstr "Αυτή η ενέργεια θα διαγράψει το ιστορικό συνομιλιών"
 
 #: src/chatty-window.c:473
-#, c-format
-msgid "Disconnect group chat ”%s”"
+msgid "Disconnect group chat “%s”"
 msgstr "Αποσύνδεση ομαδικής συνομιλίας «%s»"
 
 #: src/chatty-window.c:474
@@ -1034,7 +1040,7 @@ msgid "Delete"
 msgstr "Διαγραφή"
 
 #. TRANSLATORS: %u is the number of members in a room
-#: src/dialogs/chatty-ma-chat-info.c:123
+#: src/dialogs/chatty-ma-chat-info.c:124
 #, c-format
 msgid "%u member"
 msgid_plural "%u members"
@@ -1173,7 +1179,8 @@ msgstr "Μη έγκυρο ID Υπογραφής"
 #: src/dialogs/chatty-settings-dialog.c:701
 #, c-format
 msgid "The entered Key ID %s does not match the found PGP Key for %s:%s."
-msgstr "Το εισαγόμενο ID κλειδιού %s δεν ταιριάζει με το βρεθέν κλειδί PGP για %s:%s."
+msgstr ""
+"Το εισαγόμενο ID κλειδιού %s δεν ταιριάζει με το βρεθέν κλειδί PGP για %s:%s."
 
 #: src/dialogs/chatty-settings-dialog.c:703
 msgid "Cannot Find Signing Key"
@@ -1194,7 +1201,9 @@ msgstr "Αδυναμία δημιουργίας κλειδιού υπογραφ�
 #: src/dialogs/chatty-settings-dialog.c:886
 #, c-format
 msgid "Error creating the PGP ID. Please check the logs for more details."
-msgstr "Σφάλμα δημιουργίας του ID PGP. Παρακαλώ ελέγξτε τα αρχεία καταγραφής για περισσότερες λεπτομέρειες."
+msgstr ""
+"Σφάλμα δημιουργίας του ID PGP. Παρακαλώ ελέγξτε τα αρχεία καταγραφής για "
+"περισσότερες λεπτομέρειες."
 
 #: src/dialogs/chatty-settings-dialog.c:802
 #, c-format
@@ -1218,7 +1227,8 @@ msgstr "Όλες οι εισαγωγές πρέπει να συμπληρωθο�
 msgid ""
 "%s already has key with fingerprint %s. Please choose a different PGP ID"
 msgstr ""
-"Το %s έχει ήδη κλειδί με δακτυλικό αποτύπωμα %s. Παρακαλώ επιλέξτε διαφορετικό ID PGP"
+"Το %s έχει ήδη κλειδί με δακτυλικό αποτύπωμα %s. Παρακαλώ επιλέξτε "
+"διαφορετικό ID PGP"
 
 #: src/dialogs/chatty-settings-dialog.c:898
 #, c-format
@@ -1236,8 +1246,8 @@ msgid ""
 "Chatty is currently set to use PGP key: %s. The new key will be used instead "
 "of the existing one!"
 msgstr ""
-"Το Chatty είναι τρέχοντα ρυθμισμένο να χρησιμοποιεί το κλειδί PGP: %s. Το νέο "
-"κλειδί θα χρησιμοποιηθεί αντί του υπάρχοντος!"
+"Το Chatty είναι τρέχοντα ρυθμισμένο να χρησιμοποιεί το κλειδί PGP: %s. Το "
+"νέο κλειδί θα χρησιμοποιηθεί αντί του υπάρχοντος!"
 
 #: src/dialogs/chatty-settings-dialog.c:949
 msgid "Signing ID Present"
@@ -1301,8 +1311,7 @@ msgstr ""
 "Χρησιμοποιήστε με δική σας ευθύνη!"
 
 #: src/matrix/chatty-ma-account.c:77
-#, c-format
-msgid "Please enter password for ”%s”, homeserver: %s"
+msgid "Please enter password for “%s”, homeserver: %s"
 msgstr "Παρακαλώ εισάγετε κωδικό πρόσβασης για «%s», homeserver: %s"
 
 #: src/matrix/chatty-ma-key-chat.c:73
@@ -1337,7 +1346,7 @@ msgid_plural "Attachments are too large"
 msgstr[0] "Το συνημμένο είναι πολύ μεγάλο"
 msgstr[1] "Τα συνημμένα είναι πολύ μεγάλα"
 
-#. TRANSLATORS: Timestamp for minute accuracy, e.g. "2020-08-11 15:27".
+#. TRANSLATORS: Timestamp for minute accuracy, e.g. “2020-08-11 15:27”.
 #. See https://developer.gnome.org/glib/stable/glib-GDateTime.html#g-date-time-format
 #.
 #: src/mm/chatty-mmsd.c:984
@@ -1360,8 +1369,8 @@ msgstr "Λάβατε ένα κενό MMS."
 
 #: src/mm/chatty-mmsd.c:1794 src/mm/chatty-mmsd.c:1842
 #, c-format
-msgid "Automatically Retrying for  %i MMS"
-msgid_plural "Automatically Retrying for  %i MMSes..."
+msgid "Automatically Retrying for  %i MMS"
+msgid_plural "Automatically Retrying for  %i MMSes..."
 msgstr[0] "Αυτόματη επανάληψη για %i MMS..."
 msgstr[1] "Αυτόματη επανάληψη για %i MMS..."
 
@@ -1520,20 +1529,24 @@ msgstr "Συνομιλία"
 msgid "Topic"
 msgstr "Θέμα"
 
-#: src/ui/chatty-ma-chat-info.ui:43 src/ui/chatty-pp-chat-info.ui:110
+#: src/ui/chatty-ma-chat-info.ui:41
+msgid "Room version"
+msgstr "Έκδοση δωματίου"
+
+#: src/ui/chatty-ma-chat-info.ui:49 src/ui/chatty-pp-chat-info.ui:110
 msgid "Chat settings"
 msgstr "Ρυθμίσεις συνομιλίας"
 
-#: src/ui/chatty-ma-chat-info.ui:46 src/ui/chatty-pp-chat-info.ui:95
+#: src/ui/chatty-ma-chat-info.ui:52 src/ui/chatty-pp-chat-info.ui:95
 #: src/ui/chatty-pp-chat-info.ui:132
 msgid "Encryption"
 msgstr "Κρυπτογράφηση"
 
-#: src/ui/chatty-ma-chat-info.ui:47 src/ui/chatty-pp-chat-info.ui:133
+#: src/ui/chatty-ma-chat-info.ui:53 src/ui/chatty-pp-chat-info.ui:133
 msgid "Encrypt Messages"
 msgstr "Κρυπτογράφηση Μηνυμάτων"
 
-#: src/ui/chatty-ma-chat-info.ui:62
+#: src/ui/chatty-ma-chat-info.ui:68
 msgid "Chat Members"
 msgstr "Μέλη Συνομιλίας"
 
@@ -1673,7 +1686,7 @@ msgstr "Ευαίσθητες πληροφορίες"
 
 #: src/ui/chatty-ma-account-details.ui:124
 msgid "Access token"
-msgstr "Access token"
+msgstr "Διακριτικό πρόσβασης"
 
 #: src/ui/chatty-pp-account-details.ui:55
 msgid "Account ID"
@@ -1778,9 +1791,9 @@ msgid ""
 "Chatty can use any existing key embedded with gpg. However, you are given "
 "the option to generate a key specifically for Chatty below."
 msgstr ""
-"Το Chatty μπορεί να χρησιμοποιήσει οποιοδήποτε υπάρχον κλειδί ενσωματωμένο με "
-"gpg. Ωστόσο, σας δίνεται η επιλογή να δημιουργήσετε ένα κλειδί ειδικά για το "
-"Chatty παρακάτω."
+"Το Chatty μπορεί να χρησιμοποιήσει οποιοδήποτε υπάρχον κλειδί ενσωματωμένο "
+"με gpg. Ωστόσο, σας δίνεται η επιλογή να δημιουργήσετε ένα κλειδί ειδικά για "
+"το Chatty παρακάτω."
 
 #: src/ui/chatty-settings-dialog.ui:453
 msgid "Generate Chatty PGP Key"
@@ -1803,8 +1816,8 @@ msgid ""
 "This will generate a key for use with Chatty. Please note that this will not "
 "install the key on a smart card."
 msgstr ""
-"Αυτό θα δημιουργήσει ένα κλειδί για χρήση με το Chatty. Παρακαλώ σημειώστε ότι "
-"αυτό δεν θα εγκαταστήσει το κλειδί σε smart card."
+"Αυτό θα δημιουργήσει ένα κλειδί για χρήση με το Chatty. Παρακαλώ σημειώστε "
+"ότι αυτό δεν θα εγκαταστήσει το κλειδί σε smart card."
 
 #: src/ui/chatty-settings-dialog.ui:508
 msgid "Full Name"
@@ -1916,8 +1929,8 @@ msgid ""
 "Verifying this user will mark their session as trusted, and also mark your "
 "session as trusted to them."
 msgstr ""
-"Η επαλήθευση αυτού του χρήστη θα επισημάνει τη συνεδρία του ως αξιόπιστη, και "
-"θα επισημάνει τη δική σας συνεδρία ως αξιόπιστη προς αυτόν."
+"Η επαλήθευση αυτού του χρήστη θα επισημάνει τη συνεδρία του ως αξιόπιστη, "
+"και θα επισημάνει τη δική σας συνεδρία ως αξιόπιστη προς αυτόν."
 
 #: src/ui/chatty-verification-page.ui:98
 msgid "C_ontinue"
@@ -1927,8 +1940,8 @@ msgstr "Σ_υνέχεια"
 msgid ""
 "Verify this user by confirming the following emoji appears on their screen"
 msgstr ""
-"Επαληθεύστε αυτόν τον χρήστη επιβεβαιώνοντας ότι το ακόλουθο emoji εμφανίζεται "
-"στην οθόνη του"
+"Επαληθεύστε αυτόν τον χρήστη επιβεβαιώνοντας ότι το ακόλουθο emoji "
+"εμφανίζεται στην οθόνη του"
 
 #: src/ui/chatty-verification-page.ui:378
 msgid ""
@@ -1945,7 +1958,7 @@ msgstr ""
 
 #: src/ui/chatty-verification-page.ui:424
 msgctxt "verb, which means 'both items are not the same'"
-msgid "_Don't Match"
+msgid "_Don’t Match"
 msgstr "_Δεν Ταιριάζουν"
 
 #: src/ui/chatty-verification-page.ui:434
