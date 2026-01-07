@@ -273,7 +273,12 @@ msgstr "Ένας πελάτης ανταλλαγής μηνυμάτων SMS κα
 
 #: src/chatty-application.c:168
 msgid "translator-credits"
-msgstr "Greek translation team"
+msgstr ""
+"Ελληνική μεταφραστική ομάδα GNOME\n"
+" Ευστάθιος Ιωσηφίδης <iosifidis@opensuse.org>\n"
+"\n"
+"Για περισσότερες πληροφορίες, επισκεφθείτε τη σελίδα\n"
+"https://gr.gnome.org/"
 
 #: src/chatty-application.c:193
 #, c-format
@@ -305,6 +310,8 @@ msgid "Send To"
 msgstr "Αποστολή προς"
 
 #: src/chatty-chat-list.c:194
+#, fuzzy
+#| msgid "Select a contact with the <b>”+”</b> button in the titlebar."
 msgid "Select a contact with the <b>“+”</b> button in the titlebar."
 msgstr "Επιλέξτε μια επαφή με το κουμπί <b>«+»</b> στη γραμμή τίτλου."
 
@@ -488,6 +495,8 @@ msgstr "Δακτυλικό αποτύπωμα ID συσκευής %s:"
 
 #. TRANSLATORS: %s is the chat room name
 #: src/chatty-invite-page.c:72
+#, fuzzy, c-format
+#| msgid "Do you want to join ”%s”?"
 msgid "Do you want to join “%s”?"
 msgstr "Θέλετε να συμμετάσχετε στο «%s»;"
 
@@ -541,6 +550,8 @@ msgid "Account connecting…"
 msgstr "Σύνδεση λογαριασμού…"
 
 #: src/chatty-manager.c:679
+#, fuzzy, c-format
+#| msgid "”%s” is not a valid URI"
 msgid "“%s” is not a valid URI"
 msgstr "Το «%s» δεν είναι έγκυρο URI"
 
@@ -1020,6 +1031,8 @@ msgid "Block"
 msgstr "Αποκλεισμός"
 
 #: src/chatty-window.c:470
+#, fuzzy, c-format
+#| msgid "Delete chat with ”%s”"
 msgid "Delete chat with “%s”"
 msgstr "Διαγραφή συνομιλίας με «%s»"
 
@@ -1028,6 +1041,8 @@ msgid "This deletes the conversation history"
 msgstr "Αυτή η ενέργεια θα διαγράψει το ιστορικό συνομιλιών"
 
 #: src/chatty-window.c:473
+#, fuzzy, c-format
+#| msgid "Disconnect group chat ”%s”"
 msgid "Disconnect group chat “%s”"
 msgstr "Αποσύνδεση ομαδικής συνομιλίας «%s»"
 
@@ -1311,6 +1326,8 @@ msgstr ""
 "Χρησιμοποιήστε με δική σας ευθύνη!"
 
 #: src/matrix/chatty-ma-account.c:77
+#, fuzzy, c-format
+#| msgid "Please enter password for ”%s”, homeserver: %s"
 msgid "Please enter password for “%s”, homeserver: %s"
 msgstr "Παρακαλώ εισάγετε κωδικό πρόσβασης για «%s», homeserver: %s"
 
@@ -1369,8 +1386,8 @@ msgstr "Λάβατε ένα κενό MMS."
 
 #: src/mm/chatty-mmsd.c:1794 src/mm/chatty-mmsd.c:1842
 #, c-format
-msgid "Automatically Retrying for  %i MMS"
-msgid_plural "Automatically Retrying for  %i MMSes..."
+msgid "Automatically Retrying for  %i MMS"
+msgid_plural "Automatically Retrying for  %i MMSes..."
 msgstr[0] "Αυτόματη επανάληψη για %i MMS..."
 msgstr[1] "Αυτόματη επανάληψη για %i MMS..."
 
@@ -1531,7 +1548,7 @@ msgstr "Θέμα"
 
 #: src/ui/chatty-ma-chat-info.ui:41
 msgid "Room version"
-msgstr "Έκδοση δωματίου"
+msgstr ""
 
 #: src/ui/chatty-ma-chat-info.ui:49 src/ui/chatty-pp-chat-info.ui:110
 msgid "Chat settings"
@@ -1686,7 +1703,7 @@ msgstr "Ευαίσθητες πληροφορίες"
 
 #: src/ui/chatty-ma-account-details.ui:124
 msgid "Access token"
-msgstr "Διακριτικό πρόσβασης"
+msgstr "Access token"
 
 #: src/ui/chatty-pp-account-details.ui:55
 msgid "Account ID"
@@ -1957,6 +1974,9 @@ msgstr ""
 "επικοινωνίας."
 
 #: src/ui/chatty-verification-page.ui:424
+#, fuzzy
+#| msgctxt "verb, which means 'both items are not the same'"
+#| msgid "_Don't Match"
 msgctxt "verb, which means 'both items are not the same'"
 msgid "_Don’t Match"
 msgstr "_Δεν Ταιριάζουν"
