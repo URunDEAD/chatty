@@ -1,14 +1,14 @@
 # Bulgarian translation for of chatty po-file.
 # Copyright (C) 2024 chatty's COPYRIGHT HOLDER
 # This file is distributed under the same license as the chatty package.
-# twlvnn kraftwerk <kraft_werk@tutanota.com>, 2024, 2025.
+# twlvnn kraftwerk <kraft_werk@tutanota.com>, 2024, 2025, 2026.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: chatty main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/Chatty/issues\n"
-"POT-Creation-Date: 2025-09-10 11:29+0000\n"
-"PO-Revision-Date: 2025-09-20 10:55+0200\n"
+"POT-Creation-Date: 2025-10-27 11:35+0000\n"
+"PO-Revision-Date: 2026-01-22 14:14+0100\n"
 "Last-Translator: twlvnn kraftwerk <kraft_werk@tutanota.com>\n"
 "Language-Team: Bulgarian <dict-notifications@fsa-bg.org>\n"
 "Language: bg\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.7\n"
+"X-Generator: Poedit 3.8\n"
 
 #: data/sm.puri.Chatty.desktop.in.in:2 data/sm.puri.Chatty.metainfo.xml.in.in:6 src/chatty-application.c:157
 #: src/chatty-application.c:388 src/chatty-side-bar.c:385 src/ui/chatty-main-view.ui:4 src/ui/chatty-side-bar.ui:4
@@ -310,7 +310,7 @@ msgstr "Това е разговор по MMS"
 
 #: src/chatty-chat-page.c:197 src/chatty-chat-page.c:212 src/chatty-chat-page.c:218
 msgid "Your messages are not encrypted, and carrier rates may apply"
-msgstr "Съобщенията ви не са шифрирани и може да се прилагат тарифи на оператора."
+msgstr "Съобщенията ви не са шифрирани и може да се прилагат тарифи на оператора"
 
 #: src/chatty-chat-page.c:207
 msgid "This is an SMS/MMS conversation"
@@ -432,21 +432,21 @@ msgstr "%d.%m.%Y %I:%M %p"
 msgid "%Y-%m-%d"
 msgstr "%d.%m.%Y"
 
-#: src/chatty-file-item.c:139 src/chatty-file-item.c:154
+#: src/chatty-file-item.c:142 src/chatty-file-item.c:157
 msgid "Contact"
 msgstr "Контакт"
 
-#: src/chatty-file-item.c:151
+#: src/chatty-file-item.c:154
 #, c-format
 msgid "Contact: %s"
 msgstr "Контакт: %s"
 
-#: src/chatty-file-item.c:172
+#: src/chatty-file-item.c:175
 #, c-format
 msgid "Invite: %s"
 msgstr "Покана: %s"
 
-#: src/chatty-file-item.c:175
+#: src/chatty-file-item.c:178
 msgctxt "Invitation to event"
 msgid "Invitation"
 msgstr "Покана"
@@ -1004,7 +1004,7 @@ msgid "Delete"
 msgstr "Изтриване"
 
 #. TRANSLATORS: %u is the number of members in a room
-#: src/dialogs/chatty-ma-chat-info.c:123
+#: src/dialogs/chatty-ma-chat-info.c:124
 #, c-format
 msgid "%u member"
 msgid_plural "%u members"
@@ -1172,7 +1172,7 @@ msgstr "Изчистване на записите"
 
 #: src/dialogs/chatty-settings-dialog.c:856
 msgid "All entries must be filled to create a PGP Key"
-msgstr "Всички записи трябва да бъдат попълнени, за да се създаде PGP ключ."
+msgstr "Всички записи трябва да бъдат попълнени, за да се създаде PGP ключ"
 
 #: src/dialogs/chatty-settings-dialog.c:869
 #, c-format
@@ -1269,7 +1269,7 @@ msgstr "Вижте журнала за повече подробности"
 
 #: src/mm/chatty-mmsd.c:572 src/mm/chatty-mmsd.c:633 src/mm/chatty-mmsd.c:656
 msgid "MMS cannot be sent"
-msgstr "Не може да се изпрати MMS "
+msgstr "Не може да се изпрати MMS"
 
 #: src/mm/chatty-mmsd.c:574
 msgid "Please send less attachments"
@@ -1468,19 +1468,23 @@ msgstr "Чат"
 msgid "Topic"
 msgstr "Тема"
 
-#: src/ui/chatty-ma-chat-info.ui:43 src/ui/chatty-pp-chat-info.ui:110
+#: src/ui/chatty-ma-chat-info.ui:41
+msgid "Room version"
+msgstr "Версия на стаята"
+
+#: src/ui/chatty-ma-chat-info.ui:49 src/ui/chatty-pp-chat-info.ui:110
 msgid "Chat settings"
 msgstr "Настройки на чата"
 
-#: src/ui/chatty-ma-chat-info.ui:46 src/ui/chatty-pp-chat-info.ui:95 src/ui/chatty-pp-chat-info.ui:132
+#: src/ui/chatty-ma-chat-info.ui:52 src/ui/chatty-pp-chat-info.ui:95 src/ui/chatty-pp-chat-info.ui:132
 msgid "Encryption"
 msgstr "Шифър"
 
-#: src/ui/chatty-ma-chat-info.ui:47 src/ui/chatty-pp-chat-info.ui:133
+#: src/ui/chatty-ma-chat-info.ui:53 src/ui/chatty-pp-chat-info.ui:133
 msgid "Encrypt Messages"
 msgstr "Шифриране на съобщенията"
 
-#: src/ui/chatty-ma-chat-info.ui:62
+#: src/ui/chatty-ma-chat-info.ui:68
 msgid "Chat Members"
 msgstr "Членове на чата"
 
@@ -1863,7 +1867,7 @@ msgstr "_Продължаване"
 
 #: src/ui/chatty-verification-page.ui:201
 msgid "Verify this user by confirming the following emoji appears on their screen"
-msgstr "Потвърдете този потребител, като проверите, че на екрана му се появява следния емотикон."
+msgstr "Потвърдете този потребител, като проверите, че на екрана му се появява следния емотикон"
 
 #: src/ui/chatty-verification-page.ui:378
 msgid "Verify this user by confirming the following number appears on their screen."
