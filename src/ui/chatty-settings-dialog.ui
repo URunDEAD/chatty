@@ -347,7 +347,7 @@
                                 <property name="sensitive" bind-source="handle_smil_switch" bind-property="sensitive" bind-flags="sync-create"/>
                                 <property name="selectable">0</property>
                                 <property name="title" translatable="yes">SMIL for MMS</property>
-                                <property name="subtitle">Enable rich media embedding</property>
+                                <property name="subtitle" translatable="yes">Enable rich media embedding</property>
                                 <property name="activatable-widget">handle_smil_switch</property>
                                 <child>
                                   <object class="GtkSwitch" id="handle_smil_switch">
