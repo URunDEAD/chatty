@@ -18,7 +18,6 @@
 
 #include <sqlite3.h>
 
-#include "chatty-ma-account.h"
 #include "chatty-ma-chat.h"
 
 #include "chatty-utils.h"

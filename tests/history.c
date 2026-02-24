@@ -21,14 +21,11 @@
 #include <sqlite3.h>
 
 #include "chatty-history.c"
-#include "chatty-ma-account.h"
-#include "chatty-ma-chat.h"
 
 #include "chatty-file.h"
 #include "chatty-message.h"
 #include "chatty-contact.h"
 #include "chatty-settings.h"
-#include "chatty-utils.h"
 
 typedef struct Message {
   ChattyChat *chat;
