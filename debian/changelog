@@ -1,3 +1,146 @@
+chatty (0.8.9) unstable; urgency=medium
+
+  [ Ramal Rəhimov ]
+  * Add Azerbaijani translation
+  * Update Azerbaijani translation
+
+  [ Benedikt Wildenhain ]
+  * Add some keyboard shortcuts.
+    Added some accelerators and mnemonics to make chatty more usable via
+    keyboard.
+    Fixes #334.
+
+  [ Daniel Rusek ]
+  * Update Czech translation
+  * Update Czech translation
+  * Update Czech translation
+
+  [ Yuri Chornoivan ]
+  * Update Ukrainian translation
+  * Update Ukrainian translation
+
+  [ Antonio Marin ]
+  * Update Romanian translation
+  * Update Romanian translation
+  * Update Romanian translation
+  * Update Romanian translation
+
+  [ Martin ]
+  * Update Slovenian translation
+  * Update Slovenian translation
+
+  [ Danial Behzadi ]
+  * Update Persian translation
+  * Update Persian translation
+
+  [ Ekaterine Papava ]
+  * Update Georgian translation
+  * Update Georgian translation
+
+  [ Juliano de Souza Camargo ]
+  * Update Brazilian Portuguese translation
+
+  [ Artur S0 ]
+  * Update Russian translation
+  * Update Russian translation
+
+  [ Yaron Shahrabani ]
+  * Update Hebrew translation
+  * Update Hebrew translation
+
+  [ Emin Tufan Çetin ]
+  * Update Turkish translation
+
+  [ Anders Jonsson ]
+  * Update Swedish translation
+  * Update Swedish translation
+
+  [ Froschi ]
+  * Update German translation
+
+  [ Nathan Follens ]
+  * Update Dutch translation
+
+  [ twlvnn kraftwerk ]
+  * Update Bulgarian translation
+  * Update Bulgarian translation
+
+  [ Kristjan SCHMIDT ]
+  * Add Esperanto translation
+
+  [ BoF ButterflyOfFire ]
+  * Add Kabyle translation
+
+  [ Guido Günther ]
+  * tests: Check return value of `system`
+    Avoids having the compiler complain about an unused return value.
+  * application: Prefix GIT_VERSION symbol.
+    Avoids the
+       src/version.h:3: Warning: Chatty: symbol='GIT_VERSION': Unknown namespace for symbol 'GIT_VERSION'
+    warning
+  * ci: Add deploy stage.
+    The flatpak jobs want this
+  * file-item: Ignore gdk-pixbuf deprecations.
+    The animation API is deprecated since 2.44.
+    See https://gitlab.gnome.org/World/Chatty/-/issues/989
+  * ci: Print error logs.
+    Let's have some info when tests run and fail :)
+  * libcmatrix: Forward to v0.0.4
+  * matrix: Print room version when available.
+    Only works for new rooms where we persisted the room event.
+
+  [ Milan Crha ]
+  * contact-provider: Adapt to evolution-data-server 3.59.1 EContact API changes.
+    The attributes are read with e_vcard_get_attributes_by_name() now,
+    and the function returns "transfer container" instead.
+
+  [ Efstathios Iosifidis ]
+  * Update Greek translation
+  * Update Greek translation
+  * Update Greek translation
+  * Update Greek translation
+
+  [ Sabri Ünal ]
+  * Update Turkish translation
+
+  [ Rafael Fontenelle ]
+  * Update Brazilian Portuguese translation
+
+  [ Evangelos Ribeiro Tzaras ]
+  * ci: Update alpine deps
+  * history: Use const char* for database directory.
+    No reason to be inconsistent between the async and sync variant
+    of chatty_history_open()
+  * test/history: Fix race condition.
+    The race is due to the threads used in the ChattyHistory.
+    The test previously was iterating the main context until the
+    g_task_get_completed() returns TRUE.
+    However, backtraces from all threads showed, that the db worker thread
+    was still in the middle of g_task_return_*().
+    The tests now run in a GMainLoop and only quit
+    once the tasks callback are invoked.
+    Helps: https://gitlab.gnome.org/World/Chatty/-/issues/926
+
+  [ Asier Saratsua Garmendia ]
+  * Update Basque translation
+  * Update Basque translation
+
+  [ Jürgen Benvenuti ]
+  * Update German translation
+
+  [ Sebastian Krzyszkowiak ]
+  * data: Fix D-Bus service installation with Devel profile
+  * data: Switch to a systemd user unit for the daemon.
+    Fixes #992
+
+  [ slichtzzz ]
+  * Make ui line translatable
+
+  [ Hugo Carvalho ]
+  * Update Portuguese translation
+
+ -- fortysixandtwo <devrtz@fortysixandtwo.eu>  Sat, 28 Feb 2026 13:20:49 +0100
+
 chatty (0.8.8) unstable; urgency=medium
 
   [ Artur S0 ]

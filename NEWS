@@ -1,3 +1,46 @@
+chatty 0.8.9
+------------
+Released February 2026
+* Added some keyboard shortcuts and mnemonics
+* Adapted to evolution-data-server 3.59.1 EContact API changes
+* Update to libcmatrix 0.0.4
+* Use systemd user unit for the daemon
+* Housekeeping (CI, build files)
+* Issues fixed:
+    * https://gitlab.gnome.org/World/Chatty/-/issues/992
+    * https://gitlab.gnome.org/World/Chatty/-/issues/334
+* Contributors:
+    * Benedikt Wildenhain
+    * Evangelos Ribeiro Tzaras
+    * Guido Günther
+    * Milan Crha
+    * Sebastian Krzyszkowiak
+    * slichtzzz
+* UI translations:
+    * Anders Jonsson (sv)
+    * Antonio Marin (ro)
+    * Artur S0 (ru)
+    * Asier Saratsua Garmendia (eu)
+    * BoF ButterflyOfFire (kab)
+    * Danial Behzadi (fa)
+    * Daniel Rusek (cs)
+    * Efstathios Iosifidis (el)
+    * Ekaterine Papava (ka)
+    * Emin Tufan Çetin (tr)
+    * Froschi (de)
+    * Hugo Carvalho (pt)
+    * Juliano de Souza Camargo (pt_BR)
+    * Jürgen Benvenuti (de)
+    * Kristjan SCHMIDT (eo)
+    * Martin (sl)
+    * Nathan Follens (nl)
+    * Rafael Fontenelle (pt_BR)
+    * Ramal Rəhimov (az)
+    * Sabri Ünal (tr)
+    * twlvnn kraftwerk (bg)
+    * Yaron Shahrabani (he)
+    * Yuri Chornoivan (uk)
+
 chatty 0.8.8
 ------------
 Released Mai 2025
