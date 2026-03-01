@@ -476,6 +476,21 @@ chatty_application_activate (GApplication *application)
                                        self);
 }
 
+
+static void
+chatty_application_open (GApplication *application,
+                         GFile       **files,
+                         gint          n_files,
+                         const char   *hint)
+{
+  ChattyApplication *self = (ChattyApplication *)application;
+
+  open_uris (self, files, n_files);
+
+  g_application_activate (application);
+}
+
+
 static void
 chatty_application_shutdown (GApplication *application)
 {
@@ -499,6 +514,7 @@ chatty_application_class_init (ChattyApplicationClass *klass)
   application_class->command_line = chatty_application_command_line;
   application_class->startup = chatty_application_startup;
   application_class->activate = chatty_application_activate;
+  application_class->open = chatty_application_open;
   application_class->shutdown = chatty_application_shutdown;
 }
 
@@ -515,7 +531,7 @@ chatty_application_new (void)
 {
   return g_object_new (CHATTY_TYPE_APPLICATION,
                        "application-id", CHATTY_APP_ID,
-                       "flags", G_APPLICATION_HANDLES_COMMAND_LINE,
+                       "flags", G_APPLICATION_HANDLES_OPEN | G_APPLICATION_HANDLES_COMMAND_LINE,
                        "register-session", TRUE,
                        NULL);
 }
