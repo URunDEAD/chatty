@@ -846,7 +846,7 @@ chatty_window_get_active_chat (ChattyWindow *self)
 
   g_return_val_if_fail (CHATTY_IS_WINDOW (self), NULL);
 
-  if (chatty_utils_window_has_toplevel_focus (GTK_WINDOW (self)))
+  if (gtk_window_is_active (GTK_WINDOW (self)))
     item = chatty_main_view_get_item (CHATTY_MAIN_VIEW (self->main_view));
 
   if (CHATTY_IS_CHAT (item))

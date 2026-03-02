@@ -273,7 +273,7 @@ main_window_focus_changed_cb (ChattyApplication *self)
   g_assert (CHATTY_IS_APPLICATION (self));
 
   window = (GtkWindow *)self->main_window;
-  has_focus = window && chatty_utils_window_has_toplevel_focus (window);
+  has_focus = window && gtk_window_is_active (window);
 
   if (has_focus)
     chatty_clock_start (chatty_clock_get_default ());

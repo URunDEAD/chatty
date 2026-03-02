@@ -429,7 +429,7 @@ osk_properties_changed_cb (ChattyChatPage *self,
   GtkWindow *window;
 
   window = (GtkWindow *)gtk_widget_get_ancestor (GTK_WIDGET (self), GTK_TYPE_WINDOW);
-  if (!window || !chatty_utils_window_has_toplevel_focus (window))
+  if (!window || !gtk_window_is_active (window))
     return;
 
   value = g_variant_lookup_value (changed_properties, "Visible", NULL);

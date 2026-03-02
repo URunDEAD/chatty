@@ -615,22 +615,6 @@ chatty_utils_groupname_is_valid (const char     *name,
   return valid;
 }
 
-gboolean
-chatty_utils_window_has_toplevel_focus (GtkWindow *window)
-{
-  GdkSurface *surface;
-  GdkToplevelState state;
-
-  g_assert (GTK_IS_WINDOW (window));
-
-  surface = gtk_native_get_surface (GTK_NATIVE (window));
-  g_assert (GDK_IS_TOPLEVEL (surface));
-
-  state = gdk_toplevel_get_state (GDK_TOPLEVEL (surface));
-
-  return !!(state & GDK_TOPLEVEL_STATE_FOCUSED);
-}
-
 char *
 chatty_utils_get_purple_dir (void)
 {
