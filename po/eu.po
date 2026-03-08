@@ -1,13 +1,13 @@
 # Basque translation for chatty.
 # Copyright (C) 2023 chatty's COPYRIGHT HOLDER
 # This file is distributed under the same license as the chatty package.
-# Asier Saratsua Garmendia <asiersarasua@ni.eus>, 2023, 2024, 2025.
+# Asier Saratsua Garmendia <asiersarasua@ni.eus>, 2023, 2024, 2025, 2026.
 #
 msgid ""
 msgstr "Project-Id-Version: chatty main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/Chatty/issues\n"
-"POT-Creation-Date: 2025-12-10 11:26+0000\n"
-"PO-Revision-Date: 2025-12-21 11:24+0000\n"
+"POT-Creation-Date: 2025-10-27 11:35+0000\n"
+"PO-Revision-Date: 2026-03-08 11:24+0000\n"
 "Last-Translator: Asier Saratsua Garmendia <asiersarasua@ni.eus>\n"
 "Language-Team: Basque <eu@li.org>\n"
 "Language: eu\n"
@@ -54,7 +54,7 @@ msgstr "Mezua irakurrri bada, horren egoera bidaliko den ala ez"
 
 #: data/sm.puri.Chatty.gschema.xml:25
 msgid "Message carbon copies"
-msgstr ""
+msgstr "Mezuaren kopiak"
 
 #: data/sm.puri.Chatty.gschema.xml:26 src/ui/chatty-settings-dialog.ui:661
 msgid "Share chat history among devices"
@@ -94,11 +94,11 @@ msgstr "URLetatik jarraipeneko IDak automatikoki kenduko diren ala ez"
 
 #: data/sm.puri.Chatty.gschema.xml:55
 msgid "Whether Strip Tracking IDs was shown"
-msgstr ""
+msgstr "Jarraipeneko IDak eragoztea erakutsi den ala ez"
 
 #: data/sm.puri.Chatty.gschema.xml:56
 msgid "Whether the Tracking IDs dialog has been shown"
-msgstr ""
+msgstr "Jarraipeneko IDen elkarrizketa-koadroa erakutsi den ala ez"
 
 #: data/sm.puri.Chatty.gschema.xml:61
 msgid "Render Attachments"
@@ -138,7 +138,7 @@ msgstr "Eskatu SMS bidalketen txostenak"
 
 #: data/sm.puri.Chatty.gschema.xml:92
 msgid "Whether to request delivery reports for outgoing SMS"
-msgstr ""
+msgstr "Irteerako SMSaren bidalketen txostenak eskatuko diren ala ez"
 
 #: data/sm.puri.Chatty.gschema.xml:97
 msgid "Clear out stuck SMS"
@@ -1149,7 +1149,7 @@ msgstr "Ezabatu %s kontua?"
 #: src/dialogs/chatty-settings-dialog.c:664
 #, c-format
 msgid "Chatty cannot find a valid PGP Key for %s."
-msgstr ""
+msgstr "Chatty-k ez du aurkitu baliozko PGP gakoa honetarako: %s."
 
 #: src/dialogs/chatty-settings-dialog.c:666
 msgid "Invalid Signing ID"
@@ -1202,12 +1202,12 @@ msgstr "Sarrera guztiak bete behar dira PGP gakoa sortzeko"
 #, c-format
 msgid ""
 "%s already has key with fingerprint %s. Please choose a different PGP ID"
-msgstr ""
+msgstr "%s(e)k jadanik badu %s hatz-marka duen gakoa. Aukeratu beste PGP ID bat"
 
 #: src/dialogs/chatty-settings-dialog.c:898
 #, c-format
 msgid "Creating key for ID %s."
-msgstr ""
+msgstr "%s IDrako gakoa sortzen."
 
 #: src/dialogs/chatty-settings-dialog.c:899
 msgid "Creating Key"
@@ -1219,11 +1219,11 @@ msgstr "Gakoa sortzen"
 msgid ""
 "Chatty is currently set to use PGP key: %s. The new key will be used instead "
 "of the existing one!"
-msgstr ""
+msgstr "Chatty %s PGP gakoa erabiltzeko moduan ezarrita dago. Gako berria erabiliko da lehendik dagoenaren ordez."
 
 #: src/dialogs/chatty-settings-dialog.c:949
 msgid "Signing ID Present"
-msgstr ""
+msgstr "Sinatzeko IDa badago"
 
 #: src/dialogs/chatty-settings-dialog.c:951 src/ui/chatty-dialog-join-muc.ui:16
 #: src/ui/chatty-info-dialog.ui:23 src/ui/chatty-info-dialog.ui:32
@@ -1342,8 +1342,8 @@ msgstr "Hutsik dagoen MMS bat jaso duzu."
 #, c-format
 msgid "Automatically Retrying for  %i MMS"
 msgid_plural "Automatically Retrying for  %i MMSes..."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Automatikoki berriro saiatzen MMS %ierako"
+msgstr[1] "Automatikoki berriro saiatzen %i MMSetarako"
 
 #: src/mm/chatty-mmsd.c:1799
 msgid "Temporary Error Sending MMS"
@@ -1723,7 +1723,7 @@ msgstr "Bidali mezuak Enter sakatzean"
 
 #: src/ui/chatty-settings-dialog.ui:323
 msgid "Request Delivery Reports"
-msgstr ""
+msgstr "Eskatu bidalketen txostenak"
 
 #: src/ui/chatty-settings-dialog.ui:335
 msgid "Clear Stuck SMS"
@@ -1819,7 +1819,7 @@ msgstr "Sinkronizatu berriketak zerbitzariarekin"
 
 #: src/ui/chatty-settings-dialog.ui:660
 msgid "Message Carbon Copies"
-msgstr ""
+msgstr "Mezuaren kopiak"
 
 #: src/ui/chatty-settings-dialog.ui:775
 msgid "User ID"
