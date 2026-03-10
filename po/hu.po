@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: purism-chatty\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/Chatty/issues\n"
-"POT-Creation-Date: 2025-10-27 11:35+0000\n"
-"PO-Revision-Date: 2026-03-10 07:57+0100\n"
+"POT-Creation-Date: 2026-02-28 12:23+0000\n"
+"PO-Revision-Date: 2026-03-10 14:44+0100\n"
 "Last-Translator: Balázs Úr <ur.balazs at fsf dot hu>\n"
 "Language-Team: Hungarian <openscope at fsf dot hu>\n"
 "Language: hu\n"
@@ -1775,6 +1775,10 @@ msgstr "Beragadt SMS kitörlése"
 #: src/ui/chatty-settings-dialog.ui:349
 msgid "SMIL for MMS"
 msgstr "SMIL az MMS-hez"
+
+#: src/ui/chatty-settings-dialog.ui:350
+msgid "Enable rich media embedding"
+msgstr "Gazdag médiabeágyazás engedélyezése"
 
 #: src/ui/chatty-settings-dialog.ui:381
 msgid "MMS Carrier Settings"
