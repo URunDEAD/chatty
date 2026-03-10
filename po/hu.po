@@ -1,38 +1,40 @@
 # Hungarian translation for chatty.
-# Copyright (C) 2019, 2022 Free Software Foundation, Inc.
+# Copyright (C) 2019, 2021, 2022, 2023, 2026 Free Software Foundation, Inc.
 # This file is distributed under the same license as the chatty package.
 #
 # Csaba Fazekas <csab.faz.2 at gmail dot com>, 2019.
 # Balázs Meskó <mesko.balazs at fsf dot hu>, 2021.
-# Balázs Úr <ur.balazs at fsf dot hu>, 2022, 2023.
+# Balázs Úr <ur.balazs at fsf dot hu>, 2022, 2023, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: purism-chatty\n"
-"Report-Msgid-Bugs-To: https://source.puri.sm/Librem5/chatty/issues\n"
-"POT-Creation-Date: 2023-07-30 11:29+0000\n"
-"PO-Revision-Date: 2023-09-23 18:58+0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/Chatty/issues\n"
+"POT-Creation-Date: 2025-10-27 11:35+0000\n"
+"PO-Revision-Date: 2026-03-10 07:57+0100\n"
 "Last-Translator: Balázs Úr <ur.balazs at fsf dot hu>\n"
 "Language-Team: Hungarian <openscope at fsf dot hu>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 23.04.3\n"
+"X-Generator: Lokalize 25.08.1\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: data/sm.puri.Chatty.desktop.in:3 data/sm.puri.Chatty.metainfo.xml.in:6
-#: src/chatty-application.c:164 src/chatty-application.c:404
-#: src/chatty-side-bar.c:348 src/ui/chatty-side-bar.ui:16
+#: data/sm.puri.Chatty.desktop.in.in:2 data/sm.puri.Chatty.metainfo.xml.in.in:6
+#: src/chatty-application.c:157 src/chatty-application.c:388
+#: src/chatty-side-bar.c:385 src/ui/chatty-main-view.ui:4
+#: src/ui/chatty-side-bar.ui:4 src/ui/chatty-side-bar.ui:12
+#: src/ui/chatty-window.ui:4
 msgid "Chats"
 msgstr "Csevegések"
 
-#: data/sm.puri.Chatty.desktop.in:6
-msgid "SMS and XMPP chat application"
-msgstr "SMS és XMPP csevegésalkalmazás"
+#: data/sm.puri.Chatty.desktop.in.in:5
+msgid "SMS/MMS, Matrix and XMPP chat application"
+msgstr "SMS/MMS, Matrix és XMPP csevegésalkalmazás"
 
-#: data/sm.puri.Chatty.desktop.in:7
-msgid "XMPP;SMS;chat;jabber;messaging;modem"
-msgstr "XMPP;SMS;csevegés;jabber;üzenet;modem"
+#: data/sm.puri.Chatty.desktop.in.in:6
+msgid "XMPP;SMS;chat;jabber;messaging;modem;matrix;"
+msgstr "XMPP;SMS;csevegés;jabber;üzenet;modem;matrix;"
 
 #: data/sm.puri.Chatty.gschema.xml:7 data/sm.puri.Chatty.gschema.xml:8
 msgid "Whether the application is launching the first time"
@@ -58,7 +60,7 @@ msgstr "Elküldje-e az üzenet állapotát, ha elolvasta azt"
 msgid "Message carbon copies"
 msgstr "Üzenetmásolatok"
 
-#: data/sm.puri.Chatty.gschema.xml:26 src/ui/chatty-settings-dialog.ui:483
+#: data/sm.puri.Chatty.gschema.xml:26 src/ui/chatty-settings-dialog.ui:661
 msgid "Share chat history among devices"
 msgstr "Csevegéselőzmények megosztása az eszközök között"
 
@@ -74,7 +76,7 @@ msgstr "A kiszolgálóról történő MAM-archívum szinkronizáció engedélyez
 msgid "Enable purple"
 msgstr "Purple engedélyezése"
 
-#: data/sm.puri.Chatty.gschema.xml:38 src/ui/chatty-settings-dialog.ui:443
+#: data/sm.puri.Chatty.gschema.xml:38
 msgid "Enable purple accounts"
 msgstr "Purple-fiókok engedélyezése"
 
@@ -86,68 +88,121 @@ msgstr "Gépelési értesítések küldése"
 msgid "Whether to Send typing notifications"
 msgstr "Küldjön-e gépelési értesítéseket"
 
-#: data/sm.puri.Chatty.gschema.xml:49 data/sm.puri.Chatty.gschema.xml:50
+#: data/sm.puri.Chatty.gschema.xml:49
+msgid "Strip Tracking IDs"
+msgstr "Követési azonosítók kiszedése"
+
+#: data/sm.puri.Chatty.gschema.xml:50
+msgid "Whether to Remove Tracking IDs from URLs Automatically"
+msgstr "Távolítsa-e el automatikusan a követési azonosítókat az URL-ekből"
+
+#: data/sm.puri.Chatty.gschema.xml:55
+msgid "Whether Strip Tracking IDs was shown"
+msgstr "Megjelent-e a követési azonosítók kiszedése"
+
+#: data/sm.puri.Chatty.gschema.xml:56
+msgid "Whether the Tracking IDs dialog has been shown"
+msgstr "Meg lett-e jelenítve a követési azonosítók párbeszédablak"
+
+#: data/sm.puri.Chatty.gschema.xml:61
+msgid "Render Attachments"
+msgstr "Melléklet megjelenítése"
+
+#: data/sm.puri.Chatty.gschema.xml:62
+msgid "Whether to Render Attachments or not"
+msgstr "Megjelenítse-e a mellékleteket vagy sem"
+
+#: data/sm.puri.Chatty.gschema.xml:67 data/sm.puri.Chatty.gschema.xml:68
 msgid "Mark Idle users differently"
 msgstr "Tétlen felhasználók különböző módon történő megjelölése"
 
-#: data/sm.puri.Chatty.gschema.xml:55 data/sm.puri.Chatty.gschema.xml:56
+#: data/sm.puri.Chatty.gschema.xml:73 data/sm.puri.Chatty.gschema.xml:74
 msgid "Indicate unknown contacts"
 msgstr "Ismeretlen partnerek jelzése"
 
-#: data/sm.puri.Chatty.gschema.xml:61
+#: data/sm.puri.Chatty.gschema.xml:79
 msgid "Convert text to emoticons"
 msgstr "Szöveg átalakítása hangulatjelekké"
 
-#: data/sm.puri.Chatty.gschema.xml:62
+#: data/sm.puri.Chatty.gschema.xml:80
 msgid "Convert text matching emoticons as real emoticons"
 msgstr "Szövegnek megfelelő hangulatjelek átalakítása valódi hangulatjelekké"
 
-#: data/sm.puri.Chatty.gschema.xml:67
+#: data/sm.puri.Chatty.gschema.xml:85
 msgid "Enter key sends the message"
 msgstr "Az Enter billentyű elküldi az üzenetet"
 
-#: data/sm.puri.Chatty.gschema.xml:68
+#: data/sm.puri.Chatty.gschema.xml:86
 msgid "Whether pressing Enter key sends the message"
 msgstr "Az Enter billentyű megnyomása elküldi-e az üzenetet"
 
-#: data/sm.puri.Chatty.gschema.xml:73
+#: data/sm.puri.Chatty.gschema.xml:91
 msgid "Request SMS delivery reports"
 msgstr "SMS kézbesítési jelentések kérése"
 
-#: data/sm.puri.Chatty.gschema.xml:74
+#: data/sm.puri.Chatty.gschema.xml:92
 msgid "Whether to request delivery reports for outgoing SMS"
 msgstr "Kérjen-e kézbesítési jelentéseket a kimenő SMS-ekhez"
 
-#: data/sm.puri.Chatty.gschema.xml:79
+#: data/sm.puri.Chatty.gschema.xml:97
+msgid "Clear out stuck SMS"
+msgstr "Beragadt SMS kitörlése"
+
+#: data/sm.puri.Chatty.gschema.xml:98
+msgid ""
+"Whether Chatty should clear out SMS that are stuck in receiving/unknown state"
+msgstr ""
+"Törölje-e ki a Chatty a fogadási vagy ismeretlen állapotban beragadt SMS-eket"
+
+#: data/sm.puri.Chatty.gschema.xml:103
 msgid "Enable experimental features"
 msgstr "Kísérleti funkciók engedélyezése"
 
-#: data/sm.puri.Chatty.gschema.xml:80
+#: data/sm.puri.Chatty.gschema.xml:104
 msgid "Whether to enable experimental features"
 msgstr "Engedélyezve legyenek-e a kísérleti funkciók"
 
-#: data/sm.puri.Chatty.gschema.xml:85
+#: data/sm.puri.Chatty.gschema.xml:109
 msgid "Window maximized"
 msgstr "Teljes méretű ablak"
 
-#: data/sm.puri.Chatty.gschema.xml:86
+#: data/sm.puri.Chatty.gschema.xml:110
 msgid "Window maximized state"
 msgstr "Az ablak teljes méretű állapota"
 
-#: data/sm.puri.Chatty.gschema.xml:91
+#: data/sm.puri.Chatty.gschema.xml:115
 msgid "Window size"
 msgstr "Ablakméret"
 
-#: data/sm.puri.Chatty.gschema.xml:92
+#: data/sm.puri.Chatty.gschema.xml:116
 msgid "Window size (width, height)."
 msgstr "Ablakméret (szélesség, magasság)."
 
-#: data/sm.puri.Chatty.metainfo.xml.in:7
+#: data/sm.puri.Chatty.gschema.xml:124
+msgid "PGP user ID"
+msgstr "PGP felhasználó-azonosító"
+
+#: data/sm.puri.Chatty.gschema.xml:125
+msgid "The user ID for PGP that Chatty will use for outgoing messages"
+msgstr ""
+"A PGP felhasználó-azonosítója, amelyet a Chatty a kimenő üzenetekhez fog "
+"használni"
+
+#: data/sm.puri.Chatty.gschema.xml:130 src/ui/chatty-settings-dialog.ui:480
+msgid "Public Key Fingerprint"
+msgstr "Nyilvános kulcs ujjlenyomata"
+
+#: data/sm.puri.Chatty.gschema.xml:131
+msgid "The default keyid the remote side should use to encrypt messages to us"
+msgstr ""
+"Az alapértelmezett kulcsazonosító, amelyet a távoli félnek használnia kell "
+"az üzenetek számunkra történő titkosításához"
+
+#: data/sm.puri.Chatty.metainfo.xml.in.in:7
 msgid "Messaging application for mobile and desktop"
 msgstr "Üzenetküldő alkalmazás mobiltelefonra és asztali számítógépre"
 
-#: data/sm.puri.Chatty.metainfo.xml.in:9
-#| msgid "Chats is a messaging application supporting XMPP and SMS."
+#: data/sm.puri.Chatty.metainfo.xml.in.in:9
 msgid ""
 "Chats is a simple to use to messaging app for 1:1 communication and small "
 "groups supporting SMS, MMS, XMPP and Matrix."
@@ -156,44 +211,80 @@ msgstr ""
 "kommunikációra és kis csoportok számára. SMS, MMS, XMPP és Matrix "
 "protokollokat támogat."
 
-#: data/sm.puri.Chatty.metainfo.xml.in:16
-msgid "Chats message window"
-msgstr "Csevegések üzenetablak"
+#: data/sm.puri.Chatty.metainfo.xml.in.in:23
+msgid "Folded view of a chat using the light theme."
+msgstr "Egy csevegés összecsukott nézete a világos téma használatával."
 
-#: src/chatty-application.c:80
+#: data/sm.puri.Chatty.metainfo.xml.in.in:27
+msgid "Folded view of a chat using the dark theme."
+msgstr "Egy csevegés összecsukott nézete a sötét téma használatával."
+
+#: data/sm.puri.Chatty.metainfo.xml.in.in:31
+msgid "Unfolded view of a chat and the chat list in the sidebar."
+msgstr "Egy csevegés kinyitott nézete és a csevegési lista az oldalsávban."
+
+#: data/sm.puri.Chatty.metainfo.xml.in.in:35
+msgid ""
+"The chat view using the dark theme as seen on a mobile phone running Phosh "
+"with unfolded keyboard."
+msgstr ""
+"A sötét témát használó csevegési nézet, ahogy a Phosh-t futtató "
+"mobiltelefonon látható kinyitott billentyűzettel."
+
+#: data/sm.puri.Chatty.metainfo.xml.in.in:39
+msgid ""
+"The chat list view using the light theme as seen on a mobile phone running "
+"Phosh."
+msgstr ""
+"A világos témát használó csevegési lista, ahogy a Phosh-t futtató "
+"mobiltelefonon látható."
+
+#: data/sm.puri.Chatty.metainfo.xml.in.in:43
+msgid ""
+"The SMS/MMS preferences using the light theme as seen on a mobile phone "
+"running Phosh."
+msgstr ""
+"A világos témát használó SMS/MMS beállítások, ahogy a Phosh-t futtató "
+"mobiltelefonon látható."
+
+#: data/sm.puri.Chatty.metainfo.xml.in.in:48
+msgid ""
+"The chat details view using the dark theme as seen on a mobile phone running "
+"Phosh."
+msgstr ""
+"A sötét témát használó csevegési részletek, ahogy a Phosh-t futtató "
+"mobiltelefonon látható."
+
+#: src/chatty-application.c:73
 msgid "Show release version"
 msgstr "Kiadási verzió megjelenítése"
 
-#: src/chatty-application.c:81
-msgid "Start in daemon mode"
-msgstr "Indítás démon módban"
-
-#: src/chatty-application.c:82
+#: src/chatty-application.c:74
 msgid "Disable all accounts"
 msgstr "Összes fiók letiltása"
 
-#: src/chatty-application.c:84
+#: src/chatty-application.c:76
 msgid "Enable libpurple debug messages"
 msgstr "Libpurple hibakeresési üzenetek engedélyezése"
 
-#: src/chatty-application.c:87
+#: src/chatty-application.c:79
 msgid "Enable verbose debug messages (repeat option for more verbosity)"
 msgstr ""
 "Részletes hibakeresési üzenetek engedélyezése (ismételje a kapcsolót a "
 "nagyobb részletességhez)"
 
-#: src/chatty-application.c:167
+#: src/chatty-application.c:160
 msgid "An SMS and XMPP messaging client"
 msgstr "Egy SMS- és XMPP-üzenetküldő ügyfélprogram"
 
-#: src/chatty-application.c:175
+#: src/chatty-application.c:168
 msgid "translator-credits"
 msgstr ""
 "Fazekas Csaba <csab.faz.2 at gmail dot com>\n"
 "Meskó Balázs <mesko dot balazs at fsf dot hu>\n"
 "Úr Balázs <ur dot balazs at fsf dot hu>"
 
-#: src/chatty-application.c:198
+#: src/chatty-application.c:193
 #, c-format
 msgid ""
 "There was an error displaying help:\n"
@@ -202,73 +293,98 @@ msgstr ""
 "Hiba történt a súgó megjelenítésekor:\n"
 "%s"
 
-#: src/chatty-avatar.c:183 src/chatty-contact-list.c:391
+#: src/chatty-application.c:195 src/chatty-manager.c:681
+#: src/chatty-message-bar.c:468 src/purple/chatty-purple-notify.c:35
+#: src/purple/chatty-purple.c:199 src/purple/chatty-purple.c:619
+#: src/dialogs/chatty-new-chat-dialog.c:226
+#: src/dialogs/chatty-settings-dialog.c:219
+#: src/dialogs/chatty-settings-dialog.c:668
+#: src/dialogs/chatty-settings-dialog.c:705
+#: src/dialogs/chatty-settings-dialog.c:821
+#: src/dialogs/chatty-settings-dialog.c:857
+#: src/dialogs/chatty-settings-dialog.c:872
+#: src/dialogs/chatty-settings-dialog.c:889
+#: src/dialogs/chatty-settings-dialog.c:901
+#: src/dialogs/chatty-settings-dialog.c:1535 src/ui/chatty-main-view.ui:73
+msgid "Close"
+msgstr "Bezárás"
+
+#: src/chatty-avatar.c:182 src/chatty-contact-list.c:393
 msgid "Send To"
 msgstr "Küldés ide"
 
-#: src/chatty-chat-list.c:174
+#: src/chatty-chat-list.c:194
 msgid "Select a contact with the <b>“+”</b> button in the titlebar."
 msgstr "Válasszon egy partnert a fejlécsávon lévő <b>„+”</b> gombbal."
 
-#: src/chatty-chat-list.c:178
+#: src/chatty-chat-list.c:198
 msgid "Add instant messaging accounts in Preferences."
 msgstr "Adjon hozzá azonnaliüzenetküldő-fiókokat a beállításokban."
 
-#: src/chatty-chat-list.c:214 src/chatty-contact-list.c:282
+#: src/chatty-chat-list.c:234 src/chatty-contact-list.c:282
 msgid "No Search Results"
 msgstr "Nincsenek keresési találatok"
 
-#: src/chatty-chat-list.c:215
+#: src/chatty-chat-list.c:235
 msgid "Try different search"
 msgstr "Próbáljon másik keresést"
 
-#: src/chatty-chat-list.c:219
+#: src/chatty-chat-list.c:240
 msgid "No archived chats"
 msgstr "Nincsenek archivált csevegések"
 
-#: src/chatty-chat-list.c:221
+#: src/chatty-chat-list.c:242
 msgid "Start Chatting"
 msgstr "Csevegés elkezdése"
 
-#: src/chatty-chat-page.c:199
-msgid "This is an SMS conversation"
-msgstr "Ez egy SMS-beszélgetés"
+#: src/chatty-chat-page.c:195 src/chatty-chat-page.c:204
+msgid "This is an MMS conversation"
+msgstr "Ez egy MMS-beszélgetés"
 
-#: src/chatty-chat-page.c:201 src/chatty-chat-page.c:207
+#: src/chatty-chat-page.c:197 src/chatty-chat-page.c:212
+#: src/chatty-chat-page.c:218
 msgid "Your messages are not encrypted, and carrier rates may apply"
 msgstr ""
 "Az üzenetei nincsenek titkosítva, és szolgáltatói díjak lehetnek felszámítva"
 
-#: src/chatty-chat-page.c:205
+#: src/chatty-chat-page.c:207
+msgid "This is an SMS/MMS conversation"
+msgstr "Ez egy SMS/MMS-beszélgetés"
+
+#: src/chatty-chat-page.c:210
+msgid "This is an SMS conversation"
+msgstr "Ez egy SMS-beszélgetés"
+
+#: src/chatty-chat-page.c:216
 msgid "This is an IM conversation"
 msgstr "Ez egy azonnaliüzenet-küldő beszélgetés"
 
-#: src/chatty-chat-page.c:211
+#: src/chatty-chat-page.c:222
 msgid "Your messages are encrypted"
 msgstr "Az üzenetei titkosítva vannak"
 
-#: src/chatty-chat-page.c:214
+#: src/chatty-chat-page.c:225
 msgid "Your messages are not encrypted"
 msgstr "Az üzenetei nincsenek titkosítva"
 
-#: src/chatty-chat.c:708
+#: src/chatty-chat.c:726
 msgid "Empty room"
 msgstr "Üres szoba"
 
 #. TRANSLATORS: %s are name/user-id/phone numbers of two users
-#: src/chatty-chat.c:715
+#: src/chatty-chat.c:733
 #, c-format
 msgid "%s and %s"
 msgstr "%s és %s"
 
-#: src/chatty-chat.c:717
+#: src/chatty-chat.c:735
 #, c-format
 msgid "%s and %u other"
 msgid_plural "%s and %u others"
 msgstr[0] "%s és %u másik"
 msgstr[1] "%s és %u másik"
 
-#: src/chatty-contact-list.c:247 src/dialogs/chatty-mm-chat-info.c:128
+#: src/chatty-contact-list.c:247 src/dialogs/chatty-mm-chat-info.c:127
 msgid "Unknown Contact"
 msgstr "Ismeretlen partner"
 
@@ -278,57 +394,99 @@ msgstr ""
 "Próbáljon másik keresést, vagy gépeljen be egy érvényes számot új csevegés "
 "létrehozásához"
 
-#: src/chatty-contact-list.c:287
+#: src/chatty-contact-list.c:289
 msgid "No Contacts"
 msgstr "Nincsenek partnerek"
 
-#: src/chatty-clock.c:85
+#: src/chatty-clock.c:87
 msgid "Just Now"
 msgstr "Épp most"
 
 #. TRANSLATORS: Timestamp with 12 hour time, e.g. “06∶42 PM”.
 #. * See https://docs.gtk.org/glib/method.DateTime.format.html
+#. * Note, that this is a regular colon to ensure times are not
+#. * reversed in RTL locales, see https://gitlab.gnome.org/Teams/Websites/developer.gnome.org-hig/-/issues/127
 #.
-#: src/chatty-clock.c:94 src/chatty-clock.c:124
-msgid "%I∶%M %p"
-msgstr "%H∶%M"
+#: src/chatty-clock.c:98 src/chatty-clock.c:137
+msgid "%I:%M %p"
+msgstr "%H:%M"
 
-#: src/chatty-clock.c:103
+#: src/chatty-clock.c:107
 #, c-format
-msgid "%lu minute ago"
-msgid_plural "%lu minutes ago"
-msgstr[0] "%lu perccel ezelőtt"
-msgstr[1] "%lu perccel ezelőtt"
+msgid "%<PRIi64> minute ago"
+msgid_plural "%<PRIi64> minutes ago"
+msgstr[0] "%<PRIi64> perccel ezelőtt"
+msgstr[1] "%<PRIi64> perccel ezelőtt"
 
-#: src/chatty-clock.c:111
-msgid "Today %H∶%M"
-msgstr "Ma %H∶%M"
+#. TRANSLATORS:
+#. * Note, that this is a regular colon to ensure times are not
+#. * reversed in RTL locales, see https://gitlab.gnome.org/Teams/Websites/developer.gnome.org-hig/-/issues/127
+#.
+#: src/chatty-clock.c:120
+msgid "Today %H:%M"
+msgstr "Ma %H:%M"
 
 #. TRANSLATORS: Timestamp with 12 hour time, e.g. “Today 06∶42 PM”.
 #. * See https://docs.gtk.org/glib/method.DateTime.format.html
+#. * Note, that this is a regular colon to ensure times are not
+#. * reversed in RTL locales, see https://gitlab.gnome.org/Teams/Websites/developer.gnome.org-hig/-/issues/127
 #.
-#: src/chatty-clock.c:119
-msgid "Today %I∶%M %p"
-msgstr "Ma %H∶%M"
+#: src/chatty-clock.c:130
+msgid "Today %I:%M %p"
+msgstr "Ma %H:%M"
 
-#: src/chatty-clock.c:131
-msgid "Yesterday %H∶%M"
+#: src/chatty-clock.c:144
+msgid "Yesterday %H:%M"
 msgstr "Tegnap %H∶%M"
 
 #. TRANSLATORS: Timestamp with 12 hour time, e.g. “Yesterday 06∶42 PM”.
 #. * See https://docs.gtk.org/glib/method.DateTime.format.html
+#. * Note, that this is a regular colon to ensure times are not
+#. * reversed in RTL locales, see https://gitlab.gnome.org/Teams/Websites/developer.gnome.org-hig/-/issues/127
 #.
-#: src/chatty-clock.c:136
-msgid "Yesterday %I∶%M %p"
+#: src/chatty-clock.c:151
+msgid "Yesterday %I:%M %p"
 msgstr "Tegnap %H∶%M"
 
-#. TRANSLATORS: Timestamp from more than 7 days ago or future date
-#. * (eg: when the system time is wrong), e.g. “2022-01-01”.
-#. * See https://docs.gtk.org/glib/method.DateTime.format.html
+#. TRANSLATORS:
+#. * Note, that this is a regular colon to ensure times are not
+#. * reversed in RTL locales, see https://gitlab.gnome.org/Teams/Websites/developer.gnome.org-hig/-/issues/127
 #.
-#: src/chatty-clock.c:152
+#: src/chatty-clock.c:176
+msgid "%Y-%m-%d %H:%M"
+msgstr "%Y. %B %-d. %H∶%M"
+
+#. TRANSLATORS: Timestamp with 12 hour time, e.g. “Today 06∶42 PM”.
+#. * See https://docs.gtk.org/glib/method.DateTime.format.html
+#. * Note, that this is a regular colon to ensure times are not
+#. * reversed in RTL locales, see https://gitlab.gnome.org/Teams/Websites/developer.gnome.org-hig/-/issues/127
+#.
+#: src/chatty-clock.c:183
+msgid "%Y-%m-%d %I:%M %p"
+msgstr "%Y. %B %-d. %H∶%M"
+
+#: src/chatty-clock.c:185
 msgid "%Y-%m-%d"
 msgstr "%Y. %B %-d."
+
+#: src/chatty-file-item.c:142 src/chatty-file-item.c:157
+msgid "Contact"
+msgstr "Partner"
+
+#: src/chatty-file-item.c:154
+#, c-format
+msgid "Contact: %s"
+msgstr "Partner: %s"
+
+#: src/chatty-file-item.c:175
+#, c-format
+msgid "Invite: %s"
+msgstr "Meghívás: %s"
+
+#: src/chatty-file-item.c:178
+msgctxt "Invitation to event"
+msgid "Invitation"
+msgstr "Meghívás"
 
 #. TRANSLATORS: %s is the Device ID
 #: src/chatty-fp-row.c:130
@@ -339,145 +497,183 @@ msgstr "A(z) %s eszközazonosító ujjlenyomata:"
 #. TRANSLATORS: %s is the chat room name
 #: src/chatty-invite-page.c:72
 #, c-format
-msgid "Do you want to join “%s”"
+msgid "Do you want to join “%s”?"
 msgstr "Szeretne csatlakozni a(z) „%s” szobához?"
 
-#: src/chatty-list-row.c:121
+#: src/chatty-list-row.c:123
 msgid "Owner"
 msgstr "Tulajdonos"
 
-#: src/chatty-list-row.c:124
+#: src/chatty-list-row.c:126
 msgid "Moderator"
 msgstr "Moderátor"
 
-#: src/chatty-list-row.c:127
+#: src/chatty-list-row.c:129
 msgid "Member"
 msgstr "Tag"
 
-#: src/chatty-main-view.c:124
+#: src/chatty-list-row.c:264 src/chatty-notification.c:180
+msgid "Picture"
+msgstr "Fénykép"
+
+#: src/chatty-list-row.c:267 src/chatty-notification.c:184
+msgid "Video"
+msgstr "Videó"
+
+#: src/chatty-list-row.c:270
+msgid "Audio"
+msgstr "Hang"
+
+#: src/chatty-list-row.c:273
+msgid "Location"
+msgstr "Hely"
+
+#: src/chatty-list-row.c:276 src/chatty-list-row.c:293
+#: src/chatty-notification.c:176
+msgid "File"
+msgstr "Fájl"
+
+#: src/chatty-list-row.c:279
+msgid "MMS Message"
+msgstr "MMS-üzenet"
+
+#: src/chatty-list-row.c:295
+msgid "Multiple Files"
+msgstr "Több fájl"
+
+#: src/chatty-main-view.c:125
 msgid "Account disconnected"
 msgstr "Fiók leválasztva"
 
-#: src/chatty-main-view.c:126
+#: src/chatty-main-view.c:127
 msgid "Account connecting…"
 msgstr "Fiók kapcsolódása…"
 
-#: src/chatty-manager.c:741
+#: src/chatty-manager.c:679
 #, c-format
 msgid "“%s” is not a valid URI"
 msgstr "A(z) „%s” nem érvényes URI"
 
-#: src/chatty-message-bar.c:120
-msgid "Select File..."
-msgstr "Fájl kiválasztása…"
+#: src/chatty-message-bar.c:466 src/purple/chatty-purple.c:195
+#: src/chatty-window.c:378
+msgid "Alert"
+msgstr "Riasztás"
 
-#: src/chatty-message-bar.c:123 src/purple/chatty-purple-request.c:179
-#: src/chatty-window.c:449 src/dialogs/chatty-pp-chat-info.c:108
-#: src/dialogs/chatty-ma-account-details.c:135
-#: src/dialogs/chatty-pp-account-details.c:111
-#: src/ui/chatty-dialog-join-muc.ui:18 src/ui/chatty-info-dialog.ui:26
-#: src/ui/chatty-info-dialog.ui:35
-msgid "Cancel"
-msgstr "Mégse"
+#: src/chatty-message-bar.c:467
+msgid "Found and automatically deleted tracking IDs from the pasted link."
+msgstr ""
+"A beillesztett hivatkozásban megtalált és automatikusan törölt követési "
+"azonosítók."
 
-#: src/chatty-message-bar.c:124 src/purple/chatty-purple-request.c:181
-#: src/dialogs/chatty-pp-chat-info.c:107
-#: src/dialogs/chatty-ma-account-details.c:134
-#: src/dialogs/chatty-pp-account-details.c:110
-msgid "Open"
-msgstr "Megnyitás"
+#: src/chatty-message-bar.c:469
+msgid "Don't Show Again"
+msgstr "Ne jelenítse meg újra"
 
-#: src/chatty-message.c:232
+#: src/chatty-message.c:230
 msgid "Got an encrypted message, but couldn't decrypt due to missing keys"
 msgstr ""
 "Titkosított üzenet érkezett, de nem sikerült visszafejteni hiányzó kulcsok "
 "miatt"
 
-#: src/chatty-notification.c:180
-msgid "Open Message"
-msgstr "Üzenet megnyitása"
-
-#: src/chatty-notification.c:213
+#: src/chatty-notification.c:150
 #, c-format
 msgid "New message from %s"
 msgstr "Új üzenet tőle: %s"
 
-#: src/chatty-notification.c:215
+#: src/chatty-notification.c:152
 msgid "Message Received"
 msgstr "Üzenet érkezett"
 
-#: src/chatty-side-bar.c:318
+#: src/chatty-notification.c:188
+msgid "Audio File"
+msgstr "Hangfájl"
+
+#: src/chatty-notification.c:195
+msgid "MMS"
+msgstr "MMS"
+
+#: src/chatty-notification.c:207
+#, c-format
+msgid "%i Message"
+msgid_plural "%i Messages"
+msgstr[0] "%i üzenet"
+msgstr[1] "%i üzenet"
+
+#: src/chatty-side-bar.c:355
 msgid "Any Protocol"
 msgstr "Bármely protokoll"
 
-#: src/chatty-side-bar.c:319 src/ui/chatty-settings-dialog.ui:553
+#: src/chatty-side-bar.c:356 src/ui/chatty-settings-dialog.ui:731
 msgid "Matrix"
 msgstr "Matrix"
 
-#: src/chatty-side-bar.c:320
+#: src/chatty-side-bar.c:357 src/dialogs/chatty-new-chat-dialog.c:636
+#: src/dialogs/chatty-settings-dialog.c:1121
+#: src/ui/chatty-settings-dialog.ui:255
 msgid "SMS/MMS"
 msgstr "SMS/MMS"
 
-#: src/chatty-side-bar.c:323 src/ui/chatty-settings-dialog.ui:542
+#: src/chatty-side-bar.c:360 src/ui/chatty-settings-dialog.ui:720
 msgid "XMPP"
 msgstr "XMPP"
 
-#: src/chatty-side-bar.c:326 src/ui/chatty-settings-dialog.ui:566
+#: src/chatty-side-bar.c:363 src/ui/chatty-settings-dialog.ui:744
 msgid "Telegram"
 msgstr "Telegram"
 
-#: src/chatty-side-bar.c:348
+#: src/chatty-side-bar.c:385
 msgid "Archived"
 msgstr "Archiválva"
 
-#: src/purple/chatty-purple-notify.c:46 src/ui/chatty-main-view.ui:78
-msgid "Close"
-msgstr "Bezárás"
+#: src/purple/chatty-purple-notify.c:26 src/purple/chatty-purple.c:613
+#: src/dialogs/chatty-new-chat-dialog.c:222
+#: src/dialogs/chatty-settings-dialog.c:215
+msgid "Error"
+msgstr "Hiba"
 
-#: src/purple/chatty-purple-request.c:174
-msgid "Save File..."
+#: src/purple/chatty-purple-request.c:218
+msgid "Save File…"
 msgstr "Fájl mentése…"
 
-#: src/purple/chatty-purple-request.c:175
-msgid "Open File..."
+#: src/purple/chatty-purple-request.c:220
+msgid "Open File…"
 msgstr "Fájl megnyitása…"
 
-#: src/purple/chatty-purple-request.c:181
-msgid "Save"
-msgstr "Mentés"
-
-#: src/purple/chatty-purple.c:238
-msgid "Contact added"
-msgstr "Partner hozzáadva"
-
-#: src/purple/chatty-purple.c:240
+#: src/purple/chatty-purple.c:197
 #, c-format
 msgid "User %s has added %s to the contacts"
 msgstr "%s felhasználó hozzáadta %s partnert a partnerekhez"
 
-#: src/purple/chatty-purple.c:260
+#: src/purple/chatty-purple.c:283 src/dialogs/chatty-settings-dialog.c:477
+#: src/ui/chatty-ma-account-details.ui:144
+#: src/ui/chatty-pp-account-details.ui:80
+msgid "Delete Account"
+msgstr "Fiók törlése"
+
+#: src/purple/chatty-purple.c:285
 #, c-format
 msgid "Authorize %s?"
 msgstr "Engedélyezi: %s?"
 
-#: src/purple/chatty-purple.c:262
-msgid "Reject"
-msgstr "Elutasítás"
-
-#: src/purple/chatty-purple.c:263
-msgid "Accept"
-msgstr "Elfogadás"
-
-#: src/purple/chatty-purple.c:266
+#: src/purple/chatty-purple.c:289
 #, c-format
 msgid "Add %s to contact list"
 msgstr "%s hozzáadása a névjegyzékhez"
 
-#: src/purple/chatty-purple.c:584
-msgid "Login failed"
-msgstr "Bejelentkezés sikertelen"
+#: src/purple/chatty-purple.c:293 src/chatty-window.c:382
+#: src/chatty-window.c:478 src/dialogs/chatty-settings-dialog.c:483
+#: src/ui/chatty-dialog-wrong-pw.ui:23 src/ui/chatty-dialog-new-chat.ui:36
+#: src/ui/chatty-settings-dialog.ui:25 src/ui/chatty-settings-dialog.ui:55
+#: src/ui/chatty-settings-dialog.ui:75 src/ui/chatty-verification-page.ui:129
+#: src/ui/chatty-verification-page.ui:158
+msgid "_Cancel"
+msgstr "_Mégse"
 
-#: src/purple/chatty-purple.c:589
+#: src/purple/chatty-purple.c:294
+msgid "Authorize"
+msgstr "Felhatalmazás"
+
+#: src/purple/chatty-purple.c:618
 msgid "Please check ID and password"
 msgstr "Ellenőrizze az azonosítót és a jelszót"
 
@@ -810,97 +1006,125 @@ msgstr "Emodzsik megjelenítése"
 msgid "Show Numbers"
 msgstr "Számok megjelenítése"
 
-#: src/chatty-window.c:353
+#: src/chatty-utils.c:299
+#, c-format
+msgid "%s %s %s %s"
+msgstr "%s %s %s %s"
+
+#: src/chatty-utils.c:301 src/chatty-utils.c:305
+#, c-format
+msgid "%s %s %s"
+msgstr "%s %s %s"
+
+#: src/chatty-utils.c:307 src/chatty-utils.c:310
+#, c-format
+msgid "%s %s"
+msgstr "%s %s"
+
+#: src/chatty-window.c:379
 msgid "You shall no longer be notified for new messages, continue?"
 msgstr "A továbbiakban nem kap értesítést az új üzenetekről, folytatja?"
 
-#: src/chatty-window.c:435
+#: src/chatty-window.c:383
+msgid "Block"
+msgstr "Tiltás"
+
+#: src/chatty-window.c:470
 #, c-format
 msgid "Delete chat with “%s”"
 msgstr "„%s” partnerrel folytatott csevegés törlése"
 
-#: src/chatty-window.c:436
+#: src/chatty-window.c:471
 msgid "This deletes the conversation history"
 msgstr "Ez törli a beszélgetés előzményeit"
 
-#: src/chatty-window.c:438
+#: src/chatty-window.c:473
 #, c-format
 msgid "Disconnect group chat “%s”"
 msgstr "A(z) „%s” csoportos csevegés leválasztása"
 
-#: src/chatty-window.c:439
+#: src/chatty-window.c:474
 msgid "This removes chat from chats list"
 msgstr "Ez eltávolítja a csevegést a csevegések listájáról"
 
-#: src/chatty-window.c:450
+#: src/chatty-window.c:479 src/dialogs/chatty-settings-dialog.c:484
 msgid "Delete"
 msgstr "Törlés"
 
-#: src/dialogs/chatty-mm-chat-info.c:147
+#. TRANSLATORS: %u is the number of members in a room
+#: src/dialogs/chatty-ma-chat-info.c:124
+#, c-format
+msgid "%u member"
+msgid_plural "%u members"
+msgstr[0] "%u tag"
+msgstr[1] "%u tag"
+
+#: src/dialogs/chatty-mm-chat-info.c:146
 msgctxt "Refer to self in contact list"
 msgid "You"
 msgstr "Ön"
 
-#: src/dialogs/chatty-pp-chat-info.c:104
-#: src/dialogs/chatty-ma-account-details.c:131
-#: src/dialogs/chatty-pp-account-details.c:107
+#: src/dialogs/chatty-pp-chat-info.c:108
+#: src/dialogs/chatty-ma-account-details.c:168
+#: src/dialogs/chatty-pp-account-details.c:115
 msgid "Set Avatar"
 msgstr "Profilkép beállítása"
 
-#: src/dialogs/chatty-pp-chat-info.c:114
-#: src/dialogs/chatty-ma-account-details.c:141
-#: src/dialogs/chatty-pp-account-details.c:117
+#: src/dialogs/chatty-pp-chat-info.c:115
+#: src/dialogs/chatty-ma-account-details.c:175
+#: src/dialogs/chatty-pp-account-details.c:122
 msgid "Images"
 msgstr "Képek"
 
-#: src/dialogs/chatty-pp-chat-info.c:220
+#: src/dialogs/chatty-pp-chat-info.c:204
 msgid "Encryption is not available"
 msgstr "A titkosítás nem érhető el"
 
-#: src/dialogs/chatty-pp-chat-info.c:224
+#: src/dialogs/chatty-pp-chat-info.c:208
 msgid "This chat is encrypted"
 msgstr "Ez a csevegés titkosítva van"
 
-#: src/dialogs/chatty-pp-chat-info.c:228
+#: src/dialogs/chatty-pp-chat-info.c:212
 msgid "This chat is not encrypted"
 msgstr "Ez a csevegés nincs titkosítva"
 
-#: src/dialogs/chatty-pp-chat-info.c:252
+#: src/dialogs/chatty-pp-chat-info.c:236
 msgid "Encryption not available"
 msgstr "A titkosítás nem érhető el"
 
-#: src/dialogs/chatty-pp-chat-info.c:273
+#: src/dialogs/chatty-pp-chat-info.c:257
 #, c-format
 msgid "%u Member"
 msgid_plural "%u Members"
 msgstr[0] "%u tag"
 msgstr[1] "%u tag"
 
-#: src/dialogs/chatty-pp-chat-info.c:307
-msgid "Phone Number:"
-msgstr "Telefonszám:"
+#: src/dialogs/chatty-pp-chat-info.c:292 src/ui/chatty-settings-dialog.ui:385
+msgid "Phone Number"
+msgstr "Telefonszám"
 
-#: src/dialogs/chatty-pp-chat-info.c:309
-msgid "XMPP ID:"
-msgstr "XMPP-azonosító:"
+#: src/dialogs/chatty-pp-chat-info.c:295 src/ui/chatty-pp-chat-info.ui:88
+msgid "XMPP ID"
+msgstr "XMPP-azonosító"
 
-#: src/dialogs/chatty-pp-chat-info.c:314
-msgid "Matrix ID:"
-msgstr "Matrix-azonosító:"
+#: src/dialogs/chatty-pp-chat-info.c:301 src/ui/chatty-ma-chat-info.ui:28
+#: src/ui/chatty-ma-account-details.ui:91
+msgid "Matrix ID"
+msgstr "Matrix-azonosító"
 
-#: src/dialogs/chatty-pp-chat-info.c:317
-msgid "Telegram ID:"
-msgstr "Telegram-azonosító:"
+#: src/dialogs/chatty-pp-chat-info.c:305
+msgid "Telegram ID"
+msgstr "Telegram-azonosító"
 
-#: src/dialogs/chatty-new-chat-dialog.c:171
+#: src/dialogs/chatty-new-chat-dialog.c:170
 msgid "Add"
 msgstr "Hozzáadás"
 
-#: src/dialogs/chatty-new-chat-dialog.c:181
+#: src/dialogs/chatty-new-chat-dialog.c:180
 msgid "Create"
 msgstr "Létrehozás"
 
-#: src/dialogs/chatty-new-chat-dialog.c:187
+#: src/dialogs/chatty-new-chat-dialog.c:186
 msgid "Add Contact"
 msgstr "Partner hozzáadása"
 
@@ -909,115 +1133,202 @@ msgstr "Partner hozzáadása"
 msgid "Error opening GNOME Contacts: %s"
 msgstr "Hiba a GNOME Névjegyek megnyitásakor: %s"
 
-#: src/dialogs/chatty-new-chat-dialog.c:453
+#: src/dialogs/chatty-new-chat-dialog.c:456
 msgid "SMS"
 msgstr "SMS"
 
-#: src/dialogs/chatty-new-chat-dialog.c:631
+#: src/dialogs/chatty-new-chat-dialog.c:636
 msgid "You"
 msgstr "Ön"
 
-#: src/dialogs/chatty-ma-account-details.c:396
-#: src/dialogs/chatty-pp-account-details.c:169
+#: src/dialogs/chatty-ma-account-details.c:418
+#: src/dialogs/chatty-pp-account-details.c:171
 msgid "connected"
 msgstr "kapcsolódva"
 
-#: src/dialogs/chatty-ma-account-details.c:398
-#: src/dialogs/chatty-pp-account-details.c:171
+#: src/dialogs/chatty-ma-account-details.c:420
+#: src/dialogs/chatty-pp-account-details.c:173
 msgid "connecting…"
 msgstr "kapcsolódás…"
 
-#: src/dialogs/chatty-ma-account-details.c:400
-#: src/dialogs/chatty-pp-account-details.c:173
+#: src/dialogs/chatty-ma-account-details.c:422
+#: src/dialogs/chatty-pp-account-details.c:175
 msgid "disconnected"
 msgstr "leválasztva"
 
-#: src/dialogs/chatty-settings-dialog.c:253
+#: src/dialogs/chatty-settings-dialog.c:217
+#, c-format
+msgid "Error saving account: %s"
+msgstr "Hiba a fiók mentésekor: %s"
+
+#: src/dialogs/chatty-settings-dialog.c:272
 #, c-format
 msgid "Failed to verify server: %s"
 msgstr "A kiszolgáló ellenőrzése sikertelen: %s"
 
-#: src/dialogs/chatty-settings-dialog.c:255
+#: src/dialogs/chatty-settings-dialog.c:274
 msgid "Failed to verify server"
 msgstr "A kiszolgáló ellenőrzése sikertelen"
 
-#: src/dialogs/chatty-settings-dialog.c:261
+#: src/dialogs/chatty-settings-dialog.c:280
 msgid "Couldn't get Home server address"
 msgstr "Nem sikerült lekérni az otthont adó kiszolgáló címét"
 
-#: src/dialogs/chatty-settings-dialog.c:459
-#: src/ui/chatty-ma-account-details.ui:162
-#: src/ui/chatty-pp-account-details.ui:154
-msgid "Delete Account"
-msgstr "Fiók törlése"
-
-#: src/dialogs/chatty-settings-dialog.c:462
+#: src/dialogs/chatty-settings-dialog.c:479
 #, c-format
 msgid "Delete account %s?"
 msgstr "Törli a(z) %s fiókot?"
 
-#: src/dialogs/chatty-settings-dialog.c:635
-msgid "Restart chatty to disable purple"
+#: src/dialogs/chatty-settings-dialog.c:664
+#, c-format
+msgid "Chatty cannot find a valid PGP Key for %s."
+msgstr "A Chatty nem talált érvényes PGP-kulcsot ehhez: %s."
+
+#: src/dialogs/chatty-settings-dialog.c:666
+msgid "Invalid Signing ID"
+msgstr "Érvénytelen aláírási azonosító"
+
+#: src/dialogs/chatty-settings-dialog.c:701
+#, c-format
+msgid "The entered Key ID %s does not match the found PGP Key for %s:%s."
+msgstr ""
+"A megadott %s kulcsazonosító nem egyezik a megtalált PGP-kulccsal ennél: %s:"
+"%s."
+
+#: src/dialogs/chatty-settings-dialog.c:703
+msgid "Cannot Find Signing Key"
+msgstr "Nem található aláírási kulcs"
+
+#: src/dialogs/chatty-settings-dialog.c:706
+#: src/dialogs/chatty-settings-dialog.c:952
+msgid "I Know What I am Doing"
+msgstr "Tudom, hogy mit csinálok"
+
+#: src/dialogs/chatty-settings-dialog.c:788
+#: src/dialogs/chatty-settings-dialog.c:870
+#: src/dialogs/chatty-settings-dialog.c:887
+msgid "Cannot Create Signing Key"
+msgstr "Nem lehet létrehozni aláírási kulcsot"
+
+#: src/dialogs/chatty-settings-dialog.c:789
+#: src/dialogs/chatty-settings-dialog.c:886
+#, c-format
+msgid "Error creating the PGP ID. Please check the logs for more details."
+msgstr ""
+"Hiba a PGP-azonosító létrehozásakor. További részletekért nézze meg a "
+"naplókat."
+
+#: src/dialogs/chatty-settings-dialog.c:802
+#, c-format
+msgid "Key %s was created for ID %s"
+msgstr "A(z) %s kulcs a(z) %s azonosítóhoz lett létrehozva"
+
+#: src/dialogs/chatty-settings-dialog.c:803
+msgid "Successfully Created Key"
+msgstr "A kulcs sikeresen létrehozva"
+
+#: src/dialogs/chatty-settings-dialog.c:855
+msgid "Empty Entries"
+msgstr "Üres bejegyzések"
+
+#: src/dialogs/chatty-settings-dialog.c:856
+msgid "All entries must be filled to create a PGP Key"
+msgstr "Az összes bejegyzést ki kell tölteni egy PGP-kulcs létrehozásához"
+
+#: src/dialogs/chatty-settings-dialog.c:869
+#, c-format
+msgid ""
+"%s already has key with fingerprint %s. Please choose a different PGP ID"
+msgstr ""
+"%s már rendelkezik egy %s ujjlenyomatú kulccsal. Válasszon másik PGP-"
+"azonosítót."
+
+#: src/dialogs/chatty-settings-dialog.c:898
+#, c-format
+msgid "Creating key for ID %s."
+msgstr "Kulcs létrehozása a(z) %s azonosítóhoz."
+
+#: src/dialogs/chatty-settings-dialog.c:899
+msgid "Creating Key"
+msgstr "Kulcs létrehozása"
+
+#. Translators: This means that the existing key will be there, but there will be a new key that Chatty will use by default instead of the existing one.
+#: src/dialogs/chatty-settings-dialog.c:947
+#, c-format
+msgid ""
+"Chatty is currently set to use PGP key: %s. The new key will be used instead "
+"of the existing one!"
+msgstr ""
+"A Chatty jelenleg a következő PGP-kulcs használatához van beállítva: %s. Az "
+"új kulcs lesz használva a meglévő helyett!"
+
+#: src/dialogs/chatty-settings-dialog.c:949
+msgid "Signing ID Present"
+msgstr "Aláírási azonosító van jelen"
+
+#: src/dialogs/chatty-settings-dialog.c:951 src/ui/chatty-dialog-join-muc.ui:16
+#: src/ui/chatty-info-dialog.ui:23 src/ui/chatty-info-dialog.ui:32
+msgid "Cancel"
+msgstr "Mégse"
+
+#: src/dialogs/chatty-settings-dialog.c:1107
+msgid "Restart Chatty to disable Purple"
 msgstr "A Chatty újraindítása a Purple letiltásához"
 
-#: src/dialogs/chatty-settings-dialog.c:637
-#: src/ui/chatty-settings-dialog.ui:444
-msgid "Enable purple plugin"
-msgstr "Purple-bővítmény engedélyezése"
+#: src/dialogs/chatty-settings-dialog.c:1123
+#: src/ui/chatty-settings-dialog.ui:290
+msgid "Purple"
+msgstr "Purple"
 
-#: src/dialogs/chatty-settings-dialog.c:651
-#: src/ui/chatty-settings-dialog.ui:218
-msgid "SMS and MMS Settings"
-msgstr "SMS és MMS beállítások"
-
-#: src/dialogs/chatty-settings-dialog.c:653
-#: src/ui/chatty-settings-dialog.ui:236
-msgid "Purple Settings"
-msgstr "Purple beállítások"
-
-#: src/dialogs/chatty-settings-dialog.c:655
+#: src/dialogs/chatty-settings-dialog.c:1125
 msgid "New Account"
 msgstr "Új fiók"
 
-#: src/dialogs/chatty-settings-dialog.c:657
-#: src/ui/chatty-settings-dialog.ui:296
+#: src/dialogs/chatty-settings-dialog.c:1127
+#: src/ui/chatty-settings-dialog.ui:363
 msgid "Blocked Contacts"
 msgstr "Tiltott partnerek"
 
-#: src/dialogs/chatty-settings-dialog.c:659 src/ui/chatty-side-bar.ui:115
+#: src/dialogs/chatty-settings-dialog.c:1129
+#: src/ui/chatty-settings-dialog.ui:272
+msgid "PGP Settings"
+msgstr "PGP-beállítások"
+
+#: src/dialogs/chatty-settings-dialog.c:1131
+msgid "New PGP Key"
+msgstr "Új PGP-kulcs"
+
+#: src/dialogs/chatty-settings-dialog.c:1133
 msgid "Preferences"
 msgstr "Beállítások"
 
-#: src/dialogs/chatty-settings-dialog.c:687
-msgid "Select Protocol"
-msgstr "Protokoll kiválasztása"
+#: src/dialogs/chatty-settings-dialog.c:1161
+#: src/ui/chatty-pp-account-details.ui:60 src/ui/chatty-settings-dialog.ui:245
+msgid "Protocol"
+msgstr "Protokoll"
 
 #. TRANSLATORS: Only translate 'or'
-#: src/dialogs/chatty-settings-dialog.c:932
+#: src/dialogs/chatty-settings-dialog.c:1422
 msgid "@user:matrix.org or user@example.com"
 msgstr "@felhasznalo:matrix.org vagy felhasznalo@example.com"
 
-#: src/matrix/chatty-ma-account.c:102
-msgid "Incorrect password"
-msgstr "Hibás jelszó"
+#: src/dialogs/chatty-settings-dialog.c:1533
+msgid "Experimental Setting!"
+msgstr "Kísérleti beállítás!"
 
-#: src/matrix/chatty-ma-account.c:105
-msgid "_OK"
-msgstr "_OK"
+#: src/dialogs/chatty-settings-dialog.c:1534
+msgid ""
+"This setting is experimental and may cause loss of SMS. Use at your own risk!"
+msgstr ""
+"Ez a beállítás kísérleti, és az SMS elvesztését okozhatja. Saját "
+"felelősségére használja!"
 
-#: src/matrix/chatty-ma-account.c:106 src/ui/chatty-dialog-new-chat.ui:37
-#: src/ui/chatty-settings-dialog.ui:29 src/ui/chatty-settings-dialog.ui:72
-#: src/ui/chatty-verification-page.ui:129
-#: src/ui/chatty-verification-page.ui:157
-msgid "_Cancel"
-msgstr "_Mégse"
-
-#: src/matrix/chatty-ma-account.c:112
+#: src/matrix/chatty-ma-account.c:77
 #, c-format
 msgid "Please enter password for “%s”, homeserver: %s"
 msgstr "Adja meg a(z) „%s” jelszavát, az otthont adó kiszolgáló: %s"
 
-#: src/matrix/chatty-ma-key-chat.c:62
+#: src/matrix/chatty-ma-key-chat.c:73
 msgid "Key Verification"
 msgstr "Kulcs ellenőrzése"
 
@@ -1030,121 +1341,191 @@ msgstr "Hiba az üzenet kézbesítésekor ide: %s"
 msgid "See logs for more details"
 msgstr "Nézze meg naplókat a további részletekért"
 
+#: src/mm/chatty-mmsd.c:572 src/mm/chatty-mmsd.c:633 src/mm/chatty-mmsd.c:656
+msgid "MMS cannot be sent"
+msgstr "Az MMS nem küldhető el"
+
+#: src/mm/chatty-mmsd.c:574
+msgid "Please send less attachments"
+msgstr "Küldjön kevesebb mellékletet"
+
+#: src/mm/chatty-mmsd.c:635
+msgid "Could not resize image to be small enough"
+msgstr "Nem sikerült átméretezni a képet, hogy elég kicsi legyen"
+
+#: src/mm/chatty-mmsd.c:653
+#, c-format
+msgid "The attachment is too large"
+msgid_plural "Attachments are too large"
+msgstr[0] "A melléklet túl nagy"
+msgstr[1] "A mellékletek túl nagyok"
+
 #. TRANSLATORS: Timestamp for minute accuracy, e.g. “2020-08-11 15:27”.
 #. See https://developer.gnome.org/glib/stable/glib-GDateTime.html#g-date-time-format
 #.
-#: src/mm/chatty-mmsd.c:924
+#: src/mm/chatty-mmsd.c:984
 msgid "%Y-%m-%d %H∶%M"
 msgstr "%Y. %B %-d. %H∶%M"
 
-#: src/mm/chatty-mmsd.c:1229
+#: src/mm/chatty-mmsd.c:1308
 #, c-format
 msgid "You received an MMS, but it expired on: %s"
 msgstr "MMS-t kapott, de lejárt ekkor: %s"
 
-#: src/mm/chatty-mmsd.c:1232
+#: src/mm/chatty-mmsd.c:1311
+#, c-format
+msgid "You received an MMS, but it cannot be retrieved"
+msgstr "MMS-t kapott, de nem lehet letölteni"
+
+#: src/mm/chatty-mmsd.c:1313
 msgid "You received an empty MMS."
 msgstr "Üres MMS-t kapott."
 
-#: src/mm/chatty-mmsd.c:1723 src/mm/chatty-mmsd.c:1769
+#: src/mm/chatty-mmsd.c:1794 src/mm/chatty-mmsd.c:1842
 #, c-format
 msgid "Automatically Retrying for  %i MMS"
 msgid_plural "Automatically Retrying for  %i MMSes..."
 msgstr[0] "Automatikus újrapróbálás %i MMS-nél"
 msgstr[1] "Automatikus újrapróbálás %i MMS-nél…"
 
-#: src/mm/chatty-mmsd.c:1728
+#: src/mm/chatty-mmsd.c:1799
 msgid "Temporary Error Sending MMS"
 msgstr "Átmeneti hiba az MMS küldésekor"
 
-#: src/mm/chatty-mmsd.c:1774
+#: src/mm/chatty-mmsd.c:1847
 msgid "Temporary Error Receiving MMS"
 msgstr "Átmeneti hiba az MMS fogadásakor"
 
-#: src/mm/chatty-mmsd.c:1990
+#: src/mm/chatty-mmsd.c:2065
 msgid "MMSC is not configured"
 msgstr "Az MMSC nincs beállítva"
 
-#: src/mm/chatty-mmsd.c:1993
+#: src/mm/chatty-mmsd.c:2068
 msgid "APN is not configured correctly"
 msgstr "Az APN nincs megfelelően beállítva"
 
-#: src/mm/chatty-mmsd.c:1996
-msgid "Mobile Data is not confgured"
+#: src/mm/chatty-mmsd.c:2071
+msgid "Mobile Data is not configured"
 msgstr "A mobil adatkapcsolat nincs beállítva"
 
-#: src/mm/chatty-mmsd.c:1999
+#: src/mm/chatty-mmsd.c:2074
 msgid "Mobile Data is off"
 msgstr "A mobil adatkapcsolat ki van kapcsolva"
 
-#: src/mm/chatty-mmsd.c:2002
-#| msgid "Unknown Contact"
+#: src/mm/chatty-mmsd.c:2077
 msgid "Unknown Error"
 msgstr "Ismeretlen hiba"
 
-#: src/mm/chatty-mmsd.c:2007
+#: src/mm/chatty-mmsd.c:2082
 #, c-format
 msgid "Chatty cannot process %i MMS"
 msgid_plural "Chatty cannot process %i MMSes..."
 msgstr[0] "A Chatty nem tud feldolgozni %i MMS-t"
 msgstr[1] "A Chatty nem tud feldolgozni %i MMS-t…"
 
-#: src/ui/chatty-attachment.ui:20
+#: src/mm/chatty-mm-account.c:345 src/mm/chatty-mm-account.c:396
+#, c-format
+msgid "Error Sending SMS to %s"
+msgstr "Hiba az SMS ide küldésekor: %s"
+
+#: src/mm/chatty-mm-account.c:532
+#, c-format
+msgid "Error Sending MMS to %s"
+msgstr "Hiba az MMS ide küldésekor: %s"
+
+#: src/ui/chatty-attachment.ui:48
 msgid "Remove Attachment"
 msgstr "Melléklet eltávolítása"
+
+#: src/ui/chatty-dialog-wrong-pw.ui:15
+msgid "Incorrect password"
+msgstr "Hibás jelszó"
+
+#: src/ui/chatty-dialog-wrong-pw.ui:33
+msgid "_OK"
+msgstr "_OK"
+
+#: src/ui/chatty-dialog-wrong-pw.ui:47
+msgid "Please re-enter the Password."
+msgstr "Adja meg újra a jelszót."
+
+#: src/ui/chatty-dialog-wrong-pw.ui:53 src/ui/chatty-pp-account-details.ui:70
+#: src/ui/chatty-settings-dialog.ui:794
+msgid "Password"
+msgstr "Jelszó"
 
 #: src/ui/chatty-dialog-join-muc.ui:7
 msgid "New Group Chat"
 msgstr "Új csoportos csevegés"
 
-#: src/ui/chatty-dialog-join-muc.ui:24
+#: src/ui/chatty-dialog-join-muc.ui:22
 msgid "Join Chat"
 msgstr "Csatlakozás a csevegéshez"
 
-#: src/ui/chatty-dialog-join-muc.ui:64 src/ui/chatty-dialog-new-chat.ui:193
+#: src/ui/chatty-dialog-join-muc.ui:62 src/ui/chatty-dialog-new-chat.ui:192
 msgid "Select chat account"
 msgstr "Válasszon csevegőfiókot"
 
-#: src/ui/chatty-dialog-join-muc.ui:122
-msgid "Password (optional)"
-msgstr "Jelszó (nem kötelező)"
+#: src/ui/chatty-dialog-join-muc.ui:90
+msgid "Room address"
+msgstr "Szoba címe"
 
-#: src/ui/chatty-dialog-new-chat.ui:77
+#: src/ui/chatty-dialog-join-muc.ui:100
+msgid "Room alias (optional)"
+msgstr "Szoba álneve (elhagyható)"
+
+#: src/ui/chatty-dialog-join-muc.ui:110
+msgid "Nickname (optional)"
+msgstr "Becenév (elhagyható)"
+
+#: src/ui/chatty-dialog-join-muc.ui:120
+msgid "Password (optional)"
+msgstr "Jelszó (elhagyható)"
+
+#: src/ui/chatty-dialog-new-chat.ui:76
 msgid "Group Title"
 msgstr "Csoport címe"
 
-#: src/ui/chatty-dialog-new-chat.ui:119
+#: src/ui/chatty-dialog-new-chat.ui:118
 msgid "Add members from contacts…"
 msgstr "Tagok hozzáadása a névjegyekből…"
 
-#: src/ui/chatty-dialog-new-chat.ui:156
+#: src/ui/chatty-dialog-new-chat.ui:155
 msgid "Send To:"
 msgstr "Küldés ide:"
 
-#: src/ui/chatty-dialog-new-chat.ui:216
-#| msgid "Contact added"
+#: src/ui/chatty-dialog-new-chat.ui:215 src/ui/chatty-info-dialog.ui:114
 msgid "Contact ID"
 msgstr "Partnerazonosító"
 
-#: src/ui/chatty-dialog-new-chat.ui:226
+#: src/ui/chatty-dialog-new-chat.ui:225
 msgid "Name (optional)"
-msgstr "Név (nem kötelező)"
+msgstr "Név (elhagyható)"
 
-#: src/ui/chatty-dialog-new-chat.ui:263
+#: src/ui/chatty-dialog-new-chat.ui:262
 msgid "Add to Contacts"
 msgstr "Hozzáadás a névjegyekhez"
 
-#: src/ui/chatty-info-dialog.ui:8 src/ui/chatty-main-view.ui:129
+#: src/ui/chatty-file-item.ui:84
+msgid "Save…"
+msgstr "Mentés…"
+
+#: src/ui/chatty-info-dialog.ui:5 src/ui/chatty-main-view.ui:126
 msgid "Chat Details"
 msgstr "Csevegés részletei"
 
-#: src/ui/chatty-info-dialog.ui:44
+#: src/ui/chatty-info-dialog.ui:41
 msgid "Apply"
 msgstr "Alkalmaz"
 
-#: src/ui/chatty-info-dialog.ui:57
+#. Translators: This is invite to a chat room
+#: src/ui/chatty-info-dialog.ui:55
 msgid "Invite"
 msgstr "Meghívás"
+
+#: src/ui/chatty-info-dialog.ui:134
+msgid "Invite message"
+msgstr "Meghívási üzenet"
 
 #: src/ui/chatty-invite-page.ui:62
 msgid "_Accept"
@@ -1154,101 +1535,112 @@ msgstr "El_fogadás"
 msgid "_Reject"
 msgstr "El_utasítás"
 
-#: src/ui/chatty-ma-chat-info.ui:32
-#| msgid "Chats"
+#: src/ui/chatty-ma-chat-info.ui:21 src/ui/chatty-pp-chat-info.ui:59
 msgid "Chat"
 msgstr "Csevegés"
 
-#: src/ui/chatty-ma-chat-info.ui:61 src/ui/chatty-ma-account-details.ui:210
-msgid "Matrix ID"
-msgstr "Matrix-azonosító"
+#: src/ui/chatty-ma-chat-info.ui:35
+msgid "Topic"
+msgstr "Téma"
 
-#: src/ui/chatty-ma-chat-info.ui:89 src/ui/chatty-pp-chat-info.ui:242
+#: src/ui/chatty-ma-chat-info.ui:41
+msgid "Room version"
+msgstr "Szoba verziója"
+
+#: src/ui/chatty-ma-chat-info.ui:49 src/ui/chatty-pp-chat-info.ui:110
 msgid "Chat settings"
 msgstr "Csevegés beállításai"
 
-#: src/ui/chatty-ma-chat-info.ui:107 src/ui/chatty-pp-chat-info.ui:193
-#: src/ui/chatty-pp-chat-info.ui:292
+#: src/ui/chatty-ma-chat-info.ui:52 src/ui/chatty-pp-chat-info.ui:95
+#: src/ui/chatty-pp-chat-info.ui:132
 msgid "Encryption"
 msgstr "Titkosítás"
 
-#: src/ui/chatty-ma-chat-info.ui:108 src/ui/chatty-pp-chat-info.ui:293
+#: src/ui/chatty-ma-chat-info.ui:53 src/ui/chatty-pp-chat-info.ui:133
 msgid "Encrypt Messages"
 msgstr "Üzenetek titkosítása"
 
-#: src/ui/chatty-main-view.ui:17 src/ui/chatty-settings-dialog.ui:18
-#: src/ui/chatty-side-bar.ui:24
+#: src/ui/chatty-ma-chat-info.ui:68
+msgid "Chat Members"
+msgstr "Csevegési tagok"
+
+#: src/ui/chatty-main-view.ui:12 src/ui/chatty-settings-dialog.ui:14
+#: src/ui/chatty-side-bar.ui:19
 msgid "Back"
 msgstr "Vissza"
 
-#: src/ui/chatty-main-view.ui:46 src/ui/chatty-list-row.ui:169
+#: src/ui/chatty-main-view.ui:41 src/ui/chatty-list-row.ui:169
 msgid "Call"
 msgstr "Hívás"
 
-#: src/ui/chatty-main-view.ui:140
-msgid "Leave Chat"
-msgstr "Csevegés elhagyása"
+#: src/ui/chatty-main-view.ui:137
+msgid "_Leave Chat"
+msgstr "Csevegés _elhagyása"
 
-#: src/ui/chatty-main-view.ui:148
-msgid "Block Contact"
-msgstr "Partner tiltása"
+#: src/ui/chatty-main-view.ui:145
+msgid "_Block Contact"
+msgstr "Partner _tiltása"
 
-#: src/ui/chatty-main-view.ui:156
-msgid "Unblock Contact"
-msgstr "Partner tiltásának feloldása"
+#: src/ui/chatty-main-view.ui:153
+msgid "_Unblock Contact"
+msgstr "Partner tiltásának _feloldása"
 
-#: src/ui/chatty-main-view.ui:164
-msgid "Archive chat"
-msgstr "Csevegés archiválása"
+#: src/ui/chatty-main-view.ui:161
+msgid "_Archive chat"
+msgstr "Csevegés _archiválása"
 
-#: src/ui/chatty-main-view.ui:172
+#: src/ui/chatty-main-view.ui:169
 msgid "Unarchive chat"
 msgstr "Csevegés archiválásának megszüntetése"
 
-#: src/ui/chatty-main-view.ui:180
-msgid "Delete Chat"
-msgstr "Csevegés törlése"
+#: src/ui/chatty-main-view.ui:177
+msgid "_Delete Chat"
+msgstr "Csevegés _törlése"
 
-#: src/ui/chatty-pp-chat-info.ui:34 src/ui/chatty-pp-account-details.ui:38
+#: src/ui/chatty-message-row.ui:161
+msgid "Copy Text"
+msgstr "Szöveg másolása"
+
+#: src/ui/chatty-pp-chat-info.ui:23 src/ui/chatty-pp-account-details.ui:39
 msgid "Change Avatar"
 msgstr "Profilkép megváltoztatása"
 
-#: src/ui/chatty-pp-chat-info.ui:47 src/ui/chatty-pp-account-details.ui:25
+#: src/ui/chatty-pp-chat-info.ui:36 src/ui/chatty-pp-account-details.ui:26
 msgid "Delete Avatar"
 msgstr "Profilkép törlése"
 
-#: src/ui/chatty-pp-chat-info.ui:76
+#: src/ui/chatty-pp-chat-info.ui:67
 msgid "Room topic"
 msgstr "Szoba témája"
 
-#: src/ui/chatty-pp-chat-info.ui:143
+#: src/ui/chatty-pp-chat-info.ui:81
 msgid "User"
 msgstr "Felhasználó"
 
-#: src/ui/chatty-pp-chat-info.ui:168
-msgid "XMPP ID"
-msgstr "XMPP-azonosító"
-
-#: src/ui/chatty-pp-chat-info.ui:218 src/ui/chatty-ma-account-details.ui:54
-#: src/ui/chatty-pp-account-details.ui:105
+#: src/ui/chatty-pp-chat-info.ui:102 src/ui/chatty-ma-account-details.ui:53
+#: src/ui/chatty-pp-account-details.ui:65
 msgid "Status"
 msgstr "Állapot"
 
-#: src/ui/chatty-pp-chat-info.ui:262
+#: src/ui/chatty-pp-chat-info.ui:115
 msgid "Notifications"
 msgstr "Értesítések"
 
-#: src/ui/chatty-pp-chat-info.ui:277
+#: src/ui/chatty-pp-chat-info.ui:123
 msgid "Status Messages"
 msgstr "Állapotüzenetek"
 
-#: src/ui/chatty-pp-chat-info.ui:278
+#: src/ui/chatty-pp-chat-info.ui:124
 msgid "Show status messages in chat"
 msgstr "Állapotüzenetek megjelenítése a csevegésben"
 
-#: src/ui/chatty-pp-chat-info.ui:313
+#: src/ui/chatty-pp-chat-info.ui:143
 msgid "Fingerprints"
 msgstr "Ujjlenyomatok"
+
+#: src/ui/chatty-pp-chat-info.ui:162
+msgid "User List"
+msgstr "Felhasználólista"
 
 #: src/ui/chatty-mm-chat-info.ui:20
 msgid "Title"
@@ -1263,208 +1655,279 @@ msgid "Group Members"
 msgstr "Csoport tagja"
 
 #: src/ui/chatty-list-row.ui:33
-#| msgid "Show Numbers"
 msgid "Copy Number"
 msgstr "Szám másolása"
 
-#: src/ui/chatty-ma-account-details.ui:78
+#: src/ui/chatty-ma-account-details.ui:58
 msgid "Name"
 msgstr "Név"
 
-#: src/ui/chatty-ma-account-details.ui:106
+#: src/ui/chatty-ma-account-details.ui:64
 msgid "Email"
 msgstr "E-mail"
 
-#: src/ui/chatty-ma-account-details.ui:134
+#: src/ui/chatty-ma-account-details.ui:69
 msgid "Phone"
 msgstr "Telefon"
 
-#: src/ui/chatty-ma-account-details.ui:174
+#: src/ui/chatty-ma-account-details.ui:74
 msgid "Advanced information"
 msgstr "Speciális információk"
 
-#: src/ui/chatty-ma-account-details.ui:186
+#: src/ui/chatty-ma-account-details.ui:77
 msgid "Homeserver"
 msgstr "Otthont adó kiszolgáló"
 
-#: src/ui/chatty-ma-account-details.ui:234
+#: src/ui/chatty-ma-account-details.ui:83
+msgid "Copy homeserver URL"
+msgstr "Otthont adó kiszolgáló URL-ének másolása"
+
+#: src/ui/chatty-ma-account-details.ui:97 src/ui/chatty-ma-user-row.ui:68
+msgid "Copy user ID"
+msgstr "Felhasználó-azonosító másolása"
+
+#: src/ui/chatty-ma-account-details.ui:105
 msgid "Device ID"
 msgstr "Eszközazonosító"
 
-#: src/ui/chatty-pp-account-details.ui:59
+#: src/ui/chatty-ma-account-details.ui:111
+msgid "Copy device ID"
+msgstr "Eszközazonosító másolása"
+
+#: src/ui/chatty-ma-account-details.ui:121
+msgid "Sensitive information"
+msgstr "Érzékeny információk"
+
+#: src/ui/chatty-ma-account-details.ui:124
+msgid "Access token"
+msgstr "Hozzáférési token"
+
+#: src/ui/chatty-pp-account-details.ui:55
 msgid "Account ID"
 msgstr "Fiókazonosító"
 
-#: src/ui/chatty-pp-account-details.ui:81
-msgid "Protocol"
-msgstr "Protokoll"
-
-#: src/ui/chatty-pp-account-details.ui:129 src/ui/chatty-settings-dialog.ui:620
-msgid "Password"
-msgstr "Jelszó"
-
-#: src/ui/chatty-pp-account-details.ui:168
+#: src/ui/chatty-pp-account-details.ui:88
 msgid "Own Fingerprint"
 msgstr "Saját ujjlenyomat"
 
-#: src/ui/chatty-settings-dialog.ui:39
-msgid "_Add"
-msgstr "Hozzá_adás"
+#: src/ui/chatty-progress-button.ui:19
+msgid "Download file from server"
+msgstr "Fájl letöltése a kiszolgálóról"
 
-#: src/ui/chatty-settings-dialog.ui:52
+#: src/ui/chatty-settings-dialog.ui:35
 msgid "_Save"
 msgstr "_Mentés"
 
-#: src/ui/chatty-settings-dialog.ui:62
+#: src/ui/chatty-settings-dialog.ui:45 src/ui/chatty-settings-dialog.ui:65
+#: src/ui/chatty-settings-dialog.ui:85
 msgid "_Apply"
 msgstr "_Alkalmaz"
 
-#: src/ui/chatty-settings-dialog.ui:123
+#: src/ui/chatty-settings-dialog.ui:136
 msgid "Accounts"
 msgstr "Fiókok"
 
-#: src/ui/chatty-settings-dialog.ui:140 src/ui/chatty-settings-dialog.ui:461
+#: src/ui/chatty-settings-dialog.ui:153 src/ui/chatty-settings-dialog.ui:639
 msgid "Privacy"
 msgstr "Adatvédelem"
 
-#: src/ui/chatty-settings-dialog.ui:145
-msgid "Message Receipts"
-msgstr "Üzenetnyugták"
+#: src/ui/chatty-settings-dialog.ui:158
+msgid "Read Receipts"
+msgstr "Olvasási visszaigazolások"
 
-#: src/ui/chatty-settings-dialog.ui:146
-msgid "Confirm received messages"
-msgstr "Fogadott üzenetek megerősítése"
+#: src/ui/chatty-settings-dialog.ui:171
+msgid "Typing Indicators"
+msgstr "Gépelési jelzők"
 
-#: src/ui/chatty-settings-dialog.ui:159
-msgid "Typing Notification"
-msgstr "Gépelési értesítések"
+#: src/ui/chatty-settings-dialog.ui:184
+msgid "Remove Tracking IDs From URLs"
+msgstr "Követési azonosítók eltávolítása az URL-ekből"
 
-#: src/ui/chatty-settings-dialog.ui:160
-msgid "Send typing messages"
-msgstr "Gépelési üzenetek küldése"
+#: src/ui/chatty-settings-dialog.ui:197
+msgid "Show Attachment Previews"
+msgstr "Melléklet-előnézetek megjelenítése"
 
-#: src/ui/chatty-settings-dialog.ui:176
+#: src/ui/chatty-settings-dialog.ui:213
 msgid "Editor"
 msgstr "Szerkesztő"
 
-#: src/ui/chatty-settings-dialog.ui:180
-msgid "Graphical Emoticons"
-msgstr "Grafikus hangulatjelek"
+#: src/ui/chatty-settings-dialog.ui:217
+msgid "Convert Emoticons"
+msgstr "Hangulatjelek átalakítása"
 
-#: src/ui/chatty-settings-dialog.ui:181
-msgid "if you type :) it will be changed to 😃"
-msgstr "ha :) jelet gépel be, akkor 😃 jelre lesz megváltoztatva"
+#: src/ui/chatty-settings-dialog.ui:218
+msgid "When you type :) it will be changed to 😃"
+msgstr "Ha :) jelet gépel be, akkor 😃 jelre lesz megváltoztatva"
 
 #. TRANSLATORS: Return is the Enter key.
-#: src/ui/chatty-settings-dialog.ui:194
-msgid "Send Messages with Return"
+#: src/ui/chatty-settings-dialog.ui:231
+msgid "Send Messages With Enter"
 msgstr "Üzenetek küldése az Enter billentyűvel"
 
-#: src/ui/chatty-settings-dialog.ui:208
-msgid "Protocol Settings"
-msgstr "Protokoll beállításai"
-
-#: src/ui/chatty-settings-dialog.ui:269
+#: src/ui/chatty-settings-dialog.ui:323
 msgid "Request Delivery Reports"
 msgstr "Kézbesítési jelentések kérése"
 
-#: src/ui/chatty-settings-dialog.ui:282
+#: src/ui/chatty-settings-dialog.ui:335
+msgid "Clear Stuck SMS"
+msgstr "Beragadt SMS kitörlése"
+
+#: src/ui/chatty-settings-dialog.ui:349
 msgid "SMIL for MMS"
 msgstr "SMIL az MMS-hez"
 
-#: src/ui/chatty-settings-dialog.ui:314
+#: src/ui/chatty-settings-dialog.ui:381
 msgid "MMS Carrier Settings"
 msgstr "MMS szolgáltatói beállítások"
 
-#: src/ui/chatty-settings-dialog.ui:318
-#| msgid "Phone Number:"
-msgid "Phone Number"
-msgstr "Telefonszám"
-
-#: src/ui/chatty-settings-dialog.ui:324
+#: src/ui/chatty-settings-dialog.ui:391
 msgid "Your modem's phone number"
 msgstr "A modemje telefonszáma"
 
-#: src/ui/chatty-settings-dialog.ui:332
+#: src/ui/chatty-settings-dialog.ui:399
 msgid "MMSC"
 msgstr "MMSC"
 
-#: src/ui/chatty-settings-dialog.ui:344
+#: src/ui/chatty-settings-dialog.ui:411
 msgid "APN"
 msgstr "APN"
 
-#: src/ui/chatty-settings-dialog.ui:356
+#: src/ui/chatty-settings-dialog.ui:423
 msgid "Proxy"
 msgstr "Proxy"
 
-#: src/ui/chatty-settings-dialog.ui:383
-msgid "You shall not be notified for the messages from blocked contacts"
-msgstr "Nem kap értesítést a tiltott partnerektől érkező üzenetekről"
+#: src/ui/chatty-settings-dialog.ui:447
+msgid "Current PGP Key"
+msgstr "Jelenlegi PGP-kulcs"
 
-#: src/ui/chatty-settings-dialog.ui:414
-msgid "Blocked chat list empty"
-msgstr "A tiltott csevegések listája üres"
+#: src/ui/chatty-settings-dialog.ui:448
+msgid ""
+"Chatty can use any existing key embedded with gpg. However, you are given "
+"the option to generate a key specifically for Chatty below."
+msgstr ""
+"A Chatty a gpg-vel beágyazott bármely meglévő kulcsot használhatja. Azonban "
+"lent lehetősége van kifejezetten a Chatty számára előállítani egy kulcsot."
+
+#: src/ui/chatty-settings-dialog.ui:453
+msgid "Generate Chatty PGP Key"
+msgstr "Chatty PGP-kulcs előállítása"
 
 #: src/ui/chatty-settings-dialog.ui:467
+msgid "Signing ID"
+msgstr "Aláírási azonosító"
+
+#: src/ui/chatty-settings-dialog.ui:472
+msgid "foo@example.com"
+msgstr "ize@example.com"
+
+#: src/ui/chatty-settings-dialog.ui:485
+msgid "Optional"
+msgstr "Elhagyható"
+
+#: src/ui/chatty-settings-dialog.ui:505
+msgid ""
+"This will generate a key for use with Chatty. Please note that this will not "
+"install the key on a smart card."
+msgstr ""
+"Ez előállít majd egy kulcsot a Chatty programmal való használathoz. Ne "
+"feledje, hogy ez nem fogja telepíteni a kulcsot egy intelligens kártyára."
+
+#: src/ui/chatty-settings-dialog.ui:508
+msgid "Full Name"
+msgstr "Teljes név"
+
+#: src/ui/chatty-settings-dialog.ui:520
+msgid "PGP ID"
+msgstr "PGP-azonosító"
+
+#: src/ui/chatty-settings-dialog.ui:533
+msgid "PGP Passphrase"
+msgstr "PGP-jelmondat"
+
+#: src/ui/chatty-settings-dialog.ui:562
+msgid "You won't be notified by messages from blocked contacts"
+msgstr "Nem lesz értesítve a tiltott partnerektől érkező üzenetekről"
+
+#: src/ui/chatty-settings-dialog.ui:593
+msgid "No Blocked Chats"
+msgstr "Nincsenek tiltott csevegések"
+
+#: src/ui/chatty-settings-dialog.ui:622
+msgid "Enable Purple Accounts"
+msgstr "Purple-fiókok engedélyezése"
+
+#: src/ui/chatty-settings-dialog.ui:645
 msgid "Message Archive Management"
 msgstr "Üzenetarchívum-kezelés"
 
-#: src/ui/chatty-settings-dialog.ui:468
+#: src/ui/chatty-settings-dialog.ui:646
 msgid "Sync conversations with chat server"
 msgstr "Beszélgetések szinkronizálása a csevegési kiszolgálóval"
 
-#: src/ui/chatty-settings-dialog.ui:482
+#: src/ui/chatty-settings-dialog.ui:660
 msgid "Message Carbon Copies"
 msgstr "Üzenetmásolatok"
 
-#: src/ui/chatty-settings-dialog.ui:646
+#: src/ui/chatty-settings-dialog.ui:775
+msgid "User ID"
+msgstr "Felhasználó-azonosító"
+
+#: src/ui/chatty-settings-dialog.ui:800
 msgid "Home server"
 msgstr "Otthont adó kiszolgáló"
 
-#: src/ui/chatty-settings-dialog.ui:678
-msgid "Add _new account…"
-msgstr "Ú_j fiók hozzáadása…"
+#: src/ui/chatty-settings-dialog.ui:810
+msgid "_Add"
+msgstr "Hozzá_adás"
 
-#: src/ui/chatty-side-bar.ui:32
+#: src/ui/chatty-settings-dialog.ui:838
+msgid "Add _New Account"
+msgstr "Ú_j fiók hozzáadása"
+
+#: src/ui/chatty-side-bar.ui:27
 msgid "Add Chat"
 msgstr "Csevegés hozzáadása"
 
-#: src/ui/chatty-side-bar.ui:41
+#: src/ui/chatty-side-bar.ui:36
 msgid "Menu"
 msgstr "Menü"
 
-#: src/ui/chatty-side-bar.ui:49
+#: src/ui/chatty-side-bar.ui:45
 msgid "Search"
 msgstr "Keresés"
 
-#: src/ui/chatty-side-bar.ui:107
-msgctxt "show archived chat list when clicked"
-msgid "Archived"
-msgstr "Archiválva"
+#: src/ui/chatty-side-bar.ui:101
+msgid "_New Message…"
+msgstr "Ú_j üzenet…"
 
-#: src/ui/chatty-side-bar.ui:122
+#: src/ui/chatty-side-bar.ui:107
+msgid "New SMS/MMS _Message…"
+msgstr "Új SMS/MMS-ü_zenet…"
+
+#: src/ui/chatty-side-bar.ui:113
+msgid "New _Group Message…"
+msgstr "Új _csoportos üzenet…"
+
+#: src/ui/chatty-side-bar.ui:136
+msgctxt "show archived chat list when clicked"
+msgid "_Archived"
+msgstr "_Archiválva"
+
+#: src/ui/chatty-side-bar.ui:140
+msgid "_Preferences"
+msgstr "_Beállítások"
+
+#: src/ui/chatty-side-bar.ui:144
 msgid "Keyboard _Shortcuts"
 msgstr "_Gyorsbillentyűk"
 
-#: src/ui/chatty-side-bar.ui:129
-msgid "Help"
-msgstr "Súgó"
+#: src/ui/chatty-side-bar.ui:148
+msgid "_Help"
+msgstr "_Súgó"
 
-#: src/ui/chatty-side-bar.ui:137
-msgid "About Chats"
-msgstr "A Csevegések névjegye"
-
-#: src/ui/chatty-side-bar.ui:158
-msgid "New Message…"
-msgstr "Új üzenet…"
-
-#: src/ui/chatty-side-bar.ui:164
-msgid "New SMS/MMS Message…"
-msgstr "Új SMS/MMS-üzenet…"
-
-#: src/ui/chatty-side-bar.ui:170
-msgid "New Group Message…"
-msgstr "Új csoportos üzenet…"
+#: src/ui/chatty-side-bar.ui:152
+msgid "About _Chats"
+msgstr "A _Csevegések névjegye"
 
 #: src/ui/chatty-verification-page.ui:24
 msgid "Incoming Verification Request"
@@ -1486,32 +1949,32 @@ msgstr ""
 msgid "C_ontinue"
 msgstr "_Folytatás"
 
-#: src/ui/chatty-verification-page.ui:200
+#: src/ui/chatty-verification-page.ui:201
 msgid ""
 "Verify this user by confirming the following emoji appears on their screen"
 msgstr ""
 "Ellenőrizze ezt a felhasználót annak megerősítésével, hogy a következő "
 "emodzsi jelenik meg a képernyőjén"
 
-#: src/ui/chatty-verification-page.ui:377
+#: src/ui/chatty-verification-page.ui:378
 msgid ""
 "Verify this user by confirming the following number appears on their screen."
 msgstr ""
 "Ellenőrizze ezt a felhasználót annak megerősítésével, hogy a következő szám "
 "jelenik meg a képernyőjén."
 
-#: src/ui/chatty-verification-page.ui:412
+#: src/ui/chatty-verification-page.ui:413
 msgid "To be secure, do this in person or use a trusted way to communicate."
 msgstr ""
 "A biztonság érdekében tegye ezt személyesen, vagy használjon megbízható "
 "módot a kommunikációhoz."
 
-#: src/ui/chatty-verification-page.ui:423
+#: src/ui/chatty-verification-page.ui:424
 msgctxt "verb, which means 'both items are not the same'"
 msgid "_Don’t Match"
 msgstr "_Nem egyezik"
 
-#: src/ui/chatty-verification-page.ui:433
+#: src/ui/chatty-verification-page.ui:434
 msgctxt "verb, which means 'both items are the same'"
 msgid "_Match"
 msgstr "_Egyezik"
@@ -1533,17 +1996,42 @@ msgstr "Keresés megnyitása"
 
 #: src/ui/help-overlay.ui:35
 msgctxt "shortcut window"
+msgid "New Chat"
+msgstr "Új csevegés"
+
+#: src/ui/help-overlay.ui:43
+msgctxt "shortcut window"
+msgid "New Group Chat"
+msgstr "Új csoportos csevegés"
+
+#: src/ui/help-overlay.ui:51
+msgctxt "shortcut window"
 msgid "Show Shortcuts"
 msgstr "Gyorsbillentyűk megjelenítése"
 
+#: src/ui/help-overlay.ui:62
+msgctxt "shortcut window"
+msgid "Chat"
+msgstr "Csevegés"
+
+#: src/ui/help-overlay.ui:67
+msgctxt "shortcut window"
+msgid "Show Details"
+msgstr "Részletek megjelenítése"
+
+#: src/ui/help-overlay.ui:75
+msgctxt "shortcut window"
+msgid "Close Chat"
+msgstr "Csevegés bezárása"
+
 #: src/users/chatty-contact.c:324
-msgid "Mobile: "
-msgstr "Mobil: "
+msgid "Mobile:"
+msgstr "Mobil:"
 
 #: src/users/chatty-contact.c:326
-msgid "Work: "
-msgstr "Munkahelyi: "
+msgid "Work:"
+msgstr "Munkahelyi:"
 
 #: src/users/chatty-contact.c:328
-msgid "Other: "
-msgstr "Egyéb: "
+msgid "Other:"
+msgstr "Egyéb:"
