@@ -1,14 +1,14 @@
 # Romanian translation for chatty.
 # Copyright (C) 2020 chatty's COPYRIGHT HOLDER
 # This file is distributed under the same license as the chatty package.
-# Antonio Marin <gnmer.6qxyg@slmail.me>, 2024-2025.
+# Antonio Marin <gnmer.6qxyg@slmail.me>, 2024-2026.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: chatty master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/Chatty/issues\n"
-"POT-Creation-Date: 2025-11-10 11:24+0000\n"
-"PO-Revision-Date: 2025-11-10 15:08+0100\n"
+"POT-Creation-Date: 2026-02-28 12:23+0000\n"
+"PO-Revision-Date: 2026-03-11 15:02+0100\n"
 "Last-Translator: Antonio Marin <gnmer.6qxyg@slmail.me>\n"
 "Language-Team: Romanian <gnomero-list@lists.sourceforge.net>\n"
 "Language: ro\n"
@@ -281,7 +281,7 @@ msgstr "Aplicație de mesagerie SMS și XMPP"
 
 #: src/chatty-application.c:168
 msgid "translator-credits"
-msgstr "libre (Antonio Marin) <gnmer.6qxyg@slmail.me>"
+msgstr "Antonio Marin <gnmer.6qxyg@slmail.me>"
 
 #: src/chatty-application.c:193
 #, c-format
@@ -1772,6 +1772,10 @@ msgstr "Șterge SMS-urile blocate"
 #: src/ui/chatty-settings-dialog.ui:349
 msgid "SMIL for MMS"
 msgstr "SMIL pentru MMS"
+
+#: src/ui/chatty-settings-dialog.ui:350
+msgid "Enable rich media embedding"
+msgstr "Activează afișarea de conținut multimedia"
 
 #: src/ui/chatty-settings-dialog.ui:381
 msgid "MMS Carrier Settings"
