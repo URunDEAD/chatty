@@ -1,14 +1,14 @@
 # Georgian translation for chatty.
 # Copyright (C) 2024 chatty's authors
 # This file is distributed under the same license as the chatty package.
-# Ekaterine Papava <papava.e@gtu.ge>, 2024-2025.
+# Ekaterine Papava <papava.e@gtu.ge>, 2024-2026.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: chatty main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/Chatty/issues\n"
-"POT-Creation-Date: 2025-11-10 11:24+0000\n"
-"PO-Revision-Date: 2025-11-11 04:08+0100\n"
+"POT-Creation-Date: 2026-02-28 12:23+0000\n"
+"PO-Revision-Date: 2026-03-11 06:08+0100\n"
 "Last-Translator: Ekaterine Papava <papava.e@gtu.ge>\n"
 "Language-Team: Georgian <ka@li.org>\n"
 "Language: ka\n"
@@ -1752,6 +1752,10 @@ msgstr "გაჭედილი SMS-ების მოცილება"
 #: src/ui/chatty-settings-dialog.ui:349
 msgid "SMIL for MMS"
 msgstr "SMIL MMS-თვის"
+
+#: src/ui/chatty-settings-dialog.ui:350
+msgid "Enable rich media embedding"
+msgstr "მდიდარი მედიის ჩაშენების ჩართვა"
 
 #: src/ui/chatty-settings-dialog.ui:381
 msgid "MMS Carrier Settings"
