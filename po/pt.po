@@ -9,16 +9,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: purism-chatty\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/Chatty/issues\n"
-"POT-Creation-Date: 2025-10-27 11:35+0000\n"
-"PO-Revision-Date: 2026-02-23 18:13+0000\n"
-"Last-Translator: André Moreira <afrmscb@gmail.com>\n"
+"POT-Creation-Date: 2026-02-28 12:23+0000\n"
+"PO-Revision-Date: 2026-03-18 13:41+0000\n"
+"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.8\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #: data/sm.puri.Chatty.desktop.in.in:2 data/sm.puri.Chatty.metainfo.xml.in.in:6
 #: src/chatty-application.c:157 src/chatty-application.c:388
@@ -444,7 +444,7 @@ msgstr "Ontem às %I:%M %p"
 #.
 #: src/chatty-clock.c:176
 msgid "%Y-%m-%d %H:%M"
-msgstr "%d-%m-%Y %H:%M"
+msgstr "%Y-%m-%d %H:%M"
 
 #. TRANSLATORS: Timestamp with 12 hour time, e.g. “Today 06∶42 PM”.
 #. * See https://docs.gtk.org/glib/method.DateTime.format.html
@@ -453,11 +453,11 @@ msgstr "%d-%m-%Y %H:%M"
 #.
 #: src/chatty-clock.c:183
 msgid "%Y-%m-%d %I:%M %p"
-msgstr "%d-%m-%Y %I:%M %p"
+msgstr "%Y-%m-%d %I:%M %p"
 
 #: src/chatty-clock.c:185
 msgid "%Y-%m-%d"
-msgstr "%d-%m-%Y"
+msgstr "%Y-%m-%d"
 
 #: src/chatty-file-item.c:142 src/chatty-file-item.c:157
 msgid "Contact"
@@ -1352,7 +1352,7 @@ msgstr[1] "Os anexos são demasiado grandes"
 #.
 #: src/mm/chatty-mmsd.c:984
 msgid "%Y-%m-%d %H∶%M"
-msgstr "%d-%m-%Y %H:%M"
+msgstr "%Y-%m-%d %H∶%M"
 
 #: src/mm/chatty-mmsd.c:1308
 #, c-format
@@ -1762,6 +1762,10 @@ msgstr "Limpar SMS bloqueadas"
 #: src/ui/chatty-settings-dialog.ui:349
 msgid "SMIL for MMS"
 msgstr "SMIL para MMS"
+
+#: src/ui/chatty-settings-dialog.ui:350
+msgid "Enable rich media embedding"
+msgstr "Ativar a incorporação de conteúdos multimédia"
 
 #: src/ui/chatty-settings-dialog.ui:381
 msgid "MMS Carrier Settings"
