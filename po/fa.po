@@ -1,14 +1,14 @@
 # Persian translation for chatty.
 # Copyright (C) 2024 chatty's COPYRIGHT HOLDER
 # This file is distributed under the same license as the chatty package.
-# Danial Behzadi <dani.behzi@ubuntu.com>, 2024-2025.
+# Danial Behzadi <dani.behzi@ubuntu.com>, 2024-2026.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: chatty main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/Chatty/issues\n"
-"POT-Creation-Date: 2025-11-10 11:24+0000\n"
-"PO-Revision-Date: 2025-11-14 07:52+0330\n"
+"POT-Creation-Date: 2026-02-28 12:23+0000\n"
+"PO-Revision-Date: 2026-03-29 13:31+0330\n"
 "Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
 "Language-Team: Persian <fa@li.org>\n"
 "Language: fa\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.8\n"
+"X-Generator: Poedit 3.9\n"
 
 #: data/sm.puri.Chatty.desktop.in.in:2 data/sm.puri.Chatty.metainfo.xml.in.in:6
 #: src/chatty-application.c:157 src/chatty-application.c:388
@@ -1733,6 +1733,10 @@ msgstr "پاک‌سازی پیامک‌های گیر کرده"
 #: src/ui/chatty-settings-dialog.ui:349
 msgid "SMIL for MMS"
 msgstr "SMIL برای پیام چندرسانه‌ای"
+
+#: src/ui/chatty-settings-dialog.ui:350
+msgid "Enable rich media embedding"
+msgstr "به کار انداختن تعبیهٔ رسانهٔ غنی"
 
 #: src/ui/chatty-settings-dialog.ui:381
 msgid "MMS Carrier Settings"
