@@ -330,6 +330,30 @@ chatty_application_handle_local_options (GApplication *application,
   return -1;
 }
 
+
+static void
+open_uris (ChattyApplication *self, GFile *files[], gint n_files)
+{
+  const char *sms = NULL;
+
+  g_return_if_fail (files);
+  g_return_if_fail (n_files > 0);
+
+  for (guint i = 0; i < n_files; i++) {
+    if (g_file_has_uri_scheme (files[i], "sms") && sms == NULL) {
+      sms = g_file_get_uri (files[i]);
+    } else {
+      g_warning ("Ignoring URI '%s'", g_file_get_uri (files[i]));
+    }
+  }
+
+  if (sms) {
+    g_set_str (&self->uri, sms);
+    g_debug ("Opening sms '%s'", self->uri);
+  }
+}
+
+
 static gint
 chatty_application_command_line (GApplication            *application,
                                  GApplicationCommandLine *command_line)
@@ -338,6 +362,7 @@ chatty_application_command_line (GApplication            *application,
   GVariantDict  *options;
   g_auto(GStrv) arguments = NULL;
   gint argc;
+  GPtrArray *uris = g_ptr_array_new_full (1, g_object_unref);
 
   options = g_application_command_line_get_options_dict (command_line);
 
@@ -350,14 +375,14 @@ chatty_application_command_line (GApplication            *application,
 #endif
 
   arguments = g_application_command_line_get_arguments (command_line, &argc);
-
-  /* Keep only the last URI, if there are many */
   for (guint i = 1; i < argc; i++) {
-    if (g_str_has_prefix (arguments[i], "sms:")) {
-      g_free (self->uri);
-      self->uri = g_strdup (arguments[i]);
-    }
+    GFile *uri = g_file_new_for_commandline_arg (arguments[i]);
+
+    g_ptr_array_add (uris, g_steal_pointer (&uri));
   }
+
+  if (uris->len)
+    open_uris (self, (GFile**)uris->pdata, uris->len);
 
   g_application_activate (application);
 
