@@ -352,11 +352,12 @@ chatty_application_command_line (GApplication            *application,
   arguments = g_application_command_line_get_arguments (command_line, &argc);
 
   /* Keep only the last URI, if there are many */
-  for (guint i = 0; i < argc; i++)
+  for (guint i = 1; i < argc; i++) {
     if (g_str_has_prefix (arguments[i], "sms:")) {
       g_free (self->uri);
       self->uri = g_strdup (arguments[i]);
     }
+  }
 
   g_application_activate (application);
 
