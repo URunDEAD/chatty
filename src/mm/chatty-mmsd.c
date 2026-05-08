@@ -979,7 +979,7 @@ chatty_mmsd_receive_message (ChattyMmsd *self,
       expire_time = g_date_time_new_now_local ();
 
   /* TRANSLATORS: Timestamp for minute accuracy, e.g. “2020-08-11 15:27”.
-     See https://developer.gnome.org/glib/stable/glib-GDateTime.html#g-date-time-format
+     See https://docs.gtk.org/glib/method.DateTime.format.html
    */
     expire_time_string = g_date_time_format (expire_time, _("%Y-%m-%d %H∶%M"));
   } else if (g_strcmp0 (status, "retrieve-failure") == 0) {
