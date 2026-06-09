@@ -200,7 +200,7 @@ chatty_eds_load_contact (ChattyEds     *self,
 
   /* Only container should be freed, attribute is freed in ChattyContact */
   #if EDS_CHECK_VERSION(3, 59, 1)
-  attributes = e_vcard_get_attributes_by_name (E_VCARD (contact), e_contact_field_name (field_id));
+  attributes = e_vcard_get_attributes_by_name (E_VCARD (contact), e_contact_vcard_attribute (field_id));
   #else
   attributes = e_contact_get_attributes (contact, field_id);
   #endif
