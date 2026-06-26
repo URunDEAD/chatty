@@ -1988,6 +1988,27 @@ history_open_db (ChattyHistory *self,
   }
 }
 
+typedef struct {
+  GThread *worker_thread;
+  GTask   *task;
+} CloseDbData;
+
+static void
+history_close_db_complete (gpointer user_data)
+{
+  CloseDbData *data = user_data;
+
+  if (data->worker_thread)
+    {
+      g_thread_join (data->worker_thread);
+      data->worker_thread = NULL;
+    }
+
+  g_task_return_boolean (data->task, TRUE);
+  g_object_unref (data->task);
+  g_free (data);
+}
+
 static void
 history_close_db (ChattyHistory *self,
                   GTask         *task)
@@ -2013,11 +2034,16 @@ history_close_db (ChattyHistory *self,
      * actions with the same @self will not execute, and so the tasks
      * will take ∞ time to complete.
      *
-     * Hence invalidate the @self's ref to this task:
+     * Hence invalidate the @self's ref to this task and wait
+     * in the main thread for the worker thread to finish:
      */
-    g_clear_pointer (&self->worker_thread, g_thread_unref);
+    CloseDbData *data = g_new0 (CloseDbData, 1);
+
+    data->worker_thread = g_steal_pointer (&self->worker_thread);
+    data->task = g_object_ref (task);
+
     g_debug ("Database closed successfully");
-    g_task_return_boolean (task, TRUE);
+    g_idle_add_once (history_close_db_complete, data);
   } else {
     g_task_return_new_error (task,
                              G_IO_ERROR,
