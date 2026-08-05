@@ -8,7 +8,7 @@ include:
 
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
-  IMAGE: $CI_REGISTRY/world/chatty/debian:v0.0.2025-02-23
+  IMAGE: $CI_REGISTRY/world/chatty/debian:v0.0.2026-08-05
   ALPINE_IMAGE: alpine:edge
 
 stages:
@@ -36,7 +36,7 @@ before_script:
   - export DEBIAN_FRONTEND=noninteractive
   - apt-get -y update
 
-build-debian-gcc-trixie-no-purple:
+build-debian-gcc-forky-no-purple:
   image: ${IMAGE}
   stage: build
   script:
@@ -47,7 +47,7 @@ build-debian-gcc-trixie-no-purple:
     variables:
       - $FP_ONLY == "1"
 
-build-debian-gcc-trixie:
+build-debian-gcc-forky:
   image: ${IMAGE}
   stage: build
   script:
@@ -109,7 +109,7 @@ test:debian-gcc:
   stage: test
   image: ${IMAGE}
   dependencies:
-    - build-debian-gcc-trixie
+    - build-debian-gcc-forky
   script:
     - eatmydata apt-get -y install libgtk-4-bin xvfb gcovr
     - export G_DEBUG=fatal-warnings
@@ -169,7 +169,7 @@ test:alpine-edge:
     paths:
       - _build/
 
-asan-test:native-debian-trixie:
+asan-test:native-debian-forky:
   stage: test
   image: ${IMAGE}
   tags: [ asan ]
@@ -184,7 +184,7 @@ check-po:
   stage: test
   image: ${IMAGE}
   dependencies:
-    - build-debian-gcc-trixie
+    - build-debian-gcc-forky
   extends: .phosh-check-po
   except:
     variables:
@@ -194,7 +194,7 @@ build-docs:
   stage: test
   image: ${IMAGE}
   dependencies:
-    - build-debian-gcc-trixie
+    - build-debian-gcc-forky
   script:
     - meson setup -Dgtk_doc=true _build
     - meson compile -C _build
@@ -203,9 +203,9 @@ build-docs:
     paths:
       - _docs
 
-package:deb-debian-trixie:arm64:
+package:deb-debian-forky:arm64:
   variables:
-    L5_DOCKER_IMAGE: debian:trixie
+    L5_DOCKER_IMAGE: debian:forky
     DEB_BUILD_PROFILES: "nodoc nocheck"
     DEB_BUILD_OPTIONS: nocheck
   extends: .l5-build-debian-package
@@ -237,7 +237,7 @@ release-tarball:
   image: ${IMAGE}
   extends: .phosh-check-dist
   needs:
-    - build-debian-gcc-trixie
+    - build-debian-gcc-forky
   artifacts:
     expose_as: "Release tarball"
     paths:
