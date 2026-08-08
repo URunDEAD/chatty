@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: chatty main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/Chatty/issues\n"
-"POT-Creation-Date: 2025-11-10 11:24+0000\n"
-"PO-Revision-Date: 2026-02-22 10:30+0100\n"
+"POT-Creation-Date: 2026-02-28 12:23+0000\n"
+"PO-Revision-Date: 2026-03-10 16:59+0100\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -1764,6 +1764,10 @@ msgstr "Rensa SMS som fastnat"
 #: src/ui/chatty-settings-dialog.ui:349
 msgid "SMIL for MMS"
 msgstr "SMIL för MMS"
+
+#: src/ui/chatty-settings-dialog.ui:350
+msgid "Enable rich media embedding"
+msgstr "Aktivera rich media-inbäddning"
 
 #: src/ui/chatty-settings-dialog.ui:381
 msgid "MMS Carrier Settings"
