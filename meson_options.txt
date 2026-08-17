@@ -1,4 +1,4 @@
-option('purple', type: 'feature', value: 'auto',
+option('purple', type: 'feature', value: 'disabled',
        description: 'Enable libpurple plugin')
 
 option('profile', type: 'combo', choices: ['default','devel'], value: 'default')
