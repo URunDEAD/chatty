@@ -2,12 +2,11 @@
 
 This is the projects of the "Chats" application:
 A simple to use messaging app for 1:1 communication and small groups supporting
-SMS/MMS using [ModemManager] and [mmsd-tng], matrix via [libcmatrix]
-and optionally XMPP through [libpurple].
+SMS/MMS using [ModemManager] and [mmsd-tng] and matrix via [libcmatrix]
 
 ## Build and install
 
-In case you want to disable the libpurple plugin support
+In case you want to enable the libpurple plugin support
 have a look at [meson_options.txt](meson_options.txt)
 
 ### Getting the source
@@ -120,6 +119,7 @@ XMPP support is not actively developed anymore and might be dropped completely i
 If you would like to see that changed consider [stepping up](https://gitlab.gnome.org/World/Chatty/-/issues/842).
 
 ### Build and install the 'carbons' plugin (Optional)
+
 Message synchronization between devices according to XEP-0280.
 On Debian and derivates you can install the `purple-xmpp-carbons` package.
 
@@ -133,6 +133,7 @@ make install
 ```
 
 ### Build and install the 'lurch' plugin (Optional)
+
 lurch plugin implements XEP-0384 (OMEMO Encryption).
 On Debian and derivates you can install `purple-lurch` package.
 
@@ -154,6 +155,7 @@ If you don't have an XMPP account yet and want to subscribe to a service then pl
 [2]: https://docs.gtk.org/gtk4/running.html
 
 ### Experimental Features
+
 Sometimes things are hidden behind experiemental features. Do not enable
 unless you know what you are doing! To activate:
 ```bash
