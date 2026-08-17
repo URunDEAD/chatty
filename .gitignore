@@ -5,7 +5,7 @@ build
 _build
 arm
 arm-build
-debian/*.debhelper/
+debian/*.debhelper
 debian/chatty*.substvars
 debian/chatty/
 debian/chatty-doc/
