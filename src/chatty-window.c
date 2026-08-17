@@ -46,8 +46,7 @@ struct _ChattyWindow
   GtkWidget *side_bar;
   GtkWidget *main_view;
 
-  GtkWidget *new_chat_dialog;
-
+  ChattyNewChatDialog *new_chat_dialog; /* unowned */
   GtkWidget *settings_dialog;
 
   ChattyManager *manager;
@@ -278,20 +277,35 @@ new_chat_selection_changed_cb (ChattyWindow        *self,
   chatty_window_set_uri (self, users->str, name);
 
  end:
-  gtk_widget_set_visible (GTK_WIDGET (dialog), FALSE);
+  adw_dialog_close (ADW_DIALOG (dialog));
+}
+
+static void
+on_new_chat_dialog_closed (ChattyWindow *self)
+{
+  self->new_chat_dialog = NULL;
 }
 
 static void
 window_show_new_chat_dialog (ChattyWindow *self,
                              gboolean      can_multi_select)
 {
-  ChattyNewChatDialog *dialog;
+  g_assert (self->new_chat_dialog == NULL);
 
-  g_assert (CHATTY_IS_WINDOW (self));
+  self->new_chat_dialog = chatty_new_chat_dialog_new ();
+  g_signal_connect_object (self->new_chat_dialog,
+                           "selection-changed",
+                           G_CALLBACK (new_chat_selection_changed_cb),
+                           self,
+                           G_CONNECT_SWAPPED);
+  g_signal_connect_object (self->new_chat_dialog,
+                           "closed",
+                           G_CALLBACK (on_new_chat_dialog_closed),
+                           self,
+                           G_CONNECT_SWAPPED);
 
-  dialog = CHATTY_NEW_CHAT_DIALOG (self->new_chat_dialog);
-  chatty_new_chat_dialog_set_multi_selection (dialog, can_multi_select);
-  gtk_window_present (GTK_WINDOW (self->new_chat_dialog));
+  chatty_new_chat_dialog_set_multi_selection (self->new_chat_dialog, can_multi_select);
+  adw_dialog_present (ADW_DIALOG (self->new_chat_dialog), GTK_WIDGET (self));
 }
 
 static void
@@ -703,12 +717,6 @@ chatty_window_constructed (GObject *object)
   if (chatty_settings_get_window_maximized (self->settings))
     gtk_window_maximize (window);
 
-  self->new_chat_dialog = chatty_new_chat_dialog_new (GTK_WINDOW (self));
-  g_signal_connect_object (self->new_chat_dialog, "selection-changed",
-                           G_CALLBACK (new_chat_selection_changed_cb),
-                           self,
-                           G_CONNECT_SWAPPED);
-
   G_OBJECT_CLASS (chatty_window_parent_class)->constructed (object);
 }
 
@@ -718,7 +726,6 @@ chatty_window_finalize (GObject *object)
 {
   ChattyWindow *self = (ChattyWindow *)object;
 
-  g_clear_pointer ((GtkWindow **)&self->new_chat_dialog, gtk_window_destroy);
   g_clear_object (&self->settings);
 
   G_OBJECT_CLASS (chatty_window_parent_class)->finalize (object);
@@ -836,7 +843,7 @@ chatty_window_set_uri (ChattyWindow *self,
   if (!chatty_manager_set_uri (self->manager, uri, name))
     return;
 
-  gtk_widget_set_visible (self->new_chat_dialog, FALSE);
+  adw_dialog_close (ADW_DIALOG (self->new_chat_dialog));
 }
 
 ChattyChat *

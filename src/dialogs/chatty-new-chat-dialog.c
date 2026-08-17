@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2020-2023 Purism SPC
+ *               2026 Phosh.mobi e.V.
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -37,7 +38,7 @@ static void chatty_new_chat_name_check (ChattyNewChatDialog *self,
 
 struct _ChattyNewChatDialog
 {
-  AdwWindow  parent_instance;
+  AdwDialog  parent_instance;
 
   GtkWidget *header_bar;
   GtkWidget *edit_contact_button;
@@ -78,7 +79,7 @@ struct _ChattyNewChatDialog
 };
 
 
-G_DEFINE_TYPE (ChattyNewChatDialog, chatty_new_chat_dialog, ADW_TYPE_WINDOW)
+G_DEFINE_TYPE (ChattyNewChatDialog, chatty_new_chat_dialog, ADW_TYPE_DIALOG)
 
 enum {
   SELECTION_CHANGED,
@@ -636,14 +637,10 @@ chatty_new_chat_dialog_init (ChattyNewChatDialog *self)
 }
 
 
-GtkWidget *
-chatty_new_chat_dialog_new (GtkWindow *parent_window)
+ChattyNewChatDialog *
+chatty_new_chat_dialog_new (void)
 {
-  g_return_val_if_fail (GTK_IS_WINDOW (parent_window), NULL);
-
-  return g_object_new (CHATTY_TYPE_NEW_CHAT_DIALOG,
-                       "transient-for", parent_window,
-                       NULL);
+  return g_object_new (CHATTY_TYPE_NEW_CHAT_DIALOG, NULL);
 }
 
 GListModel *

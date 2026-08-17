@@ -14,10 +14,10 @@
 G_BEGIN_DECLS
 
 #define CHATTY_TYPE_NEW_CHAT_DIALOG (chatty_new_chat_dialog_get_type())
-G_DECLARE_FINAL_TYPE (ChattyNewChatDialog, chatty_new_chat_dialog, CHATTY, NEW_CHAT_DIALOG, GtkDialog)
+G_DECLARE_FINAL_TYPE (ChattyNewChatDialog, chatty_new_chat_dialog, CHATTY, NEW_CHAT_DIALOG, AdwDialog)
 
 
-GtkWidget *chatty_new_chat_dialog_new (GtkWindow *parent_window);
+ChattyNewChatDialog *chatty_new_chat_dialog_new (void);
 void chatty_new_chat_set_edit_mode (ChattyNewChatDialog *self, gboolean edit);
 GListModel *chatty_new_chat_dialog_get_selected_items (ChattyNewChatDialog *self);
 void chatty_new_chat_dialog_set_multi_selection (ChattyNewChatDialog *self,
