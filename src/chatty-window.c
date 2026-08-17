@@ -228,32 +228,6 @@ notify_unfold_cb (ChattyWindow *self)
 }
 
 static void
-window_show_new_chat_dialog (ChattyWindow *self,
-                             gboolean      can_multi_select)
-{
-  ChattyNewChatDialog *dialog;
-
-  g_assert (CHATTY_IS_WINDOW (self));
-
-  dialog = CHATTY_NEW_CHAT_DIALOG (self->new_chat_dialog);
-  chatty_new_chat_dialog_set_multi_selection (dialog, can_multi_select);
-  gtk_window_present (GTK_WINDOW (self->new_chat_dialog));
-}
-
-static void
-window_chat_deleted_cb (ChattyWindow *self,
-                        ChattyChat   *chat)
-{
-  g_assert (CHATTY_IS_WINDOW (self));
-  g_assert (CHATTY_IS_CHAT (chat));
-
-  if (chatty_main_view_get_item (CHATTY_MAIN_VIEW (self->main_view)) != (gpointer)chat)
-    return;
-
-  window_set_item (self, NULL);
-}
-
-static void
 new_chat_selection_changed_cb (ChattyWindow        *self,
                                ChattyNewChatDialog *dialog)
 {
@@ -305,6 +279,32 @@ new_chat_selection_changed_cb (ChattyWindow        *self,
 
  end:
   gtk_widget_set_visible (GTK_WIDGET (dialog), FALSE);
+}
+
+static void
+window_show_new_chat_dialog (ChattyWindow *self,
+                             gboolean      can_multi_select)
+{
+  ChattyNewChatDialog *dialog;
+
+  g_assert (CHATTY_IS_WINDOW (self));
+
+  dialog = CHATTY_NEW_CHAT_DIALOG (self->new_chat_dialog);
+  chatty_new_chat_dialog_set_multi_selection (dialog, can_multi_select);
+  gtk_window_present (GTK_WINDOW (self->new_chat_dialog));
+}
+
+static void
+window_chat_deleted_cb (ChattyWindow *self,
+                        ChattyChat   *chat)
+{
+  g_assert (CHATTY_IS_WINDOW (self));
+  g_assert (CHATTY_IS_CHAT (chat));
+
+  if (chatty_main_view_get_item (CHATTY_MAIN_VIEW (self->main_view)) != (gpointer)chat)
+    return;
+
+  window_set_item (self, NULL);
 }
 
 static void
