@@ -16,7 +16,7 @@ Build-Depends:
  libjson-glib-dev <!pkg.chatty.nocmatrix>,
  libmm-glib-dev (>= 1.12.0),
  libphonenumber-dev,
- libpurple-dev <!pkg.chatty.nopurple>,
+ libpurple-dev <pkg.chatty.purple>,
  libolm-dev <!pkg.chatty.nocmatrix>,
  libsecret-1-dev <!pkg.chatty.nocmatrix>,
  libsoup-3.0-dev <!pkg.chatty.nocmatrix>,
@@ -45,9 +45,9 @@ Depends:
 Recommends:
  gnupg,
  mmsd-tng,
- purple-xmpp-carbons,
- purple-lurch,
- purple-xmpp-http-upload,
+ purple-xmpp-carbons <pkg.chatty.purple>,
+ purple-lurch <pkg.chatty.purple>,
+ purple-xmpp-http-upload <pkg.chatty.purple>,
  libgdk-pixbuf2.0-bin,
 Suggests:
  calls,
