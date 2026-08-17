@@ -36,17 +36,6 @@ before_script:
   - export DEBIAN_FRONTEND=noninteractive
   - apt-get -y update
 
-build-debian-gcc-forky-no-purple:
-  image: ${IMAGE}
-  stage: build
-  script:
-    - export LC_ALL=C.UTF-8
-    - meson setup _build -Dpurple=disabled
-    - meson compile -C _build
-  except:
-    variables:
-      - $FP_ONLY == "1"
-
 build-debian-gcc-forky:
   image: ${IMAGE}
   stage: build
@@ -88,10 +77,6 @@ build-alpine-edge:
         olm-dev
         pidgin-dev
         cyrus-sasl
-        purple-xmpp
-        purple-carbons
-        purple-lurch
-        purple-xmpp-http-upload
         appstream-glib
         desktop-file-utils
         mesa-dri-gallium
@@ -151,10 +136,6 @@ test:alpine-edge:
         olm-dev
         pidgin-dev
         cyrus-sasl
-        purple-xmpp
-        purple-carbons
-        purple-lurch
-        purple-xmpp-http-upload
         appstream-glib
         desktop-file-utils
         mesa-dri-gallium
