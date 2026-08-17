@@ -530,26 +530,6 @@ new_chat_dialog_selected_contacts_changed_cb (ChattyNewChatDialog *self)
 }
 
 static void
-chatty_new_chat_dialog_show (GtkWidget *widget)
-{
-  ChattyNewChatDialog *self = (ChattyNewChatDialog *)widget;
-
-  g_return_if_fail (CHATTY_IS_NEW_CHAT_DIALOG (self));
-
-  /* Reset selection list */
-  g_list_store_remove_all (self->selection_list);
-
-  gtk_widget_set_sensitive (self->apply_button, FALSE);
-  gtk_editable_set_text ((gpointer) self->contacts_search_entry, "");
-  gtk_stack_set_visible_child (GTK_STACK (self->main_stack), self->contact_list_view);
-  new_chat_dialog_page_changed_cb (self);
-  chatty_new_chat_dialog_set_multi_selection (self, self->multi_selection);
-  new_chat_dialog_selected_contacts_changed_cb (self);
-
-  GTK_WIDGET_CLASS (chatty_new_chat_dialog_parent_class)->show (widget);
-}
-
-static void
 chatty_new_chat_dialog_dispose (GObject *object)
 {
   ChattyNewChatDialog *self = (ChattyNewChatDialog *)object;
@@ -570,8 +550,6 @@ chatty_new_chat_dialog_class_init (ChattyNewChatDialogClass *klass)
   GtkWidgetClass *widget_class = GTK_WIDGET_CLASS (klass);
 
   object_class->dispose = chatty_new_chat_dialog_dispose;
-
-  widget_class->show = chatty_new_chat_dialog_show;
 
   signals [SELECTION_CHANGED] =
     g_signal_new ("selection-changed",
@@ -651,6 +629,10 @@ chatty_new_chat_dialog_init (ChattyNewChatDialog *self)
   self->dummy_prefix_radio = gtk_check_button_new ();
 
   self->manager = g_object_ref (chatty_manager_get_default ());
+
+  gtk_stack_set_visible_child (GTK_STACK (self->main_stack), self->contact_list_view);
+  new_chat_dialog_page_changed_cb (self);
+  new_chat_dialog_selected_contacts_changed_cb (self);
 }
 
 

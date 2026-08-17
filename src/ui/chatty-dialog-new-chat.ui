@@ -42,6 +42,7 @@
             <child type="end">
               <object class="GtkButton" id="apply_button">
                 <property name="visible">0</property>
+                <property name="sensitive">0</property>
                 <property name="use-underline">1</property>
                 <signal name="clicked" handler="new_chat_dialog_apply_button_clicked_cb" swapped="yes"/>
                 <style>
