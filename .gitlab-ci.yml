@@ -1,7 +1,6 @@
 include:
-  - 'https://source.puri.sm/Librem5/librem5-ci/raw/master/librem5-pipeline-definitions.yml'
-  - project: 'guidog/meta-phosh'
-    ref: c63ce48348a61be7c74e952da5e30456ef0effd9
+  - project: 'World/Phosh/meta-phosh'
+    ref: '561d49ceb84e6f585e60f05e59e2c7e180d007f5'
     file: '/ci/phosh-common-jobs.yml'
   - project: 'gnome/citemplates'
     file: 'flatpak/flatpak-ci-initiative-sdk-extensions.yml'
@@ -184,17 +183,13 @@ build-docs:
     paths:
       - _docs
 
-package:deb-debian-forky:arm64:
+package-deb-debian-forky:
+  stage: package
+  image: ${IMAGE}
   variables:
-    L5_DOCKER_IMAGE: debian:forky
-    DEB_BUILD_PROFILES: "nodoc nocheck"
-    DEB_BUILD_OPTIONS: nocheck
-  extends: .l5-build-debian-package
-  tags:
-    - aarch64
-  except:
-    variables:
-      - $FP_ONLY == "1"
+    DEB_BUILD_PROFILES: "nocheck"
+    PHOSH_DOCKER_IMAGE: "${DEBIAN_IMAGE}"
+  extends: .phosh-build-debian-package
 
 flatpak-gnome-46:
   image: 'quay.io/gnome_infrastructure/gnome-runtime-images:gnome-46'
