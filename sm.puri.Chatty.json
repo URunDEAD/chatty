@@ -234,9 +234,9 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://source.puri.sm/Librem5/libcmatrix.git",
-                    "tag": "v0.0.2",
-                    "commit": "a338cafc420656a30adeb873430e978f0a688a33"
+                    "url": "https://github.com/agx/libcmatrix.git",
+                    "tag": "v0.0.4",
+                    "commit": "5999b7afcb02b459fe13a2b93ab018f3af6d2b05"
                 }
             ]
         },
