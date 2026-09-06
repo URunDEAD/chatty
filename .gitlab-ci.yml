@@ -1,6 +1,6 @@
 include:
   - project: 'World/Phosh/meta-phosh'
-    ref: '561d49ceb84e6f585e60f05e59e2c7e180d007f5'
+    ref: '8605615b6ce98e97ad0ab83c6e6ee55ffbbe5865'
     file: '/ci/phosh-common-jobs.yml'
   - project: 'gnome/citemplates'
     file: 'flatpak/flatpak-ci-initiative-sdk-extensions.yml'
