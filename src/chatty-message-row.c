@@ -63,7 +63,7 @@ text_item_linkify (const char *message)
 {
   g_autoptr(GString) link_str = NULL;
   GString *str = NULL;
-  char *start, *end, *url;
+  const char *start, *end, *url;
 
   if (!message || !*message)
     return NULL;

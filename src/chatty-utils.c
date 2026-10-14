@@ -38,7 +38,7 @@
 
 #define get_url_start(_start, _match, _type, _suffix, _out)             \
   do {                                                                  \
-    char *_uri = _match - strlen (_type);                               \
+    const char *_uri = _match - strlen (_type);                         \
     size_t len = strlen (_type _suffix);                                \
                                                                         \
     if (*_out)                                                          \
@@ -50,12 +50,11 @@
       *_out = _match - strlen (_type);                                  \
   } while (0)
 
-char *
+const char *
 chatty_utils_find_url (const char  *buffer,
-                       char       **end)
+                       const char **end)
 {
-  char *match, *url = NULL;
-  const char *start;
+  const char *start, *match, *url = NULL;
 
   start = buffer;
 
@@ -85,7 +84,7 @@ chatty_utils_find_url (const char  *buffer,
     if (url_end == strlen (url))
       *end = url + url_end;
     else {
-      char *ptr = url + url_end + 1;
+      const char *ptr = url + url_end + 1;
 
       while (ptr[-1] == '(') {
         size_t count = 0;
@@ -214,7 +213,7 @@ char *
 chatty_utils_strip_utm_from_message (const char *message)
 {
   GString *str = NULL;
-  char *start, *end, *url;
+  const char *start, *end, *url;
 
   if (!message)
     return NULL;

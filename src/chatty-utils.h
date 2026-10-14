@@ -18,8 +18,8 @@
 char *chatty_utils_get_purple_dir (void);
 char *chatty_utils_jabber_id_strip (const char *name);
 void chatty_utils_sanitize_filename (char *name);
-char *chatty_utils_find_url (const char  *buffer,
-                             char       **end);
+const char *chatty_utils_find_url (const char  *buffer,
+                                   const char **end);
 char *chatty_utils_strip_utm_from_url (const char *url_to_parse);
 char *chatty_utils_strip_utm_from_message (const char *message);
 char *chatty_utils_vcard_get_contact_title (GFile* vcard);
