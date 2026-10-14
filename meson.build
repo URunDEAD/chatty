@@ -31,7 +31,6 @@ if get_option('profile') == 'devel'
 endif
 
 config_h = configuration_data()
-config_h.set10('HAVE_EXPLICIT_BZERO', cc.has_function('explicit_bzero'))
 config_h.set('PURPLE_ENABLED', purple_dep.found())
 config_h.set('LIBSPELL_ENABLED', libspell_dep.found())
 config_h.set_quoted('GETTEXT_PACKAGE', 'purism-chatty')
