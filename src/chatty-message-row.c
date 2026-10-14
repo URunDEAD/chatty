@@ -139,7 +139,7 @@ static void
 text_item_update_quotes (ChattyMessageRow *self)
 {
   const char *text, *end;
-  char *quote;
+  const char *quote;
 
   text = gtk_label_get_text (GTK_LABEL (self->message_body));
   end = text;
