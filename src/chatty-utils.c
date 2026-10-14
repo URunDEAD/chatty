@@ -47,7 +47,7 @@
     if (_match - _start >= strlen (_type) &&                            \
         g_ascii_strncasecmp (_uri, _type _suffix, len) == 0 &&          \
         (isalnum (_uri[len]) || _uri[len] == '/'))                      \
-      *_out = match - strlen (_type);                                   \
+      *_out = _match - strlen (_type);                                  \
   } while (0)
 
 char *
