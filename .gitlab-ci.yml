@@ -95,7 +95,7 @@ test:debian-gcc:
   dependencies:
     - build-debian-gcc-forky
   script:
-    - eatmydata apt-get -y install libgtk-4-bin xvfb gcovr
+    - eatmydata apt-get -y install libgtk-4-bin xvfb gcovr locales-all
     - export G_DEBUG=fatal-warnings
     - export LC_ALL=C.UTF-8
     - xvfb-run -a -s "-screen 0 1024x768x24" meson test -C _build --print-errorlogs
