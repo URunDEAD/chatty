@@ -200,6 +200,8 @@ package-deb-debian-forky:
     FLATPAK_MODULE: "chatty"
     MANIFEST_PATH: "sm.puri.Chatty.json"
     RUNTIME_REPO: "https://dl.flathub.org/repo/flathub.flatpakrepo"
+  rules:
+    - when: never
 
 flatpak@x86_64:
   extends:
