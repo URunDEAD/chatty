@@ -23,10 +23,8 @@
 
 #define G_LOG_DOMAIN "chatty-application"
 
-#ifdef HAVE_CONFIG_H
-# include "config.h"
-# include "version.h"
-#endif
+#include "config.h"
+#include "version.h"
 
 #define CMATRIX_USE_EXPERIMENTAL_API
 #include <cmatrix.h>
