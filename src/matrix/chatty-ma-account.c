@@ -91,11 +91,11 @@ handle_password_login (ChattyMaAccount *self,
 }
 
 static void
-cm_account_sync_cb (CmClient  *cm_client,
-                    CmRoom    *cm_room,
-                    GPtrArray *events,
-                    GError    *error,
-                    gpointer   user_data)
+chatty_cm_account_sync_cb (CmClient  *cm_client,
+                           CmRoom    *cm_room,
+                           GPtrArray *events,
+                           GError    *error,
+                           gpointer   user_data)
 {
   ChattyMaAccount *self = user_data;
 
@@ -589,7 +589,7 @@ ma_account_set_client (ChattyMaAccount *self,
   self->cm_client = client;
   cm_client_set_device_name (client, "Chatty");
   cm_client_set_sync_callback (client,
-                               cm_account_sync_cb,
+                               chatty_cm_account_sync_cb,
                                self, NULL);
 
   g_signal_connect_object (self->cm_client, "status-changed",
