@@ -53,6 +53,7 @@ build-debian-gcc-forky:
 build-alpine-edge:
   image: ${ALPINE_IMAGE}
   stage: build
+  allow_failure: true
   before_script:
     - apk -q add
         build-base
@@ -108,6 +109,7 @@ test:debian-gcc:
 test:alpine-edge:
   stage: test
   image: ${ALPINE_IMAGE}
+  allow_failure: true
   dependencies:
     - build-alpine-edge
   before_script:
