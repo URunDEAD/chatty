@@ -165,7 +165,7 @@ gsettings set sm.puri.Chatty experimental-features true
 # Getting in Touch
 
 * Issue tracker: https://gitlab.gnome.org/World/Chatty/issues
-* Matrix: https://matrix.to/#/#chatty:talk.puri.sm
+* Matrix: https://matrix.to/#/#chatty:phosh.mobi
 
 [ModemManager]: https://modemmanager.org/
 [mmsd-tng]: https://gitlab.com/kop316/mmsd
