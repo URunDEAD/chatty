@@ -262,18 +262,19 @@ chatty_application_open_chat (GSimpleAction *action,
 }
 
 static void
-main_window_focus_changed_cb (ChattyApplication *self)
+on_main_window_is_active_changed (ChattyApplication *self,
+                                  GParamSpec        *pspec,
+                                  GtkWindow         *window)
 {
   ChattyChat *chat = NULL;
-  GtkWindow *window;
-  gboolean has_focus;
+  gboolean is_active;
 
   g_assert (CHATTY_IS_APPLICATION (self));
+  g_assert (GTK_WINDOW (self->main_window) == window);
 
-  window = (GtkWindow *)self->main_window;
-  has_focus = window && gtk_window_is_active (window);
+  is_active = window && gtk_window_is_active (window);
 
-  if (has_focus)
+  if (is_active)
     chatty_clock_start (chatty_clock_get_default ());
   else
     chatty_clock_stop (chatty_clock_get_default ());
@@ -286,7 +287,7 @@ main_window_focus_changed_cb (ChattyApplication *self)
   if (gtk_application_get_active_window (GTK_APPLICATION (self)) != window)
     return;
 
-  if (has_focus)
+  if (is_active)
     chat = chatty_application_get_active_chat (self);
 
   if (chat) {
@@ -460,8 +461,8 @@ chatty_application_activate (GApplication *application)
     g_set_weak_pointer (&self->main_window, chatty_window_new (app));
     g_info ("New main window created");
 
-    g_signal_connect_object (self->main_window, "notify::has-toplevel-focus",
-                             G_CALLBACK (main_window_focus_changed_cb),
+    g_signal_connect_object (self->main_window, "notify::is-active",
+                             G_CALLBACK (on_main_window_is_active_changed),
                              self, G_CONNECT_SWAPPED);
   }
 
